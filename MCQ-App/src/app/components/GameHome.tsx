@@ -27,10 +27,16 @@ export const GameHome: React.FC = () => {
   const [subjects, setSubjects] = useState<string[]>([]);
   const [levels, setLevels] = useState<any[]>([]);
   const [showLevelComplete, setShowLevelComplete] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const [levelStats, setLevelStats] = useState({
     accuracy: 0,
     xpEarned: 0,
   });
+
+  // Handle Hydration for Zustand persist
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Load available subjects
   useEffect(() => {
@@ -79,6 +85,8 @@ export const GameHome: React.FC = () => {
   const progress = getSubjectProgress(currentSubject);
 
   // Quiz view
+  if (!isMounted) return null; // Wait for Zustand to hydrate
+
   if (currentLevel !== null && levels[currentLevel]) {
     return (
       <>
