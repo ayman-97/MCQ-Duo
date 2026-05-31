@@ -1,0 +1,4903 @@
+[
+  {
+    "question": {
+      "en": "1. Why is Java considered a strongly typed language?",
+      "ar": "1. لماذا تعتبر Java لغة مكتوبة بقوة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It uses pointers for direct memory access."
+      },
+      {
+        "letter": "B",
+        "text": "Every variable and expression has a strictly defined type that is checked by the compiler."
+      },
+      {
+        "letter": "C",
+        "text": "Variables can dynamically change types during execution."
+      },
+      {
+        "letter": "D",
+        "text": "It does not require type declarations."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "First, every variable and expression has a type, and every type is strictly defined. Second, all assignments and parameters are checked for type compatibility by the compiler.",
+      "ar": "أولاً، لكل متغير وتعبير نوع، وكل نوع محدد بدقة. ثانياً، يتحقق المترجم من توافق الأنواع في جميع التعيينات والمعلمات لتجنب الأخطاء."
+    }
+  },
+  {
+    "question": {
+      "en": "2. How many primitive types of data does Java define?",
+      "ar": "2. ما هو عدد أنواع البيانات البدائية التي تحددها Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "7"
+      },
+      {
+        "letter": "C",
+        "text": "8"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Java defines eight primitive types: byte, short, int, long, char, float, double, and boolean.",
+      "ar": "تعرف جافا ثمانية أنواع أساسية للبيانات: byte، short، int، long، char، float، double، و boolean."
+    }
+  },
+  {
+    "question": {
+      "en": "3. Why are primitive types in Java not implemented as objects?",
+      "ar": "3. لماذا لا يتم تنفيذ الأنواع البدائية في Java ككائنات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To reduce memory leaks."
+      },
+      {
+        "letter": "B",
+        "text": "Because objects cannot handle numeric values."
+      },
+      {
+        "letter": "C",
+        "text": "For efficiency, to avoid performance degradation."
+      },
+      {
+        "letter": "D",
+        "text": "To maintain compatibility with older C code."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The primitive types are not objects because making them into objects would have degraded performance too much. It is done for efficiency.",
+      "ar": "الأنواع الأساسية ليست كائنات لأن تحويلها إلى كائنات كان سيؤدي إلى تدهور الأداء بشكل كبير. تم ذلك لضمان الكفاءة."
+    }
+  },
+  {
+    "question": {
+      "en": "4. What is the guaranteed size of an `int` in Java across all platforms?",
+      "ar": "4. ما هو الحجم المضمون لـ \"int\" في Java عبر جميع الأنظمة الأساسية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "16 bits"
+      },
+      {
+        "letter": "B",
+        "text": "32 bits"
+      },
+      {
+        "letter": "C",
+        "text": "64 bits"
+      },
+      {
+        "letter": "D",
+        "text": "It varies based on the execution environment."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Because of Java's portability requirement, an int is always 32 bits, regardless of the particular platform.",
+      "ar": "بسبب متطلبات قابلية النقل في جافا، يكون حجم int دائمًا 32 بت، بغض النظر عن بنية الجهاز المستخدم."
+    }
+  },
+  {
+    "question": {
+      "en": "5. Does Java support unsigned, positive-only integers as distinct primitive types?",
+      "ar": "5. هل تدعم Java الأعداد الصحيحة غير الموقعة والموجبة فقط كأنواع بدائية متميزة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, using the `unsigned` keyword."
+      },
+      {
+        "letter": "B",
+        "text": "Yes, but only for the `long` data type."
+      },
+      {
+        "letter": "C",
+        "text": "No, Java does not support unsigned integers."
+      },
+      {
+        "letter": "D",
+        "text": "No, except for the `byte` type."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Java does not support unsigned, positive-only integers. All integer types (byte, short, int, long) are signed.",
+      "ar": "لا تدعم جافا الأعداد الصحيحة غير الموجبة (unsigned) كأنواع أساسية. جميع أنواع الأعداد الصحيحة في جافا تحمل إشارة (موجبة وسالبة)."
+    }
+  },
+  {
+    "question": {
+      "en": "6. What is the range of values for a `byte` data type?",
+      "ar": "6. ما هو نطاق القيم لنوع البيانات \"بايت\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "0 to 255"
+      },
+      {
+        "letter": "B",
+        "text": "-128 to 127"
+      },
+      {
+        "letter": "C",
+        "text": "-32,768 to 32,767"
+      },
+      {
+        "letter": "D",
+        "text": "-127 to 128"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The byte is a signed 8-bit type that has a range from -128 to 127.",
+      "ar": "نوع byte هو نوع 8 بت يحمل إشارة، ويتراوح مداه حصرياً من -128 إلى 127."
+    }
+  },
+  {
+    "question": {
+      "en": "7. Which integer type is useful when an `int` is not large enough to hold a value?",
+      "ar": "7. ما هو نوع الأعداد الصحيحة الذي يكون مفيدًا عندما لا يكون `int' كبيرًا بما يكفي لاحتواء قيمة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "short"
+      },
+      {
+        "letter": "B",
+        "text": "double"
+      },
+      {
+        "letter": "C",
+        "text": "long"
+      },
+      {
+        "letter": "D",
+        "text": "byte"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The long type is a signed 64-bit type and is useful for occasions where an int type (32 bits) is not large enough.",
+      "ar": "نوع long هو نوع 64 بت يحمل إشارة ومفيد في الحالات التي تتطلب أرقاماً صحيحة كبيرة جداً تفوق قدرة نوع int."
+    }
+  },
+  {
+    "question": {
+      "en": "8. What standard set of floating-point types and operators does Java implement?",
+      "ar": "8. ما هي المجموعة القياسية من أنواع الفاصلة العائمة والمشغلين التي تنفذها Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ASCII"
+      },
+      {
+        "letter": "B",
+        "text": "IEEE-754"
+      },
+      {
+        "letter": "C",
+        "text": "ISO-8859-1"
+      },
+      {
+        "letter": "D",
+        "text": "Unicode"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Java implements the standard (IEEE-754) set of floating-point types and operators.",
+      "ar": "تطبق جافا مجموعة المعايير القياسية العالمية (IEEE-754) لأنواع وعمليات الفاصلة العائمة (الأعداد العشرية)."
+    }
+  },
+  {
+    "question": {
+      "en": "9. Which floating-point type is the best choice when you need to maintain accuracy over many iterative calculations?",
+      "ar": "9. ما هو نوع الفاصلة العائمة الذي يعد الخيار الأفضل عندما تحتاج إلى الحفاظ على الدقة في العديد من الحسابات التكرارية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "float"
+      },
+      {
+        "letter": "B",
+        "text": "double"
+      },
+      {
+        "letter": "C",
+        "text": "int"
+      },
+      {
+        "letter": "D",
+        "text": "long"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "When maintaining accuracy over many iterative calculations, or manipulating large-valued numbers, double (64-bit precision) is the best choice.",
+      "ar": "عند الحاجة للحفاظ على الدقة عبر العديد من الحسابات التكرارية أو معالجة الأرقام الكبيرة، فإن double (64 بت) هو الخيار الأفضل."
+    }
+  },
+  {
+    "question": {
+      "en": "10. What character set does Java use to represent characters?",
+      "ar": "10. ما هي مجموعة الأحرف التي تستخدمها Java لتمثيل الأحرف؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Extended ASCII"
+      },
+      {
+        "letter": "B",
+        "text": "ISO-Latin-1"
+      },
+      {
+        "letter": "C",
+        "text": "Unicode"
+      },
+      {
+        "letter": "D",
+        "text": "UTF-8 strictly"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Java uses Unicode to represent characters, which is a fully international character set requiring 16 bits.",
+      "ar": "تستخدم جافا الترميز العالمي (Unicode) لتمثيل الأحرف، وهو نظام دولي متكامل يتطلب 16 بت لتغطية اللغات البشرية."
+    }
+  },
+  {
+    "question": {
+      "en": "11. What is the mathematical range of a `char` type in Java?",
+      "ar": "11. ما هو النطاق الرياضي لنوع `char` في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "-128 to 127"
+      },
+      {
+        "letter": "B",
+        "text": "0 to 255"
+      },
+      {
+        "letter": "C",
+        "text": "-32,768 to 32,767"
+      },
+      {
+        "letter": "D",
+        "text": "0 to 65,536"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The range of a char is 0 to 65,536. There are no negative chars in Java.",
+      "ar": "نطاق char هو من 0 إلى 65,536. لا توجد أحرف بقيم سالبة ضمن هذا النوع."
+    }
+  },
+  {
+    "question": {
+      "en": "12. In Java, what is the output format of a boolean variable when printed using `println()`?",
+      "ar": "12. في Java، ما هو تنسيق إخراج المتغير المنطقي عند طباعته باستخدام `println()`؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 or 0"
+      },
+      {
+        "letter": "B",
+        "text": "T or F"
+      },
+      {
+        "letter": "C",
+        "text": "true or false"
+      },
+      {
+        "letter": "D",
+        "text": "TRUE or FALSE"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "When a boolean value is output by println(), the exact lowercase strings 'true' or 'false' are displayed.",
+      "ar": "عند طباعة قيمة منطقية باستخدام ()println، يتم عرض السلاسل النصية بأحرف صغيرة 'true' أو 'false'."
+    }
+  },
+  {
+    "question": {
+      "en": "13. How do you correctly specify an octal integer literal in Java?",
+      "ar": "13. كيف يمكنك تحديد عدد صحيح ثماني حرفيًا في Java بشكل صحيح؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By adding a leading 'O' (letter O)"
+      },
+      {
+        "letter": "B",
+        "text": "By adding a leading zero '0'"
+      },
+      {
+        "letter": "C",
+        "text": "By adding a leading '0x'"
+      },
+      {
+        "letter": "D",
+        "text": "By appending 'oct'"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Octal values (base eight) are denoted in Java by a leading zero (e.g., 07).",
+      "ar": "يُشار إلى القيم الثمانية في جافا بوضع صفر في البداية (مثل 07). القيم العشرية لا يمكن أن تبدأ بصفر."
+    }
+  },
+  {
+    "question": {
+      "en": "14. How do you specify a binary integer literal?",
+      "ar": "14. كيف يمكنك تحديد عدد صحيح ثنائي حرفي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By prefixing with '0b' or '0B'"
+      },
+      {
+        "letter": "B",
+        "text": "By prefixing with '0x' or '0X'"
+      },
+      {
+        "letter": "C",
+        "text": "By prefixing with 'bin'"
+      },
+      {
+        "letter": "D",
+        "text": "By suffixing with 'b'"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "You can specify integer literals using binary by prefixing the value with 0b or 0B.",
+      "ar": "يمكنك تحديد قيم الأعداد الصحيحة بالصيغة الثنائية عن طريق إضافة البادئة 0b أو 0B للقيمة المكتوبة."
+    }
+  },
+  {
+    "question": {
+      "en": "15. Which of the following is a VALID use of underscores in a numeric literal?",
+      "ar": "15. أي مما يلي يعد استخدامًا صالحًا للشرطات السفلية في الأرقام الحرفية الرقمية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "`int x = _123;`"
+      },
+      {
+        "letter": "B",
+        "text": "`int x = 123_;`"
+      },
+      {
+        "letter": "C",
+        "text": "`int x = 1_2_3;`"
+      },
+      {
+        "letter": "D",
+        "text": "`double x = 1._23;`"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Underscores can only be used to separate digits. They cannot come at the beginning or the end of a literal, nor directly next to a decimal point.",
+      "ar": "يمكن استخدام الشرطة السفلية فقط لفصل الأرقام. لا يُسمح باستخدامها في البداية أو النهاية، ولا بجوار الفاصلة العشرية."
+    }
+  },
+  {
+    "question": {
+      "en": "16. What is the default data type for a floating-point literal (e.g., 3.14) in Java?",
+      "ar": "16. ما هو نوع البيانات الافتراضي للفاصلة العائمة الحرفية (على سبيل المثال، 3.14) في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "float"
+      },
+      {
+        "letter": "B",
+        "text": "double"
+      },
+      {
+        "letter": "C",
+        "text": "decimal"
+      },
+      {
+        "letter": "D",
+        "text": "long"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Floating-point literals in Java default to double precision (64 bits). To specify a float literal, you must explicitly append an F or f.",
+      "ar": "القيم الحرفية للفاصلة العائمة في جافا تكون افتراضياً من النوع double (64 بت). لتحديدها كـ float يجب إلحاق F أو f بالقيمة."
+    }
+  },
+  {
+    "question": {
+      "en": "17. How are string literals implemented internally in Java?",
+      "ar": "17. كيف يتم تنفيذ القيم الحرفية للسلسلة داخليًا في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "As null-terminated arrays of characters."
+      },
+      {
+        "letter": "B",
+        "text": "As a primitive data type."
+      },
+      {
+        "letter": "C",
+        "text": "As object types of the class String."
+      },
+      {
+        "letter": "D",
+        "text": "As an extended variant of the char array."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In Java, strings are not arrays of characters as in C/C++; they are actually full object types.",
+      "ar": "في جافا، السلاسل النصية ليست مجرد مصفوفات من الأحرف؛ بل هي في الواقع كائنات (Objects) مدعومة بقدرات متقدمة."
+    }
+  },
+  {
+    "question": {
+      "en": "18. What does dynamic initialization mean in the context of Java variables?",
+      "ar": "18. ماذا يعني التهيئة الديناميكية في سياق متغيرات Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Variables can change their types dynamically during runtime."
+      },
+      {
+        "letter": "B",
+        "text": "Variables can be initialized using any valid expression at the time they are declared."
+      },
+      {
+        "letter": "C",
+        "text": "Variables are stored in dynamic memory clusters."
+      },
+      {
+        "letter": "D",
+        "text": "Arrays grow automatically in size as needed."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Java allows variables to be initialized dynamically using any expression (including method calls) valid at the time the variable is declared.",
+      "ar": "تسمح جافا بتهيئة المتغيرات ديناميكياً باستخدام أي تعبير برمجي صالح (بما في ذلك استدعاء الدوال) وقت الإعلان عن المتغير."
+    }
+  },
+  {
+    "question": {
+      "en": "19. How is a new scope generally created in a Java method?",
+      "ar": "19. كيف يتم إنشاء نطاق جديد بشكل عام بطريقة Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By simply indenting the code further."
+      },
+      {
+        "letter": "B",
+        "text": "By declaring a new variable with a specific modifier."
+      },
+      {
+        "letter": "C",
+        "text": "By starting a block with an opening curly brace `{`."
+      },
+      {
+        "letter": "D",
+        "text": "By using the `scope` keyword."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A block is begun with an opening curly brace and ended by a closing curly brace. Every block defines a new scope.",
+      "ar": "تبدأ الكتلة البرمجية بقوس متعرج مفتوح وتنتهي بآخر مغلق. كل كتلة برمجية من هذا النوع تُنشئ وتحدد نطاقاً (scope) جديداً."
+    }
+  },
+  {
+    "question": {
+      "en": "20. What happens to a variable when the execution leaves its scope (e.g., the block ends)?",
+      "ar": "20. ماذا يحدث للمتغير عندما يترك التنفيذ نطاقه (على سبيل المثال، تنتهي الكتلة)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It retains its value for the next time the block is entered."
+      },
+      {
+        "letter": "B",
+        "text": "It is automatically promoted to a global variable."
+      },
+      {
+        "letter": "C",
+        "text": "It is destroyed and will not hold its value."
+      },
+      {
+        "letter": "D",
+        "text": "Its value is safely cast to null."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Variables are created when their scope is entered, and destroyed when their scope is left. A variable loses its value once it goes out of scope.",
+      "ar": "يتم إنشاء المتغيرات عند الدخول إلى نطاقها، وتُدمر وتفقد قيمها تماماً عند مغادرة هذا النطاق."
+    }
+  },
+  {
+    "question": {
+      "en": "21. Is it permissible to declare a variable in an inner nested block with the exact same name as one in an outer block?",
+      "ar": "21. هل يجوز الإعلان عن متغير في كتلة داخلية متداخلة بنفس اسم متغير في كتلة خارجية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, the inner variable cleanly shadows the outer variable."
+      },
+      {
+        "letter": "B",
+        "text": "Yes, but only for primitive types, not objects."
+      },
+      {
+        "letter": "C",
+        "text": "No, it will cause a compile-time error."
+      },
+      {
+        "letter": "D",
+        "text": "No, it will cause a run-time error."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Although blocks can be nested, you cannot declare a variable to have the same name as one in an outer scope. Doing so results in a compile-time error in Java.",
+      "ar": "على الرغم من إمكانية تداخل الكتل البرمجية، الإعلان عن متغير بنفس اسم متغير موجود في النطاق الخارجي غير مسموح ويسبب خطأ أثناء الترجمة."
+    }
+  },
+  {
+    "question": {
+      "en": "22. Under which conditions does Java perform an automatic widening type conversion?",
+      "ar": "22. تحت أي ظروف تقوم Java بإجراء تحويل تلقائي لنوع التوسيع؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "When the two types are compatible and the destination type is larger."
+      },
+      {
+        "letter": "B",
+        "text": "When explicitly casting from a double to an int."
+      },
+      {
+        "letter": "C",
+        "text": "When implicitly converting a boolean to an int."
+      },
+      {
+        "letter": "D",
+        "text": "When the source type is larger than the destination type."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "An automatic widening conversion takes place only when the two types are compatible and the destination type is larger than the source type.",
+      "ar": "يحدث التحويل التلقائي الموسع فقط عندما يكون النوعان متوافقين ويكون نوع المتلقي (الوجهة) ذو مساحة استيعاب أكبر من المصدر."
+    }
+  },
+  {
+    "question": {
+      "en": "23. How do you explicitly convert between incompatible types or perform a narrowing conversion?",
+      "ar": "23. كيف يمكنك التحويل بشكل صريح بين الأنواع غير المتوافقة أو إجراء تحويل تضييقي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using the `convert` keyword."
+      },
+      {
+        "letter": "B",
+        "text": "Using an automatic promotion framework."
+      },
+      {
+        "letter": "C",
+        "text": "By assigning them directly without syntax changes."
+      },
+      {
+        "letter": "D",
+        "text": "Using a cast with the syntax `(target-type) value`."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "To create a conversion between two incompatible types, or a narrowing conversion, you must explicitly use a cast, formatted as (target-type) value.",
+      "ar": "لإجراء تحويل بين أنواع غير متوافقة أو للقيام بتحويل تضييقي، يتوجب استخدام التحويل الصريح (cast) باستخدام الصيغة: (النوع-الهدف) القيمة."
+    }
+  },
+  {
+    "question": {
+      "en": "24. What happens when a floating-point value is explicitly assigned to an integer type using a cast?",
+      "ar": "24. ماذا يحدث عندما يتم تعيين قيمة الفاصلة العائمة بشكل صريح لنوع عدد صحيح باستخدام قالب؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The number is rounded to the nearest whole mathematical integer."
+      },
+      {
+        "letter": "B",
+        "text": "The fractional component is completely truncated (lost)."
+      },
+      {
+        "letter": "C",
+        "text": "An `ArithmeticException` is thrown at runtime."
+      },
+      {
+        "letter": "D",
+        "text": "The integer variable is automatically promoted to a double."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "When a floating-point value is cast and assigned to an integer type, truncation occurs, meaning the fractional component is discarded completely.",
+      "ar": "عند تحويل وتعيين قيمة فاصلة عائمة إلى نوع عدد صحيح، يحدث اقتطاع وتُفقد القيمة الكسرية بالكامل دون تقريب."
+    }
+  },
+  {
+    "question": {
+      "en": "25. During the evaluation of mathematical expressions, to what data type are `byte`, `short`, and `char` operands automatically promoted?",
+      "ar": "25. أثناء تقييم التعبيرات الرياضية، إلى أي نوع من البيانات يتم ترقية المعاملات \"byte\"، و\"short\"، و\"char\" تلقائيًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "long"
+      },
+      {
+        "letter": "B",
+        "text": "int"
+      },
+      {
+        "letter": "C",
+        "text": "float"
+      },
+      {
+        "letter": "D",
+        "text": "double"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "To handle precision issues, Java automatically promotes each byte, short, or char operand to int when evaluating an expression.",
+      "ar": "لمعالجة تجاوز السعة، تقوم جافا تلقائياً بترقية كل معامل من نوع byte أو short أو char إلى نوع int أثناء تقييم التعبيرات الرياضية."
+    }
+  },
+  {
+    "question": {
+      "en": "26. What operator is strictly required to allocate physical memory for an array in Java?",
+      "ar": "26. ما هو المشغل المطلوب بشكل صارم لتخصيص الذاكرة الفعلية لمصفوفة في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "malloc"
+      },
+      {
+        "letter": "B",
+        "text": "create"
+      },
+      {
+        "letter": "C",
+        "text": "new"
+      },
+      {
+        "letter": "D",
+        "text": "alloc"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The `new` keyword is a special operator that dynamically allocates memory for arrays (and other objects) in Java.",
+      "ar": "الكلمة المحجوزة `new` هي مُعامِل خاص ومطلوب لتخصيص الذاكرة ديناميكياً للمصفوفات (والكائنات الأخرى) في جافا."
+    }
+  },
+  {
+    "question": {
+      "en": "27. In Java, what is the consequence of trying to access an array element outside its valid index bounds?",
+      "ar": "27. في Java، ما هي نتيجة محاولة الوصول إلى عنصر مصفوفة خارج حدود الفهرس الصالحة الخاصة به؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It safely returns a null or 0 value."
+      },
+      {
+        "letter": "B",
+        "text": "The execution hangs in an infinite loop."
+      },
+      {
+        "letter": "C",
+        "text": "It immediately causes a run-time error."
+      },
+      {
+        "letter": "D",
+        "text": "The array automatically resizes to accommodate the index."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Java run-time system strictly checks that all array indexes are in the correct range. Accessing elements outside this range causes a run-time error.",
+      "ar": "يتحقق نظام التشغيل الخاص بجافا بصرامة من فهارس المصفوفات. وتتسبب أي محاولة للوصول لعناصر خارج النطاق الصحيح في خطأ وقت التشغيل (Run-time error)."
+    }
+  },
+  {
+    "question": {
+      "en": "28. How are multidimensional arrays conceptually structured and implemented in Java?",
+      "ar": "28. كيف يتم هيكلة المصفوفات متعددة الأبعاد وتنفيذها في جافا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "As a contiguous, flat single block of memory."
+      },
+      {
+        "letter": "B",
+        "text": "Strictly as arrays of arrays."
+      },
+      {
+        "letter": "C",
+        "text": "As linked data lists."
+      },
+      {
+        "letter": "D",
+        "text": "As symmetrical mathematical matrices uniformly sized."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In Java, multidimensional arrays are strictly implemented as arrays of arrays, which inherently allows for the creation of uneven (irregular) arrays.",
+      "ar": "في جافا، تُنفذ المصفوفات متعددة الأبعاد برمجياً على أنها مصفوفات تحتوي بداخلها على مصفوفات أخرى، مما يتيح إنشاء مصفوفات غير منتظمة أو متساوية الأبعاد."
+    }
+  },
+  {
+    "question": {
+      "en": "29. Starting with JDK 10, what reserved keyword enables local variable type inference based on its assigned initializer?",
+      "ar": "29. بدءًا من JDK 10، ما هي الكلمة الرئيسية المحجوزة التي تمكن من استنتاج نوع المتغير المحلي بناءً على المُهيئ المخصص لها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "auto"
+      },
+      {
+        "letter": "B",
+        "text": "infer"
+      },
+      {
+        "letter": "C",
+        "text": "let"
+      },
+      {
+        "letter": "D",
+        "text": "var"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The context-sensitive identifier `var` was added to Java as a reserved type name to formally support local variable type inference.",
+      "ar": "تمت إضافة المعرف الحساس للسياق `var` إلى جافا كاسم نوع محجوز لدعم وتفعيل استنتاج نوع المتغير المحلي من خلال قيمته المبدئية."
+    }
+  },
+  {
+    "question": {
+      "en": "30. Which of the following is an explicit restriction when utilizing the `var` keyword for local variables?",
+      "ar": "30. أي مما يلي يعد قيدًا صريحًا عند استخدام الكلمة الأساسية `var` للمتغيرات المحلية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It cannot be used in conjunction with an array initializer."
+      },
+      {
+        "letter": "B",
+        "text": "It can be utilized to declare uninitialized variables."
+      },
+      {
+        "letter": "C",
+        "text": "It can be effectively used for instance variables inside classes."
+      },
+      {
+        "letter": "D",
+        "text": "It can be assigned as the actual name of a class."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Among several restrictions, `var` strictly requires an initializer, cannot be an instance variable, cannot be a class name, and cannot be used with an array initializer.",
+      "ar": "يخضع `var` لقيود صارمة، فهو يتطلب قيمة مبدئية، ولا يُستخدم كمتغير فئة (Instance Variable)، ولا يمكن تسمية الفئات به، ولا يُستخدم مع مهيئات المصفوفات (Array Initializers)."
+    }
+  },
+  {
+    "question": {
+      "en": "1. What is the logical construct upon which the entire Java language is built?",
+      "ar": "1. ما هو البناء المنطقي الذي بنيت عليه لغة جافا بأكملها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Method"
+      },
+      {
+        "letter": "B",
+        "text": "Object"
+      },
+      {
+        "letter": "C",
+        "text": "Class"
+      },
+      {
+        "letter": "D",
+        "text": "Interface"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The class is at the core of Java. It defines the shape and nature of an object, forming the basis for object-oriented programming.",
+      "ar": "الفصل هو جوهر جافا. فهو يحدد شكل وطبيعة الكائن، ويشكل الأساس للبرمجة الموجهة للكائنات."
+    }
+  },
+  {
+    "question": {
+      "en": "2. What happens when you declare a class in Java?",
+      "ar": "2. ماذا يحدث عندما تعلن عن فصل دراسي في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An object is immediately created"
+      },
+      {
+        "letter": "B",
+        "text": "A new data type is defined"
+      },
+      {
+        "letter": "C",
+        "text": "Memory is allocated"
+      },
+      {
+        "letter": "D",
+        "text": "A method is executed"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A class defines a new data type. Once defined, this new type can be used to create objects of that type.",
+      "ar": "تحدد الفئة نوع بيانات جديد. بمجرد تعريف هذا النوع الجديد، يمكن استخدامه لإنشاء كائنات من هذا النوع."
+    }
+  },
+  {
+    "question": {
+      "en": "3. Which operator is used to dynamically allocate memory for an object?",
+      "ar": "3. ما هو العامل الذي يستخدم لتخصيص الذاكرة ديناميكيًا لكائن ما؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "alloc"
+      },
+      {
+        "letter": "B",
+        "text": "create"
+      },
+      {
+        "letter": "C",
+        "text": "new"
+      },
+      {
+        "letter": "D",
+        "text": "malloc"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The 'new' operator dynamically allocates memory for an object at run time and returns a reference to it.",
+      "ar": "يقوم عامل التشغيل \"الجديد\" بتخصيص الذاكرة لكائن ما بشكل ديناميكي في وقت التشغيل ويعيد مرجعًا إليه."
+    }
+  },
+  {
+    "question": {
+      "en": "4. Variables defined within a class are called:",
+      "ar": "4. تسمى المتغيرات المحددة داخل الفصل:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Local variables"
+      },
+      {
+        "letter": "B",
+        "text": "Instance variables"
+      },
+      {
+        "letter": "C",
+        "text": "Static variables"
+      },
+      {
+        "letter": "D",
+        "text": "Reference variables"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Variables defined within a class are called instance variables because each instance of the class contains its own copy of these variables.",
+      "ar": "تسمى المتغيرات المحددة داخل فئة ما بمتغيرات الحالة لأن كل مثيل للفئة يحتوي على نسخته الخاصة من هذه المتغيرات."
+    }
+  },
+  {
+    "question": {
+      "en": "5. What is the result of assigning one object reference variable to another (e.g., b2 = b1)?",
+      "ar": "5. ما هي نتيجة تعيين متغير مرجعي لكائن إلى آخر (على سبيل المثال، b2 = b1)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A copy of the object is created"
+      },
+      {
+        "letter": "B",
+        "text": "Memory is reallocated"
+      },
+      {
+        "letter": "C",
+        "text": "Both variables refer to the same object"
+      },
+      {
+        "letter": "D",
+        "text": "The original object is destroyed"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Assigning one object reference to another simply makes both variables refer to the exact same object in memory. No copy of the object is made.",
+      "ar": "إن تعيين مرجع كائن إلى آخر يجعل كلا المتغيرين يشيران إلى نفس الكائن بالضبط في الذاكرة. لم يتم إنشاء نسخة من الكائن."
+    }
+  },
+  {
+    "question": {
+      "en": "6. What must the return type be if a method does not return a value?",
+      "ar": "6. ما هو نوع الإرجاع إذا لم تُرجع الطريقة قيمة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "null"
+      },
+      {
+        "letter": "B",
+        "text": "empty"
+      },
+      {
+        "letter": "C",
+        "text": "void"
+      },
+      {
+        "letter": "D",
+        "text": "zero"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "If a method does not return a value, its return type must be specified as 'void'.",
+      "ar": "إذا لم تُرجع الطريقة قيمة، فيجب تحديد نوع الإرجاع الخاص بها على أنه \"فارغ\"."
+    }
+  },
+  {
+    "question": {
+      "en": "7. How do you access instance variables and methods of an object from outside its class?",
+      "ar": "7. كيف يمكنك الوصول إلى متغيرات وأساليب الكائن من خارج فئته؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using the arrow (->) operator"
+      },
+      {
+        "letter": "B",
+        "text": "Using the dot (.) operator"
+      },
+      {
+        "letter": "C",
+        "text": "Using the colon (:) operator"
+      },
+      {
+        "letter": "D",
+        "text": "Directly by their names"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "You use the dot (.) operator to link the name of the object with the name of an instance variable or method.",
+      "ar": "يمكنك استخدام عامل التشغيل النقطة (.) لربط اسم الكائن باسم متغير المثيل أو الأسلوب."
+    }
+  },
+  {
+    "question": {
+      "en": "8. What initializes an object immediately upon creation?",
+      "ar": "8. ما الذي يقوم بتهيئة الكائن فور إنشائه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A constructor"
+      },
+      {
+        "letter": "B",
+        "text": "The main method"
+      },
+      {
+        "letter": "C",
+        "text": "A static block"
+      },
+      {
+        "letter": "D",
+        "text": "The dot operator"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "A constructor initializes an object immediately upon creation. It has the same name as the class.",
+      "ar": "يقوم المُنشئ بتهيئة الكائن فورًا عند إنشائه. لها نفس اسم الفئة."
+    }
+  },
+  {
+    "question": {
+      "en": "9. What is the implicit return type of a constructor?",
+      "ar": "9. ما هو نوع الإرجاع الضمني للمنشئ؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "void"
+      },
+      {
+        "letter": "B",
+        "text": "int"
+      },
+      {
+        "letter": "C",
+        "text": "The class type itself"
+      },
+      {
+        "letter": "D",
+        "text": "Object"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Constructors have no explicit return type, not even void. The implicit return type is the class type itself.",
+      "ar": "ليس لدى المنشئين نوع إرجاع واضح، ولا حتى فارغ. نوع الإرجاع الضمني هو نوع الفئة نفسه."
+    }
+  },
+  {
+    "question": {
+      "en": "10. What keyword is used inside any method to refer to the current invoking object?",
+      "ar": "10. ما هي الكلمة الأساسية المستخدمة داخل أي طريقة للإشارة إلى كائن الاستدعاء الحالي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "current"
+      },
+      {
+        "letter": "B",
+        "text": "me"
+      },
+      {
+        "letter": "C",
+        "text": "object"
+      },
+      {
+        "letter": "D",
+        "text": "this"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The 'this' keyword can be used inside any method to refer to the current object on which the method was invoked.",
+      "ar": "يمكن استخدام الكلمة الأساسية \"هذا\" داخل أي طريقة للإشارة إلى الكائن الحالي الذي تم استدعاء الطريقة عليه."
+    }
+  },
+  {
+    "question": {
+      "en": "11. What technique does Java use to automatically release the memory of unused objects?",
+      "ar": "11. ما هي التقنية التي تستخدمها Java لتحرير ذاكرة الكائنات غير المستخدمة تلقائيًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Memory allocation"
+      },
+      {
+        "letter": "B",
+        "text": "Garbage collection"
+      },
+      {
+        "letter": "C",
+        "text": "Object destruction"
+      },
+      {
+        "letter": "D",
+        "text": "Manual deletion"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Java handles deallocation automatically using garbage collection. It reclaims memory from objects that no longer have any references.",
+      "ar": "تتعامل Java مع إلغاء التخصيص تلقائيًا باستخدام مجموعة البيانات المهملة. يقوم باستعادة الذاكرة من الكائنات التي لم يعد لها أي مراجع."
+    }
+  },
+  {
+    "question": {
+      "en": "12. What term describes defining two or more methods within the same class that share the same name but have different parameters?",
+      "ar": "12. ما هو المصطلح الذي يصف تعريف طريقتين أو أكثر داخل نفس الفئة والتي تشترك في نفس الاسم ولكن لها معلمات مختلفة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Method overriding"
+      },
+      {
+        "letter": "B",
+        "text": "Method overloading"
+      },
+      {
+        "letter": "C",
+        "text": "Method hiding"
+      },
+      {
+        "letter": "D",
+        "text": "Polymorphism resolution"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Method overloading occurs when methods have the same name but differ in the type and/or number of their parameters.",
+      "ar": "يحدث التحميل الزائد للطريقة عندما يكون للطرق نفس الاسم ولكنها تختلف في نوع و/أو عدد معلماتها."
+    }
+  },
+  {
+    "question": {
+      "en": "13. Can overloaded methods be distinguished solely by their return type?",
+      "ar": "13. هل يمكن التمييز بين الأساليب المحملة بشكل زائد فقط من خلال نوع الإرجاع الخاص بها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes"
+      },
+      {
+        "letter": "B",
+        "text": "No"
+      },
+      {
+        "letter": "C",
+        "text": "Only if they are static"
+      },
+      {
+        "letter": "D",
+        "text": "Only if they are public"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "While overloaded methods may have different return types, the return type alone is insufficient to distinguish two versions of a method.",
+      "ar": "على الرغم من أن الأساليب المحملة بشكل زائد قد يكون لها أنواع إرجاع مختلفة، إلا أن نوع الإرجاع وحده غير كافٍ للتمييز بين نسختين من الطريقة."
+    }
+  },
+  {
+    "question": {
+      "en": "14. How are primitive types (like int, double) passed to methods in Java?",
+      "ar": "14. كيف يتم تمرير الأنواع البدائية (مثل int، double) إلى الأساليب في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Call-by-reference"
+      },
+      {
+        "letter": "B",
+        "text": "Call-by-value"
+      },
+      {
+        "letter": "C",
+        "text": "Call-by-pointer"
+      },
+      {
+        "letter": "D",
+        "text": "Call-by-name"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Primitive types are passed by value. A copy is made, so changes to the parameter inside the method do not affect the original argument.",
+      "ar": "يتم تمرير الأنواع البدائية حسب القيمة. يتم إنشاء نسخة، لذا فإن التغييرات التي يتم إجراؤها على المعلمة داخل الطريقة لا تؤثر على الوسيطة الأصلية."
+    }
+  },
+  {
+    "question": {
+      "en": "15. What happens when you pass an object reference to a method and modify the object inside the method?",
+      "ar": "15. ماذا يحدث عندما تقوم بتمرير مرجع كائن إلى طريقة ما وتعديل الكائن داخل الطريقة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The original object is unaffected"
+      },
+      {
+        "letter": "B",
+        "text": "A new object is created"
+      },
+      {
+        "letter": "C",
+        "text": "The changes affect the original object"
+      },
+      {
+        "letter": "D",
+        "text": "A compile error occurs"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Since the reference passed refers to the same object, changes made to the object inside the method will affect the original object.",
+      "ar": "نظرًا لأن المرجع الذي تم تمريره يشير إلى نفس الكائن، فإن التغييرات التي يتم إجراؤها على الكائن داخل الطريقة ستؤثر على الكائن الأصلي."
+    }
+  },
+  {
+    "question": {
+      "en": "16. A method that calls itself is known as:",
+      "ar": "16. الطريقة التي تطلق على نفسها تُعرف بـ:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An iterative method"
+      },
+      {
+        "letter": "B",
+        "text": "A dynamic method"
+      },
+      {
+        "letter": "C",
+        "text": "A recursive method"
+      },
+      {
+        "letter": "D",
+        "text": "An overloaded method"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Recursion is the process where a method calls itself.",
+      "ar": "العودية هي العملية التي تستدعي فيها الطريقة نفسها."
+    }
+  },
+  {
+    "question": {
+      "en": "17. Which access modifier makes a class member accessible ONLY to other members of the same class?",
+      "ar": "17. ما هو معدّل الوصول الذي يجعل عضو الفصل الدراسي متاحًا فقط للأعضاء الآخرين من نفس الفصل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "public"
+      },
+      {
+        "letter": "B",
+        "text": "default"
+      },
+      {
+        "letter": "C",
+        "text": "protected"
+      },
+      {
+        "letter": "D",
+        "text": "private"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "When a member is specified as 'private', it can only be accessed by other members of its own class.",
+      "ar": "عندما يتم تحديد عضو على أنه \"خاص\"، فلا يمكن الوصول إليه إلا من خلال أعضاء آخرين من فئته الخاصة."
+    }
+  },
+  {
+    "question": {
+      "en": "18. Which access modifier allows a member to be accessed by any other code?",
+      "ar": "18. ما هو معدّل الوصول الذي يسمح للعضو بالوصول إلى أي رمز آخر؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "public"
+      },
+      {
+        "letter": "B",
+        "text": "default"
+      },
+      {
+        "letter": "C",
+        "text": "private"
+      },
+      {
+        "letter": "D",
+        "text": "protected"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "When a member is modified by 'public', it can be accessed by any other code.",
+      "ar": "عندما يتم تعديل عضو بواسطة \"عام\"، يمكن الوصول إليه عن طريق أي رمز آخر."
+    }
+  },
+  {
+    "question": {
+      "en": "19. What keyword creates a member that can be accessed without creating an object of the class?",
+      "ar": "19. ما هي الكلمة الأساسية التي تنشئ عضوًا يمكن الوصول إليه دون إنشاء كائن للفئة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "public"
+      },
+      {
+        "letter": "B",
+        "text": "final"
+      },
+      {
+        "letter": "C",
+        "text": "static"
+      },
+      {
+        "letter": "D",
+        "text": "private"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A 'static' member can be accessed before any objects of its class are created, and without reference to any object.",
+      "ar": "يمكن الوصول إلى العضو \"الثابت\" قبل إنشاء أي كائنات من فئته، ودون الرجوع إلى أي كائن."
+    }
+  },
+  {
+    "question": {
+      "en": "20. Which of the following is true about static methods?",
+      "ar": "20. أي مما يلي صحيح فيما يتعلق بالطرق الثابتة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "They can freely access non-static variables directly"
+      },
+      {
+        "letter": "B",
+        "text": "They can refer to 'this' directly"
+      },
+      {
+        "letter": "C",
+        "text": "They can only directly call other static methods of their class"
+      },
+      {
+        "letter": "D",
+        "text": "They cannot be overloaded"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Static methods have restrictions: they can only directly call other static methods and access static variables of their class. They cannot refer to 'this' or 'super'.",
+      "ar": "الأساليب الثابتة لها قيود: يمكنها فقط الاتصال مباشرة بالطرق الثابتة الأخرى والوصول إلى المتغيرات الثابتة لفئتها. لا يمكنهم الإشارة إلى \"هذا\" أو \"الفائق\"."
+    }
+  },
+  {
+    "question": {
+      "en": "21. Declaring a field with which keyword prevents its contents from being modified?",
+      "ar": "21. هل يتم الإعلان عن الحقل الذي تمنع الكلمة الرئيسية من تعديل محتوياته؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "static"
+      },
+      {
+        "letter": "B",
+        "text": "final"
+      },
+      {
+        "letter": "C",
+        "text": "constant"
+      },
+      {
+        "letter": "D",
+        "text": "immutable"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A field declared as 'final' prevents its contents from being modified, making it a constant.",
+      "ar": "الحقل الذي تم إعلانه كحقل \"نهائي\" يمنع تعديل محتوياته، مما يجعله ثابتًا."
+    }
+  },
+  {
+    "question": {
+      "en": "22. Which array member holds the size (number of elements) of the array?",
+      "ar": "22. أي عضو في المصفوفة يحمل حجم (عدد العناصر) للمصفوفة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "size"
+      },
+      {
+        "letter": "B",
+        "text": "length()"
+      },
+      {
+        "letter": "C",
+        "text": "length"
+      },
+      {
+        "letter": "D",
+        "text": "capacity"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The size of an array is found in its 'length' instance variable.",
+      "ar": "تم العثور على حجم المصفوفة في متغير مثيل \"الطول\" الخاص بها."
+    }
+  },
+  {
+    "question": {
+      "en": "23. A non-static nested class is specifically called:",
+      "ar": "23. تسمى الفئة المتداخلة غير الساكنة على وجه التحديد:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An enclosed class"
+      },
+      {
+        "letter": "B",
+        "text": "An inner class"
+      },
+      {
+        "letter": "C",
+        "text": "An inherited class"
+      },
+      {
+        "letter": "D",
+        "text": "A local class"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An inner class is a non-static nested class. It has access to all variables and methods of its outer class.",
+      "ar": "الفئة الداخلية هي فئة متداخلة غير ثابتة. لديه حق الوصول إلى جميع المتغيرات والأساليب الخاصة بفئته الخارجية."
+    }
+  },
+  {
+    "question": {
+      "en": "24. Are String objects mutable or immutable in Java?",
+      "ar": "24. هل كائنات السلسلة قابلة للتغيير أم غير قابلة للتغيير في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mutable"
+      },
+      {
+        "letter": "B",
+        "text": "Immutable"
+      },
+      {
+        "letter": "C",
+        "text": "Mutable if defined as public"
+      },
+      {
+        "letter": "D",
+        "text": "Mutable if defined as static"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Objects of type String are immutable; once a String object is created, its contents cannot be altered.",
+      "ar": "الكائنات من النوع String غير قابلة للتغيير؛ بمجرد إنشاء كائن سلسلة، لا يمكن تغيير محتوياته."
+    }
+  },
+  {
+    "question": {
+      "en": "25. Which syntax specifies a variable-length argument (varargs) in a method declaration?",
+      "ar": "25. ما هو بناء الجملة الذي يحدد وسيطة ذات طول متغير (varargs) في إعلان الطريقة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "***"
+      },
+      {
+        "letter": "B",
+        "text": "[]"
+      },
+      {
+        "letter": "C",
+        "text": "..."
+      },
+      {
+        "letter": "D",
+        "text": "varargs"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A variable-length argument is specified by three periods (...). It allows a method to take a variable number of arguments.",
+      "ar": "يتم تحديد وسيطة ذات طول متغير بثلاث نقاط (...). يسمح للطريقة بأخذ عدد متغير من الوسائط."
+    }
+  },
+  {
+    "question": {
+      "en": "26. Where must a varargs parameter be placed if a method has multiple parameters?",
+      "ar": "26. أين يجب وضع معلمة varargs إذا كانت الطريقة تحتوي على معلمات متعددة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "First"
+      },
+      {
+        "letter": "B",
+        "text": "Middle"
+      },
+      {
+        "letter": "C",
+        "text": "It can be anywhere"
+      },
+      {
+        "letter": "D",
+        "text": "Last"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The variable-length parameter must be the last parameter declared by the method.",
+      "ar": "يجب أن تكون المعلمة ذات الطول المتغير هي المعلمة الأخيرة التي تم الإعلان عنها بواسطة الطريقة."
+    }
+  },
+  {
+    "question": {
+      "en": "1. What are the categories of Java's program control statements?",
+      "ar": "1. ما هي فئات بيانات التحكم في برنامج Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Selection, iteration, and jump"
+      },
+      {
+        "letter": "B",
+        "text": "Logical, boolean, and numeric"
+      },
+      {
+        "letter": "C",
+        "text": "Classes, objects, and methods"
+      },
+      {
+        "letter": "D",
+        "text": "Public, private, and protected"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Java's program control statements can be put into the following categories: selection, iteration, and jump.",
+      "ar": "يمكن وضع عبارات التحكم في برنامج Java في الفئات التالية: التحديد، والتكرار، والقفز."
+    }
+  },
+  {
+    "question": {
+      "en": "2. Which control statements allow your program to choose different paths of execution based upon the outcome of an expression?",
+      "ar": "2. ما هي بيانات التحكم التي تسمح لبرنامجك باختيار مسارات مختلفة للتنفيذ بناءً على نتيجة التعبير؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jump statements"
+      },
+      {
+        "letter": "B",
+        "text": "Selection statements"
+      },
+      {
+        "letter": "C",
+        "text": "Iteration statements"
+      },
+      {
+        "letter": "D",
+        "text": "Declaration statements"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Selection statements allow your program to choose different paths of execution based upon the outcome of an expression or the state of a variable.",
+      "ar": "تسمح عبارات التحديد لبرنامجك باختيار مسارات مختلفة للتنفيذ بناءً على نتيجة التعبير أو حالة المتغير."
+    }
+  },
+  {
+    "question": {
+      "en": "3. Which two selection statements are supported by Java?",
+      "ar": "3. ما هي عبارات التحديد التي تدعمها Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "if and for"
+      },
+      {
+        "letter": "B",
+        "text": "while and switch"
+      },
+      {
+        "letter": "C",
+        "text": "if and switch"
+      },
+      {
+        "letter": "D",
+        "text": "do-while and if"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Java supports two selection statements: if and switch.",
+      "ar": "تدعم Java عبارتي تحديد: if وswitch."
+    }
+  },
+  {
+    "question": {
+      "en": "4. In an 'if' statement, the condition must be an expression that returns what type of value?",
+      "ar": "4. في عبارة \"if\"، يجب أن يكون الشرط عبارة عن تعبير يُرجع ما نوع القيمة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "int"
+      },
+      {
+        "letter": "B",
+        "text": "boolean"
+      },
+      {
+        "letter": "C",
+        "text": "String"
+      },
+      {
+        "letter": "D",
+        "text": "char"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The condition in an if statement is any expression that returns a boolean value.",
+      "ar": "الشرط في عبارة if هو أي تعبير يُرجع قيمة منطقية."
+    }
+  },
+  {
+    "question": {
+      "en": "5. What must you create if you want to include more than one statement directly after an 'if' or 'else' clause?",
+      "ar": "5. ما الذي يجب عليك إنشاؤه إذا كنت تريد تضمين أكثر من عبارة مباشرة بعد عبارة \"if\" أو \"else\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A loop"
+      },
+      {
+        "letter": "B",
+        "text": "A new method"
+      },
+      {
+        "letter": "C",
+        "text": "A block enclosed in curly braces"
+      },
+      {
+        "letter": "D",
+        "text": "A switch statement"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Only one statement can appear directly after the if or the else. To include more statements, you need to create a block enclosed in curly braces.",
+      "ar": "يمكن أن تظهر عبارة واحدة فقط مباشرة بعد if أو the else. لتضمين المزيد من البيانات، تحتاج إلى إنشاء كتلة محاطة بأقواس متعرجة."
+    }
+  },
+  {
+    "question": {
+      "en": "6. How does the Java compiler interpret indentation in 'if-else' statements if curly braces are omitted?",
+      "ar": "6. كيف يفسر مترجم Java المسافة البادئة في عبارات \"if-else\" إذا تم حذف الأقواس المتعرجة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It uses indentation to determine the block scope."
+      },
+      {
+        "letter": "B",
+        "text": "Whitespace is insignificant; it relies on curly braces to know what was intended."
+      },
+      {
+        "letter": "C",
+        "text": "It throws a compile-time error."
+      },
+      {
+        "letter": "D",
+        "text": "It executes the indented code automatically as part of the loop."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Whitespace is insignificant to Java, and there is no way for the compiler to know what was intended without curly braces.",
+      "ar": "المسافة البيضاء غير ذات أهمية بالنسبة لجافا، وليس هناك طريقة للمترجم لمعرفة ما هو المقصود دون الأقواس المتعرجة."
+    }
+  },
+  {
+    "question": {
+      "en": "7. In a nested 'if' statement, to which 'if' does an 'else' statement always refer?",
+      "ar": "7. في عبارة \"if\" المتداخلة، إلى أي عبارة \"if\" تشير دائمًا عبارة \"else\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The very first 'if' in the program."
+      },
+      {
+        "letter": "B",
+        "text": "The nearest 'if' statement within the same block that is not already associated with an 'else'."
+      },
+      {
+        "letter": "C",
+        "text": "The outermost 'if'."
+      },
+      {
+        "letter": "D",
+        "text": "The 'if' statement with the exact same indentation."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An else statement always refers to the nearest if statement that is within the same block as the else and that is not already associated with an else.",
+      "ar": "تشير عبارة else دائمًا إلى أقرب عبارة if الموجودة داخل نفس الكتلة مثل else والتي لا ترتبط بالفعل بعبارة else."
+    }
+  },
+  {
+    "question": {
+      "en": "8. In an if-else-if ladder, what happens when one of the conditions is evaluated as true?",
+      "ar": "8. في سلم \"إذا كان غير ذلك\"، ماذا يحدث عندما يتم تقييم أحد الشروط على أنه صحيح؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "All subsequent conditions are evaluated."
+      },
+      {
+        "letter": "B",
+        "text": "The statement associated with that 'if' is executed, and the rest of the ladder is bypassed."
+      },
+      {
+        "letter": "C",
+        "text": "The loop terminates."
+      },
+      {
+        "letter": "D",
+        "text": "The final 'else' statement is forced to execute."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "As soon as one of the conditions controlling the if is true, the statement associated with that if is executed, and the rest of the ladder is bypassed.",
+      "ar": "بمجرد أن يكون أحد الشروط المتحكمة في if صحيحًا، يتم تنفيذ العبارة المرتبطة بذلك، ويتم تجاوز بقية السلم."
+    }
+  },
+  {
+    "question": {
+      "en": "9. What is the primary function of the 'switch' statement in Java?",
+      "ar": "9. ما هي الوظيفة الأساسية لعبارة \"switch\" في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To loop through an array."
+      },
+      {
+        "letter": "B",
+        "text": "To handle exceptions."
+      },
+      {
+        "letter": "C",
+        "text": "To provide a multiway branch based on the value of an expression."
+      },
+      {
+        "letter": "D",
+        "text": "To evaluate complex boolean conditions."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The switch statement is Java's multiway branch statement. It dispatches execution to different parts of code based on the value of an expression.",
+      "ar": "بيان التبديل هو بيان فرع متعدد الاتجاهات لجافا. يرسل التنفيذ إلى أجزاء مختلفة من التعليمات البرمجية بناءً على قيمة التعبير."
+    }
+  },
+  {
+    "question": {
+      "en": "10. Beginning with JDK 7, which of the following types can be used to control a 'switch' statement, in addition to byte, short, int, char, and enumerations?",
+      "ar": "10. بدءًا من JDK 7، أي من الأنواع التالية يمكن استخدامه للتحكم في عبارة \"switch\"، بالإضافة إلى البايت، والقصير، والكثافة، والشار، والتعدادات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "float"
+      },
+      {
+        "letter": "B",
+        "text": "double"
+      },
+      {
+        "letter": "C",
+        "text": "boolean"
+      },
+      {
+        "letter": "D",
+        "text": "String"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Beginning with JDK 7, the expression controlling a switch statement can also be of type String.",
+      "ar": "بدءًا من JDK 7، يمكن أيضًا أن يكون التعبير الذي يتحكم في بيان التبديل من النوع String."
+    }
+  },
+  {
+    "question": {
+      "en": "11. Which of the following statements is true regarding 'case' values in a 'switch' statement?",
+      "ar": "11. أي من العبارات التالية صحيحة فيما يتعلق بقيم \"الحالة\" في عبارة \"التبديل\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Duplicate case values are allowed."
+      },
+      {
+        "letter": "B",
+        "text": "Duplicate case values are not allowed."
+      },
+      {
+        "letter": "C",
+        "text": "Case values must be variables."
+      },
+      {
+        "letter": "D",
+        "text": "Case values can be of any type, disregarding the expression type."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Each value specified in the case statements must be a unique constant expression. Duplicate case values are not allowed.",
+      "ar": "يجب أن تكون كل قيمة محددة في عبارات الحالة تعبيرًا ثابتًا فريدًا. غير مسموح بقيم الحالة المكررة."
+    }
+  },
+  {
+    "question": {
+      "en": "12. What is the effect of the 'break' statement inside a 'switch' statement?",
+      "ar": "12. ما هو تأثير عبارة \"break\" داخل عبارة \"switch\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It terminates the program."
+      },
+      {
+        "letter": "B",
+        "text": "It continues execution into the next case."
+      },
+      {
+        "letter": "C",
+        "text": "It terminates a statement sequence and jumps out of the switch."
+      },
+      {
+        "letter": "D",
+        "text": "It returns a boolean value."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The break statement is used inside the switch to terminate a statement sequence and branch to the first line of code following the entire switch statement.",
+      "ar": "يتم استخدام عبارة Break داخل المحول لإنهاء تسلسل العبارة والتفرع إلى السطر الأول من التعليمات البرمجية بعد عبارة التبديل بأكملها."
+    }
+  },
+  {
+    "question": {
+      "en": "13. What occurs if you omit the 'break' statement in a 'case' block?",
+      "ar": "13. ماذا يحدث إذا قمت بحذف عبارة \"break\" في كتلة \"الحالة\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A compile-time error occurs."
+      },
+      {
+        "letter": "B",
+        "text": "Execution stops immediately."
+      },
+      {
+        "letter": "C",
+        "text": "Execution will continue on into the next case."
+      },
+      {
+        "letter": "D",
+        "text": "The default block is executed automatically."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The break statement is optional. If you omit the break, execution will fall through and continue on into the next case.",
+      "ar": "بيان الاستراحة اختياري. إذا قمت بحذف الفاصل، فسوف يفشل التنفيذ ويستمر في الحالة التالية."
+    }
+  },
+  {
+    "question": {
+      "en": "14. When using a nested 'switch' statement, do the case constants of the inner switch conflict with those of the outer switch?",
+      "ar": "14. عند استخدام عبارة \"switch\" المتداخلة، هل تتعارض ثوابت حالة المفتاح الداخلي مع ثوابت المفتاح الخارجي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, they must be unique across all switches."
+      },
+      {
+        "letter": "B",
+        "text": "No, because each switch statement defines its own block."
+      },
+      {
+        "letter": "C",
+        "text": "Yes, it causes a compile-time error."
+      },
+      {
+        "letter": "D",
+        "text": "Only if they share the same default statement."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Since a switch statement defines its own block, no conflicts arise between the case constants in the inner switch and those in the outer switch.",
+      "ar": "نظرًا لأن عبارة التبديل تحدد الكتلة الخاصة بها، فلا تنشأ أي تعارضات بين ثوابت الحالة في المحول الداخلي وتلك الموجودة في المحول الخارجي."
+    }
+  },
+  {
+    "question": {
+      "en": "15. What is a key difference between 'switch' and 'if' statements regarding condition testing?",
+      "ar": "15. ما هو الفرق الرئيسي بين عبارات \"التبديل\" و\"إذا\" فيما يتعلق باختبار الحالة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "'switch' can evaluate any Boolean expression, while 'if' cannot."
+      },
+      {
+        "letter": "B",
+        "text": "'switch' can only test for equality, whereas 'if' can evaluate any type of Boolean expression."
+      },
+      {
+        "letter": "C",
+        "text": "'if' generates a jump table for faster execution."
+      },
+      {
+        "letter": "D",
+        "text": "There is no difference."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The switch differs from the if in that switch can only test for equality, whereas if can evaluate any type of Boolean expression.",
+      "ar": "يختلف المفتاح عن if حيث يمكن فقط اختبار المساواة، في حين يمكن لـ if تقييم أي نوع من التعبير المنطقي."
+    }
+  },
+  {
+    "question": {
+      "en": "16. Which of the following groups represent Java's iteration statements?",
+      "ar": "16. أي من المجموعات التالية تمثل عبارات التكرار الخاصة بـ Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "if, else, switch"
+      },
+      {
+        "letter": "B",
+        "text": "break, continue, return"
+      },
+      {
+        "letter": "C",
+        "text": "for, while, do-while"
+      },
+      {
+        "letter": "D",
+        "text": "try, catch, finally"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Java's iteration statements are for, while, and do-while. These statements create loops.",
+      "ar": "عبارات التكرار الخاصة بـ Java مخصصة لـ و while و do-while. هذه العبارات تنشئ حلقات."
+    }
+  },
+  {
+    "question": {
+      "en": "17. In a 'while' loop, what happens if the conditional expression evaluates to false to begin with?",
+      "ar": "17. في حلقة \"while\"، ماذا يحدث إذا تم تقييم التعبير الشرطي على أنه خطأ في البداية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The loop body executes exactly once."
+      },
+      {
+        "letter": "B",
+        "text": "The loop body will not execute even once."
+      },
+      {
+        "letter": "C",
+        "text": "The loop runs infinitely."
+      },
+      {
+        "letter": "D",
+        "text": "A runtime exception is thrown."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Since the while loop evaluates its conditional expression at the top, the body of the loop will not execute even once if the condition is false to begin with.",
+      "ar": "بما أن الحلقة تقوم بتقييم تعبيرها الشرطي في الأعلى، فلن يتم تنفيذ نص الحلقة ولو مرة واحدة إذا كان الشرط خاطئًا في البداية."
+    }
+  },
+  {
+    "question": {
+      "en": "18. Is it possible for the body of a 'while' loop to be entirely empty in Java?",
+      "ar": "18. هل من الممكن أن يكون نص حلقة \"while\" فارغًا تمامًا في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, because a null statement (a semicolon) is syntactically valid in Java."
+      },
+      {
+        "letter": "B",
+        "text": "No, a loop must contain at least one operational statement."
+      },
+      {
+        "letter": "C",
+        "text": "Yes, but only in infinite loops."
+      },
+      {
+        "letter": "D",
+        "text": "No, it causes a compile-time error."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The body of the while can be empty because a null statement (one that consists only of a semicolon) is syntactically valid in Java.",
+      "ar": "يمكن أن يكون نص while فارغًا لأن العبارة الفارغة (التي تتكون من فاصلة منقوطة فقط) صالحة من الناحية النحوية في Java."
+    }
+  },
+  {
+    "question": {
+      "en": "19. Which loop is guaranteed to execute its body at least once because its conditional expression is evaluated at the bottom?",
+      "ar": "19. ما هي الحلقة التي تضمن تنفيذ جسمها مرة واحدة على الأقل لأن تعبيرها الشرطي يتم تقييمه في الأسفل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "for loop"
+      },
+      {
+        "letter": "B",
+        "text": "while loop"
+      },
+      {
+        "letter": "C",
+        "text": "do-while loop"
+      },
+      {
+        "letter": "D",
+        "text": "enhanced for loop"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The do-while loop always executes its body at least once, because its conditional expression is at the bottom of the loop.",
+      "ar": "تقوم حلقة do-while دائمًا بتنفيذ جسمها مرة واحدة على الأقل، لأن التعبير الشرطي الخاص بها يكون في أسفل الحلقة."
+    }
+  },
+  {
+    "question": {
+      "en": "20. How many times is the initialization portion of a traditional 'for' loop executed?",
+      "ar": "20. كم مرة يتم تنفيذ جزء التهيئة من حلقة \"for\" التقليدية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Once per iteration."
+      },
+      {
+        "letter": "B",
+        "text": "Every time the condition is checked."
+      },
+      {
+        "letter": "C",
+        "text": "Only once when the loop first starts."
+      },
+      {
+        "letter": "D",
+        "text": "It depends on the iteration expression."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "When the loop first starts, the initialization portion of the loop is executed. It is important to understand that it is executed only once.",
+      "ar": "عندما تبدأ الحلقة لأول مرة، يتم تنفيذ جزء التهيئة من الحلقة. من المهم أن نفهم أنه يتم تنفيذه مرة واحدة فقط."
+    }
+  },
+  {
+    "question": {
+      "en": "21. What happens to the scope of a variable that is declared inside the initialization portion of a 'for' loop?",
+      "ar": "21. ماذا يحدث لنطاق المتغير الذي تم الإعلان عنه داخل جزء التهيئة من حلقة \"for\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Its scope is global to the entire class."
+      },
+      {
+        "letter": "B",
+        "text": "Its scope is limited to the method containing the loop."
+      },
+      {
+        "letter": "C",
+        "text": "Its scope ends when the 'for' statement ends."
+      },
+      {
+        "letter": "D",
+        "text": "It remains in memory until the program terminates."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "When you declare a variable inside a for loop, the scope of that variable ends when the for statement does. Outside the loop, it ceases to exist.",
+      "ar": "عندما تقوم بتعريف متغير داخل حلقة for، فإن نطاق هذا المتغير ينتهي عندما تنتهي عبارة for. خارج الحلقة، يتوقف عن الوجود."
+    }
+  },
+  {
+    "question": {
+      "en": "22. In a 'for' loop, what punctuation mark allows you to include multiple statements in the initialization and iteration portions?",
+      "ar": "22. في حلقة \"for\"، ما هي علامة الترقيم التي تسمح لك بتضمين عبارات متعددة في أجزاء التهيئة والتكرار؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Semicolon (;)"
+      },
+      {
+        "letter": "B",
+        "text": "Comma (,)"
+      },
+      {
+        "letter": "C",
+        "text": "Colon (:)"
+      },
+      {
+        "letter": "D",
+        "text": "Ampersand (&)"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "To allow two or more variables to control a for loop, Java permits multiple statements separated by a comma in the initialization and iteration portions.",
+      "ar": "للسماح لمتغيرين أو أكثر بالتحكم في حلقة for، تسمح Java بعبارات متعددة مفصولة بفاصلة في أجزاء التهيئة والتكرار."
+    }
+  },
+  {
+    "question": {
+      "en": "23. How can you intentionally create an infinite loop using the 'for' statement?",
+      "ar": "23. كيف يمكنك عن قصد إنشاء حلقة لا نهائية باستخدام عبارة \"for\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "for(true) {}"
+      },
+      {
+        "letter": "B",
+        "text": "for(i=0; i<0; i--) {}"
+      },
+      {
+        "letter": "C",
+        "text": "for(;;) {}"
+      },
+      {
+        "letter": "D",
+        "text": "for(infinite) {}"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "You can intentionally create an infinite loop if you leave all three parts of the for empty, as in: for(;;) { }.",
+      "ar": "يمكنك إنشاء حلقة لا نهائية عمدًا إذا تركت الأجزاء الثلاثة من for فارغة، كما في: for(;;) { }."
+    }
+  },
+  {
+    "question": {
+      "en": "24. What is the primary design purpose of the 'for-each' style loop (enhanced for loop) in Java?",
+      "ar": "24. ما هو الغرض الأساسي من التصميم لحلقة النمط \"لكل\" (المحسنة للحلقة) في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To count numbers backward."
+      },
+      {
+        "letter": "B",
+        "text": "To execute statements based on a boolean flag."
+      },
+      {
+        "letter": "C",
+        "text": "To cycle through a collection of objects, like an array, in strictly sequential fashion."
+      },
+      {
+        "letter": "D",
+        "text": "To evaluate multidimensional array conditions randomly."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A for-each style loop is designed to cycle through a collection of objects, such as an array, in strictly sequential fashion, from start to finish.",
+      "ar": "تم تصميم حلقة لكل نمط للتنقل عبر مجموعة من الكائنات، مثل المصفوفة، بطريقة تسلسلية تمامًا، من البداية إلى النهاية."
+    }
+  },
+  {
+    "question": {
+      "en": "25. When using a 'for-each' loop on an array, what happens if you assign a new value to the iteration variable?",
+      "ar": "25. عند استخدام حلقة \"لكل\" في مصفوفة، ماذا يحدث إذا قمت بتعيين قيمة جديدة لمتغير التكرار؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It updates the underlying array directly."
+      },
+      {
+        "letter": "B",
+        "text": "It has no effect on the underlying array because the iteration variable is essentially 'read-only'."
+      },
+      {
+        "letter": "C",
+        "text": "It causes a compile-time error."
+      },
+      {
+        "letter": "D",
+        "text": "It resizes the array."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The iteration variable is 'read-only' as it relates to the underlying array. An assignment to the iteration variable has no effect on the underlying array.",
+      "ar": "متغير التكرار هو \"للقراءة فقط\" من حيث صلته بالمصفوفة الأساسية. ليس للتخصيص لمتغير التكرار أي تأثير على المصفوفة الأساسية."
+    }
+  },
+  {
+    "question": {
+      "en": "26. Which of the following represents Java's three jump statements?",
+      "ar": "26. أي مما يلي يمثل عبارات القفز الثلاثة في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "if, else, default"
+      },
+      {
+        "letter": "B",
+        "text": "try, catch, finally"
+      },
+      {
+        "letter": "C",
+        "text": "break, continue, return"
+      },
+      {
+        "letter": "D",
+        "text": "switch, case, default"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Java supports three jump statements: break, continue, and return. These transfer control to another part of your program.",
+      "ar": "تدعم Java ثلاث عبارات قفز: Break، continue، وreturn. هذه السيطرة على النقل إلى جزء آخر من البرنامج الخاص بك."
+    }
+  },
+  {
+    "question": {
+      "en": "27. In Java, what is one of the most common, legitimate uses for the labeled 'break' statement?",
+      "ar": "27. في Java، ما هو أحد الاستخدامات الأكثر شيوعًا وشرعية لعبارة \"break\" المسماة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To pause execution indefinitely."
+      },
+      {
+        "letter": "B",
+        "text": "To return a value from a nested method."
+      },
+      {
+        "letter": "C",
+        "text": "To exit from a deeply nested set of loops as a civilized form of 'goto'."
+      },
+      {
+        "letter": "D",
+        "text": "To skip a single iteration of a loop."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "One of the most common uses for a labeled break statement is to exit from deeply nested loops, providing a 'civilized' form of goto.",
+      "ar": "أحد الاستخدامات الأكثر شيوعًا لبيان Break المسمى هو الخروج من الحلقات المتداخلة بعمق، مما يوفر شكلاً \"متحضرًا\" من goto."
+    }
+  },
+  {
+    "question": {
+      "en": "28. What action does the 'continue' statement perform when encountered inside a loop?",
+      "ar": "28. ما الإجراء الذي تقوم به عبارة \"المتابعة\" عند مواجهتها داخل الحلقة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It terminates the loop completely."
+      },
+      {
+        "letter": "B",
+        "text": "It forces an early iteration of the loop, bypassing the remaining code in its body."
+      },
+      {
+        "letter": "C",
+        "text": "It pauses the program waiting for input."
+      },
+      {
+        "letter": "D",
+        "text": "It jumps out of a switch block."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The continue statement forces an early iteration of a loop. Any intermediate code in the loop body is bypassed.",
+      "ar": "يفرض بيان المتابعة تكرارًا مبكرًا للحلقة. يتم تجاوز أي رمز وسيط في نص الحلقة."
+    }
+  },
+  {
+    "question": {
+      "en": "29. What is the explicit purpose of the 'return' statement in Java?",
+      "ar": "29. ما هو الغرض الواضح من عبارة \"return\" في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To restart an iteration loop from the beginning."
+      },
+      {
+        "letter": "B",
+        "text": "To break out of a switch statement."
+      },
+      {
+        "letter": "C",
+        "text": "To cause program control to transfer back to the caller of the method."
+      },
+      {
+        "letter": "D",
+        "text": "To throw an exception."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The return statement is used to explicitly return from a method. It causes program control to transfer back to the caller of the method.",
+      "ar": "يتم استخدام بيان الإرجاع للعودة بشكل صريح من إحدى الطرق. يؤدي إلى نقل التحكم في البرنامج مرة أخرى إلى المتصل بالطريقة."
+    }
+  },
+  {
+    "question": {
+      "en": "1. What is an exception in Java?",
+      "ar": "1. ما هو الاستثناء في جافا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A compile-time error that prevents code from running."
+      },
+      {
+        "letter": "B",
+        "text": "An abnormal condition that arises in a code sequence at run time."
+      },
+      {
+        "letter": "C",
+        "text": "A keyword used to handle memory leaks."
+      },
+      {
+        "letter": "D",
+        "text": "A primitive data type used for error checking."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An exception is an abnormal condition that arises in a code sequence at run time. In other words, it is a run-time error.",
+      "ar": "الاستثناء هو حالة غير طبيعية تنشأ في تسلسل التعليمات البرمجية في وقت التشغيل. بمعنى آخر، إنه خطأ وقت التشغيل."
+    }
+  },
+  {
+    "question": {
+      "en": "2. Which of the following are the five keywords used to manage Java exception handling?",
+      "ar": "2. أي مما يلي هي الكلمات الأساسية الخمس المستخدمة لإدارة معالجة استثناءات Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "try, catch, throw, throws, and finally"
+      },
+      {
+        "letter": "B",
+        "text": "try, catch, block, execute, and return"
+      },
+      {
+        "letter": "C",
+        "text": "error, exception, handle, throws, and finally"
+      },
+      {
+        "letter": "D",
+        "text": "monitor, catch, throw, bypass, and finally"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Java exception handling is managed via five keywords: try, catch, throw, throws, and finally.",
+      "ar": "تتم إدارة معالجة استثناءات Java عبر خمس كلمات رئيسية: حاول، وقبض، ورمي، ورميات، وأخيرًا."
+    }
+  },
+  {
+    "question": {
+      "en": "3. Where should you place the program statements that you want to monitor for exceptions?",
+      "ar": "3. أين يجب أن تضع بيانات البرنامج التي تريد مراقبتها بحثًا عن الاستثناءات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inside a catch block"
+      },
+      {
+        "letter": "B",
+        "text": "Inside a finally block"
+      },
+      {
+        "letter": "C",
+        "text": "Inside a try block"
+      },
+      {
+        "letter": "D",
+        "text": "Inside a throws method"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Program statements that you want to monitor for exceptions are contained within a try block.",
+      "ar": "توجد عبارات البرنامج التي تريد مراقبتها بحثًا عن الاستثناءات ضمن كتلة المحاولة."
+    }
+  },
+  {
+    "question": {
+      "en": "4. What is the top class in the Java exception class hierarchy?",
+      "ar": "4. ما هي الفئة العليا في التسلسل الهرمي لفئة استثناء Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Exception"
+      },
+      {
+        "letter": "B",
+        "text": "Error"
+      },
+      {
+        "letter": "C",
+        "text": "RuntimeException"
+      },
+      {
+        "letter": "D",
+        "text": "Throwable"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "All exception types are subclasses of the built-in class Throwable. Thus, Throwable is at the top of the exception class hierarchy.",
+      "ar": "جميع أنواع الاستثناءات هي فئات فرعية من الفئة المضمنة Throwable. وبالتالي، Throwable موجود في أعلى التسلسل الهرمي لفئة الاستثناء."
+    }
+  },
+  {
+    "question": {
+      "en": "5. Which branch of the Throwable hierarchy is used for exceptional conditions that user programs should catch?",
+      "ar": "5. ما هو فرع التسلسل الهرمي القابل للرمي الذي يتم استخدامه للظروف الاستثنائية التي يجب على برامج المستخدم التقاطها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Error"
+      },
+      {
+        "letter": "B",
+        "text": "Exception"
+      },
+      {
+        "letter": "C",
+        "text": "ThreadDeath"
+      },
+      {
+        "letter": "D",
+        "text": "StackOverflowError"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "One branch is headed by Exception. This class is used for exceptional conditions that user programs should catch.",
+      "ar": "فرع واحد يرأسه استثناء. يتم استخدام هذه الفئة لظروف استثنائية يجب أن تلتقطها برامج المستخدم."
+    }
+  },
+  {
+    "question": {
+      "en": "6. Exceptions like division by zero and invalid array indexing belong to which specific subclass?",
+      "ar": "6. استثناءات مثل القسمة على صفر وفهرسة المصفوفة غير الصالحة تنتمي إلى أي فئة فرعية محددة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "RuntimeException"
+      },
+      {
+        "letter": "B",
+        "text": "IOException"
+      },
+      {
+        "letter": "C",
+        "text": "CatastrophicException"
+      },
+      {
+        "letter": "D",
+        "text": "TypeNotPresentException"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Exceptions of type RuntimeException are automatically defined for the programs that you write and include things such as division by zero and invalid array indexing.",
+      "ar": "يتم تعريف الاستثناءات من النوع RuntimeException تلقائيًا للبرامج التي تكتبها وتتضمن أشياء مثل القسمة على صفر وفهرسة المصفوفة غير الصالحة."
+    }
+  },
+  {
+    "question": {
+      "en": "7. What are exceptions of type Error typically used for?",
+      "ar": "7. ما هي الاستثناءات من نوع الخطأ التي تُستخدم عادةً؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Custom user-defined errors"
+      },
+      {
+        "letter": "B",
+        "text": "Minor bugs that can be caught and fixed during runtime"
+      },
+      {
+        "letter": "C",
+        "text": "Errors having to do with the run-time environment itself, like Stack overflow"
+      },
+      {
+        "letter": "D",
+        "text": "Syntax errors in the source code"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Exceptions of type Error are used by the Java run-time system to indicate errors having to do with the run-time environment, itself, such as stack overflow.",
+      "ar": "يتم استخدام استثناءات النوع خطأ بواسطة نظام وقت تشغيل Java للإشارة إلى الأخطاء المتعلقة ببيئة وقت التشغيل نفسها، مثل تجاوز سعة المكدس."
+    }
+  },
+  {
+    "question": {
+      "en": "8. What happens to any exception that is not caught by your program?",
+      "ar": "8. ماذا يحدث لأي استثناء لم يلتقطه برنامجك؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The program automatically restarts."
+      },
+      {
+        "letter": "B",
+        "text": "It is processed by the default handler provided by the Java run-time system."
+      },
+      {
+        "letter": "C",
+        "text": "The compiler ignores it."
+      },
+      {
+        "letter": "D",
+        "text": "It gets saved to an error log and the program continues."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Any exception that is not caught by your program will ultimately be processed by the default handler.",
+      "ar": "أي استثناء لم يتم اكتشافه بواسطة برنامجك ستتم معالجته في النهاية بواسطة المعالج الافتراضي."
+    }
+  },
+  {
+    "question": {
+      "en": "9. What information does the default exception handler display before terminating the program?",
+      "ar": "9. ما هي المعلومات التي يعرضها معالج الاستثناء الافتراضي قبل إنهاء البرنامج؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The memory address of the object."
+      },
+      {
+        "letter": "B",
+        "text": "A string describing the exception and a stack trace."
+      },
+      {
+        "letter": "C",
+        "text": "A list of all variable values."
+      },
+      {
+        "letter": "D",
+        "text": "Only the line number of the error."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The default handler displays a string describing the exception, prints a stack trace from the point at which the exception occurred, and terminates the program.",
+      "ar": "يعرض المعالج الافتراضي سلسلة تصف الاستثناء، ويطبع تتبع المكدس من النقطة التي حدث عندها الاستثناء، وينهي البرنامج."
+    }
+  },
+  {
+    "question": {
+      "en": "10. What is the scope of a catch clause in relation to a try statement?",
+      "ar": "10. ما هو نطاق عبارة الالتقاط فيما يتعلق ببيان المحاولة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It covers the entire program."
+      },
+      {
+        "letter": "B",
+        "text": "It covers all try statements in the current method."
+      },
+      {
+        "letter": "C",
+        "text": "It is restricted to those statements specified by the immediately preceding try statement."
+      },
+      {
+        "letter": "D",
+        "text": "It is defined by the throws clause."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The scope of the catch clause is restricted to those statements specified by the immediately preceding try statement.",
+      "ar": "يقتصر نطاق عبارة الالتقاط على تلك العبارات المحددة بواسطة عبارة المحاولة السابقة مباشرة."
+    }
+  },
+  {
+    "question": {
+      "en": "11. Can you use a try block on a single statement without curly braces?",
+      "ar": "11. هل يمكنك استخدام مجموعة المحاولة في عبارة واحدة بدون الأقواس المتعرجة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, if it is only one line."
+      },
+      {
+        "letter": "B",
+        "text": "No, the statements protected by try must be surrounded by curly braces."
+      },
+      {
+        "letter": "C",
+        "text": "Yes, but only for ArithmeticExceptions."
+      },
+      {
+        "letter": "D",
+        "text": "No, curly braces are only for the catch block."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The statements that are protected by try must be surrounded by curly braces. You cannot use try on a single statement.",
+      "ar": "يجب أن تكون العبارات المحمية بواسطة المحاولة محاطة بأقواس متعرجة. لا يمكنك استخدام المحاولة في عبارة واحدة."
+    }
+  },
+  {
+    "question": {
+      "en": "12. How can you display a string describing the exception within a catch block using a standard Java method?",
+      "ar": "12. كيف يمكنك عرض سلسلة تصف الاستثناء داخل كتلة الالتقاط باستخدام طريقة Java القياسية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pass the exception object as an argument to a println() statement."
+      },
+      {
+        "letter": "B",
+        "text": "Use the e.getMemory() method."
+      },
+      {
+        "letter": "C",
+        "text": "Use the System.out.trace() method."
+      },
+      {
+        "letter": "D",
+        "text": "The description cannot be displayed."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Throwable overrides the toString() method so that it returns a string containing a description. You can display this by simply passing the exception as an argument to println().",
+      "ar": "يتجاوز Throwable طريقة toString() بحيث يُرجع سلسلة تحتوي على وصف. يمكنك عرض ذلك ببساطة عن طريق تمرير الاستثناء كوسيطة إلى println()."
+    }
+  },
+  {
+    "question": {
+      "en": "13. When multiple catch statements are specified, how are they inspected?",
+      "ar": "13. عندما يتم تحديد بيانات التقاط متعددة، كيف يتم فحصها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "In reverse order, bottom to top."
+      },
+      {
+        "letter": "B",
+        "text": "Simultaneously, and all matching clauses are executed."
+      },
+      {
+        "letter": "C",
+        "text": "In order, and only the first one whose type matches is executed."
+      },
+      {
+        "letter": "D",
+        "text": "Randomly, based on the Java Virtual Machine."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "When an exception is thrown, each catch statement is inspected in order, and the first one whose type matches that of the exception is executed.",
+      "ar": "عند طرح استثناء، يتم فحص كل بيان صيد بالترتيب، ويتم تنفيذ أول بيان يطابق نوعه الاستثناء."
+    }
+  },
+  {
+    "question": {
+      "en": "14. In a multiple catch block sequence, what happens if an exception superclass comes before its subclass?",
+      "ar": "14. في تسلسل كتلة الالتقاط المتعدد، ماذا يحدث إذا جاءت فئة استثنائية استثنائية قبل فئتها الفرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The code compiles normally and executes both catch blocks."
+      },
+      {
+        "letter": "B",
+        "text": "Unreachable code will be created and a compile-time error will result."
+      },
+      {
+        "letter": "C",
+        "text": "The subclass overrides the superclass automatically."
+      },
+      {
+        "letter": "D",
+        "text": "The program throws a ClassCastException."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A subclass must come before its superclass in a series of catch statements. If not, unreachable code will be created and a compile-time error will result.",
+      "ar": "يجب أن تأتي الفئة الفرعية قبل فئتها الفائقة في سلسلة من عبارات الالتقاط. إذا لم يكن الأمر كذلك، فسيتم إنشاء تعليمات برمجية لا يمكن الوصول إليها وسينتج خطأ في وقت الترجمة."
+    }
+  },
+  {
+    "question": {
+      "en": "15. How does a nested try statement handle an exception if it does not have a matching catch handler?",
+      "ar": "15. كيف تتعامل عبارة المحاولة المتداخلة مع الاستثناء إذا لم يكن لديها معالج التقاط مطابق؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The program immediately crashes."
+      },
+      {
+        "letter": "B",
+        "text": "The stack is unwound and the next outer try statement's catch handlers are inspected."
+      },
+      {
+        "letter": "C",
+        "text": "The nested try statement goes into an infinite loop."
+      },
+      {
+        "letter": "D",
+        "text": "The exception is automatically ignored."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If an inner try statement does not have a catch handler for a particular exception, the stack is unwound and the next try statement's catch handlers are inspected.",
+      "ar": "إذا لم تكن عبارة المحاولة الداخلية تحتوي على معالج التقاط لاستثناء معين، فسيتم فك المكدس وسيتم فحص معالجات الالتقاط الخاصة بعبارة المحاولة التالية."
+    }
+  },
+  {
+    "question": {
+      "en": "16. Which keyword is used to throw an exception explicitly in your program?",
+      "ar": "16. ما هي الكلمة الأساسية المستخدمة لطرح استثناء بشكل صريح في برنامجك؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "throws"
+      },
+      {
+        "letter": "B",
+        "text": "try"
+      },
+      {
+        "letter": "C",
+        "text": "throw"
+      },
+      {
+        "letter": "D",
+        "text": "raise"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "It is possible for your program to throw an exception explicitly, using the throw statement.",
+      "ar": "من الممكن أن يقوم برنامجك بطرح استثناء بشكل صريح، وذلك باستخدام عبارة الرمي."
+    }
+  },
+  {
+    "question": {
+      "en": "17. What type of object must be used with the throw statement?",
+      "ar": "17. ما هو نوع الكائن الذي يجب استخدامه مع عبارة الرمي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Any object derived from Object."
+      },
+      {
+        "letter": "B",
+        "text": "Primitive types like int or char."
+      },
+      {
+        "letter": "C",
+        "text": "An object of type Throwable or a subclass of Throwable."
+      },
+      {
+        "letter": "D",
+        "text": "Any String object."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "With the throw statement, the instance must be an object of type Throwable or a subclass of Throwable. Non-Throwable classes cannot be used.",
+      "ar": "باستخدام عبارة throw، يجب أن يكون المثيل كائنًا من النوع Throwable أو فئة فرعية من Throwable. لا يمكن استخدام الفئات غير القابلة للرمي."
+    }
+  },
+  {
+    "question": {
+      "en": "18. What happens immediately after a throw statement is executed?",
+      "ar": "18. ماذا يحدث مباشرة بعد تنفيذ بيان الرمي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The subsequent statements execute normally."
+      },
+      {
+        "letter": "B",
+        "text": "The program returns to the start of the try block."
+      },
+      {
+        "letter": "C",
+        "text": "The flow of execution stops immediately and transfers to the nearest enclosing try block's catch statement."
+      },
+      {
+        "letter": "D",
+        "text": "A new thread is spawned."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The flow of execution stops immediately after the throw statement; any subsequent statements are not executed. Control transfers to the matching catch statement.",
+      "ar": "يتوقف تدفق التنفيذ مباشرة بعد بيان الرمي؛ لا يتم تنفيذ أي بيانات لاحقة. ينقل التحكم إلى بيان الصيد المطابق."
+    }
+  },
+  {
+    "question": {
+      "en": "19. If a method causes an exception that it does not handle, how must it specify this behavior?",
+      "ar": "19. إذا تسببت إحدى الطرق في حدوث استثناء لم تتمكن من معالجته، فكيف يجب أن تحدد هذا السلوك؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By using a throw block."
+      },
+      {
+        "letter": "B",
+        "text": "By including a throws clause in the method's declaration."
+      },
+      {
+        "letter": "C",
+        "text": "By returning an error code."
+      },
+      {
+        "letter": "D",
+        "text": "By using a finally block."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If a method is capable of causing an exception that it does not handle, it must specify this by including a throws clause in the method's declaration.",
+      "ar": "إذا كانت إحدى الطرق قادرة على إحداث استثناء لا يمكنها التعامل معه، فيجب عليها تحديد ذلك عن طريق تضمين جملة الرميات في إعلان الطريقة."
+    }
+  },
+  {
+    "question": {
+      "en": "20. Which types of exceptions do NOT need to be listed in a throws clause?",
+      "ar": "20. ما هي أنواع الاستثناءات التي لا يلزم إدراجها في جملة الرميات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Checked exceptions like IOException."
+      },
+      {
+        "letter": "B",
+        "text": "Exceptions of type Error or RuntimeException, or any of their subclasses."
+      },
+      {
+        "letter": "C",
+        "text": "Custom exceptions extending Exception."
+      },
+      {
+        "letter": "D",
+        "text": "All exceptions must be listed."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A throws clause is necessary for all exceptions, except those of type Error or RuntimeException, or any of their subclasses.",
+      "ar": "تعد جملة الرميات ضرورية لجميع الاستثناءات، باستثناء تلك من النوع Error أو RuntimeException، أو أي من فئاتها الفرعية."
+    }
+  },
+  {
+    "question": {
+      "en": "21. What is the purpose of the finally block?",
+      "ar": "21. ما هو الغرض من الكتلة النهائية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To define the specific exception to be thrown."
+      },
+      {
+        "letter": "B",
+        "text": "To restart the try block if it fails."
+      },
+      {
+        "letter": "C",
+        "text": "To execute code whether or not an exception is thrown."
+      },
+      {
+        "letter": "D",
+        "text": "To log exceptions directly to a file."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "finally creates a block of code that will execute whether or not an exception is thrown, making it useful for closing files and freeing resources.",
+      "ar": "يقوم أخيرًا بإنشاء كتلة من التعليمات البرمجية التي سيتم تنفيذها سواء تم طرح استثناء أم لا، مما يجعله مفيدًا لإغلاق الملفات وتحرير الموارد."
+    }
+  },
+  {
+    "question": {
+      "en": "22. Is the finally clause mandatory for every try statement?",
+      "ar": "22. هل الشرط الأخير إلزامي لكل بيان محاولة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, every try must have a finally block."
+      },
+      {
+        "letter": "B",
+        "text": "No, it is optional, but each try requires at least one catch or a finally clause."
+      },
+      {
+        "letter": "C",
+        "text": "Yes, but only if a throws clause is used."
+      },
+      {
+        "letter": "D",
+        "text": "No, try statements do not need catch or finally clauses."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The finally clause is optional. However, each try statement requires at least one catch or a finally clause.",
+      "ar": "الجملة الأخيرة اختيارية. ومع ذلك، تتطلب كل عبارة محاولة التقاطًا واحدًا على الأقل أو عبارة أخيرًا."
+    }
+  },
+  {
+    "question": {
+      "en": "23. In Java terminology, what are exceptions that are subclasses of RuntimeException called?",
+      "ar": "23. في مصطلحات Java، ما هي الاستثناءات التي تسمى فئات فرعية من RuntimeException؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Checked exceptions"
+      },
+      {
+        "letter": "B",
+        "text": "Unchecked exceptions"
+      },
+      {
+        "letter": "C",
+        "text": "Fatal errors"
+      },
+      {
+        "letter": "D",
+        "text": "System exceptions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Exceptions that are subclasses of RuntimeException are called unchecked exceptions because the compiler does not check to see if a method handles or throws them.",
+      "ar": "تسمى الاستثناءات التي تمثل فئات فرعية من RuntimeException بالاستثناءات غير المحددة لأن المترجم لا يتحقق لمعرفة ما إذا كان الأسلوب يعالجها أو يرميها."
+    }
+  },
+  {
+    "question": {
+      "en": "24. How do you create your own custom exception types in Java?",
+      "ar": "24. كيف يمكنك إنشاء أنواع الاستثناءات المخصصة الخاصة بك في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By implementing the Exception interface."
+      },
+      {
+        "letter": "B",
+        "text": "By defining a subclass of Exception."
+      },
+      {
+        "letter": "C",
+        "text": "By importing the java.util.CustomException class."
+      },
+      {
+        "letter": "D",
+        "text": "By creating a method named createException()."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "To create your own exception types to handle specific situations, just define a subclass of Exception.",
+      "ar": "لإنشاء أنواع الاستثناءات الخاصة بك للتعامل مع مواقف معينة، ما عليك سوى تحديد فئة فرعية من الاستثناءات."
+    }
+  },
+  {
+    "question": {
+      "en": "25. Why might you want to override the toString() method when creating a custom exception?",
+      "ar": "25. لماذا قد ترغب في تجاوز طريقة toString() عند إنشاء استثناء مخصص؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To prevent the program from terminating."
+      },
+      {
+        "letter": "B",
+        "text": "To automatically fix the error causing the exception."
+      },
+      {
+        "letter": "C",
+        "text": "To prevent the exception name and colon from being displayed, making output cleaner."
+      },
+      {
+        "letter": "D",
+        "text": "To convert the exception into a checked exception."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "By overriding toString(), you can prevent the exception name and colon from being displayed. This makes for a cleaner output.",
+      "ar": "من خلال تجاوز toString()، يمكنك منع عرض اسم الاستثناء والنقطتين. وهذا يجعل لإخراج أنظف."
+    }
+  },
+  {
+    "question": {
+      "en": "26. What does the chained exception feature allow you to do?",
+      "ar": "26. ما الذي تسمح لك ميزة الاستثناء المتسلسل بفعله؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Associate another exception with an exception to describe its underlying cause."
+      },
+      {
+        "letter": "B",
+        "text": "Combine multiple catch statements into one."
+      },
+      {
+        "letter": "C",
+        "text": "Ignore all exceptions in a chain."
+      },
+      {
+        "letter": "D",
+        "text": "Throw exceptions automatically without a try block."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The chained exception feature allows you to associate another exception with an exception. This second exception describes the cause of the first exception.",
+      "ar": "تسمح لك ميزة الاستثناء المتسلسل بربط استثناء آخر باستثناء. يصف هذا الاستثناء الثاني سبب الاستثناء الأول."
+    }
+  },
+  {
+    "question": {
+      "en": "27. In the multi-catch feature, what operator is used to separate each exception type in the catch clause?",
+      "ar": "27. في ميزة الالتقاط المتعدد، ما هو العامل المستخدم لفصل كل نوع استثناء في جملة الالتقاط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "AND operator (&&)"
+      },
+      {
+        "letter": "B",
+        "text": "OR operator (|)"
+      },
+      {
+        "letter": "C",
+        "text": "Comma (,)"
+      },
+      {
+        "letter": "D",
+        "text": "Semicolon (;)"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "To use a multi-catch, separate each exception type in the catch clause with the OR operator (|).",
+      "ar": "لاستخدام ميزة التقاط متعددة، قم بفصل كل نوع استثناء في جملة الالتقاط باستخدام عامل التشغيل OR (|)."
+    }
+  },
+  {
+    "question": {
+      "en": "28. Why should you avoid using Java's exception-handling statements as a general mechanism for nonlocal branching?",
+      "ar": "28. لماذا يجب عليك تجنب استخدام عبارات معالجة الاستثناءات في Java كآلية عامة للتفريع غير المحلي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It requires importing external libraries."
+      },
+      {
+        "letter": "B",
+        "text": "It will cause a StackOverflowError."
+      },
+      {
+        "letter": "C",
+        "text": "It will confuse your code and make it hard to maintain."
+      },
+      {
+        "letter": "D",
+        "text": "It prevents the use of multi-catch features."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Java's exception-handling statements should not be considered a general mechanism for nonlocal branching because it will only confuse your code and make it hard to maintain.",
+      "ar": "لا ينبغي اعتبار عبارات معالجة الاستثناءات في Java آلية عامة للتفريع غير المحلي لأنها لن تؤدي إلا إلى إرباك التعليمات البرمجية الخاصة بك وتجعل من الصعب صيانتها."
+    }
+  },
+  {
+    "question": {
+      "en": "1. What keyword is used to incorporate the definition of one class into another in Java?",
+      "ar": "1. ما هي الكلمة الأساسية المستخدمة لدمج تعريف فئة في فئة أخرى في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "inherits"
+      },
+      {
+        "letter": "B",
+        "text": "extends"
+      },
+      {
+        "letter": "C",
+        "text": "implements"
+      },
+      {
+        "letter": "D",
+        "text": "super"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "To inherit a class, you incorporate the definition of one class into another by using the extends keyword.",
+      "ar": "لوراثة فئة ما، يمكنك دمج تعريف فئة واحدة في فئة أخرى باستخدام الكلمة الأساسية الممتدة."
+    }
+  },
+  {
+    "question": {
+      "en": "2. In the terminology of Java, what is a class that is inherited called?",
+      "ar": "2. في مصطلحات Java، ما هي الفئة الموروثة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Subclass"
+      },
+      {
+        "letter": "B",
+        "text": "Derived class"
+      },
+      {
+        "letter": "C",
+        "text": "Superclass"
+      },
+      {
+        "letter": "D",
+        "text": "Child class"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A class that is inherited is called a superclass.",
+      "ar": "تسمى الفئة الموروثة بالفئة المتفوقة."
+    }
+  },
+  {
+    "question": {
+      "en": "3. What is a subclass?",
+      "ar": "3. ما هي الفئة الفرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The class that does the inheriting"
+      },
+      {
+        "letter": "B",
+        "text": "The class that is being inherited"
+      },
+      {
+        "letter": "C",
+        "text": "An interface"
+      },
+      {
+        "letter": "D",
+        "text": "An abstract class"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The class that does the inheriting is called a subclass, which is a specialized version of a superclass.",
+      "ar": "تسمى الفئة التي تقوم بالوراثة فئة فرعية، وهي نسخة متخصصة من فئة فائقة."
+    }
+  },
+  {
+    "question": {
+      "en": "4. Does Java support the inheritance of multiple superclasses into a single subclass?",
+      "ar": "4. هل تدعم Java وراثة الفئات الفائقة المتعددة في فئة فرعية واحدة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, using the extends keyword multiple times"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, by default"
+      },
+      {
+        "letter": "C",
+        "text": "No, Java does not support multiple class inheritance"
+      },
+      {
+        "letter": "D",
+        "text": "Only if the classes are abstract"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Java does not support the inheritance of multiple superclasses into a single subclass.",
+      "ar": "لا تدعم Java وراثة الفئات الفائقة المتعددة في فئة فرعية واحدة."
+    }
+  },
+  {
+    "question": {
+      "en": "5. Can a class be a superclass of itself?",
+      "ar": "5. هل يمكن للفصل أن يكون فئة متفوقة في حد ذاته؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes"
+      },
+      {
+        "letter": "B",
+        "text": "No"
+      },
+      {
+        "letter": "C",
+        "text": "Only if it is final"
+      },
+      {
+        "letter": "D",
+        "text": "Only if it is abstract"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "No class can be a superclass of itself.",
+      "ar": "لا يمكن لأي فئة أن تكون فئة متفوقة في حد ذاتها."
+    }
+  },
+  {
+    "question": {
+      "en": "6. Can a subclass access members of its superclass that have been declared as private?",
+      "ar": "6. هل يمكن لفئة فرعية الوصول إلى أعضاء فئتها الفائقة التي تم الإعلان عنها كخاصة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, always"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, if it is in the same package"
+      },
+      {
+        "letter": "C",
+        "text": "No, private members remain private to their class"
+      },
+      {
+        "letter": "D",
+        "text": "Only by using the extends keyword"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Although a subclass includes all members of its superclass, it cannot access those declared as private.",
+      "ar": "على الرغم من أن الفئة الفرعية تتضمن جميع أعضاء فئتها الفائقة، إلا أنها لا تستطيع الوصول إلى تلك التي تم الإعلان عنها على أنها خاصة."
+    }
+  },
+  {
+    "question": {
+      "en": "7. What determines which members can be accessed when a superclass reference variable refers to a subclass object?",
+      "ar": "7. ما الذي يحدد الأعضاء الذين يمكن الوصول إليهم عندما يشير المتغير المرجعي للفئة الفائقة إلى كائن فئة فرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The type of the object being referred to"
+      },
+      {
+        "letter": "B",
+        "text": "The type of the reference variable"
+      },
+      {
+        "letter": "C",
+        "text": "The access modifiers of the subclass"
+      },
+      {
+        "letter": "D",
+        "text": "The constructor of the subclass"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "It is the type of the reference variable—not the type of the object that it refers to—that determines what members can be accessed.",
+      "ar": "إن نوع المتغير المرجعي - وليس نوع الكائن الذي يشير إليه - هو الذي يحدد الأعضاء الذين يمكن الوصول إليهم."
+    }
+  },
+  {
+    "question": {
+      "en": "8. What happens if a superclass reference tries to access a variable uniquely defined in the subclass?",
+      "ar": "8. ماذا يحدث إذا حاول مرجع الفئة الفائقة الوصول إلى متغير محدد بشكل فريد في الفئة الفرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It accesses the variable successfully"
+      },
+      {
+        "letter": "B",
+        "text": "It causes a compile-time error"
+      },
+      {
+        "letter": "C",
+        "text": "It returns null"
+      },
+      {
+        "letter": "D",
+        "text": "It throws an exception at runtime"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A superclass reference has no knowledge of what a subclass adds to it; trying to access a subclass-specific field is invalid and won't compile.",
+      "ar": "ليس لدى مرجع الفئة الفائقة أي معرفة بما تضيفه الفئة الفرعية إليه؛ محاولة الوصول إلى حقل خاص بفئة فرعية غير صالح ولن يتم تجميعه."
+    }
+  },
+  {
+    "question": {
+      "en": "9. What is the keyword used by a subclass to refer to its immediate superclass?",
+      "ar": "9. ما هي الكلمة الأساسية التي تستخدمها فئة فرعية للإشارة إلى فئتها الفائقة المباشرة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "base"
+      },
+      {
+        "letter": "B",
+        "text": "parent"
+      },
+      {
+        "letter": "C",
+        "text": "super"
+      },
+      {
+        "letter": "D",
+        "text": "main"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Whenever a subclass needs to refer to its immediate superclass, it can do so by use of the keyword super.",
+      "ar": "عندما تحتاج فئة فرعية إلى الإشارة إلى فئتها الفائقة المباشرة، يمكنها القيام بذلك عن طريق استخدام الكلمة الأساسية super."
+    }
+  },
+  {
+    "question": {
+      "en": "10. What are the two general forms of the 'super' keyword?",
+      "ar": "10. ما هو الشكلان العامان للكلمة الرئيسية \"super\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Calling superclass constructor and accessing hidden members"
+      },
+      {
+        "letter": "B",
+        "text": "Overriding methods and overloading methods"
+      },
+      {
+        "letter": "C",
+        "text": "Implementing interfaces and extending classes"
+      },
+      {
+        "letter": "D",
+        "text": "Creating objects and deleting objects"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The first calls the superclass' constructor. The second is used to access a member of the superclass that has been hidden by a subclass.",
+      "ar": "الأول يدعو منشئ الطبقة المتفوقة. يتم استخدام الثاني للوصول إلى عضو الفئة الفائقة الذي تم إخفاؤه بواسطة فئة فرعية."
+    }
+  },
+  {
+    "question": {
+      "en": "11. When using super() to call a superclass constructor, what is the placement rule?",
+      "ar": "11. عند استخدام super() لاستدعاء مُنشئ الطبقة الفائقة، ما هي قاعدة الموضع؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It can be placed anywhere in the subclass constructor"
+      },
+      {
+        "letter": "B",
+        "text": "It must be the first statement executed inside the subclass constructor"
+      },
+      {
+        "letter": "C",
+        "text": "It must be the last statement inside the subclass constructor"
+      },
+      {
+        "letter": "D",
+        "text": "It is executed outside the constructor"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "super() must always be the first statement executed inside a subclass' constructor.",
+      "ar": "يجب أن يكون super() دائمًا أول بيان يتم تنفيذه داخل مُنشئ فئة فرعية."
+    }
+  },
+  {
+    "question": {
+      "en": "12. In a class hierarchy, if a superclass constructor requires arguments, what must all subclasses do?",
+      "ar": "12. في التسلسل الهرمي للفصل، إذا كان منشئ الطبقة المتفوقة يتطلب وسيطات، فماذا يجب على جميع الفئات الفرعية أن تفعل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ignore the arguments"
+      },
+      {
+        "letter": "B",
+        "text": "Provide default values internally without super()"
+      },
+      {
+        "letter": "C",
+        "text": "Pass those arguments 'up the line' using super"
+      },
+      {
+        "letter": "D",
+        "text": "Overload the constructor to remove arguments"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "If a superclass constructor requires arguments, then all subclasses must pass those arguments 'up the line'.",
+      "ar": "إذا كان منشئ الطبقة الفائقة يتطلب وسائط، فيجب على جميع الفئات الفرعية تمرير تلك الوسائط \"في السطر\"."
+    }
+  },
+  {
+    "question": {
+      "en": "13. In what order are constructors executed in a class hierarchy?",
+      "ar": "13. بأي ترتيب يتم تنفيذ المنشئين في التسلسل الهرمي للفئة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Subclass to superclass"
+      },
+      {
+        "letter": "B",
+        "text": "In order of derivation, from superclass to subclass"
+      },
+      {
+        "letter": "C",
+        "text": "Random order"
+      },
+      {
+        "letter": "D",
+        "text": "Alphabetical order of class names"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Constructors complete their execution in order of derivation, from superclass to subclass.",
+      "ar": "يكمل المنشئون تنفيذهم بترتيب الاشتقاق، من الطبقة الفائقة إلى الفئة الفرعية."
+    }
+  },
+  {
+    "question": {
+      "en": "14. What occurs when a method in a subclass has the same name and type signature as a method in its superclass?",
+      "ar": "14. ماذا يحدث عندما يكون لأسلوب ما في فئة فرعية نفس توقيع الاسم والنوع كأسلوب في فئته الفائقة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Method overloading"
+      },
+      {
+        "letter": "B",
+        "text": "Method overriding"
+      },
+      {
+        "letter": "C",
+        "text": "Method hiding"
+      },
+      {
+        "letter": "D",
+        "text": "Constructor chaining"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "When a method in a subclass has the same name and type signature as a method in its superclass, it overrides the method in the superclass.",
+      "ar": "عندما يكون لأسلوب ما في فئة فرعية نفس توقيع الاسم والنوع كأسلوب في فئته الفائقة، فإنه يتجاوز الطريقة الموجودة في الفئة الفائقة."
+    }
+  },
+  {
+    "question": {
+      "en": "15. How can you access the superclass version of an overridden method from within the subclass?",
+      "ar": "15. كيف يمكنك الوصول إلى إصدار الفئة الفائقة للطريقة المتجاوزة من داخل الفئة الفرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using the this keyword"
+      },
+      {
+        "letter": "B",
+        "text": "Calling the method directly"
+      },
+      {
+        "letter": "C",
+        "text": "Using the super.methodName() syntax"
+      },
+      {
+        "letter": "D",
+        "text": "It cannot be accessed once overridden"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "If you wish to access the superclass version of an overridden method, you can do so by using super.",
+      "ar": "إذا كنت ترغب في الوصول إلى إصدار الطبقة الفائقة لطريقة تم تجاوزها، فيمكنك القيام بذلك باستخدام super."
+    }
+  },
+  {
+    "question": {
+      "en": "16. If two methods have the same name but different type signatures in a class hierarchy, what occurs?",
+      "ar": "16. إذا كانت هناك طريقتان لهما نفس الاسم ولكن نوع التوقيع مختلف في التسلسل الهرمي للفئة، فماذا يحدث؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Method overriding"
+      },
+      {
+        "letter": "B",
+        "text": "Compile-time error"
+      },
+      {
+        "letter": "C",
+        "text": "Method overloading"
+      },
+      {
+        "letter": "D",
+        "text": "Run-time error"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Method overriding occurs only when names and type signatures are identical. If they are not, the two methods are simply overloaded.",
+      "ar": "يحدث تجاوز الطريقة فقط عندما تكون الأسماء وتوقيعات النوع متطابقة. إذا لم تكن كذلك، فإن الطريقتين ببساطة مثقلتان."
+    }
+  },
+  {
+    "question": {
+      "en": "17. What is dynamic method dispatch?",
+      "ar": "17. ما هو إرسال الطريقة الديناميكية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Resolving method calls at compile time"
+      },
+      {
+        "letter": "B",
+        "text": "Mechanism by which a call to an overridden method is resolved at run time"
+      },
+      {
+        "letter": "C",
+        "text": "Overloading multiple methods with the same name"
+      },
+      {
+        "letter": "D",
+        "text": "Creating dynamic arrays"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Dynamic method dispatch is the mechanism by which a call to an overridden method is resolved at run time, rather than compile time.",
+      "ar": "إرسال الأسلوب الديناميكي هو الآلية التي يتم من خلالها حل استدعاء الأسلوب الذي تم تجاوزه في وقت التشغيل، بدلاً من وقت الترجمة."
+    }
+  },
+  {
+    "question": {
+      "en": "18. In dynamic method dispatch, what determines which version of an overridden method to execute?",
+      "ar": "18. في إرسال الطريقة الديناميكية، ما الذي يحدد إصدار الطريقة المتجاوزة المطلوب تنفيذه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The type of the reference variable"
+      },
+      {
+        "letter": "B",
+        "text": "The type of the object being referred to at the time the call occurs"
+      },
+      {
+        "letter": "C",
+        "text": "The access modifier of the method"
+      },
+      {
+        "letter": "D",
+        "text": "The compiler randomly chooses"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Java determines which version of that method to execute based upon the type of the object being referred to at the time the call occurs.",
+      "ar": "تحدد Java أي إصدار من تلك الطريقة سيتم تنفيذه بناءً على نوع الكائن المشار إليه في وقت حدوث الاستدعاء."
+    }
+  },
+  {
+    "question": {
+      "en": "19. Dynamic method dispatch is how Java implements what OOP principle?",
+      "ar": "19. إرسال الطريقة الديناميكية هو كيفية تنفيذ Java لمبدأ OOP؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Compile-time polymorphism"
+      },
+      {
+        "letter": "B",
+        "text": "Encapsulation"
+      },
+      {
+        "letter": "C",
+        "text": "Run-time polymorphism"
+      },
+      {
+        "letter": "D",
+        "text": "Multiple inheritance"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Dynamic method dispatch is important because this is how Java implements run-time polymorphism.",
+      "ar": "يعد إرسال الطريقة الديناميكية مهمًا لأن هذه هي الطريقة التي تنفذ بها Java تعدد الأشكال في وقت التشغيل."
+    }
+  },
+  {
+    "question": {
+      "en": "20. What type of modifier requires that a method be overridden by subclasses?",
+      "ar": "20. ما هو نوع المعدل الذي يتطلب تجاوز الطريقة بواسطة الفئات الفرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "static"
+      },
+      {
+        "letter": "B",
+        "text": "final"
+      },
+      {
+        "letter": "C",
+        "text": "abstract"
+      },
+      {
+        "letter": "D",
+        "text": "volatile"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "You can require that certain methods be overridden by subclasses by specifying the abstract type modifier.",
+      "ar": "يمكنك أن تطلب تجاوز طرق معينة بواسطة فئات فرعية عن طريق تحديد معدل النوع الملخص."
+    }
+  },
+  {
+    "question": {
+      "en": "21. Can an abstract class be directly instantiated with the new operator?",
+      "ar": "21. هل يمكن إنشاء فئة مجردة مباشرة مع المشغل الجديد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes"
+      },
+      {
+        "letter": "B",
+        "text": "No"
+      },
+      {
+        "letter": "C",
+        "text": "Only inside its own package"
+      },
+      {
+        "letter": "D",
+        "text": "Only if it has concrete methods"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "There can be no objects of an abstract class. It cannot be directly instantiated with the new operator.",
+      "ar": "لا يمكن أن يكون هناك كائنات من فئة مجردة. لا يمكن إنشاء مثيل له مباشرة مع المشغل الجديد."
+    }
+  },
+  {
+    "question": {
+      "en": "22. Can abstract classes include concrete (fully implemented) methods?",
+      "ar": "22. هل يمكن للفصول المجردة أن تتضمن طرقًا ملموسة (منفذة بالكامل)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "No, they can only have abstract methods"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, concrete methods are allowed in abstract classes"
+      },
+      {
+        "letter": "C",
+        "text": "Only if they are static"
+      },
+      {
+        "letter": "D",
+        "text": "Only if they are final"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Abstract classes can include as much implementation as they see fit; concrete methods are acceptable.",
+      "ar": "يمكن أن تتضمن الفئات المجردة قدرًا كبيرًا من التنفيذ الذي تراه مناسبًا؛ الأساليب الملموسة مقبولة."
+    }
+  },
+  {
+    "question": {
+      "en": "23. If a subclass of an abstract class does not implement all of the superclass's abstract methods, what must it be?",
+      "ar": "23. إذا كانت فئة فرعية من فئة مجردة لا تنفذ جميع الأساليب المجردة للفئة المتفوقة، فماذا يجب أن تكون؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It must be declared final"
+      },
+      {
+        "letter": "B",
+        "text": "It must be declared abstract itself"
+      },
+      {
+        "letter": "C",
+        "text": "It will automatically implement them as empty methods"
+      },
+      {
+        "letter": "D",
+        "text": "It must be declared static"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Any subclass of an abstract class must either implement all abstract methods or be declared abstract itself.",
+      "ar": "أي فئة فرعية من فئة مجردة يجب إما أن تنفذ جميع الأساليب المجردة أو يتم الإعلان عنها بأنها مجردة نفسها."
+    }
+  },
+  {
+    "question": {
+      "en": "24. Can you create a reference variable of an abstract class type?",
+      "ar": "24. هل يمكنك إنشاء متغير مرجعي من نوع فئة مجردة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, to refer to a subclass object"
+      },
+      {
+        "letter": "B",
+        "text": "No, abstract classes cannot have references"
+      },
+      {
+        "letter": "C",
+        "text": "Yes, but it can only refer to other abstract classes"
+      },
+      {
+        "letter": "D",
+        "text": "No, it causes a compile-time error"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "You can create object references to an abstract class so that it can be used to point to a subclass object.",
+      "ar": "يمكنك إنشاء مراجع كائنات لفئة مجردة بحيث يمكن استخدامها للإشارة إلى كائن فئة فرعية."
+    }
+  },
+  {
+    "question": {
+      "en": "25. How do you prevent a method from being overridden in a subclass?",
+      "ar": "25. كيف يمكنك منع تجاوز الطريقة في فئة فرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Declare it as private"
+      },
+      {
+        "letter": "B",
+        "text": "Declare it as abstract"
+      },
+      {
+        "letter": "C",
+        "text": "Specify final as a modifier at the start of its declaration"
+      },
+      {
+        "letter": "D",
+        "text": "Specify static as a modifier"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "To disallow a method from being overridden, specify final as a modifier at the start of its declaration.",
+      "ar": "لمنع تجاوز طريقة ما، حدد Final كمعدِّل في بداية الإعلان الخاص بها."
+    }
+  },
+  {
+    "question": {
+      "en": "26. What performance enhancement can the compiler apply to final methods?",
+      "ar": "26. ما هو تحسين الأداء الذي يمكن للمترجم تطبيقه على الطرق النهائية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Memory reallocation"
+      },
+      {
+        "letter": "B",
+        "text": "Inlining calls to them"
+      },
+      {
+        "letter": "C",
+        "text": "Multi-threading"
+      },
+      {
+        "letter": "D",
+        "text": "Garbage collection acceleration"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The compiler is free to inline calls to final methods because it knows they will not be overridden.",
+      "ar": "المترجم حر في تضمين الاستدعاءات للطرق النهائية لأنه يعلم أنه لن يتم تجاوزها."
+    }
+  },
+  {
+    "question": {
+      "en": "27. Resolving a method call at compile time because the method cannot be overridden is called what?",
+      "ar": "27. ماذا يسمى حل استدعاء الطريقة في وقت الترجمة لأنه لا يمكن تجاوز الطريقة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Late binding"
+      },
+      {
+        "letter": "B",
+        "text": "Dynamic dispatch"
+      },
+      {
+        "letter": "C",
+        "text": "Early binding"
+      },
+      {
+        "letter": "D",
+        "text": "Compile-time execution"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Since final methods cannot be overridden, a call to one can be resolved at compile time. This is called early binding.",
+      "ar": "نظرًا لأنه لا يمكن تجاوز الطرق النهائية، فيمكن حل استدعاء إحدى الطرق في وقت الترجمة. وهذا ما يسمى الربط المبكر."
+    }
+  },
+  {
+    "question": {
+      "en": "28. How do you prevent a class from being inherited entirely?",
+      "ar": "28. كيف تمنع توريث الفصل بالكامل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Make all its methods private"
+      },
+      {
+        "letter": "B",
+        "text": "Precede the class declaration with final"
+      },
+      {
+        "letter": "C",
+        "text": "Omit the public keyword"
+      },
+      {
+        "letter": "D",
+        "text": "Declare it as abstract"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "To prevent a class from being inherited, precede the class declaration with final.",
+      "ar": "لمنع وراثة فئة ما، تسبق إعلان الفئة بكلمة نهائية."
+    }
+  },
+  {
+    "question": {
+      "en": "29. Can a class be declared as both abstract and final?",
+      "ar": "29. هل يمكن الإعلان عن الفصل على أنه مجرد ونهائي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, it's common practice"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, but it has no effect"
+      },
+      {
+        "letter": "C",
+        "text": "No, it is illegal"
+      },
+      {
+        "letter": "D",
+        "text": "Only in JDK 10 and later"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "It is illegal to declare a class as both abstract and final since an abstract class relies on subclasses, which final prevents.",
+      "ar": "من غير القانوني الإعلان عن فئة ما على أنها مجردة ونهائية لأن الفئة المجردة تعتمد على الفئات الفرعية، وهو ما يمنعه Final."
+    }
+  },
+  {
+    "question": {
+      "en": "30. When using local variable type inference (var) with inheritance, what determines the inferred type?",
+      "ar": "30. عند استخدام نوع المتغير المحلي (var) مع الوراثة، ما الذي يحدد النوع المستنتج؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The declared type of its initializer"
+      },
+      {
+        "letter": "B",
+        "text": "The actual runtime type of the object"
+      },
+      {
+        "letter": "C",
+        "text": "The type of the highest superclass"
+      },
+      {
+        "letter": "D",
+        "text": "The method's access modifier"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The inferred type of a variable is based on the declared type of its initializer, even if it refers to a derived class object.",
+      "ar": "يعتمد النوع المستنتج للمتغير على النوع المعلن لمهيئه، حتى لو كان يشير إلى كائن فئة مشتقة."
+    }
+  },
+  {
+    "question": {
+      "en": "31. What is the superclass of all other classes in Java?",
+      "ar": "31. ما هي الفئة الفائقة لجميع الفئات الأخرى في جافا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Main"
+      },
+      {
+        "letter": "B",
+        "text": "Super"
+      },
+      {
+        "letter": "C",
+        "text": "Base"
+      },
+      {
+        "letter": "D",
+        "text": "Object"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Object is a superclass of all other classes in Java.",
+      "ar": "الكائن هو فئة فائقة من جميع الفئات الأخرى في Java."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: How does Java implement strings unlike some other languages?",
+      "ar": "س1: كيف تقوم Java بتنفيذ السلاسل بخلاف بعض اللغات الأخرى؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "As primitive data types"
+      },
+      {
+        "letter": "B",
+        "text": "As objects of type String"
+      },
+      {
+        "letter": "C",
+        "text": "As standard character arrays"
+      },
+      {
+        "letter": "D",
+        "text": "As pointers"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In Java, a string is a sequence of characters implemented as objects of type String, not as character arrays.",
+      "ar": "في Java، السلسلة عبارة عن سلسلة من الأحرف يتم تنفيذها ككائنات من النوع String، وليس كمصفوفات أحرف."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: What happens when you create an altered version of an existing String object?",
+      "ar": "س2: ماذا يحدث عندما تقوم بإنشاء نسخة معدلة من كائن سلسلة موجود؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The original String object is modified"
+      },
+      {
+        "letter": "B",
+        "text": "A new String object is created containing the modifications"
+      },
+      {
+        "letter": "C",
+        "text": "Java throws an Exception"
+      },
+      {
+        "letter": "D",
+        "text": "The modification is ignored"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Because String objects are immutable in Java, every time an altered version is needed, a new String object is created while the original remains unchanged.",
+      "ar": "نظرًا لأن كائنات السلسلة غير قابلة للتغيير في Java، ففي كل مرة تكون هناك حاجة إلى إصدار معدل، يتم إنشاء كائن سلسلة جديد بينما يظل الأصل دون تغيير."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Which package contains the String, StringBuffer, and StringBuilder classes?",
+      "ar": "س3: ما هي الحزمة التي تحتوي على فئات String وStringBuffer وStringBuilder؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "java.util"
+      },
+      {
+        "letter": "B",
+        "text": "java.io"
+      },
+      {
+        "letter": "C",
+        "text": "java.lang"
+      },
+      {
+        "letter": "D",
+        "text": "java.text"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The String, StringBuffer, and StringBuilder classes are defined in java.lang, making them automatically available to all programs.",
+      "ar": "يتم تعريف فئات String وStringBuffer وStringBuilder في java.lang، مما يجعلها متاحة تلقائيًا لجميع البرامج."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: Why are the String, StringBuffer, and StringBuilder classes declared final?",
+      "ar": "س 4: لماذا تم إعلان فئات String وStringBuffer وStringBuilder نهائية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To prevent them from being subclassed"
+      },
+      {
+        "letter": "B",
+        "text": "To make them thread-safe"
+      },
+      {
+        "letter": "C",
+        "text": "To restrict memory usage"
+      },
+      {
+        "letter": "D",
+        "text": "To force them to be immutable"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Being final means none of these classes may be subclassed, which allows certain optimizations that increase performance.",
+      "ar": "كونها نهائية، يعني أنه لا يجوز تصنيف أي من هذه الفئات إلى فئات فرعية، مما يسمح ببعض التحسينات التي تزيد من الأداء."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: What will be the output of: System.out.println(\"abc\".length());",
+      "ar": "س 5: ماذا سيكون ناتج: System.out.println(\"abc\".length());"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "Compilation error"
+      },
+      {
+        "letter": "D",
+        "text": "0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A String object is automatically created for every string literal, so you can call methods like length() directly on a quoted string.",
+      "ar": "يتم إنشاء كائن سلسلة تلقائيًا لكل سلسلة حرفية، لذا يمكنك استدعاء أساليب مثل length() مباشرة على سلسلة مقتبسة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: What is the result of evaluating: String s = \"four: \" + 2 + 2;",
+      "ar": "س6: ما نتيجة التقييم: String s = \"four: \" + 2 + 2;"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "four: 4"
+      },
+      {
+        "letter": "B",
+        "text": "four: 22"
+      },
+      {
+        "letter": "C",
+        "text": "Compilation Error"
+      },
+      {
+        "letter": "D",
+        "text": "four: 2+2"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Operator precedence causes 'four: ' to concatenate with 2, resulting in 'four: 2', which then concatenates with the second 2. Parentheses are needed to add integers first.",
+      "ar": "تؤدي أسبقية عامل التشغيل إلى تسلسل \"أربعة:\" مع 2، مما ينتج عنه \"أربعة: 2\"، والذي يتسلسل بعد ذلك مع الرقم 2 الثاني. هناك حاجة إلى الأقواس لإضافة الأعداد الصحيحة أولاً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: Which method is called by valueOf() when passed an object reference?",
+      "ar": "س7: ما هي الطريقة التي يتم استدعاؤها بواسطة valueOf() عند تمرير مرجع كائن؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "toString()"
+      },
+      {
+        "letter": "B",
+        "text": "getChars()"
+      },
+      {
+        "letter": "C",
+        "text": "equals()"
+      },
+      {
+        "letter": "D",
+        "text": "value()"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "For objects, valueOf() calls the toString() method on the object to get its string representation.",
+      "ar": "بالنسبة للكائنات، تستدعي الدالة valueOf() الطريقة toString() على الكائن للحصول على تمثيل السلسلة الخاصة به."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: What must be assured when using the getChars() method to copy a substring?",
+      "ar": "س8: ما الذي يجب التأكد منه عند استخدام طريقة getChars() لنسخ سلسلة فرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The source string is not final"
+      },
+      {
+        "letter": "B",
+        "text": "The target array is large enough to hold the characters"
+      },
+      {
+        "letter": "C",
+        "text": "The string contains only ASCII characters"
+      },
+      {
+        "letter": "D",
+        "text": "The target array is dynamically allocated"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Care must be taken to assure that the target array is large enough to hold the number of characters in the specified substring.",
+      "ar": "يجب توخي الحذر للتأكد من أن المصفوفة المستهدفة كبيرة بما يكفي لاستيعاب عدد الأحرف في السلسلة الفرعية المحددة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: What is the key difference between equals() and the == operator?",
+      "ar": "س9: ما هو الفرق الرئيسي بين يساوي () وعامل التشغيل ==؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "equals() is faster"
+      },
+      {
+        "letter": "B",
+        "text": "== compares characters inside a String object, while equals() compares references"
+      },
+      {
+        "letter": "C",
+        "text": "equals() compares characters inside a String object, while == compares object references"
+      },
+      {
+        "letter": "D",
+        "text": "There is no difference"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "equals() compares the characters inside a String object, while == compares object references to see whether they refer to the same instance.",
+      "ar": "يساوي () يقارن الأحرف الموجودة داخل كائن سلسلة، بينما يقارن == مراجع الكائنات لمعرفة ما إذا كانت تشير إلى نفس المثيل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: What does compareTo() return if the invoking string comes after the specified string in dictionary order?",
+      "ar": "س10: ما الذي يُرجعه CompareTo()‎ إذا كانت سلسلة الاستدعاء تأتي بعد السلسلة المحددة بترتيب القاموس؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Zero"
+      },
+      {
+        "letter": "B",
+        "text": "A value less than zero"
+      },
+      {
+        "letter": "C",
+        "text": "A value greater than zero"
+      },
+      {
+        "letter": "D",
+        "text": "Boolean true"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A return value greater than zero means the invoking string is greater than the specified string in dictionary order.",
+      "ar": "تعني القيمة المرجعة الأكبر من الصفر أن سلسلة الاستدعاء أكبر من السلسلة المحددة بترتيب القاموس."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: What does indexOf() return if the character or substring is not found?",
+      "ar": "س 11: ما الذي يعود به مؤشر ()indexOf إذا لم يتم العثور على الحرف أو السلسلة الفرعية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "-1"
+      },
+      {
+        "letter": "C",
+        "text": "false"
+      },
+      {
+        "letter": "D",
+        "text": "Throws an exception"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The indexOf() and lastIndexOf() methods return the index at which the match was found, or -1 on failure.",
+      "ar": "تقوم طريقتا IndexOf() و lastIndexOf() بإرجاع الفهرس الذي تم العثور على التطابق فيه، أو -1 عند الفشل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Which characters are extracted by substring(int startIndex, int endIndex)?",
+      "ar": "س 12: ما هي الأحرف التي يتم استخراجها بواسطة السلسلة الفرعية (int startIndex، int endIndex)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "From startIndex to endIndex"
+      },
+      {
+        "letter": "B",
+        "text": "From startIndex up to, but not including, endIndex"
+      },
+      {
+        "letter": "C",
+        "text": "From startIndex + 1 to endIndex"
+      },
+      {
+        "letter": "D",
+        "text": "From 0 to endIndex"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The string returned contains all the characters from the beginning index, up to, but not including, the ending index.",
+      "ar": "تحتوي السلسلة التي تم إرجاعها على كافة الأحرف من فهرس البداية، حتى فهرس النهاية، ولكن ليس بما في ذلك."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: How does the trim() method determine which characters to remove as spaces?",
+      "ar": "س13: كيف تحدد طريقة القطع () الأحرف التي سيتم إزالتها كمسافات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It uses regular expressions"
+      },
+      {
+        "letter": "B",
+        "text": "Characters with an ASCII value of 32 or less"
+      },
+      {
+        "letter": "C",
+        "text": "Only the space character (value 32)"
+      },
+      {
+        "letter": "D",
+        "text": "Characters with an ASCII value greater than 127"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The trim() method removes spaces, which consist of those characters with a value of 32 or less.",
+      "ar": "يقوم أسلوب القطع () بإزالة المسافات التي تتكون من تلك الأحرف بقيمة 32 أو أقل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: Introduced in JDK 11, which method removes all whitespace characters (like spaces, tabs, and line feeds) from the beginning and end of a string?",
+      "ar": "س 14: تم تقديمه في JDK 11، ما هي الطريقة التي تزيل جميع أحرف المسافات البيضاء (مثل المسافات وعلامات التبويب وخلاصات الأسطر) من بداية السلسلة ونهايتها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "clean()"
+      },
+      {
+        "letter": "B",
+        "text": "trim()"
+      },
+      {
+        "letter": "C",
+        "text": "strip()"
+      },
+      {
+        "letter": "D",
+        "text": "truncate()"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The strip() method removes all whitespace characters (as defined by Java) from the beginning and end of the invoking string.",
+      "ar": "يزيل الأسلوب strip() جميع أحرف المسافات البيضاء (كما هو محدد بواسطة Java) من بداية ونهاية سلسلة الاستدعاء."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: What effect does toUpperCase() have on nonalphabetical characters such as digits?",
+      "ar": "س 15: ما هو تأثير toUpperCase() على الأحرف غير الأبجدية مثل الأرقام؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "They are removed"
+      },
+      {
+        "letter": "B",
+        "text": "They throw an error"
+      },
+      {
+        "letter": "C",
+        "text": "They are unaffected"
+      },
+      {
+        "letter": "D",
+        "text": "They are converted to special symbols"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Nonalphabetical characters, such as digits, are unaffected by the case conversion methods.",
+      "ar": "لا تتأثر الأحرف غير الأبجدية، مثل الأرقام، بطرق تحويل الحالة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: What is the purpose of the join() method added in JDK 8?",
+      "ar": "س 16: ما هو الغرض من طريقة join() المضافة في JDK 8؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To merge arrays"
+      },
+      {
+        "letter": "B",
+        "text": "To concatenate two or more strings separated by a delimiter"
+      },
+      {
+        "letter": "C",
+        "text": "To join two threads"
+      },
+      {
+        "letter": "D",
+        "text": "To merge two databases"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The join() method is used to concatenate two or more strings, separating each string with a specified delimiter.",
+      "ar": "يتم استخدام طريقة join() لربط سلسلتين أو أكثر، وفصل كل سلسلة بمحدد محدد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: How many extra characters does the default StringBuffer constructor reserve room for without reallocation?",
+      "ar": "س 17: ما هو عدد الأحرف الإضافية التي يحجزها مُنشئ StringBuffer الافتراضي دون إعادة التخصيص؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "8"
+      },
+      {
+        "letter": "B",
+        "text": "16"
+      },
+      {
+        "letter": "C",
+        "text": "32"
+      },
+      {
+        "letter": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The default constructor reserves room for 16 characters without reallocation.",
+      "ar": "يحتفظ المُنشئ الافتراضي بمساحة تتسع لـ 16 حرفًا دون إعادة التخصيص."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: Why does StringBuffer allocate room for extra characters by default?",
+      "ar": "س 18: لماذا يقوم StringBuffer بتخصيص مساحة للأحرف الإضافية بشكل افتراضي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To reduce the number of costly reallocations that can fragment memory"
+      },
+      {
+        "letter": "B",
+        "text": "Because strings cannot be exactly sized"
+      },
+      {
+        "letter": "C",
+        "text": "To support Unicode"
+      },
+      {
+        "letter": "D",
+        "text": "To speed up compilation"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Reallocation is costly in terms of time and can fragment memory. By allocating extra room, StringBuffer reduces the number of reallocations.",
+      "ar": "إعادة التخصيص مكلفة من حيث الوقت ويمكن أن تؤدي إلى تجزئة الذاكرة. من خلال تخصيص مساحة إضافية، يقلل StringBuffer من عدد عمليات إعادة التخصيص."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Which method is used to preallocate room for a certain number of characters after a StringBuffer has been constructed?",
+      "ar": "س19: ما هي الطريقة المستخدمة لتخصيص مساحة لعدد معين من الأحرف بعد إنشاء StringBuffer؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "setLength()"
+      },
+      {
+        "letter": "B",
+        "text": "resize()"
+      },
+      {
+        "letter": "C",
+        "text": "ensureCapacity()"
+      },
+      {
+        "letter": "D",
+        "text": "allocate()"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "You can use ensureCapacity() to set the size of the buffer if you know in advance you will append many strings.",
+      "ar": "يمكنك استخدام EnsureCapacity() لتعيين حجم المخزن المؤقت إذا كنت تعلم مقدمًا أنك ستقوم بإلحاق العديد من السلاسل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: What happens if you call setLength() on a StringBuffer with a value less than its current length?",
+      "ar": "س20: ماذا يحدث إذا قمت باستدعاء setLength() على StringBuffer بقيمة أقل من طوله الحالي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Null characters are added"
+      },
+      {
+        "letter": "B",
+        "text": "An exception is thrown"
+      },
+      {
+        "letter": "C",
+        "text": "The operation is ignored"
+      },
+      {
+        "letter": "D",
+        "text": "Characters stored beyond the new length will be lost"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "If you call setLength() with a value less than the current value returned by length(), the characters stored beyond the new length are lost.",
+      "ar": "إذا قمت باستدعاء setLength() بقيمة أقل من القيمة الحالية التي تم إرجاعها بواسطة length()، فسيتم فقدان الأحرف المخزنة بعد الطول الجديد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: Which method of StringBuffer removes a sequence of characters from the invoking object?",
+      "ar": "س21: ما هي طريقة StringBuffer التي تقوم بإزالة تسلسل من الأحرف من كائن الاستدعاء؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "delete()"
+      },
+      {
+        "letter": "B",
+        "text": "remove()"
+      },
+      {
+        "letter": "C",
+        "text": "erase()"
+      },
+      {
+        "letter": "D",
+        "text": "substring()"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The delete(int startIndex, int endIndex) method deletes a sequence of characters from the invoking StringBuffer object.",
+      "ar": "تقوم طريقة الحذف (int startIndex، int endIndex) بحذف سلسلة من الأحرف من كائن StringBuffer الذي يستدعي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: What is the key advantage of StringBuilder over StringBuffer?",
+      "ar": "س22: ما هي الميزة الرئيسية لـ StringBuilder مقارنة بـ StringBuffer؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It uses less memory"
+      },
+      {
+        "letter": "B",
+        "text": "It has faster performance because it is not synchronized"
+      },
+      {
+        "letter": "C",
+        "text": "It supports Unicode characters"
+      },
+      {
+        "letter": "D",
+        "text": "It is immutable"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "StringBuilder is similar to StringBuffer except it is not synchronized (not thread-safe), which provides faster performance.",
+      "ar": "يشبه StringBuilder StringBuffer باستثناء أنه غير متزامن (غير آمن لمؤشر الترابط)، مما يوفر أداءً أسرع."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: Which class implements the CharSequence interface?",
+      "ar": "س23: ما هي الفئة التي تطبق واجهة CharSequence؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only String"
+      },
+      {
+        "letter": "B",
+        "text": "Only StringBuffer"
+      },
+      {
+        "letter": "C",
+        "text": "Only StringBuilder"
+      },
+      {
+        "letter": "D",
+        "text": "String, StringBuffer, and StringBuilder"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "All three classes (String, StringBuffer, and StringBuilder) implement the CharSequence interface.",
+      "ar": "تقوم جميع الفئات الثلاث (String وStringBuffer وStringBuilder) بتنفيذ واجهة CharSequence."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: How can you construct a String initialized by a byte array in Java?",
+      "ar": "س24: كيف يمكنك إنشاء سلسلة تمت تهيئتها بواسطة مصفوفة بايت في Java؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "new String(byte[] chars)"
+      },
+      {
+        "letter": "B",
+        "text": "String.fromBytes(byte[] chars)"
+      },
+      {
+        "letter": "C",
+        "text": "String.parseBytes(byte[] chars)"
+      },
+      {
+        "letter": "D",
+        "text": "You cannot initialize a string with a byte array"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The String class provides constructors that initialize a string when given a byte array, using the platform's default encoding.",
+      "ar": "توفر فئة String مُنشئات تقوم بتهيئة سلسلة عند إعطائها مصفوفة بايت، باستخدام التشفير الافتراضي للنظام الأساسي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: Which method is used to compare a specific region inside a string with another specific region in another string?",
+      "ar": "س25: ما هي الطريقة المستخدمة لمقارنة منطقة معينة داخل سلسلة مع منطقة محددة أخرى في سلسلة أخرى؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "compareRegions()"
+      },
+      {
+        "letter": "B",
+        "text": "regionMatches()"
+      },
+      {
+        "letter": "C",
+        "text": "substringEquals()"
+      },
+      {
+        "letter": "D",
+        "text": "matchRegion()"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The regionMatches() method compares a specific region inside a string with another specific region in another string.",
+      "ar": "يقارن الأسلوب RegionMatches() منطقة معينة داخل سلسلة مع منطقة محددة أخرى في سلسلة أخرى."
+    }
+  }
+]

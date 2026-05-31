@@ -1,0 +1,494 @@
+[
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 0,
+    "q": "Q1: What type of agent is a Problem-Solving Agent?",
+    "a": "Goal-based agent"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 1,
+    "q": "Q2: Which step must immediately precede problem formulation?",
+    "a": "Goal formulation"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 2,
+    "q": "Q3: Which of the following is NOT an assumption made for the basic problem-solving agents?",
+    "a": "The environment is continuous."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 3,
+    "q": "Q4: What is the specific function of the Transition Model in problem formulation?",
+    "a": "It returns the state that results from doing action 'a' in state 's'."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 4,
+    "q": "Q5: Which three components implicitly define the \"State Space\" of a problem?",
+    "a": "Initial state, Actions, Transition model"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 5,
+    "q": "Q6: What is the primary purpose of 'Abstraction' in problem formulation?",
+    "a": "To remove irrelevant details from the representation."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 6,
+    "q": "Q7: Why is the execution phase of a basic problem-solving agent considered an 'open-loop system'?",
+    "a": "Because it ignores its percepts when choosing an action during execution."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 7,
+    "q": "Q8: In the formal definition of a problem, what calculates the numeric cost of a sequence of states connected by actions?",
+    "a": "The Path Cost function"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 8,
+    "q": "Q9: According to the text, when is an abstraction considered valid?",
+    "a": "When any abstract solution can be expanded into a solution in the more detailed world."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 9,
+    "q": "Q10: If an agent operates in an environment that is NOT deterministic, what kind of solution might it need instead of a fixed sequence of actions?",
+    "a": "A branching strategy or contingency plan"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 10,
+    "q": "Q11: What is the primary characteristic that distinguishes a \"toy problem\" from a \"real-world problem\" in AI research?",
+    "a": "Toy problems can be given a concise, exact mathematical description."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 11,
+    "q": "Q12: In the vacuum world problem, if the environment has n locations, what is the exact formula for the total number of possible world states?",
+    "a": "n * 2^n"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 12,
+    "q": "Q13: Which specific abstraction is applied in the standard formal problem formulation of the 8-puzzle?",
+    "a": "The intermediate physical manipulations and real-world execution details are ignored."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 13,
+    "q": "Q14: Why is the improved incremental formulation of the 8-Queens problem vastly superior to the basic incremental formulation?",
+    "a": "It restricts actions to placing a queen in the leftmost empty column such that it is not attacked."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 14,
+    "q": "Q15: What is the fundamental difference between a standard \"Route-finding problem\" and a \"Touring problem\" (like TSP)?",
+    "a": "The state in a touring problem must include the set of all locations visited so far."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 15,
+    "q": "Q16: What is the primary difference between a general TREE-SEARCH algorithm and a GRAPH-SEARCH algorithm?",
+    "a": "GRAPH-SEARCH maintains an Explored Set to remember previously expanded nodes and avoid redundant paths."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 16,
+    "q": "Q17: What is the critical distinction between a \"Node\" and a \"State\" in problem-solving algorithms?",
+    "a": "A node is a bookkeeping data structure belonging to a search tree, whereas a state is a physical configuration."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 17,
+    "q": "Q18: What metric is typically used to represent Space Complexity in search algorithms?",
+    "a": "The maximum number of nodes stored in memory at any given point during execution."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 18,
+    "q": "Q19: Why is Iterative Deepening Search preferred over Breadth-First Search if identical step costs are assumed and the depth is unknown?",
+    "a": "It avoids the O(b^d) space complexity bottleneck of breadth-first search while maintaining completeness."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 19,
+    "q": "Q20: Which condition strictly guarantees the optimality of Uniform-Cost Search?",
+    "a": "All step costs must be strictly greater than some positive constant ε."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 20,
+    "q": "Q21: Why is Depth-First Tree Search heavily utilized despite lacking completeness and optimality?",
+    "a": "Its space complexity is linear O(bm), making it highly memory-efficient."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 21,
+    "q": "Q22: What is the most significant computational weakness of Bidirectional search?",
+    "a": "It has an exponential space requirement O(b^{d/2}) because one frontier must be kept in memory to check for intersection."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 22,
+    "q": "Q23: In A* search using GRAPH-SEARCH, what happens if the heuristic h(n) is \"Admissible\" but NOT \"Consistent\"?",
+    "a": "The algorithm is not guaranteed to find the optimal solution because it might expand a node via a suboptimal path first."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 23,
+    "q": "Q24: Which statement mathematically defines a \"Consistent\" heuristic?",
+    "a": "h(n) <= c(n,a,n') + h(n')"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 24,
+    "q": "Q25: What is the primary operational flaw of the Recursive Best-First Search (RBFS)?",
+    "a": "Frequently \"changes its mind\" and backtracks, leading to excessive regeneration of previously expanded nodes (thrashing)."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 25,
+    "q": "Q26: Under what condition is the A* algorithm definitively proven to be \"Optimally Efficient\"?",
+    "a": "When the heuristic function used is consistent."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 26,
+    "q": "Q27: What does it mean if heuristic function h2 'dominates' heuristic function h1?",
+    "a": "h2(n) is greater than or equal to h1(n) for all nodes n, assuming both are admissible."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 27,
+    "q": "Q28: If the effective branching factor (b*) of a heuristic is close to 1, what does this indicate?",
+    "a": "The heuristic is highly accurate, guiding the search almost directly to the goal."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 28,
+    "q": "Q29: How is a 'relaxed problem' utilized to create an admissible heuristic?",
+    "a": "By removing constraints on actions; the optimal cost of this easier problem becomes the heuristic for the original."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 29,
+    "q": "Q30: How do you optimally combine multiple non-dominating admissible heuristics {h1, h2, h3}?",
+    "a": "h(n) = max(h1(n), h2(n), h3(n))"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 30,
+    "q": "Q31: What is a critical theoretical risk when deriving heuristics using Machine Learning?",
+    "a": "It is statistical and may overestimate the true cost, breaking admissibility and losing optimality."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 31,
+    "q": "Q1: In hill-climbing search, what topography feature describes a flat area of the state-space landscape from which no uphill exit exists?",
+    "a": "Flat local maximum"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 32,
+    "q": "Q2: In the simulated annealing algorithm, if a generated move worsens the evaluation by an amount ΔE, what is the exact probability that the algorithm will accept this move?",
+    "a": "e^(ΔE/T)"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 33,
+    "q": "Q3: How does Stochastic Beam Search mathematically alleviate the lack of diversity often found in standard Local Beam Search?",
+    "a": "By choosing k successors at random, with the probability of selection being an increasing function of the successor's value."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 34,
+    "q": "Q4: According to schema theory in genetic algorithms, what is the theoretical advantage of the crossover operation?",
+    "a": "It allows the algorithm to combine large blocks of letters that have evolved independently to perform useful functions."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 35,
+    "q": "Q5: In continuous state spaces, when searching for a maximum using the Newton-Raphson update equation, what does the matrix Hf(x) mathematically represent?",
+    "a": "The Hessian matrix of second derivatives."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 36,
+    "q": "Q6: What are the strict topological requirements for a valid solution in an AND-OR search tree dealing with nondeterministic environments?",
+    "a": "It must be a subtree that has a goal node at every leaf, specifies one action at each OR node, and includes every outcome branch at each AND node."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 37,
+    "q": "Q7: In a nondeterministic environment like the \"slippery vacuum world,\" where movement actions sometimes fail, how is a viable solution mathematically formulated?",
+    "a": "As a cyclic plan, adding a label to denote some portion of the plan and using that label later instead of repeating the plan itself."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 38,
+    "q": "Q8: If an underlying physical problem P has N states, what is the theoretical maximum size of the entire belief-state space in the corresponding sensorless problem?",
+    "a": "2^N"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 39,
+    "q": "Q9: During belief-state transitions in a partially observable problem, what is the specific mathematical function of the \"update stage\"?",
+    "a": "To compute the new belief state by determining the set of states in the predicted belief state that could have produced the actual received percept."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 40,
+    "q": "Q10: Why is the state estimation formula b' = UPDATE(PREDICT(b, a), o) technically referred to as a \"recursive state estimator\"?",
+    "a": "Because it computes the new belief state from the previous one rather than by examining the entire percept sequence."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 41,
+    "q": "Q11: In the analysis of online search algorithms, what does the metric known as the \"competitive ratio\" specifically measure?",
+    "a": "The total path cost of the path the agent actually travels compared with the path cost of the path the agent would follow if it knew the search space in advance."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 42,
+    "q": "Q12: What specific architectural requirement restricts the applicability of the ONLINE-DFS-AGENT algorithm?",
+    "a": "It works only in state spaces where the actions are reversible."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 43,
+    "q": "Q13: To prevent an online search agent from becoming stuck in irreversible dead ends during mathematical analysis, what property must be strictly assumed about the state space?",
+    "a": "It is safely explorable, meaning some goal state is reachable from every reachable state."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 44,
+    "q": "Q14: How does the Learning Real-Time A* (LRTA*) algorithm computationally escape flat local minima during execution?",
+    "a": "By updating the cost estimate H(s) of the current state, iteratively incrementing it and \"flattening out\" the local minimum."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 45,
+    "q": "Q15: In LRTA*, what critical design principle is implemented when evaluating actions that have not yet been physically tried by the agent?",
+    "a": "Optimism under uncertainty; they are assumed to lead immediately to the goal with the least possible cost h(s)."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 46,
+    "q": "Q16: When an online search agent attempts to learn the underlying \"map\" of an unknown environment, what precise structural information is it trying to acquire and populate?",
+    "a": "The exact state resulting from executing each action a in each state s, mathematically defining the RESULT(s, a) transition table."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 47,
+    "q": "Q1: In complex domains like driving in traffic or Internet shopping, what type of representations are required, and what is the process of creating these abstract concepts called?",
+    "a": "General and flexible representations; Ontological engineering"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 48,
+    "q": "Q2: What distinguishes a general-purpose ontology from a collection of special-purpose ontologies?",
+    "a": "A general-purpose ontology must be applicable in more or less any special-purpose domain, requiring different areas of knowledge to be unified simultaneously."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 49,
+    "q": "Q3: Which ontology construction system was built primarily by a team of trained ontologists/logicians who architected the system and wrote explicit axioms?",
+    "a": "CYC"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 50,
+    "q": "Q4: What is the process of turning a logical proposition or category into an individual object in First-Order Logic called?",
+    "a": "Reification"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 51,
+    "q": "Q5: If we assert that Dogs ∈ DomesticatedSpecies, what is the structural nature of DomesticatedSpecies?",
+    "a": "It is a category of categories."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 52,
+    "q": "Q6: Which of the following formal definitions correctly specifies a structural \"Partition\" of a category c into a set of subcategories s?",
+    "a": "Partition(s,c) ⟺ Disjoint(s) ∧ ExhaustiveDecomposition(s,c)"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 53,
+    "q": "Q7: What are the strict mathematical properties of the general logical relation PartOf(x,y) used in physical composition?",
+    "a": "Transitive and Reflexive"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 54,
+    "q": "Q8: Why is it a semantic error to assign a physical property like weight directly to a logical set of objects (e.g., assigning weight to the set of apples in a bag)?",
+    "a": "The set is an abstract mathematical concept that has elements but does not have physical mass or weight."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 55,
+    "q": "Q9: What is the defining characteristic of a \"Substance\" (Mass Noun / Stuff) category compared to a \"Thing\" (Count Noun) category when subjected to subdivision?",
+    "a": "Any part of a substance object is also a substance object because its definition includes only intrinsic properties that are retained under subdivision."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 56,
+    "q": "Q10: What is the fundamental limitation of Situation Calculus that motivates the introduction of Event Calculus?",
+    "a": "Situation Calculus is restricted to describing worlds where actions are discrete, instantaneous, and happen one at a time, making it unable to describe continuous or simultaneous actions."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 57,
+    "q": "Q11: In Event Calculus, what does the expression Clipped(f, (t1, t2)) formally define?",
+    "a": "The fluent f ceases to be true at some point during the time interval (t1, t2) due to an intervening event."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 58,
+    "q": "Q12: What is the defining property of a \"Process Category\" (or Liquid Event Category) in Event Calculus?",
+    "a": "Any process that happens over an interval also happens over any subinterval of that duration."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 59,
+    "q": "Q13: According to Allen's Interval Algebra, what is the formal definition of the relation During(i, j)?",
+    "a": "Begin(j) < Begin(i) < End(i) < End(j)"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 60,
+    "q": "Q14: Why can't a term like President(USA) simply denote different individual people at different times directly inside standard First-Order Logic?",
+    "a": "A logical term denotes exactly one constant object in a given model structure; logical identity cannot change over time."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 61,
+    "q": "Q15: What semantic property is exhibited by propositional attitudes like Believes and Knows, making standard First-Order Logic substitution fail?",
+    "a": "Referential Opacity"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 62,
+    "q": "Q16: Under Kripke semantics for Modal Logic, when is a knowledge atom sentence like K_A P evaluated as true in a specific possible world w?",
+    "a": "If and only if P is true in every possible world accessible from w."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 63,
+    "q": "Q17: In Semantic Networks, how are default values prevented from causing a logical contradiction when an exception is introduced (e.g., John has 1 leg, but Persons have 2 legs)?",
+    "a": "The inheritance algorithm follows links upwards from the object and stops as soon as it finds a value, naturally enforcing that the default is overridden by the more specific value."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 64,
+    "q": "Q18: What are the two primary algorithmic inference tasks designed for Description Logics?",
+    "a": "Subsumption (checking subset relations via definitions) and Classification (checking if an object belongs to a category)"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 65,
+    "q": "Q19: In the context of nonmonotonic logics, what is the core operational concept underlying the \"Nixon Diamond\" dilemma?",
+    "a": "It shows a conflict where an individual belongs to two categories that inherit conflicting default properties, creating two equally preferred models or extensions and leaving an unprioritized reasoner agnostic."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 66,
+    "q": "Q20: What architectural feature allows an Assumption-based Truth Maintenance System (ATMS) to be more efficient at context-switching and exploring multiple hypotheses than a Justification-based TMS (JTMS)?",
+    "a": "A JTMS represents only one state of the world at a time (requiring retractions to switch states), whereas an ATMS represents all states that have ever been considered simultaneously by tracking labels of valid assumption sets for each sentence."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 90,
+    "q": "Q1: According to the PEAS description of an automated taxi driver, which of the following components directly represent the \"Actuators\" used to alter the state of the environment?",
+    "a": "Steering, accelerator, brake, signal, horn"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 91,
+    "q": "Q2: A medical diagnosis system receives initial symptoms, proposes a series of tests, evaluates the progress over the course of treatment, and iteratively adjusts its diagnosis. How must this task environment be classified?",
+    "a": "Sequential"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 92,
+    "q": "Q3: You are engineering a rational agent for an automated taxi in a Partially Observable, Stochastic, and Dynamic environment. It must weigh safe arrival against conflicting objectives (minimize time vs. minimize fuel). Which Agent Program is required?",
+    "a": "Utility-based Agent"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 93,
+    "q": "Q4: A Simple Reflex Agent operates a vacuum in a Partially Observable environment (has dirt sensor but no location sensor). What mechanism can prevent this agent from falling into infinite loops?",
+    "a": "Implementing Randomization in its condition-action rules"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 94,
+    "q": "Q5: If an AI agent splits the current world state into a fixed vector of attributes (e.g., GPS location, gas level) and represents uncertainty by leaving certain attribute values blank, which state representation is it using?",
+    "a": "Factored representation"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 95,
+    "q": "Q1: Which best describes the fundamental difference between an omniscient agent and a rational agent?",
+    "a": "Omniscience maximizes actual performance (knowing the actual outcome), while rationality maximizes expected performance based on the percept sequence."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 96,
+    "q": "Q2: If an artificial agent relies completely on the prior knowledge provided by its designer and cannot adjust its behavior based on its own percepts, the agent is said to lack:",
+    "a": "Autonomy"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 97,
+    "q": "Q3: How is playing chess with a clock logically differentiated from solving a crossword puzzle?",
+    "a": "Chess with a clock is Semidynamic, while a crossword puzzle is Static."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 98,
+    "q": "Q4: A Simple Reflex Agent can only sense if its current square is Clean or Dirty, but cannot sense its Location. Why will this architectural constraint cause the agent to fail?",
+    "a": "It will inevitably fall into infinite loops because its condition-action rules cannot distinguish between unobservable states requiring different actions."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 99,
+    "q": "Q5: In a Model-based reflex agent, updating the internal state to handle partial observability requires two specific kinds of knowledge. What are they?",
+    "a": "How the world evolves independently, and what the agent's actions do."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 100,
+    "q": "Q6: Within a learning agent architecture, what is the precise engineering function of the \"Critic\"?",
+    "a": "To provide feedback to the learning element on how well the agent is doing with respect to a fixed performance standard."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 101,
+    "q": "Q7: What is the strict logical distinction that dictates whether entity 'B' must be treated as an \"agent\" rather than just an object obeying the laws of physics?",
+    "a": "Entity B is best described as maximizing a performance measure whose value depends on agent A's behavior."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 102,
+    "q": "Q8: From a structural perspective, why is a Goal-based agent considered more flexible than a Simple Reflex agent?",
+    "a": "Its knowledge supporting decisions is represented explicitly and can be easily modified (e.g., changing destinations) without rewriting numerous condition-action rules."
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 103,
+    "q": "Q9: Which state representation model is required when an agent needs to understand the world as having specific objects with their own attributes and explicit relationships to other objects?",
+    "a": "Structured representation"
+  },
+  {
+    "subject": "Artificial Intelligence",
+    "idx": 104,
+    "q": "Q10: In agent evaluation, why is it scientifically necessary to use an \"Environment Generator\" rather than testing the agent on a single, fixed environment?",
+    "a": "To select particular environments from an environment class, allowing evaluation of the agent's average performance and robustness over varied conditions."
+  }
+]

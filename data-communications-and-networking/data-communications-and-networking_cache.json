@@ -1,0 +1,3482 @@
+[
+  {
+    "question": {
+      "en": "1. Four fundamental characteristics of a data communications system effectiveness are delivery, accuracy, timeliness, and...",
+      "ar": "1. أربع خصائص أساسية لفعالية نظام اتصالات البيانات هي التسليم، والدقة، وحسن التوقيت،..."
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Security"
+      },
+      {
+        "letter": "B",
+        "text": "Jitter"
+      },
+      {
+        "letter": "C",
+        "text": "Protocol"
+      },
+      {
+        "letter": "D",
+        "text": "Performance"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The effectiveness depends on delivery, accuracy, timeliness, and jitter.",
+      "ar": "تعتمد الفعالية على التسليم والدقة وحسن التوقيت والارتعاش."
+    }
+  },
+  {
+    "question": {
+      "en": "2. Which component is the physical path by which a message travels?",
+      "ar": "2. ما هو المكون الذي يمثل المسار المادي الذي تنتقل به الرسالة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sender"
+      },
+      {
+        "letter": "B",
+        "text": "Protocol"
+      },
+      {
+        "letter": "C",
+        "text": "Transmission medium"
+      },
+      {
+        "letter": "D",
+        "text": "Receiver"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The transmission medium is the physical path by which a message travels from sender to receiver.",
+      "ar": "وسيط الإرسال هو المسار المادي الذي تنتقل من خلاله الرسالة من المرسل إلى المستقبل."
+    }
+  },
+  {
+    "question": {
+      "en": "3. Which data flow mode allows both stations to transmit and receive simultaneously?",
+      "ar": "3. ما هو وضع تدفق البيانات الذي يسمح لكلا المحطتين بالإرسال والاستقبال في وقت واحد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Simplex"
+      },
+      {
+        "letter": "B",
+        "text": "Half-duplex"
+      },
+      {
+        "letter": "C",
+        "text": "Full-duplex"
+      },
+      {
+        "letter": "D",
+        "text": "Auto-duplex"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In full-duplex mode, both stations can transmit and receive simultaneously.",
+      "ar": "في وضع الإرسال المزدوج الكامل، يمكن لكلتا المحطتين الإرسال والاستقبال في وقت واحد."
+    }
+  },
+  {
+    "question": {
+      "en": "4. How many I/O ports are required for each device in a fully connected mesh topology with n nodes?",
+      "ar": "4. ما هو عدد منافذ الإدخال/الإخراج المطلوبة لكل جهاز في طوبولوجيا شبكية متصلة بالكامل مع عدد n من العقد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "n"
+      },
+      {
+        "letter": "B",
+        "text": "n-1"
+      },
+      {
+        "letter": "C",
+        "text": "n+1"
+      },
+      {
+        "letter": "D",
+        "text": "n(n-1)"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Every device on the network must have n-1 input/output (I/O) ports to connect to the other n-1 stations.",
+      "ar": "يجب أن يحتوي كل جهاز على الشبكة على منافذ إدخال/إخراج (I/O) n-1 للاتصال بمحطات n-1 الأخرى."
+    }
+  },
+  {
+    "question": {
+      "en": "5. In which topology does each device have a dedicated point-to-point link only to a central controller (hub)?",
+      "ar": "5. في أي هيكل يحتوي كل جهاز على رابط مخصص من نقطة إلى نقطة لوحدة التحكم المركزية (المحور) فقط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mesh"
+      },
+      {
+        "letter": "B",
+        "text": "Bus"
+      },
+      {
+        "letter": "C",
+        "text": "Ring"
+      },
+      {
+        "letter": "D",
+        "text": "Star"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "In a star topology, each device has a dedicated point-to-point link only to a central controller, usually called a hub.",
+      "ar": "في الهيكل النجمي، يكون لكل جهاز رابط مخصص من نقطة إلى نقطة فقط لوحدة التحكم المركزية، والتي تسمى عادةً بالمحور."
+    }
+  },
+  {
+    "question": {
+      "en": "6. Which topology features a multipoint connection where one long cable acts as a backbone to link all devices?",
+      "ar": "6. ما هي الهيكلية التي تتميز باتصال متعدد النقاط حيث يعمل كبل طويل كعمود فقري لربط جميع الأجهزة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bus"
+      },
+      {
+        "letter": "B",
+        "text": "Star"
+      },
+      {
+        "letter": "C",
+        "text": "Ring"
+      },
+      {
+        "letter": "D",
+        "text": "Mesh"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "A bus topology is multipoint. One long cable acts as a backbone to link all the devices in a network.",
+      "ar": "طوبولوجيا الحافلة متعددة النقاط. يعمل الكابل الطويل بمثابة العمود الفقري لربط جميع الأجهزة الموجودة في الشبكة."
+    }
+  },
+  {
+    "question": {
+      "en": "7. What is an internetwork (or internet)?",
+      "ar": "7. ما هي الشبكة البينية (أو الإنترنت)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A single local area network"
+      },
+      {
+        "letter": "B",
+        "text": "Two or more networks connected together"
+      },
+      {
+        "letter": "C",
+        "text": "A point-to-point WAN"
+      },
+      {
+        "letter": "D",
+        "text": "A single host computer"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "When two or more networks are connected, they make an internetwork, or internet.",
+      "ar": "عندما يتم توصيل شبكتين أو أكثر، فإنها تقوم بإنشاء شبكة بينية، أو إنترنت."
+    }
+  },
+  {
+    "question": {
+      "en": "8. The TCP/IP protocol suite is composed of how many layers?",
+      "ar": "8. كم عدد الطبقات تتكون مجموعة بروتوكولات TCP/IP؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The TCP/IP protocol suite is defined as five layers: physical, data-link, network, transport, and application.",
+      "ar": "يتم تعريف مجموعة بروتوكولات TCP/IP على أنها خمس طبقات: المادية، وصلة البيانات، والشبكة، والنقل، والتطبيق."
+    }
+  },
+  {
+    "question": {
+      "en": "9. Which TCP/IP layer is responsible for carrying individual bits in a frame across the link?",
+      "ar": "9. ما هي طبقة TCP/IP المسؤولة عن حمل البتات الفردية في الإطار عبر الرابط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data-link"
+      },
+      {
+        "letter": "B",
+        "text": "Network"
+      },
+      {
+        "letter": "C",
+        "text": "Physical"
+      },
+      {
+        "letter": "D",
+        "text": "Transport"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The physical layer is responsible for carrying individual bits in a frame across the link.",
+      "ar": "الطبقة المادية مسؤولة عن حمل البتات الفردية في الإطار عبر الرابط."
+    }
+  },
+  {
+    "question": {
+      "en": "10. The network layer in the TCP/IP protocol suite is responsible for:",
+      "ar": "10. تكون طبقة الشبكة في مجموعة بروتوكولات TCP/IP مسؤولة عن:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hop-to-hop delivery"
+      },
+      {
+        "letter": "B",
+        "text": "Process-to-process delivery"
+      },
+      {
+        "letter": "C",
+        "text": "Source-to-destination delivery of a packet across multiple networks"
+      },
+      {
+        "letter": "D",
+        "text": "Providing services to the application"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The network layer is responsible for creating a connection between the source and destination computers across multiple networks.",
+      "ar": "طبقة الشبكة مسؤولة عن إنشاء اتصال بين أجهزة الكمبيوتر المصدر والوجهة عبر شبكات متعددة."
+    }
+  },
+  {
+    "question": {
+      "en": "11. Which layer provides process-to-process delivery of the entire message?",
+      "ar": "11. ما هي الطبقة التي توفر تسليم الرسالة بأكملها من عملية إلى عملية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Application"
+      },
+      {
+        "letter": "B",
+        "text": "Transport"
+      },
+      {
+        "letter": "C",
+        "text": "Network"
+      },
+      {
+        "letter": "D",
+        "text": "Data-link"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The transport layer is responsible for process-to-process delivery of the entire message.",
+      "ar": "طبقة النقل مسؤولة عن تسليم الرسالة بأكملها من عملية إلى عملية."
+    }
+  },
+  {
+    "question": {
+      "en": "12. Which two layers of the OSI model are missing from the TCP/IP protocol suite?",
+      "ar": "12. ما هي طبقتي نموذج OSI المفقودتين من مجموعة بروتوكولات TCP/IP؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Session and Presentation"
+      },
+      {
+        "letter": "B",
+        "text": "Network and Transport"
+      },
+      {
+        "letter": "C",
+        "text": "Data-link and Physical"
+      },
+      {
+        "letter": "D",
+        "text": "Application and Session"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "When comparing the two models, the session and presentation layers are missing from the TCP/IP suite.",
+      "ar": "عند مقارنة النموذجين، تكون طبقات الجلسة والعرض التقديمي مفقودة من مجموعة TCP/IP."
+    }
+  },
+  {
+    "question": {
+      "en": "13. An analog signal that cannot be decomposed into simpler signals is called a:",
+      "ar": "13. تسمى الإشارة التناظرية التي لا يمكن تحليلها إلى إشارات أبسط:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Composite signal"
+      },
+      {
+        "letter": "B",
+        "text": "Periodic digital signal"
+      },
+      {
+        "letter": "C",
+        "text": "Simple periodic analog signal"
+      },
+      {
+        "letter": "D",
+        "text": "Aperiodic analog signal"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A simple periodic analog signal, a sine wave, cannot be decomposed into simpler signals.",
+      "ar": "لا يمكن تحليل الإشارة التناظرية الدورية البسيطة، وهي موجة جيبية، إلى إشارات أبسط."
+    }
+  },
+  {
+    "question": {
+      "en": "14. Which parameter of a sine wave is measured in Hertz (Hz)?",
+      "ar": "14. ما هي معلمة الموجة الجيبية التي يتم قياسها بالهرتز (هرتز)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Peak Amplitude"
+      },
+      {
+        "letter": "B",
+        "text": "Phase"
+      },
+      {
+        "letter": "C",
+        "text": "Period"
+      },
+      {
+        "letter": "D",
+        "text": "Frequency"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The frequency (f), measured in hertz (Hz), refers to the number of periods in 1 second.",
+      "ar": "يشير التردد (f)، المقاس بالهرتز (هرتز)، إلى عدد الفترات في ثانية واحدة."
+    }
+  },
+  {
+    "question": {
+      "en": "15. The mathematical relationship between period (T) and frequency (f) is:",
+      "ar": "15. العلاقة الرياضية بين الدورة (T) والتكرار (f) هي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "f = T"
+      },
+      {
+        "letter": "B",
+        "text": "f = 1/T"
+      },
+      {
+        "letter": "C",
+        "text": "f = T^2"
+      },
+      {
+        "letter": "D",
+        "text": "f = c/T"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Period and frequency are inverses of each other, meaning f = 1/T.",
+      "ar": "الدورة والتكرار معكوسان لبعضهما البعض، بمعنى f = 1/T."
+    }
+  },
+  {
+    "question": {
+      "en": "16. Which parameter describes the position of the waveform relative to time 0?",
+      "ar": "16. ما المعلمة التي تصف موضع شكل الموجة بالنسبة للوقت 0؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Frequency"
+      },
+      {
+        "letter": "B",
+        "text": "Wavelength"
+      },
+      {
+        "letter": "C",
+        "text": "Phase"
+      },
+      {
+        "letter": "D",
+        "text": "Amplitude"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Phase describes the position of the waveform relative to time 0.",
+      "ar": "تصف المرحلة موضع شكل الموجة بالنسبة إلى الوقت 0."
+    }
+  },
+  {
+    "question": {
+      "en": "17. The bandwidth of a composite signal is defined as:",
+      "ar": "17. يتم تعريف عرض النطاق الترددي للإشارة المركبة على النحو التالي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The highest frequency in the signal"
+      },
+      {
+        "letter": "B",
+        "text": "The lowest frequency in the signal"
+      },
+      {
+        "letter": "C",
+        "text": "The difference between the highest and lowest frequencies"
+      },
+      {
+        "letter": "D",
+        "text": "The sum of all frequencies"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The bandwidth is the difference between the lowest and highest frequencies in the signal.",
+      "ar": "عرض النطاق الترددي هو الفرق بين أدنى وأعلى الترددات في الإشارة."
+    }
+  },
+  {
+    "question": {
+      "en": "18. If a digital signal has 4 signal levels, how many bits are sent per level?",
+      "ar": "18. إذا كانت الإشارة الرقمية تحتوي على 4 مستويات للإشارة، فما عدد البتات التي يتم إرسالها لكل مستوى؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If a signal has L levels, each level needs log2(L) bits. For 4 levels, log2(4) = 2 bits.",
+      "ar": "إذا كانت الإشارة تحتوي على مستويات L، فإن كل مستوى يحتاج إلى بتات log2(L). لأربعة مستويات، log2(4) = 2 بت."
+    }
+  },
+  {
+    "question": {
+      "en": "19. What is the term used to describe the number of bits sent in 1 second for a digital signal?",
+      "ar": "19. ما هو المصطلح المستخدم لوصف عدد البتات المرسلة في ثانية واحدة للإشارة الرقمية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bit length"
+      },
+      {
+        "letter": "B",
+        "text": "Frequency"
+      },
+      {
+        "letter": "C",
+        "text": "Baud rate"
+      },
+      {
+        "letter": "D",
+        "text": "Bit rate"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The bit rate is the number of bits sent in 1 second, expressed in bps.",
+      "ar": "معدل البت هو عدد البتات المرسلة في ثانية واحدة، ويتم التعبير عنه بوحدة البت في الثانية."
+    }
+  },
+  {
+    "question": {
+      "en": "20. Sending a digital signal over a channel without changing it to an analog signal is called:",
+      "ar": "20. يسمى إرسال إشارة رقمية عبر قناة دون تحويلها إلى إشارة تناظرية:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Broadband transmission"
+      },
+      {
+        "letter": "B",
+        "text": "Baseband transmission"
+      },
+      {
+        "letter": "C",
+        "text": "Modulation"
+      },
+      {
+        "letter": "D",
+        "text": "Analog transmission"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Baseband transmission means sending a digital signal over a channel without changing it to an analog signal.",
+      "ar": "يعني إرسال النطاق الأساسي إرسال إشارة رقمية عبر قناة دون تغييرها إلى إشارة تناظرية."
+    }
+  },
+  {
+    "question": {
+      "en": "21. Which signal impairment refers to a loss of energy as the signal overcomes the resistance of the medium?",
+      "ar": "21. ما هو ضعف الإشارة الذي يشير إلى فقدان الطاقة عندما تتغلب الإشارة على مقاومة الوسط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Distortion"
+      },
+      {
+        "letter": "B",
+        "text": "Noise"
+      },
+      {
+        "letter": "C",
+        "text": "Attenuation"
+      },
+      {
+        "letter": "D",
+        "text": "Crosstalk"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Attenuation means a loss of energy when a signal travels through a medium.",
+      "ar": "التوهين يعني فقدان الطاقة عندما تنتقل الإشارة عبر وسيط."
+    }
+  },
+  {
+    "question": {
+      "en": "22. Which unit is used to measure the relative strengths of two signals to calculate attenuation or amplification?",
+      "ar": "22. ما هي الوحدة المستخدمة لقياس القوة النسبية لإشارتين لحساب التوهين أو التضخيم؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hertz"
+      },
+      {
+        "letter": "B",
+        "text": "Decibel (dB)"
+      },
+      {
+        "letter": "C",
+        "text": "Volts"
+      },
+      {
+        "letter": "D",
+        "text": "Watts"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The decibel (dB) measures the relative strengths of two signals or one signal at two different points.",
+      "ar": "يقيس الديسيبل (dB) القوة النسبية لإشارتين أو إشارة واحدة عند نقطتين مختلفتين."
+    }
+  },
+  {
+    "question": {
+      "en": "23. Distortion in a composite signal occurs primarily because:",
+      "ar": "23. يحدث التشوه في الإشارة المركبة في المقام الأول للأسباب التالية:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Electrons have random motion"
+      },
+      {
+        "letter": "B",
+        "text": "Different frequency components have different propagation speeds"
+      },
+      {
+        "letter": "C",
+        "text": "The signal loses energy"
+      },
+      {
+        "letter": "D",
+        "text": "External devices induce signals"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Distortion occurs because each signal component has its own propagation speed and delay.",
+      "ar": "يحدث التشويه لأن كل مكون إشارة له سرعة انتشار وتأخير خاصة به."
+    }
+  },
+  {
+    "question": {
+      "en": "24. The random motion of electrons in a wire that creates an extra unwanted signal is called:",
+      "ar": "24. الحركة العشوائية للإلكترونات في السلك والتي تولد إشارة إضافية غير مرغوب فيها تسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Impulse noise"
+      },
+      {
+        "letter": "B",
+        "text": "Crosstalk"
+      },
+      {
+        "letter": "C",
+        "text": "Induced noise"
+      },
+      {
+        "letter": "D",
+        "text": "Thermal noise"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Thermal noise is the random motion of electrons in a wire, creating an extra signal.",
+      "ar": "الضوضاء الحرارية هي الحركة العشوائية للإلكترونات في السلك، مما يؤدي إلى إنشاء إشارة إضافية."
+    }
+  },
+  {
+    "question": {
+      "en": "25. The theoretical maximum bit rate of a noiseless channel is defined by:",
+      "ar": "25. يتم تحديد معدل البتات الأقصى النظري لقناة عديمة الضوضاء بواسطة:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shannon capacity"
+      },
+      {
+        "letter": "B",
+        "text": "Nyquist bit rate formula"
+      },
+      {
+        "letter": "C",
+        "text": "Fourier transform"
+      },
+      {
+        "letter": "D",
+        "text": "Phase shift formula"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "For a noiseless channel, the Nyquist bit rate formula defines the theoretical maximum bit rate.",
+      "ar": "بالنسبة لقناة عديمة الضوضاء، تحدد صيغة معدل البت Nyquist الحد الأقصى لمعدل البت النظري."
+    }
+  },
+  {
+    "question": {
+      "en": "26. Which formula determines the theoretical highest data rate for a noisy channel?",
+      "ar": "26. ما هي الصيغة التي تحدد أعلى معدل نظري للبيانات لقناة صاخبة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shannon capacity"
+      },
+      {
+        "letter": "B",
+        "text": "Nyquist bit rate"
+      },
+      {
+        "letter": "C",
+        "text": "Baud rate formula"
+      },
+      {
+        "letter": "D",
+        "text": "Attenuation limit"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Claude Shannon introduced the Shannon capacity formula for a noisy channel.",
+      "ar": "قدم كلود شانون صيغة شانون لقدرة القناة الصاخبة."
+    }
+  },
+  {
+    "question": {
+      "en": "27. The actual measurement of how fast we can send data through a network is called:",
+      "ar": "27. القياس الفعلي لمدى سرعة إرسال البيانات عبر الشبكة يسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bandwidth in Hertz"
+      },
+      {
+        "letter": "B",
+        "text": "Potential bandwidth"
+      },
+      {
+        "letter": "C",
+        "text": "Throughput"
+      },
+      {
+        "letter": "D",
+        "text": "Frequency range"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The throughput is an actual measurement of how fast we can send data, while bandwidth is potential.",
+      "ar": "الإنتاجية هي قياس فعلي لمدى سرعة إرسال البيانات، في حين أن عرض النطاق الترددي محتمل."
+    }
+  },
+  {
+    "question": {
+      "en": "28. Latency (total delay) consists of propagation delay, transmission delay, queuing delay, and:",
+      "ar": "28. يتكون الكمون (التأخير الإجمالي) من تأخير الانتشار، وتأخر الإرسال، وتأخر الاصطفاف، وما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Processing delay"
+      },
+      {
+        "letter": "B",
+        "text": "Amplification delay"
+      },
+      {
+        "letter": "C",
+        "text": "Attenuation delay"
+      },
+      {
+        "letter": "D",
+        "text": "Refraction delay"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Latency is the sum of propagation, transmission, queuing, and processing delays.",
+      "ar": "الكمون هو مجموع تأخيرات النشر والنقل والانتظار والمعالجة."
+    }
+  },
+  {
+    "question": {
+      "en": "29. The process of converting digital data to digital signals is known as:",
+      "ar": "29- تعرف عملية تحويل البيانات الرقمية إلى إشارات رقمية بما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Line coding"
+      },
+      {
+        "letter": "B",
+        "text": "Block coding"
+      },
+      {
+        "letter": "C",
+        "text": "Scrambling"
+      },
+      {
+        "letter": "D",
+        "text": "Modulation"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Line coding is the process of converting digital data to digital signals.",
+      "ar": "ترميز الخط هو عملية تحويل البيانات الرقمية إلى إشارات رقمية."
+    }
+  },
+  {
+    "question": {
+      "en": "30. The three processes of a Pulse Code Modulation (PCM) encoder are Sampling, Quantizing, and:",
+      "ar": "30. العمليات الثلاث لمشفر تعديل كود النبض (PCM) هي أخذ العينات، والتكميم، و:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Multiplexing"
+      },
+      {
+        "letter": "B",
+        "text": "Encoding"
+      },
+      {
+        "letter": "C",
+        "text": "Modulating"
+      },
+      {
+        "letter": "D",
+        "text": "Scrambling"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A PCM encoder processes are: Sampling, Quantizing, and Encoding.",
+      "ar": "عمليات التشفير PCM هي: أخذ العينات، والتكميم، والتشفير."
+    }
+  },
+  {
+    "question": {
+      "en": "31. In Delta Modulation (DM), instead of finding the exact amplitude for each sample, it finds:",
+      "ar": "31. في تعديل دلتا (DM)، بدلاً من العثور على السعة الدقيقة لكل عينة، وجد:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The highest peak amplitude"
+      },
+      {
+        "letter": "B",
+        "text": "The change from the previous sample"
+      },
+      {
+        "letter": "C",
+        "text": "The phase shift"
+      },
+      {
+        "letter": "D",
+        "text": "The frequency deviation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "DM finds the change from the previous sample rather than the exact amplitude.",
+      "ar": "يجد DM التغيير من العينة السابقة بدلاً من السعة الدقيقة."
+    }
+  },
+  {
+    "question": {
+      "en": "32. Which digital-to-analog conversion technique varies the amplitude of the carrier signal to represent data?",
+      "ar": "32. ما هي تقنية التحويل من الرقمي إلى التناظري التي تغير سعة الإشارة الحاملة لتمثيل البيانات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "FSK"
+      },
+      {
+        "letter": "B",
+        "text": "PSK"
+      },
+      {
+        "letter": "C",
+        "text": "QAM"
+      },
+      {
+        "letter": "D",
+        "text": "ASK"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "In Amplitude Shift Keying (ASK), the amplitude of the carrier signal is varied.",
+      "ar": "في Amplitude Shift Keying (ASK)، يتنوع اتساع إشارة الموجة الحاملة."
+    }
+  },
+  {
+    "question": {
+      "en": "33. Which modulation mechanism combines changing both the amplitude and phase?",
+      "ar": "33. ما هي آلية التعديل التي تجمع بين تغيير السعة والطور؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "FSK"
+      },
+      {
+        "letter": "B",
+        "text": "QAM"
+      },
+      {
+        "letter": "C",
+        "text": "ASK"
+      },
+      {
+        "letter": "D",
+        "text": "PM"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Quadrature Amplitude Modulation (QAM) combines changing both amplitude and phase.",
+      "ar": "يجمع تعديل السعة التربيعية (QAM) بين تغيير السعة والمرحلة."
+    }
+  },
+  {
+    "question": {
+      "en": "34. Analog-to-analog conversion (modulation) is necessary when:",
+      "ar": "34. يكون التحويل (التشكيل) من تناظري إلى تناظري ضروريًا عندما:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only a bandpass channel is available"
+      },
+      {
+        "letter": "B",
+        "text": "The medium is strictly low-pass"
+      },
+      {
+        "letter": "C",
+        "text": "The signal is already digital"
+      },
+      {
+        "letter": "D",
+        "text": "The transmission distance is negligible"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Modulation is needed if the medium is bandpass in nature or if only a bandpass channel is available.",
+      "ar": "يكون التعديل ضروريًا إذا كان الوسط عبارة عن ممر نطاق بطبيعته أو إذا كانت قناة تمرير النطاق متاحة فقط."
+    }
+  },
+  {
+    "question": {
+      "en": "35. In Frequency-Division Multiplexing (FDM), channels can be separated by strips of unused bandwidth called:",
+      "ar": "35. في تعدد الإرسال بتقسيم التردد (FDM)، يمكن فصل القنوات بواسطة شرائح من عرض النطاق الترددي غير المستخدم تسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Carrier bands"
+      },
+      {
+        "letter": "B",
+        "text": "Guard bands"
+      },
+      {
+        "letter": "C",
+        "text": "Phase bands"
+      },
+      {
+        "letter": "D",
+        "text": "Basebands"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Channels are separated by strips of unused bandwidth—guard bands—to prevent overlapping.",
+      "ar": "يتم فصل القنوات بواسطة شرائح من النطاق الترددي غير المستخدم - نطاقات الحراسة - لمنع التداخل."
+    }
+  },
+  {
+    "question": {
+      "en": "36. Time-Division Multiplexing (TDM) is primarily a:",
+      "ar": "36. تعدد الإرسال بتقسيم الزمن (TDM) هو في المقام الأول:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Digital process sharing time"
+      },
+      {
+        "letter": "B",
+        "text": "Analog process sharing frequency"
+      },
+      {
+        "letter": "C",
+        "text": "Digital process sharing frequency"
+      },
+      {
+        "letter": "D",
+        "text": "Analog process sharing time"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "TDM is a digital process that allows several connections to share the bandwidth of a link by sharing time.",
+      "ar": "TDM هي عملية رقمية تسمح لعدة اتصالات بمشاركة النطاق الترددي للارتباط من خلال مشاركة الوقت."
+    }
+  },
+  {
+    "question": {
+      "en": "37. In a twisted-pair cable, what is the main reason for twisting the two conductors together?",
+      "ar": "37. في الكابل المزدوج المجدول، ما هو السبب الرئيسي لالتواء الموصلين معًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To increase physical strength"
+      },
+      {
+        "letter": "B",
+        "text": "To maintain a balance against noise and crosstalk"
+      },
+      {
+        "letter": "C",
+        "text": "To reduce the weight of the cable"
+      },
+      {
+        "letter": "D",
+        "text": "To increase the propagation speed"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "By twisting the pairs, a balance is maintained against interference and crosstalk.",
+      "ar": "ومن خلال لف الأزواج، يتم الحفاظ على التوازن ضد التداخل والتداخل."
+    }
+  },
+  {
+    "question": {
+      "en": "38. Which guided medium has a central core conductor enclosed in an insulating sheath, encased in an outer metal conductor?",
+      "ar": "38. ما هي الوسائط الموجهة التي تحتوي على موصل مركزي مركزي محاط بغلاف عازل ومغطى بموصل معدني خارجي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Unshielded Twisted Pair"
+      },
+      {
+        "letter": "B",
+        "text": "Fiber-optic cable"
+      },
+      {
+        "letter": "C",
+        "text": "Infrared"
+      },
+      {
+        "letter": "D",
+        "text": "Coaxial cable"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Coaxial cable has a central core conductor enclosed in an insulating sheath and an outer conductor.",
+      "ar": "يحتوي الكابل المحوري على موصل أساسي مركزي محاط بغمد عازل وموصل خارجي."
+    }
+  },
+  {
+    "question": {
+      "en": "39. Optical fibers guide light through a channel using the physical principle of:",
+      "ar": "39. تقوم الألياف الضوئية بتوجيه الضوء عبر قناة باستخدام المبدأ الفيزيائي المتمثل في:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Refraction into the cladding"
+      },
+      {
+        "letter": "B",
+        "text": "Reflection off the cladding"
+      },
+      {
+        "letter": "C",
+        "text": "Thermal radiation"
+      },
+      {
+        "letter": "D",
+        "text": "Attenuation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Optical fibers use reflection to guide light through a channel; light is reflected off the cladding.",
+      "ar": "تستخدم الألياف الضوئية الانعكاس لتوجيه الضوء عبر القناة؛ ينعكس الضوء من الكسوة."
+    }
+  },
+  {
+    "question": {
+      "en": "40. Electromagnetic waves ranging in frequencies between 1 and 300 GHz that are unidirectional are called:",
+      "ar": "40. تسمى الموجات الكهرومغناطيسية التي تتراوح تردداتها بين 1 و 300 جيجا هرتز وهي أحادية الاتجاه:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Radio waves"
+      },
+      {
+        "letter": "B",
+        "text": "Microwaves"
+      },
+      {
+        "letter": "C",
+        "text": "Infrared waves"
+      },
+      {
+        "letter": "D",
+        "text": "Visible light"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Waves between 1 and 300 GHz are microwaves, which are unidirectional and can be narrowly focused.",
+      "ar": "الموجات بين 1 و300 جيجا هرتز هي موجات ميكروويف، وهي أحادية الاتجاه ويمكن تركيزها بشكل ضيق."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: Communication at the data-link layer is:",
+      "ar": "س1: الاتصال في طبقة ربط البيانات هو:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "End-to-end"
+      },
+      {
+        "letter": "B",
+        "text": "Node-to-node"
+      },
+      {
+        "letter": "C",
+        "text": "Process-to-process"
+      },
+      {
+        "letter": "D",
+        "text": "Host-to-host"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Communication at the application, transport, and network layers is end-to-end, whereas communication at the data-link layer is node-to-node.",
+      "ar": "التواصل في طبقة ربط البيانات (data-link) يتم من عقدة إلى عقدة (node-to-node)، على عكس الطبقات العليا التي تكون من طرف إلى طرف (end-to-end)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Which type of link is used when two friends use their cellular phones to chat?",
+      "ar": "س2: ما نوع الارتباط الذي يتم استخدامه عندما يستخدم صديقان هاتفيهما الخلوي للدردشة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Point-to-point link"
+      },
+      {
+        "letter": "B",
+        "text": "Broadcast link"
+      },
+      {
+        "letter": "C",
+        "text": "Multicast link"
+      },
+      {
+        "letter": "D",
+        "text": "Dedicated link"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "When using cellular phones, the link is a broadcast link because the air is shared among many cell phone users.",
+      "ar": "عند استخدام الهواتف المحمولة، يكون الرابط من نوع البث (broadcast) لأن الهواء وسيط مشترك بين العديد من المستخدمين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: The data-link layer is divided into which two sublayers?",
+      "ar": "س3: تنقسم طبقة ارتباط البيانات إلى أي طبقتين فرعيتين؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "TCP and IP"
+      },
+      {
+        "letter": "B",
+        "text": "DLC and MAC"
+      },
+      {
+        "letter": "C",
+        "text": "Physical and Network"
+      },
+      {
+        "letter": "D",
+        "text": "CSMA and ALOHA"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The data-link layer is divided into the data-link control (DLC) and media access control (MAC) sublayers.",
+      "ar": "تنقسم طبقة ربط البيانات إلى طبقتين فرعيتين هما التحكم في ربط البيانات (DLC) والتحكم في الوصول للوسائط (MAC)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: Which sublayer deals only with issues specific to broadcast links?",
+      "ar": "س4: ما هي الطبقة الفرعية التي تتعامل فقط مع المشكلات الخاصة بارتباطات البث؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data-link control (DLC)"
+      },
+      {
+        "letter": "B",
+        "text": "Logical Link Control (LLC)"
+      },
+      {
+        "letter": "C",
+        "text": "Media access control (MAC)"
+      },
+      {
+        "letter": "D",
+        "text": "Physical control"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The MAC sublayer deals only with issues specific to broadcast links, while DLC deals with issues common to all links.",
+      "ar": "الطبقة الفرعية MAC تتعامل حصراً مع المشكلات الخاصة بروابط البث (broadcast links)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: In character-oriented framing, what strategy is added to prevent a character with the same pattern as the flag from being interpreted as the end of the frame?",
+      "ar": "س5: في التأطير الموجه نحو الأحرف، ما هي الإستراتيجية التي تتم إضافتها لمنع تفسير الحرف الذي له نفس نمط العلامة على أنه نهاية الإطار؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bit stuffing"
+      },
+      {
+        "letter": "B",
+        "text": "Byte stuffing"
+      },
+      {
+        "letter": "C",
+        "text": "Error correction"
+      },
+      {
+        "letter": "D",
+        "text": "Parity checking"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Byte stuffing (or character stuffing) adds a special byte (ESC) to the data section when there is a character with the same pattern as the flag.",
+      "ar": "حشو البايتات (Byte stuffing) هو إضافة بايت خاص (ESC) للبيانات لمنع تفسير أي جزء منها على أنه إشارة نهاية الإطار (flag)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: What is the standard 8-bit flag pattern used in most bit-oriented protocols?",
+      "ar": "س6: ما هو نمط العلامة القياسي ذو 8 بتات المستخدم في معظم البروتوكولات الموجهة بالبت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "11111111"
+      },
+      {
+        "letter": "B",
+        "text": "00000000"
+      },
+      {
+        "letter": "C",
+        "text": "01111110"
+      },
+      {
+        "letter": "D",
+        "text": "10101010"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Most bit-oriented protocols use a special 8-bit pattern flag, 01111110, as the delimiter.",
+      "ar": "تستخدم معظم البروتوكولات الموجهة للبتات (bit-oriented) النمط 01111110 كإشارة للبداية والنهاية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: In bit stuffing, when does the sender add an extra 0?",
+      "ar": "س7: في حالة حشو البتات، متى يقوم المرسل بإضافة 0 إضافي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "After every 8 bits"
+      },
+      {
+        "letter": "B",
+        "text": "Whenever five consecutive 1s follow a 0"
+      },
+      {
+        "letter": "C",
+        "text": "Whenever a 0 follows five 1s"
+      },
+      {
+        "letter": "D",
+        "text": "Before every flag pattern"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Bit stuffing is the process of adding one extra 0 whenever five consecutive 1s follow a 0 in the data.",
+      "ar": "حشو البتات (Bit stuffing) يعني إضافة صفر إضافي كلما ظهرت خمسة وحايد متتالية بعد صفر، لتجنب تشابهها مع الفلاج."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: What type of error means that two or more bits in the data unit have changed?",
+      "ar": "س8: ما هو نوع الخطأ الذي يعني أن اثنين أو أكثر من البتات في وحدة البيانات قد تغيرت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Single-bit error"
+      },
+      {
+        "letter": "B",
+        "text": "Burst error"
+      },
+      {
+        "letter": "C",
+        "text": "Synchronization error"
+      },
+      {
+        "letter": "D",
+        "text": "Framing error"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A burst error means that two or more bits in the data unit have changed from 1 to 0 or from 0 to 1.",
+      "ar": "خطأ الاندفاع (Burst error) يعني أن بتين أو أكثر في وحدة البيانات قد تغيرا أثناء النقل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: What is the central concept used for detecting or correcting errors?",
+      "ar": "س9: ما هو المفهوم المركزي المستخدم لاكتشاف الأخطاء أو تصحيحها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Redundancy"
+      },
+      {
+        "letter": "B",
+        "text": "Encapsulation"
+      },
+      {
+        "letter": "C",
+        "text": "Framing"
+      },
+      {
+        "letter": "D",
+        "text": "Multiplexing"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The central concept in detecting or correcting errors is redundancy, which means sending extra bits with the data.",
+      "ar": "المفهوم الأساسي لاكتشاف وتصحيح الأخطاء هو التكرار (Redundancy)، بإضافة بتات زائدة للبيانات الأصلية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: In block coding, if a message block consists of k bits and r redundant bits are added, what is the length of the resulting codeword (n)?",
+      "ar": "س10: في تشفير الكتل، إذا كانت كتلة الرسالة تتكون من k بتات وتم إضافة r بتات زائدة، ما هو طول كلمة التشفير الناتجة (n)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "n = k * r"
+      },
+      {
+        "letter": "B",
+        "text": "n = k / r"
+      },
+      {
+        "letter": "C",
+        "text": "n = k + r"
+      },
+      {
+        "letter": "D",
+        "text": "n = k - r"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "We add r redundant bits to each k-bit dataword to make the length n = k + r.",
+      "ar": "يتم إضافة r بتات زائدة إلى k بتات من البيانات ليكون الطول النهائي للإطار n = k + r."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: What is the Hamming distance between the words 10101 and 11110?",
+      "ar": "س11: ما مسافة هامنج بين الكلمتين 10101 و 11110؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Applying the XOR operation (10101 XOR 11110 = 01011) results in three 1s, meaning the Hamming distance is 3.",
+      "ar": "مسافة هامنج بين الكلمتين هي 3، وذلك لوجود 3 اختلافات بين البتات المتقابلة فيهما."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: To guarantee the detection of up to s errors in all cases, the minimum Hamming distance (d_min) must be:",
+      "ar": "س12: لضمان اكتشاف ما يصل إلى s من الأخطاء في جميع الحالات، يجب أن يكون الحد الأدنى لمسافة هامينغ (d_min) كما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "s"
+      },
+      {
+        "letter": "B",
+        "text": "s - 1"
+      },
+      {
+        "letter": "C",
+        "text": "2s + 1"
+      },
+      {
+        "letter": "D",
+        "text": "s + 1"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The minimum Hamming distance in a block code must be d_min = s + 1 to detect up to s errors.",
+      "ar": "لضمان اكتشاف أخطاء يصل عددها إلى s، يجب أن تكون مسافة هامنج الصغرى d_min = s + 1."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: In a linear block code, the exclusive OR (XOR) of two valid codewords creates:",
+      "ar": "س13: في كود الكتلة الخطي، يؤدي استخدام OR (XOR) الحصري لاثنين من كلمات الكود الصالحة إلى إنشاء:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An invalid codeword"
+      },
+      {
+        "letter": "B",
+        "text": "The original dataword"
+      },
+      {
+        "letter": "C",
+        "text": "Another valid codeword"
+      },
+      {
+        "letter": "D",
+        "text": "A parity bit"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A linear block code is a code in which the exclusive OR of two valid codewords creates another valid codeword.",
+      "ar": "في شفرة الكتلة الخطية (linear block code)، عملية XOR بين كلمتي شفرة صالحتين تنتج دائماً كلمة شفرة صالحة أخرى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: A simple parity-check code can detect:",
+      "ar": "س14: يمكن لرمز التحقق من التكافؤ البسيط اكتشاف ما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only single-bit errors"
+      },
+      {
+        "letter": "B",
+        "text": "Any odd number of errors"
+      },
+      {
+        "letter": "C",
+        "text": "Any even number of errors"
+      },
+      {
+        "letter": "D",
+        "text": "Burst errors of any length"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The simple parity check is guaranteed to detect one single error, and it can also find any odd number of errors.",
+      "ar": "فحص التكافؤ البسيط (parity-check) يكتشف الخطأ المفرد وأي عدد فردي من الأخطاء."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: Which error-detecting code is based on the property that if a codeword is rotated, the result is another codeword?",
+      "ar": "س15: ما هو رمز اكتشاف الأخطاء الذي يعتمد على خاصية أنه إذا تم تدوير كلمة المرور، فإن النتيجة هي كلمة تشفير أخرى؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Parity-check code"
+      },
+      {
+        "letter": "B",
+        "text": "Checksum"
+      },
+      {
+        "letter": "C",
+        "text": "Hamming code"
+      },
+      {
+        "letter": "D",
+        "text": "Cyclic code"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "In a cyclic code, if a codeword is cyclically shifted (rotated), the result is another codeword.",
+      "ar": "الشفرات الدورية (Cyclic codes) تتميز بأن الإزاحة الدورية لأي كلمة شفرة تنتج كلمة شفرة صالحة أخرى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: In CRC, if the generator (divisor) is 4 bits long, how many 0s are added to the right-hand side of the dataword?",
+      "ar": "س 16: في CRC، إذا كان طول المولد (المقسوم عليه) 4 بت، فكم عدد الأصفار التي تتم إضافتها إلى الجانب الأيمن من كلمة البيانات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The size of the dataword is augmented by adding n - k (which is divisor size - 1) 0s. For a 4-bit divisor, 3 zeros are added.",
+      "ar": "في فحص التكرار الدوري (CRC)، يتم إضافة أصفار تساوي طول القاسم (المقسوم عليه) ناقص واحد. هنا تضاف 3 أصفار."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: In CRC, the modulo-2 binary division process uses which logical operation for both addition and subtraction?",
+      "ar": "س 17: في CRC، تستخدم عملية القسمة الثنائية modulo-2 أي عملية منطقية لكل من الجمع والطرح؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "AND"
+      },
+      {
+        "letter": "B",
+        "text": "OR"
+      },
+      {
+        "letter": "C",
+        "text": "XOR"
+      },
+      {
+        "letter": "D",
+        "text": "NOT"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In modulo-2 arithmetic, addition and subtraction are the same, and the XOR operation is used to do both.",
+      "ar": "في عملية القسمة الثنائية (modulo-2)، يتم استخدام بوابة العطف المنطقي (XOR) لعمليات الجمع والطرح."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: Checksum is mostly used at which layers of the Internet protocol suite?",
+      "ar": "س18: يتم استخدام المجموع الاختباري في الغالب في أي طبقات من مجموعة بروتوكولات الإنترنت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Physical and Data-link"
+      },
+      {
+        "letter": "B",
+        "text": "Network and Transport"
+      },
+      {
+        "letter": "C",
+        "text": "Data-link and Network"
+      },
+      {
+        "letter": "D",
+        "text": "Application and Presentation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In the Internet, the checksum technique is mostly used at the network and transport layer rather than the data-link layer.",
+      "ar": "تُستخدم تقنية Checksum بشكل أساسي في طبقتي الشبكة (Network) والنقل (Transport) في الإنترنت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Which HDLC transfer mode is characterized by a balanced configuration where each station can function as primary and secondary?",
+      "ar": "س19: ما هو وضع نقل HDLC الذي يتميز بتكوين متوازن حيث يمكن لكل محطة أن تعمل كمحطة أساسية وثانوية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Normal response mode (NRM)"
+      },
+      {
+        "letter": "B",
+        "text": "Asynchronous balanced mode (ABM)"
+      },
+      {
+        "letter": "C",
+        "text": "Synchronous response mode (SRM)"
+      },
+      {
+        "letter": "D",
+        "text": "Polling mode"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In ABM, the configuration is balanced, the link is point-to-point, and each station can function as a primary and a secondary.",
+      "ar": "في وضع ABM، تكون التهيئة متوازنة ويمكن لكل محطة أن تعمل كمحطة أساسية (primary) وثانوية (secondary)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: In HDLC, which type of frame is used to transport user data and control information relating to user data (piggybacking)?",
+      "ar": "س20: في HDLC، ما هو نوع الإطار المستخدم لنقل بيانات المستخدم والتحكم في المعلومات المتعلقة ببيانات المستخدم (التحميل)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "S-frames"
+      },
+      {
+        "letter": "B",
+        "text": "U-frames"
+      },
+      {
+        "letter": "C",
+        "text": "I-frames"
+      },
+      {
+        "letter": "D",
+        "text": "C-frames"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Information frames (I-frames) are used to transport user data and control information relating to user data.",
+      "ar": "إطارات المعلومات (I-frames) تُستخدم لنقل بيانات المستخدم ومعلومات التحكم المتعلقة بها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: In HDLC, if the first 2 bits of the control field are 10, the frame is a(n):",
+      "ar": "س21: في HDLC، إذا كانت أول بتتين من مجال التحكم 10، يكون الإطار a(n):"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "I-frame"
+      },
+      {
+        "letter": "B",
+        "text": "S-frame"
+      },
+      {
+        "letter": "C",
+        "text": "U-frame"
+      },
+      {
+        "letter": "D",
+        "text": "Payload frame"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If the first 2 bits of the control field are 10, this means the frame is a Supervisory (S) frame.",
+      "ar": "في بروتوكول HDLC، إذا كان أول بتين في حقل التحكم هما 10، فهذا يعني أنه إطار إشرافي (S-frame)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: Which protocol is by far the most common for point-to-point access connecting home computers to an ISP?",
+      "ar": "س22: ما هو البروتوكول الأكثر شيوعًا للوصول من نقطة إلى نقطة لتوصيل أجهزة الكمبيوتر المنزلية بمزود خدمة الإنترنت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "HDLC"
+      },
+      {
+        "letter": "B",
+        "text": "SLIP"
+      },
+      {
+        "letter": "C",
+        "text": "PPP"
+      },
+      {
+        "letter": "D",
+        "text": "Ethernet"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Millions of Internet users connecting to an ISP use the Point-to-Point Protocol (PPP).",
+      "ar": "بروتوكول نقطة لنقطة (PPP) هو الأكثر شيوعاً لربط أجهزة المستخدمين بمزودي خدمة الإنترنت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: Which of the following services is NOT provided by PPP?",
+      "ar": "س23: أي من الخدمات التالية لا تقدمها الشراكة بين القطاعين العام والخاص؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Framing"
+      },
+      {
+        "letter": "B",
+        "text": "Flow control"
+      },
+      {
+        "letter": "C",
+        "text": "Network address configuration"
+      },
+      {
+        "letter": "D",
+        "text": "Error detection"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "PPP does not provide flow control. A sender can send several frames without concern about overwhelming the receiver.",
+      "ar": "لا يوفر بروتوكول PPP التحكم في التدفق (Flow control)، حيث يمكن للمرسل إرسال بيانات دون مراعاة قدرة المستقبل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: What is the constant value of the address field in a PPP frame?",
+      "ar": "س24: ما هي القيمة الثابتة لحقل العنوان في إطار PPP؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "00000000"
+      },
+      {
+        "letter": "B",
+        "text": "11111111"
+      },
+      {
+        "letter": "C",
+        "text": "01111110"
+      },
+      {
+        "letter": "D",
+        "text": "00000011"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The address field in PPP is a constant value and set to 11111111 (broadcast address).",
+      "ar": "حقل العنوان في إطار PPP ثابت وقيمته 11111111 (عنوان البث)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: In PPP transition phases, which state follows the 'Establish' state if the two ends agree on authentication?",
+      "ar": "س25: في مراحل انتقال الشراكة بين القطاعين العام والخاص، ما هي الدولة التي تتبع حالة \"التأسيس\" إذا اتفق الطرفان على المصادقة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Open"
+      },
+      {
+        "letter": "B",
+        "text": "Network"
+      },
+      {
+        "letter": "C",
+        "text": "Authenticate"
+      },
+      {
+        "letter": "D",
+        "text": "Terminate"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "If the two ends agree with authentication, the system goes to the authenticate state from the establish state.",
+      "ar": "إذا اتفق الطرفان على المصادقة، ينتقل النظام من حالة التأسيس (Establish) إلى حالة المصادقة (Authenticate)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q26: Which PPP protocol is responsible for establishing, maintaining, configuring, and terminating links?",
+      "ar": "س26: ما هو بروتوكول PPP المسؤول عن إنشاء الارتباطات وصيانتها وتكوينها وإنهائها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "PAP"
+      },
+      {
+        "letter": "B",
+        "text": "LCP"
+      },
+      {
+        "letter": "C",
+        "text": "NCP"
+      },
+      {
+        "letter": "D",
+        "text": "CHAP"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Link Control Protocol (LCP) is responsible for establishing, maintaining, configuring, and terminating links.",
+      "ar": "بروتوكول التحكم في الرابط (LCP) هو المسؤول عن تأسيس وإدارة وإنهاء الروابط في PPP."
+    }
+  },
+  {
+    "question": {
+      "en": "Q27: Which authentication protocol in PPP uses a three-way handshaking process and keeps the password secret?",
+      "ar": "س27: ما هو بروتوكول المصادقة في PPP الذي يستخدم عملية مصافحة ثلاثية الاتجاهات ويحافظ على سرية كلمة المرور؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "PAP"
+      },
+      {
+        "letter": "B",
+        "text": "CHAP"
+      },
+      {
+        "letter": "C",
+        "text": "IPCP"
+      },
+      {
+        "letter": "D",
+        "text": "LCP"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Challenge Handshake Authentication Protocol (CHAP) is a three-way protocol where the password is kept secret.",
+      "ar": "بروتوكول CHAP يوفر مصادقة عبر ثلاثة خطوات ويحافظ على سرية كلمة المرور بتشفيرها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q28: In Multilink PPP, to show that an actual PPP frame is carrying a fragment of a logical PPP frame, the protocol field is set to:",
+      "ar": "س28: في Multilink PPP، لإظهار أن إطار PPP الفعلي يحمل جزءًا من إطار PPP المنطقي، يتم تعيين حقل البروتوكول إلى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "0021_16"
+      },
+      {
+        "letter": "B",
+        "text": "0023_16"
+      },
+      {
+        "letter": "C",
+        "text": "003d_16"
+      },
+      {
+        "letter": "D",
+        "text": "C021_16"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The protocol field is set to (003d)16 to show that the actual frame is a fragment of a logical PPP frame.",
+      "ar": "في بروتوكول PPP متعدد الروابط، يتم ضبط حقل البروتوكول على القيمة 003d بالنظام الست عشري للإشارة إلى أن الإطار هو جزء من إطار منطقي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q29: ALOHA, CSMA, and CSMA/CD are examples of which category of multiple-access protocols?",
+      "ar": "س29: ALOHA وCSMA وCSMA/CD هي أمثلة على أي فئة من بروتوكولات الوصول المتعدد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Controlled-access"
+      },
+      {
+        "letter": "B",
+        "text": "Random-access"
+      },
+      {
+        "letter": "C",
+        "text": "Channelization"
+      },
+      {
+        "letter": "D",
+        "text": "Token passing"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "These protocols belong to random-access or contention methods where stations compete for the medium.",
+      "ar": "تنتمي هذه البروتوكولات إلى طرق الوصول العشوائي (Random-access) حيث تتنافس المحطات على استخدام الوسيط."
+    }
+  },
+  {
+    "question": {
+      "en": "Q30: In pure ALOHA, what is the vulnerable time (the time during which a collision may occur)?",
+      "ar": "س30: في ALOHA الخالص، ما هو وقت الضعف (الوقت الذي قد يحدث فيه الاصطدام)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "T_fr"
+      },
+      {
+        "letter": "B",
+        "text": "2 x T_fr"
+      },
+      {
+        "letter": "C",
+        "text": "T_p"
+      },
+      {
+        "letter": "D",
+        "text": "2 x T_p"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The vulnerable time for pure ALOHA is 2 times the frame transmission time (2 x T_fr).",
+      "ar": "الوقت المعرض للتصادم في نظام ALOHA النقي يساوي ضعف وقت إرسال الإطار (2 x T_fr)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: What is the maximum throughput (S_max) of pure ALOHA?",
+      "ar": "س31: ما هو الحد الأقصى للإنتاجية (S_max) لألوها النقي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "18.4%"
+      },
+      {
+        "letter": "B",
+        "text": "36.8%"
+      },
+      {
+        "letter": "C",
+        "text": "50.0%"
+      },
+      {
+        "letter": "D",
+        "text": "100%"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The maximum throughput for pure ALOHA is 0.184 (18.4%) when G = 1/2.",
+      "ar": "الحد الأقصى للإنتاجية في ALOHA النقي هو 18.4%."
+    }
+  },
+  {
+    "question": {
+      "en": "Q32: In slotted ALOHA, the vulnerable time is reduced to:",
+      "ar": "س32: في ALOHA ذات الفواصل الزمنية، يتم تقليل وقت الضعف إلى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "0.5 x T_fr"
+      },
+      {
+        "letter": "B",
+        "text": "T_fr"
+      },
+      {
+        "letter": "C",
+        "text": "2 x T_fr"
+      },
+      {
+        "letter": "D",
+        "text": "T_p"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "By forcing stations to start transmission only at the beginning of a time slot, the vulnerable time is reduced to T_fr.",
+      "ar": "في نظام ALOHA المجدول (Slotted)، يتم تقليص الوقت المعرض للتصادم ليصبح مساوياً لوقت إرسال الإطار (T_fr)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q33: Which access method is based on the principle 'listen before talk'?",
+      "ar": "س33: ما هي طريقة الوصول التي تعتمد على مبدأ \"استمع قبل أن تتحدث\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ALOHA"
+      },
+      {
+        "letter": "B",
+        "text": "Token Passing"
+      },
+      {
+        "letter": "C",
+        "text": "CSMA"
+      },
+      {
+        "letter": "D",
+        "text": "Polling"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Carrier sense multiple access (CSMA) requires that each station listen to the medium before sending.",
+      "ar": "يعتمد بروتوكول CSMA على مبدأ الاستماع للوسيط قبل التحدث لتجنب التصادم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q34: In CSMA, the vulnerable time is equal to:",
+      "ar": "س 34: في CSMA، وقت الضعف يساوي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "T_fr"
+      },
+      {
+        "letter": "B",
+        "text": "2 x T_fr"
+      },
+      {
+        "letter": "C",
+        "text": "The propagation time (T_p)"
+      },
+      {
+        "letter": "D",
+        "text": "2 x The propagation time (2 x T_p)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The vulnerable time for CSMA is the propagation time (T_p), the time needed for a signal to propagate to the other end.",
+      "ar": "الوقت المعرض للتصادم في CSMA يساوي وقت انتشار الإشارة (Propagation time)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q35: Which persistence method sends the frame immediately with a probability of 1 if the line is idle?",
+      "ar": "س35: ما هي طريقة الثبات التي ترسل الإطار فورًا باحتمال 1 إذا كان الخط خاملاً؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1-persistent"
+      },
+      {
+        "letter": "B",
+        "text": "Nonpersistent"
+      },
+      {
+        "letter": "C",
+        "text": "p-persistent"
+      },
+      {
+        "letter": "D",
+        "text": "0-persistent"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "In the 1-persistent method, after finding the line idle, the station sends its frame immediately.",
+      "ar": "في الطريقة المستمرة-1 (1-persistent)، تُرسل المحطة الإطار فوراً إذا كان الخط فارغاً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q36: For CSMA/CD to work correctly, the frame transmission time (T_fr) must be at least:",
+      "ar": "س 36: لكي يعمل CSMA/CD بشكل صحيح، يجب أن يكون وقت إرسال الإطار (T_fr) على الأقل:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "T_p"
+      },
+      {
+        "letter": "B",
+        "text": "2 x T_p"
+      },
+      {
+        "letter": "C",
+        "text": "T_p / 2"
+      },
+      {
+        "letter": "D",
+        "text": "2 x T_fr"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The frame transmission time T_fr must be at least twice the maximum propagation time (2 x T_p) to detect collisions.",
+      "ar": "لكي يعمل بروتوكول CSMA/CD بشكل صحيح، يجب أن يكون وقت إرسال الإطار ضعف وقت الانتشار كحد أدنى لاكتشاف التصادم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q37: In which controlled-access method does a station need to make a reservation in a minislot before sending data?",
+      "ar": "س37: ما هي طريقة الوصول الخاضعة للتحكم التي تحتاج المحطة إلى إجراء حجز فيها في فتحة صغيرة قبل إرسال البيانات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Token passing"
+      },
+      {
+        "letter": "B",
+        "text": "Polling"
+      },
+      {
+        "letter": "C",
+        "text": "CSMA/CA"
+      },
+      {
+        "letter": "D",
+        "text": "Reservation"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "In the reservation method, a station needs to make a reservation before sending data.",
+      "ar": "في طريقة الحجز (Reservation)، يجب على المحطة حجز مكان في إطار الحجز قبل إرسال بياناتها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q38: Which controlled-access method designates one device as a primary station and others as secondary devices?",
+      "ar": "س38: ما هي طريقة التحكم في الوصول التي تحدد جهازًا واحدًا كمحطة أساسية وأجهزة أخرى كأجهزة ثانوية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reservation"
+      },
+      {
+        "letter": "B",
+        "text": "Token passing"
+      },
+      {
+        "letter": "C",
+        "text": "Polling"
+      },
+      {
+        "letter": "D",
+        "text": "ALOHA"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Polling uses a primary station to control the link and solicit transmissions from secondary stations.",
+      "ar": "تعتمد طريقة الاقتراع (Polling) على محطة أساسية تتحكم في الرابط وتسمح للمحطات الثانوية بالإرسال."
+    }
+  },
+  {
+    "question": {
+      "en": "Q39: In a token-passing network, what gives a station the right to access the channel and send data?",
+      "ar": "س39: في شبكة تمرير الرموز، ما الذي يمنح المحطة الحق في الوصول إلى القناة وإرسال البيانات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A reservation minislot"
+      },
+      {
+        "letter": "B",
+        "text": "The SEL frame"
+      },
+      {
+        "letter": "C",
+        "text": "The possession of the token"
+      },
+      {
+        "letter": "D",
+        "text": "The CSMA algorithm"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The possession of the token gives the station the right to access the channel and send its data.",
+      "ar": "امتلاك الرمز (Token) يعطي المحطة الحق في الوصول للوسيط وإرسال البيانات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q40: What protocol is used to find the link-layer (MAC) address of the next node when the IP address is known?",
+      "ar": "س40: ما هو البروتوكول المستخدم للعثور على عنوان طبقة الارتباط (MAC) للعقدة التالية عندما يكون عنوان IP معروفًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ARP"
+      },
+      {
+        "letter": "B",
+        "text": "RARP"
+      },
+      {
+        "letter": "C",
+        "text": "ICMP"
+      },
+      {
+        "letter": "D",
+        "text": "DHCP"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The Address Resolution Protocol (ARP) is used to find the link-layer address of the next node.",
+      "ar": "يُستخدم بروتوكول ARP لإيجاد عنوان طبقة الربط (MAC address) للعقدة التالية باستخدام عنوان الـ IP الخاص بها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: Which wired LAN technology survived and updated itself to meet the needs of the time?",
+      "ar": "س1: ما هي تقنية الشبكة المحلية السلكية التي نجت وقامت بتحديث نفسها لتفي باحتياجات العصر؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fiber Distributed Data Interface (FDDI)"
+      },
+      {
+        "letter": "B",
+        "text": "Ethernet"
+      },
+      {
+        "letter": "C",
+        "text": "Token Ring"
+      },
+      {
+        "letter": "D",
+        "text": "Fibre Channel"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Almost every wired LAN technology except Ethernet disappeared because Ethernet was able to update itself to meet the needs of the time.",
+      "ar": "تقريباً جميع تقنيات الشبكات المحلية السلكية اختفت باستثناء إيثرنت لأنها كانت قادرة على تحديث نفسها لتلبية احتياجات الوقت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: What is the transmission rate of Standard Ethernet?",
+      "ar": "س2: ما هو معدل نقل الإيثرنت القياسي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "10 Mbps"
+      },
+      {
+        "letter": "B",
+        "text": "100 Mbps"
+      },
+      {
+        "letter": "C",
+        "text": "1 Gbps"
+      },
+      {
+        "letter": "D",
+        "text": "10 Gbps"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Standard Ethernet refers to the original Ethernet technology with a data rate of 10 Mbps.",
+      "ar": "تشير الإيثرنت القياسية إلى تقنية إيثرنت الأصلية بمعدل نقل بيانات يبلغ 10 ميجابت في الثانية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: What is the minimum payload length of an Ethernet frame data field?",
+      "ar": "س3: ما هو الحد الأدنى لطول الحمولة لحقل بيانات إطار Ethernet؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "64 bytes"
+      },
+      {
+        "letter": "B",
+        "text": "46 bytes"
+      },
+      {
+        "letter": "C",
+        "text": "1500 bytes"
+      },
+      {
+        "letter": "D",
+        "text": "1518 bytes"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The data field carries data encapsulated from the upper-layer protocols with a minimum of 46 bytes and a maximum of 1500 bytes.",
+      "ar": "يحمل حقل البيانات البيانات المغلفة من بروتوكولات الطبقة العليا بحد أدنى 46 بايت وحد أقصى 1500 بايت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: What does a destination MAC address composed of forty-eight 1s (FF:FF:FF:FF:FF:FF) represent?",
+      "ar": "س4: ما الذي يمثله عنوان MAC الوجهة المكون من ثمانية وأربعين 1s (FF:FF:FF:FF:FF:FF)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Unicast address"
+      },
+      {
+        "letter": "B",
+        "text": "Multicast address"
+      },
+      {
+        "letter": "C",
+        "text": "Broadcast address"
+      },
+      {
+        "letter": "D",
+        "text": "Loopback address"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A broadcast destination address is forty-eight 1s (all Fs in hexadecimal), meaning the recipients are all stations on the LAN.",
+      "ar": "عنوان وجهة البث (Broadcast) يتكون من 48 واحدًا (كلها F بالسداسي عشر)، مما يعني أن المستلمين هم جميع المحطات على الشبكة المحلية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: If the least significant bit of the first byte in a destination MAC address is 1, what is the address type?",
+      "ar": "س5: إذا كان البت الأقل أهمية من البايت الأول في عنوان MAC الوجهة هو 1، فما هو نوع العنوان؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Unicast"
+      },
+      {
+        "letter": "B",
+        "text": "Broadcast"
+      },
+      {
+        "letter": "C",
+        "text": "Multicast"
+      },
+      {
+        "letter": "D",
+        "text": "Anycast"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "If the least significant bit of the first byte in a destination address is 0, the address is unicast; otherwise, it is multicast.",
+      "ar": "إذا كان البت الأقل أهمية في البايت الأول من عنوان الوجهة هو 0، فالعنوان أحادي (Unicast)؛ أما إذا كان 1 فهو متعدد (Multicast)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: Which feature was added to Fast Ethernet to allow incompatible devices to agree on a mode or data rate?",
+      "ar": "س6: ما هي الميزة التي تمت إضافتها إلى Fast Ethernet للسماح للأجهزة غير المتوافقة بالموافقة على الوضع أو معدل البيانات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Frame Bursting"
+      },
+      {
+        "letter": "B",
+        "text": "CSMA/CD"
+      },
+      {
+        "letter": "C",
+        "text": "Autonegotiation"
+      },
+      {
+        "letter": "D",
+        "text": "Carrier Extension"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Autonegotiation allows two devices to negotiate the mode or data rate of operation, allowing a 10 Mbps device to connect with a 100 Mbps device.",
+      "ar": "يسمح التفاوض التلقائي لجهازين بالتفاوض على وضع أو معدل نقل البيانات، مما يسمح لجهاز بسرعة 10 ميجابت بالاتصال بجهاز بسرعة 100 ميجابت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: In full-duplex mode Gigabit Ethernet, which medium access method is used?",
+      "ar": "س7: في وضع الاتصال المزدوج الكامل Gigabit Ethernet، ما هي طريقة الوصول إلى الوسائط المستخدمة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "CSMA/CD"
+      },
+      {
+        "letter": "B",
+        "text": "CSMA/CA"
+      },
+      {
+        "letter": "C",
+        "text": "Token Passing"
+      },
+      {
+        "letter": "D",
+        "text": "No contention (CSMA/CD is not used)"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "In full-duplex mode, there is a central switch and no collision, which means that CSMA/CD is not used.",
+      "ar": "في وضع الازدواج الكامل، يوجد محول (Switch) مركزي ولا يوجد تصادم، مما يعني عدم استخدام CSMA/CD."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: What is the IEEE standard for the wireless LAN known as WiFi?",
+      "ar": "س8: ما هو معيار IEEE للشبكة المحلية اللاسلكية المعروفة باسم WiFi؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "IEEE 802.3"
+      },
+      {
+        "letter": "B",
+        "text": "IEEE 802.11"
+      },
+      {
+        "letter": "C",
+        "text": "IEEE 802.15"
+      },
+      {
+        "letter": "D",
+        "text": "IEEE 802.16"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "IEEE has defined the specifications for a wireless LAN, called IEEE 802.11, which is certified by the WiFi Alliance.",
+      "ar": "حددت IEEE مواصفات الشبكة المحلية اللاسلكية المسماة IEEE 802.11، والتي تم اعتمادها من قبل تحالف WiFi."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: What is a Basic Service Set (BSS) without an Access Point (AP) called?",
+      "ar": "س9: ما هو اسم مجموعة الخدمات الأساسية (BSS) بدون نقطة الوصول (AP)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Infrastructure BSS"
+      },
+      {
+        "letter": "B",
+        "text": "Extended Service Set"
+      },
+      {
+        "letter": "C",
+        "text": "Ad hoc architecture"
+      },
+      {
+        "letter": "D",
+        "text": "Distribution system"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A BSS without an AP is a stand-alone network known as an ad hoc architecture.",
+      "ar": "مجموعة الخدمة الأساسية (BSS) بدون نقطة وصول (AP) هي شبكة مستقلة تُعرف ببنية الشبكة المخصصة (Ad hoc)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: Which MAC sublayer in IEEE 802.11 uses CSMA/CA as the access method?",
+      "ar": "س10: ما هي طبقة MAC الفرعية في IEEE 802.11 التي تستخدم CSMA/CA كأسلوب وصول؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Distributed Coordination Function (DCF)"
+      },
+      {
+        "letter": "B",
+        "text": "Point Coordination Function (PCF)"
+      },
+      {
+        "letter": "C",
+        "text": "Logical Link Control (LLC)"
+      },
+      {
+        "letter": "D",
+        "text": "Carrier Sense Function (CSF)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The distributed coordination function (DCF) is one of the two protocols defined by IEEE at the MAC sublayer and uses CSMA/CA.",
+      "ar": "وظيفة التنسيق الموزعة (DCF) هي أحد البروتوكولين المحددين بواسطة IEEE في طبقة MAC وتستخدم CSMA/CA."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: In IEEE 802.11, what is the Network Allocation Vector (NAV)?",
+      "ar": "س11: في IEEE 802.11، ما هو ناقل تخصيص الشبكة (NAV)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An access point identifier"
+      },
+      {
+        "letter": "B",
+        "text": "A timer indicating how long the channel will be occupied"
+      },
+      {
+        "letter": "C",
+        "text": "A routing table"
+      },
+      {
+        "letter": "D",
+        "text": "A physical layer frequency band"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The NAV is a timer created by stations that shows how much time must pass before they are allowed to check the channel for idleness.",
+      "ar": "الـ NAV هو مؤقت تنشئه المحطات يوضح مقدار الوقت الذي يجب أن يمر قبل السماح لها بالتحقق من خلو القناة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Which control frames solve the hidden-station problem in WiFi?",
+      "ar": "س12: ما هي إطارات التحكم التي تحل مشكلة المحطة المخفية في شبكة WiFi؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ACK and NAK"
+      },
+      {
+        "letter": "B",
+        "text": "RTS and CTS"
+      },
+      {
+        "letter": "C",
+        "text": "Beacon and Probe"
+      },
+      {
+        "letter": "D",
+        "text": "Data and ACK"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The solution to the hidden-station problem is the use of the handshake frames (RTS and CTS).",
+      "ar": "الحل لمشكلة المحطة المخفية هو استخدام إطارات المصافحة (RTS و CTS)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: What does a 802.11 frame address 1 always represent?",
+      "ar": "س13: ما الذي يمثله عنوان إطار 802.11 1 دائمًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Original source"
+      },
+      {
+        "letter": "B",
+        "text": "Final destination"
+      },
+      {
+        "letter": "C",
+        "text": "Address of the next device the frame will visit"
+      },
+      {
+        "letter": "D",
+        "text": "BSS ID"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Address 1 is always the address of the next device that the frame will visit.",
+      "ar": "العنوان رقم 1 هو دائماً عنوان الجهاز التالي الذي سيزوره الإطار."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: What is the IEEE standard for Bluetooth?",
+      "ar": "س14: ما هو معيار IEEE للبلوتوث؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "IEEE 802.11"
+      },
+      {
+        "letter": "B",
+        "text": "IEEE 802.3"
+      },
+      {
+        "letter": "C",
+        "text": "IEEE 802.15"
+      },
+      {
+        "letter": "D",
+        "text": "IEEE 802.5"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Bluetooth technology is the implementation of a protocol defined by the IEEE 802.15 standard for WPANs.",
+      "ar": "تقنية البلوتوث هي تطبيق للبروتوكول المحدد بمعيار IEEE 802.15 لشبكات WPAN."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: What is a Bluetooth network called?",
+      "ar": "س15: ما إسم شبكة البلوتوث؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "BSS"
+      },
+      {
+        "letter": "B",
+        "text": "Scatternet"
+      },
+      {
+        "letter": "C",
+        "text": "Piconet"
+      },
+      {
+        "letter": "D",
+        "text": "ESS"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A Bluetooth network is called a piconet, which can have up to eight stations (one primary and up to seven secondaries).",
+      "ar": "تسمى شبكة البلوتوث بـ Piconet، والتي يمكن أن تحتوي على ما يصل إلى 8 محطات (واحدة رئيسية وما يصل إلى 7 فرعية)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: What happens when multiple Bluetooth piconets are combined?",
+      "ar": "س 16: ماذا يحدث عند دمج عدة بيكونيت بلوتوث؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "They form a wide area network"
+      },
+      {
+        "letter": "B",
+        "text": "They form a scatternet"
+      },
+      {
+        "letter": "C",
+        "text": "They form an extended service set"
+      },
+      {
+        "letter": "D",
+        "text": "They cause channel collision"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Piconets can be combined to form a scatternet, where a secondary station in one piconet can be the primary in another.",
+      "ar": "يمكن دمج الـ Piconets لتشكيل Scatternet، حيث يمكن لمحطة فرعية في بيكونت معين أن تكون رئيسية في آخر."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: Which Bluetooth layer is roughly equivalent to the LLC sublayer in LANs?",
+      "ar": "س17: ما هي طبقة Bluetooth التي تعادل تقريبًا الطبقة الفرعية LLC في الشبكات المحلية (LAN)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Radio layer"
+      },
+      {
+        "letter": "B",
+        "text": "Baseband layer"
+      },
+      {
+        "letter": "C",
+        "text": "L2CAP layer"
+      },
+      {
+        "letter": "D",
+        "text": "Applications layer"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Logical Link Control and Adaptation Protocol (L2CAP) is roughly equivalent to the LLC sublayer in LANs.",
+      "ar": "بروتوكول التحكم والربط المنطقي (L2CAP) يعادل تقريبًا طبقة LLC الفرعية في الشبكات المحلية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: In Bluetooth, what type of link is used for real-time audio where avoiding delay is more important than error-free delivery?",
+      "ar": "س18: في تقنية Bluetooth، ما هو نوع الارتباط المستخدم للصوت في الوقت الفعلي حيث يكون تجنب التأخير أكثر أهمية من التسليم الخالي من الأخطاء؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ACL"
+      },
+      {
+        "letter": "B",
+        "text": "SCO"
+      },
+      {
+        "letter": "C",
+        "text": "L2CAP"
+      },
+      {
+        "letter": "D",
+        "text": "TDD"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A synchronous connection-oriented (SCO) link is used when avoiding latency is more important than integrity, such as for real-time audio.",
+      "ar": "يُستخدم الرابط المتزامن (SCO) عندما يكون تجنب التأخير أهم من سلامة البيانات، كما في الصوت الفوري."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Which component of the telephone network is a twisted-pair cable connecting the subscriber to the local central office?",
+      "ar": "س19: أي مكون من مكونات شبكة الهاتف عبارة عن كبل مزدوج مجدول يربط المشترك بالمكتب المركزي المحلي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trunk"
+      },
+      {
+        "letter": "B",
+        "text": "Tandem office"
+      },
+      {
+        "letter": "C",
+        "text": "Local loop"
+      },
+      {
+        "letter": "D",
+        "text": "Regional office"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The local loop is a twisted-pair cable that connects the subscriber telephone to the nearest end office.",
+      "ar": "الحلقة المحلية هي كابل مزدوج ملتوي يربط هاتف المشترك بأقرب مكتب نهاية (سنترال محلي)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: What does LATA stand for in telephone networks?",
+      "ar": "س20: ما الذي تعنيه LATA في شبكات الهاتف؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Local Area Telephone Access"
+      },
+      {
+        "letter": "B",
+        "text": "Local Access Transport Area"
+      },
+      {
+        "letter": "C",
+        "text": "Long-distance Area Telephone Association"
+      },
+      {
+        "letter": "D",
+        "text": "Local Asynchronous Transmission Area"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "After 1984, the United States was divided into more than 200 local access transport areas (LATAs).",
+      "ar": "بعد عام 1984، تم تقسيم الولايات المتحدة إلى أكثر من 200 منطقة نقل وصول محلي (LATA)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: Which carriers provide services between different LATAs?",
+      "ar": "س21: ما هي شركات النقل التي تقدم الخدمات بين LATAs المختلفة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ILECs"
+      },
+      {
+        "letter": "B",
+        "text": "CLECs"
+      },
+      {
+        "letter": "C",
+        "text": "LECs"
+      },
+      {
+        "letter": "D",
+        "text": "IXCs"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Interexchange carriers (IXCs), sometimes called long-distance companies, provide services between different LATAs.",
+      "ar": "توفر شركات التبادل البيني (IXCs)، والتي تُسمى أحيانًا شركات المسافات الطويلة، خدمات بين مناطق LATA المختلفة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: Where do local exchange carriers (LECs) and interexchange carriers (IXCs) interact with one another?",
+      "ar": "س22: أين تتفاعل شركات النقل المحلية (LECs) وناقلات التبادل (IXCs) مع بعضها البعض؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "End office"
+      },
+      {
+        "letter": "B",
+        "text": "Local loop"
+      },
+      {
+        "letter": "C",
+        "text": "Point of presence (POP)"
+      },
+      {
+        "letter": "D",
+        "text": "Tandem switch"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "LECs and IXCs interact via a switching office called a point of presence (POP).",
+      "ar": "تتفاعل شركات الاتصالات المحلية (LECs) مع شركات المسافات الطويلة (IXCs) عبر مكتب تبديل يسمى نقطة التواجد (POP)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: What protocol is used in the modern telephone signaling network?",
+      "ar": "س23: ما هو البروتوكول المستخدم في شبكة الإشارات الهاتفية الحديثة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "TCP/IP"
+      },
+      {
+        "letter": "B",
+        "text": "SS7"
+      },
+      {
+        "letter": "C",
+        "text": "L2CAP"
+      },
+      {
+        "letter": "D",
+        "text": "DSSS"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The protocol used in the telephone signaling network is called Signaling System Seven (SS7).",
+      "ar": "البروتوكول المستخدم في شبكة إشارات الهاتف يسمى نظام الإشارات السابع (SS7)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: What is the theoretical maximum downloading data rate for a 56K modem?",
+      "ar": "س24: ما هو الحد الأقصى النظري لمعدل تنزيل البيانات لمودم 56 كيلو بايت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "33.6 kbps"
+      },
+      {
+        "letter": "B",
+        "text": "56 kbps"
+      },
+      {
+        "letter": "C",
+        "text": "64 kbps"
+      },
+      {
+        "letter": "D",
+        "text": "128 kbps"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "56K modems have a downloading rate of up to 56 kbps because there is no quantization error in the downstream direction.",
+      "ar": "تتمتع أجهزة مودم 56K بمعدل تنزيل يصل إلى 56 كيلوبت في الثانية لعدم وجود خطأ تكميم (Quantization) في اتجاه التنزيل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: In an ADSL network, what is the primary reason for the term 'asymmetric'?",
+      "ar": "س25: في شبكة ADSL، ما هو السبب الرئيسي لمصطلح \"غير متماثل\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It uses different physical cables for send and receive."
+      },
+      {
+        "letter": "B",
+        "text": "The downstream data rate is higher than the upstream data rate."
+      },
+      {
+        "letter": "C",
+        "text": "It only supports one-way communication."
+      },
+      {
+        "letter": "D",
+        "text": "It does not support voice communication."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "ADSL provides higher speed in the downstream direction (from Internet to resident) than in the upstream direction.",
+      "ar": "توفر ADSL سرعة أعلى في اتجاه التنزيل (من الإنترنت إلى المشترك) مقارنة باتجاه الرفع، ولهذا تسمى غير متماثلة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q26: What device at the telephone company's end separates data from voice in an ADSL network?",
+      "ar": "س26: ما هو الجهاز الموجود في نهاية شركة الهاتف الذي يفصل البيانات عن الصوت في شبكة ADSL؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ADSL modem"
+      },
+      {
+        "letter": "B",
+        "text": "Splitter"
+      },
+      {
+        "letter": "C",
+        "text": "DSLAM"
+      },
+      {
+        "letter": "D",
+        "text": "Switch"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The ADSL uses a digital subscriber line access multiplexer (DSLAM) that separates data from voice at the destination (central office).",
+      "ar": "تستخدم ADSL مُجمّع وصول خط المشترك الرقمي (DSLAM) الذي يفصل البيانات عن الصوت في السنترال المركزي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q27: What type of cable network combines optical fiber to the neighborhood node and coaxial cable to the house?",
+      "ar": "س27: ما نوع شبكة الكابل التي تجمع بين الألياف الضوئية وعقدة الحي والكابل المحوري بالمنزل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Traditional CATV"
+      },
+      {
+        "letter": "B",
+        "text": "HFC (Hybrid fiber-coaxial)"
+      },
+      {
+        "letter": "C",
+        "text": "10Base5"
+      },
+      {
+        "letter": "D",
+        "text": "100Base-FX"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The hybrid fiber-coaxial (HFC) network uses optical fiber from the cable office to the fiber node, and coaxial cable into the house.",
+      "ar": "تستخدم شبكة الألياف والمحور الهجينة (HFC) الألياف الضوئية من مكتب الكابل إلى العقدة، والكابل المحوري إلى داخل المنزل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q28: Which device is installed inside the cable company to receive data from subscribers and pass it to the Internet?",
+      "ar": "س28: ما هو الجهاز الذي يتم تركيبه داخل شركة الكابلات لاستقبال البيانات من المشتركين وتمريرها إلى شبكة الإنترنت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "CM (Cable Modem)"
+      },
+      {
+        "letter": "B",
+        "text": "DSLAM"
+      },
+      {
+        "letter": "C",
+        "text": "CMTS (Cable Modem Transmission System)"
+      },
+      {
+        "letter": "D",
+        "text": "Splitter"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The cable modem transmission system (CMTS) is installed inside the cable company to handle subscriber data.",
+      "ar": "يتم تثبيت نظام إرسال مودم الكابل (CMTS) داخل شركة الكابلات للتعامل مع بيانات المشتركين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q29: What is the center that controls base stations and coordinates communication in a cellular network?",
+      "ar": "س29: ما هو المركز الذي يتحكم في المحطات الأساسية وينسق الاتصال في الشبكة الخلوية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mobile Station (MS)"
+      },
+      {
+        "letter": "B",
+        "text": "Base Station (BS)"
+      },
+      {
+        "letter": "C",
+        "text": "Mobile Switching Center (MSC)"
+      },
+      {
+        "letter": "D",
+        "text": "Regional Cable Head (RCH)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The mobile switching center (MSC) coordinates communication between all base stations and the telephone central office.",
+      "ar": "يقوم مركز التبديل المتنقل (MSC) بتنسيق الاتصال بين جميع المحطات الأساسية والسنترال المركزي للهاتف."
+    }
+  },
+  {
+    "question": {
+      "en": "Q30: In cellular networks, what is a frequency-reuse pattern?",
+      "ar": "س30: ما هو نمط إعادة استخدام التردد في الشبكات الخلوية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A method to increase transmission power"
+      },
+      {
+        "letter": "B",
+        "text": "A configuration of N cells where each cell uses a unique set of frequencies"
+      },
+      {
+        "letter": "C",
+        "text": "A modulation technique"
+      },
+      {
+        "letter": "D",
+        "text": "A way to bypass the MSC"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A frequency-reuse pattern is a configuration of N cells in which each cell uses a unique set of frequencies that can be repeated.",
+      "ar": "نمط إعادة استخدام التردد هو تكوين من N خلايا حيث تستخدم كل خلية مجموعة فريدة من الترددات التي يمكن تكرارها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: Which handoff method allows a mobile station to communicate with two base stations at the same time during the transition?",
+      "ar": "س31: ما هي طريقة التسليم التي تسمح لمحطة متنقلة بالاتصال بمحطتين أساسيتين في نفس الوقت أثناء عملية النقل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hard handoff"
+      },
+      {
+        "letter": "B",
+        "text": "Soft handoff"
+      },
+      {
+        "letter": "C",
+        "text": "Roaming"
+      },
+      {
+        "letter": "D",
+        "text": "Paging"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In a soft handoff, a mobile station can communicate with two base stations simultaneously, avoiding a broken connection.",
+      "ar": "في التسليم المرن (Soft handoff)، يمكن للمحطة المتنقلة الاتصال بمحطتين أساسيتين في نفس الوقت، مما يمنع انقطاع الاتصال."
+    }
+  },
+  {
+    "question": {
+      "en": "Q32: What multiplexing technology does the first-generation AMPS cellular system use?",
+      "ar": "س32: ما هي تقنية تعدد الإرسال التي يستخدمها الجيل الأول من النظام الخلوي AMPS؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "TDMA"
+      },
+      {
+        "letter": "B",
+        "text": "CDMA"
+      },
+      {
+        "letter": "C",
+        "text": "FDMA"
+      },
+      {
+        "letter": "D",
+        "text": "OFDM"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "AMPS is an analog cellular phone system using FDMA to separate channels.",
+      "ar": "AMPS هو نظام هاتف خلوي تناظري يستخدم FDMA لفصل القنوات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q33: What multiplexing technologies does the GSM (2G) cellular system use?",
+      "ar": "س33: ما هي تقنيات تعدد الإرسال التي يستخدمها النظام الخلوي GSM (2G)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "FDMA only"
+      },
+      {
+        "letter": "B",
+        "text": "TDMA and FDMA"
+      },
+      {
+        "letter": "C",
+        "text": "CDMA and DSSS"
+      },
+      {
+        "letter": "D",
+        "text": "OFDM"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "GSM is a digital cellular phone system using both TDMA and FDMA.",
+      "ar": "GSM هو نظام هاتف خلوي رقمي يستخدم كلاً من TDMA و FDMA."
+    }
+  },
+  {
+    "question": {
+      "en": "Q34: In the IS-95 cellular system, what technique is used in the forward direction for signal spreading?",
+      "ar": "س34: في النظام الخلوي IS-95، ما هي التقنية المستخدمة في الاتجاه الأمامي لنشر الإشارة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "TDMA"
+      },
+      {
+        "letter": "B",
+        "text": "CDMA"
+      },
+      {
+        "letter": "C",
+        "text": "FDMA only"
+      },
+      {
+        "letter": "D",
+        "text": "GSM"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "IS-95 uses CDMA in the forward direction where all bases are synchronized via GPS.",
+      "ar": "يستخدم نظام IS-95 تقنية CDMA في الاتجاه الأمامي حيث تتم مزامنة جميع القواعد عبر GPS."
+    }
+  },
+  {
+    "question": {
+      "en": "Q35: What generation of cellular networks uses an all-IP, packet-switched architecture supporting IPv6?",
+      "ar": "س35: ما هو جيل الشبكات الخلوية الذي يستخدم بنية IPv6 بالكامل وتبديل الحزم التي تدعم IPv6؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1G"
+      },
+      {
+        "letter": "B",
+        "text": "2G"
+      },
+      {
+        "letter": "C",
+        "text": "3G"
+      },
+      {
+        "letter": "D",
+        "text": "4G"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The fourth generation (4G) is only packet-based and supports Internet Protocol version 6.",
+      "ar": "الجيل الرابع (4G) يعتمد بالكامل على الحزم ويدعم الإصدار السادس من بروتوكول الإنترنت (IPv6)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q36: What is the altitude of a Geostationary Earth Orbit (GEO) satellite?",
+      "ar": "س36: ما هو ارتفاع القمر الصناعي الذي يدور حول الأرض (GEO)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "500 km"
+      },
+      {
+        "letter": "B",
+        "text": "2000 km"
+      },
+      {
+        "letter": "C",
+        "text": "15,000 km"
+      },
+      {
+        "letter": "D",
+        "text": "35,786 km"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "GEO satellites are located at a specific orbit approximately 35,786 km (22,000 mi) above the surface of the Earth.",
+      "ar": "توجد أقمار GEO الصناعية في مدار محدد يبلغ ارتفاعه تقريبًا 35,786 كم فوق سطح الأرض."
+    }
+  },
+  {
+    "question": {
+      "en": "Q37: Which category of satellites operates at an altitude between the two Van Allen belts?",
+      "ar": "س37: ما هي فئة الأقمار الصناعية التي تعمل على ارتفاع بين حزامي فان ألين؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "GEO"
+      },
+      {
+        "letter": "B",
+        "text": "MEO"
+      },
+      {
+        "letter": "C",
+        "text": "LEO"
+      },
+      {
+        "letter": "D",
+        "text": "Solar orbiters"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Medium-Earth-orbit (MEO) satellites are positioned between the two Van Allen belts (altitudes between 5000 and 15,000 km).",
+      "ar": "تتموضع الأقمار الصناعية ذات المدار الأرضي المتوسط (MEO) بين حزامي فان ألين (على ارتفاعات تتراوح بين 5000 و15000 كم)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q38: Which satellite system uses 24 satellites in six orbits to provide time and location information?",
+      "ar": "س38: ما هو نظام الأقمار الصناعية الذي يستخدم 24 قمرًا صناعيًا في ستة مدارات لتوفير معلومات الوقت والموقع؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Iridium"
+      },
+      {
+        "letter": "B",
+        "text": "Globalstar"
+      },
+      {
+        "letter": "C",
+        "text": "Teledesic"
+      },
+      {
+        "letter": "D",
+        "text": "Global Positioning System (GPS)"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "GPS uses 24 MEO satellites in six orbits to provide navigation and location services.",
+      "ar": "يستخدم نظام GPS 24 قمرًا صناعيًا من فئة MEO في 6 مدارات لتوفير خدمات الملاحة وتحديد المواقع."
+    }
+  },
+  {
+    "question": {
+      "en": "Q39: What principle does GPS use to determine a receiver's position?",
+      "ar": "س39: ما هو المبدأ الذي يستخدمه نظام تحديد المواقع لتحديد موقع جهاز الاستقبال؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Triangulation"
+      },
+      {
+        "letter": "B",
+        "text": "Trilateration"
+      },
+      {
+        "letter": "C",
+        "text": "Orthogonality"
+      },
+      {
+        "letter": "D",
+        "text": "Autonegotiation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "GPS is based on trilateration, measuring distances (pseudoranges) from at least four satellites to find exact 3D coordinates.",
+      "ar": "يعتمد GPS على التثليث المساحي (Trilateration)، حيث يقيس المسافات من 4 أقمار صناعية على الأقل لإيجاد الإحداثيات ثلاثية الأبعاد الدقيقة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q40: What is the term for the transmission path from the Earth to a satellite?",
+      "ar": "س40: ما هو مصطلح مسار الإرسال من الأرض إلى القمر الصناعي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Downlink"
+      },
+      {
+        "letter": "B",
+        "text": "Uplink"
+      },
+      {
+        "letter": "C",
+        "text": "ISL"
+      },
+      {
+        "letter": "D",
+        "text": "Footprint"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Transmission from the Earth to the satellite is called the uplink, while transmission from the satellite to Earth is the downlink.",
+      "ar": "يُسمى الإرسال من الأرض إلى القمر الصناعي بالوصلة الصاعدة (Uplink)، بينما الإرسال من القمر إلى الأرض هو الوصلة الهابطة (Downlink)."
+    }
+  }
+]

@@ -1,0 +1,3772 @@
+[
+  {
+    "question": {
+      "en": "Q1: What type of agent is a Problem-Solving Agent?",
+      "ar": "س1: ما هو نوع الوكيل الذي يعتبر وكيل حل المشكلات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reflex agent"
+      },
+      {
+        "letter": "B",
+        "text": "Learning agent"
+      },
+      {
+        "letter": "C",
+        "text": "Goal-based agent"
+      },
+      {
+        "letter": "D",
+        "text": "Utility-based agent"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A Problem-Solving Agent is specifically designed to use search algorithms to find a sequence of actions that reach a goal state.",
+      "ar": "وكيل حل المشكلات مصمم خصيصاً لاستخدام خوارزميات البحث للعثور على سلسلة من الإجراءات التي تصل إلى حالة الهدف."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Which step must immediately precede problem formulation?",
+      "ar": "س2: ما هي الخطوة التي يجب أن تسبق صياغة المشكلة مباشرة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Goal formulation"
+      },
+      {
+        "letter": "B",
+        "text": "Search"
+      },
+      {
+        "letter": "C",
+        "text": "Execution"
+      },
+      {
+        "letter": "D",
+        "text": "Abstraction"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Goal formulation is the first step because an agent must know its objective before it can formulate the problem to achieve it.",
+      "ar": "صياغة الهدف هي الخطوة الأولى لأن الوكيل يجب أن يعرف هدفه قبل أن يتمكن من صياغة المشكلة لتحقيقه."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Which of the following is NOT an assumption made for the basic problem-solving agents?",
+      "ar": "س3: أي مما يلي ليس افتراضًا لوكلاء حل المشكلات الأساسيين؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The environment is fully observable."
+      },
+      {
+        "letter": "B",
+        "text": "The environment is deterministic."
+      },
+      {
+        "letter": "C",
+        "text": "The environment is continuous."
+      },
+      {
+        "letter": "D",
+        "text": "The environment is known."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The basic problem-solving agent assumes the environment is discrete, not continuous.",
+      "ar": "يفترض وكيل حل المشكلات الأساسي أن البيئة منفصلة وليست مستمرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: What is the specific function of the Transition Model in problem formulation?",
+      "ar": "س4: ما هي الوظيفة المحددة للنموذج الانتقالي في صياغة المشكلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It calculates the total cost of a path."
+      },
+      {
+        "letter": "B",
+        "text": "It returns the state that results from doing action 'a' in state 's'."
+      },
+      {
+        "letter": "C",
+        "text": "It tests whether a state is the goal state."
+      },
+      {
+        "letter": "D",
+        "text": "It lists all possible actions from the initial state."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Transition Model formally defines what each action does by returning the resulting state.",
+      "ar": "يحدد نموذج الانتقال رسمياً ما يفعله كل إجراء عن طريق إرجاع الحالة الناتجة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: Which three components implicitly define the \"State Space\" of a problem?",
+      "ar": "س5: ما هي المكونات الثلاثة التي تحدد ضمنيًا \"مساحة الحالة\" للمشكلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Initial state, Goal test, Path cost"
+      },
+      {
+        "letter": "B",
+        "text": "Initial state, Actions, Transition model"
+      },
+      {
+        "letter": "C",
+        "text": "Problem formulation, Search, Execution"
+      },
+      {
+        "letter": "D",
+        "text": "State description, Abstraction level, Step cost"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The State Space is implicitly defined by the initial state, the possible actions, and the transition model.",
+      "ar": "يتم تعريف مساحة الحالة ضمنياً من خلال الحالة الأولية، والإجراءات الممكنة، ونموذج الانتقال."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: What is the primary purpose of 'Abstraction' in problem formulation?",
+      "ar": "س6: ما هو الغرض الأساسي من \"التجريد\" في صياغة المشكلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To remove irrelevant details from the representation."
+      },
+      {
+        "letter": "B",
+        "text": "To increase the number of states in the state space."
+      },
+      {
+        "letter": "C",
+        "text": "To ensure the heuristic function is admissible."
+      },
+      {
+        "letter": "D",
+        "text": "To convert a continuous path cost into a discrete one."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Abstraction helps simplify the problem by removing irrelevant details so the agent can focus on what matters.",
+      "ar": "يساعد التجريد في تبسيط المشكلة عن طريق إزالة التفاصيل غير ذات الصلة ليتمكن الوكيل من التركيز على ما يهم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: Why is the execution phase of a basic problem-solving agent considered an 'open-loop system'?",
+      "ar": "س7: لماذا تعتبر مرحلة تنفيذ وكيل حل المشكلات الأساسي \"نظام حلقة مفتوحة\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because it constantly evaluates alternative paths while acting."
+      },
+      {
+        "letter": "B",
+        "text": "Because it ignores its percepts when choosing an action during execution."
+      },
+      {
+        "letter": "C",
+        "text": "Because it leaves the problem space open for future modifications."
+      },
+      {
+        "letter": "D",
+        "text": "Because it loops infinitely until a goal is reached."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "It is an open-loop system because it executes its planned actions without checking its percepts again.",
+      "ar": "إنه نظام حلقة مفتوحة لأنه ينفذ إجراءاته المخطط لها دون التحقق من مدركاته مرة أخرى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: In the formal definition of a problem, what calculates the numeric cost of a sequence of states connected by actions?",
+      "ar": "س8: في التعريف الرسمي للمشكلة، ما الذي يحسب التكلفة الرقمية لسلسلة من الحالات المرتبطة بالإجراءات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Transition Model"
+      },
+      {
+        "letter": "B",
+        "text": "The Path Cost function"
+      },
+      {
+        "letter": "C",
+        "text": "The Goal Test"
+      },
+      {
+        "letter": "D",
+        "text": "The Utility Function"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Path Cost function assigns a numeric cost to a path to help the agent find the optimal sequence.",
+      "ar": "تقوم دالة تكلفة المسار بتعيين تكلفة رقمية للمسار لمساعدة الوكيل في العثور على التسلسل الأمثل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: According to the text, when is an abstraction considered valid?",
+      "ar": "س9: بحسب النص متى يعتبر التجريد صحيحا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "When it reduces the state space size by at least 50%."
+      },
+      {
+        "letter": "B",
+        "text": "When it ensures the optimal solution has a lower path cost."
+      },
+      {
+        "letter": "C",
+        "text": "When any abstract solution can be expanded into a solution in the more detailed world."
+      },
+      {
+        "letter": "D",
+        "text": "When it removes all step costs from the calculation."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "An abstraction is valid if any abstract solution can be expanded into a real-world solution.",
+      "ar": "يعتبر التجريد صالحاً إذا كان من الممكن توسيع أي حل مجرد إلى حل في العالم الحقيقي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: If an agent operates in an environment that is NOT deterministic, what kind of solution might it need instead of a fixed sequence of actions?",
+      "ar": "س10: إذا كان الوكيل يعمل في بيئة غير حتمية، فما نوع الحل الذي قد يحتاجه بدلاً من تسلسل ثابت من الإجراءات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An atomic representation"
+      },
+      {
+        "letter": "B",
+        "text": "A branching strategy or contingency plan"
+      },
+      {
+        "letter": "C",
+        "text": "A stricter goal formulation"
+      },
+      {
+        "letter": "D",
+        "text": "A zero-cost step function"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In non-deterministic environments, the agent needs a contingency plan to handle different possible outcomes.",
+      "ar": "في البيئات غير الحتمية، يحتاج الوكيل إلى خطة طوارئ للتعامل مع النتائج المحتملة المختلفة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: What is the primary characteristic that distinguishes a \"toy problem\" from a \"real-world problem\" in AI research?",
+      "ar": "س11: ما هي الخاصية الأساسية التي تميز \"مشكلة الألعاب\" عن \"مشكلة العالم الحقيقي\" في أبحاث الذكاء الاصطناعي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Toy problems always have finite state spaces."
+      },
+      {
+        "letter": "B",
+        "text": "Toy problems can be given a concise, exact mathematical description."
+      },
+      {
+        "letter": "C",
+        "text": "Real-world problems cannot be solved using uninformed search algorithms."
+      },
+      {
+        "letter": "D",
+        "text": "Toy problems are specifically designed for continuous environments."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Toy problems are used in AI because they can be given a concise, exact mathematical description for testing.",
+      "ar": "تُستخدم المشاكل البسيطة (Toy problems) في الذكاء الاصطناعي لأنه يمكن إعطاؤها وصفاً رياضياً دقيقاً وموجزاً للاختبار."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: In the vacuum world problem, if the environment has n locations, what is the exact formula for the total number of possible world states?",
+      "ar": "س12: في مشكلة عالم الفراغ، إذا كانت البيئة لها n موقع، ما هي الصيغة الدقيقة لإجمالي عدد حالات العالم المحتملة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "n^2"
+      },
+      {
+        "letter": "B",
+        "text": "2^n"
+      },
+      {
+        "letter": "C",
+        "text": "n * 2^n"
+      },
+      {
+        "letter": "D",
+        "text": "n!"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The total number of world states is n (robot location) multiplied by 2^n (dirty/clean status of all locations).",
+      "ar": "إجمالي عدد حالات العالم هو n (موقع الروبوت) مضروباً في 2^n (حالة النظافة لجميع المواقع)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: Which specific abstraction is applied in the standard formal problem formulation of the 8-puzzle?",
+      "ar": "س13: ما هو التجريد المحدد الذي يتم تطبيقه في صياغة المشكلة الرسمية القياسية للألغاز الثمانية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The path cost is calculated based on the physical distance moved."
+      },
+      {
+        "letter": "B",
+        "text": "The initial and final positions of the tiles are ignored."
+      },
+      {
+        "letter": "C",
+        "text": "The intermediate physical manipulations and real-world execution details are ignored."
+      },
+      {
+        "letter": "D",
+        "text": "The goal state is generalized to any ordered configuration."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The 8-puzzle problem abstraction ignores the physical manipulation of the tiles and focuses only on their positions.",
+      "ar": "يتجاهل تجريد مشكلة الـ 8-puzzle التلاعب المادي بالمربعات ويركز فقط على مواقعها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: Why is the improved incremental formulation of the 8-Queens problem vastly superior to the basic incremental formulation?",
+      "ar": "س 14: لماذا تعد الصياغة التزايدية المحسنة لمسألة الملكات الثمانية متفوقة بشكل كبير على الصياغة التزايدية الأساسية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It places all 8 queens on the board initially."
+      },
+      {
+        "letter": "B",
+        "text": "It restricts actions to placing a queen in the leftmost empty column such that it is not attacked."
+      },
+      {
+        "letter": "C",
+        "text": "It formulates the problem as a continuous space."
+      },
+      {
+        "letter": "D",
+        "text": "It ignores the path cost."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "It is superior because it drastically reduces the search space by only allowing legal non-attacking placements.",
+      "ar": "إنه أفضل لأنه يقلل بشكل كبير من مساحة البحث من خلال السماح فقط بالوضعيات القانونية غير المهاجمة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: What is the fundamental difference between a standard \"Route-finding problem\" and a \"Touring problem\" (like TSP)?",
+      "ar": "س 15: ما هو الفرق الأساسي بين \"مشكلة العثور على الطريق\" القياسية و\"مشكلة التجول\" (مثل TSP)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Touring problems require a dynamic path cost function."
+      },
+      {
+        "letter": "B",
+        "text": "Route-finding problems operate in discrete spaces."
+      },
+      {
+        "letter": "C",
+        "text": "The state in a touring problem must include the set of all locations visited so far."
+      },
+      {
+        "letter": "D",
+        "text": "Route-finding problems use complete-state formulations."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A touring problem requires the state to track all visited locations to ensure every location is visited exactly once.",
+      "ar": "تتطلب مشكلة الجولة من الحالة تتبع جميع المواقع التي تمت زيارتها لضمان زيارة كل موقع مرة واحدة بالضبط."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: What is the primary difference between a general TREE-SEARCH algorithm and a GRAPH-SEARCH algorithm?",
+      "ar": "س 16: ما هو الفرق الأساسي بين خوارزمية TREE-SEARCH العامة وخوارزمية GRAPH-SEARCH؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "TREE-SEARCH evaluates the path cost, whereas GRAPH-SEARCH does not."
+      },
+      {
+        "letter": "B",
+        "text": "GRAPH-SEARCH utilizes a LIFO queue."
+      },
+      {
+        "letter": "C",
+        "text": "GRAPH-SEARCH maintains an Explored Set to remember previously expanded nodes and avoid redundant paths."
+      },
+      {
+        "letter": "D",
+        "text": "TREE-SEARCH operates on discrete environments only."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "GRAPH-SEARCH maintains an Explored Set to avoid getting stuck in loops or redundant paths.",
+      "ar": "يحافظ GRAPH-SEARCH على مجموعة مستكشفة (Explored Set) لتجنب العالق في الحلقات أو المسارات المتكررة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: What is the critical distinction between a \"Node\" and a \"State\" in problem-solving algorithms?",
+      "ar": "س 17: ما هو الفرق الحاسم بين \"العقدة\" و\"الحالة\" في خوارزميات حل المشكلات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Node refers to initial condition, state refers to goal."
+      },
+      {
+        "letter": "B",
+        "text": "A node is a bookkeeping data structure belonging to a search tree, whereas a state is a physical configuration."
+      },
+      {
+        "letter": "C",
+        "text": "State contains PARENT and ACTION, node contains PATH-COST."
+      },
+      {
+        "letter": "D",
+        "text": "There is no mathematical distinction."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A node is a data structure used by the algorithm, whereas a state represents a physical configuration in the world.",
+      "ar": "العقدة هي بنية بيانات تستخدمها الخوارزمية، بينما الحالة تمثل تكويناً مادياً في العالم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: What metric is typically used to represent Space Complexity in search algorithms?",
+      "ar": "س18: ما هو المقياس المستخدم عادةً لتمثيل تعقيد المساحة في خوارزميات البحث؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The physical memory required for executable code."
+      },
+      {
+        "letter": "B",
+        "text": "The number of steps in the optimal solution path."
+      },
+      {
+        "letter": "C",
+        "text": "The maximum number of nodes generated per millisecond."
+      },
+      {
+        "letter": "D",
+        "text": "The maximum number of nodes stored in memory at any given point during execution."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Space Complexity is measured by the maximum number of nodes stored in memory during the search process.",
+      "ar": "يُقاس تعقيد المساحة بأقصى عدد من العقد المخزنة في الذاكرة أثناء عملية البحث."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Why is Iterative Deepening Search preferred over Breadth-First Search if identical step costs are assumed and the depth is unknown?",
+      "ar": "س 19: لماذا يُفضل بحث التعميق التكراري على بحث العرض الأول إذا تم افتراض تكاليف خطوة متطابقة وكان العمق غير معروف؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It expands fewer total nodes."
+      },
+      {
+        "letter": "B",
+        "text": "It avoids the O(b^d) space complexity bottleneck of breadth-first search while maintaining completeness."
+      },
+      {
+        "letter": "C",
+        "text": "It inherently avoids redundant paths."
+      },
+      {
+        "letter": "D",
+        "text": "Breadth-first search is not optimal."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Iterative Deepening Search uses minimal memory (like DFS) but guarantees finding the shortest path (like BFS).",
+      "ar": "يستخدم البحث بالتعميق التكراري ذاكرة قليلة (مثل DFS) ولكنه يضمن العثور على أقصر مسار (مثل BFS)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: Which condition strictly guarantees the optimality of Uniform-Cost Search?",
+      "ar": "س20: ما هو الشرط الذي يضمن بدقة البحث الأمثل للتكلفة الموحدة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The use of a FIFO queue."
+      },
+      {
+        "letter": "B",
+        "text": "Applying the goal test upon node generation."
+      },
+      {
+        "letter": "C",
+        "text": "Path costs depend on node depth."
+      },
+      {
+        "letter": "D",
+        "text": "All step costs must be strictly greater than some positive constant ε."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Uniform-Cost Search is optimal only if all step costs are strictly positive, preventing infinite negative cost loops.",
+      "ar": "يكون البحث بتكلفة موحدة مثالياً فقط إذا كانت جميع تكاليف الخطوات إيجابية بحتة، مما يمنع حلقات التكلفة السلبية اللانهائية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: Why is Depth-First Tree Search heavily utilized despite lacking completeness and optimality?",
+      "ar": "س21: لماذا يتم استخدام بحث العمق الأول بشكل كبير على الرغم من افتقاره إلى الاكتمال والمثالية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Time complexity is logarithmic O(log n)."
+      },
+      {
+        "letter": "B",
+        "text": "It operates as a graph search inherently."
+      },
+      {
+        "letter": "C",
+        "text": "Its space complexity is linear O(bm), making it highly memory-efficient."
+      },
+      {
+        "letter": "D",
+        "text": "It guarantees finding the shortest path."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "DFS is heavily used because its linear space complexity makes it highly memory-efficient for deep problems.",
+      "ar": "يُستخدم DFS بكثرة لأن تعقيد المساحة الخطي يجعله عالي الكفاءة في استخدام الذاكرة للمشاكل العميقة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: What is the most significant computational weakness of Bidirectional search?",
+      "ar": "س22: ما هو أهم نقاط الضعف الحسابية في البحث ثنائي الاتجاه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Generating a new state space."
+      },
+      {
+        "letter": "B",
+        "text": "Loss of completeness."
+      },
+      {
+        "letter": "C",
+        "text": "It has an exponential space requirement O(b^{d/2}) because one frontier must be kept in memory to check for intersection."
+      },
+      {
+        "letter": "D",
+        "text": "Infinite loops."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Bidirectional search requires exponential space because at least one of the search frontiers must be kept in memory.",
+      "ar": "يتطلب البحث ثنائي الاتجاه مساحة أسية لأنه يجب الاحتفاظ بإحدى واجهات البحث في الذاكرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: In A* search using GRAPH-SEARCH, what happens if the heuristic h(n) is \"Admissible\" but NOT \"Consistent\"?",
+      "ar": "س23: في بحث A* باستخدام GRAPH-SEARCH، ماذا يحدث إذا كان h(n) الإرشادي \"مقبولًا\" ولكنه ليس \"متسقًا\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It fails to find any solution."
+      },
+      {
+        "letter": "B",
+        "text": "The f-costs are monotonically increasing."
+      },
+      {
+        "letter": "C",
+        "text": "The algorithm is not guaranteed to find the optimal solution because it might expand a node via a suboptimal path first."
+      },
+      {
+        "letter": "D",
+        "text": "It degrades to Greedy Search."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "If a heuristic is admissible but not consistent, GRAPH-SEARCH might not find the optimal path without extra checks.",
+      "ar": "إذا كان الاستدلال مقبولاً ولكنه غير متسق، فقد لا يجد GRAPH-SEARCH المسار الأمثل بدون فحوصات إضافية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: Which statement mathematically defines a \"Consistent\" heuristic?",
+      "ar": "س24: ما هي العبارة التي تحدد رياضيًا الاستدلال \"المتسق\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "h(n) <= h*(n)"
+      },
+      {
+        "letter": "B",
+        "text": "h(n) = 0 for goal states."
+      },
+      {
+        "letter": "C",
+        "text": "h(n) <= c(n,a,n') + h(n')"
+      },
+      {
+        "letter": "D",
+        "text": "f(n) = g(n) + h(n)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A consistent heuristic satisfies the triangle inequality: h(n) <= c(n,a,n') + h(n').",
+      "ar": "الاستدلال المتسق يحقق متباينة المثلث: h(n) <= c(n,a,n') + h(n')."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: What is the primary operational flaw of the Recursive Best-First Search (RBFS)?",
+      "ar": "س25: ما هو الخلل التشغيلي الأساسي في البحث المتكرر الأفضل أولاً (RBFS)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Requires inconsistent heuristics."
+      },
+      {
+        "letter": "B",
+        "text": "Frequently \"changes its mind\" and backtracks, leading to excessive regeneration of previously expanded nodes (thrashing)."
+      },
+      {
+        "letter": "C",
+        "text": "Arbitrarily drops nodes."
+      },
+      {
+        "letter": "D",
+        "text": "Converts graph to continuous model."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "RBFS often 'changes its mind' and forgets previously expanded nodes, leading to excessive recomputation (thrashing).",
+      "ar": "غالباً ما يغير RBFS رأيه وينسى العقد الموسعة سابقاً، مما يؤدي إلى إعادة حساب مفرطة (Thrashing)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q26: Under what condition is the A* algorithm definitively proven to be \"Optimally Efficient\"?",
+      "ar": "س26: في أي حالة يتم إثبات أن خوارزمية A* \"ذات كفاءة مثالية\" بشكل قاطع؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "When h(n) = 0 for all non-goal nodes."
+      },
+      {
+        "letter": "B",
+        "text": "When the heuristic function is an exact probability distribution."
+      },
+      {
+        "letter": "C",
+        "text": "When the heuristic function used is consistent."
+      },
+      {
+        "letter": "D",
+        "text": "When the state space is infinite."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A* is optimally efficient when the heuristic function used is consistent.",
+      "ar": "تعتبر خوارزمية A* فعالة بشكل أمثل عندما تكون الدالة الاستدلالية المستخدمة متسقة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q27: What does it mean if heuristic function h2 'dominates' heuristic function h1?",
+      "ar": "س27: ماذا يعني إذا كانت الوظيفة الإرشادية h2 \"تهيمن\" على الوظيفة الإرشادية h1؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "h2 evaluates faster computationally."
+      },
+      {
+        "letter": "B",
+        "text": "h2(n) is greater than or equal to h1(n) for all nodes n, assuming both are admissible."
+      },
+      {
+        "letter": "C",
+        "text": "h2 generates a larger branching factor."
+      },
+      {
+        "letter": "D",
+        "text": "h2(n) is less than h1(n)."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Heuristic h2 dominates h1 if its estimated cost is always greater than or equal to h1's estimate for every node.",
+      "ar": "يهيمن الاستدلال h2 على h1 إذا كانت تكلفته المقدرة أكبر من أو تساوي تقدير h1 لكل عقدة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q28: If the effective branching factor (b*) of a heuristic is close to 1, what does this indicate?",
+      "ar": "س28: إذا كان عامل التفرع الفعال (b*) للاستدلال يقترب من 1، فماذا يشير ذلك؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The heuristic is weak."
+      },
+      {
+        "letter": "B",
+        "text": "The heuristic is highly accurate, guiding the search almost directly to the goal."
+      },
+      {
+        "letter": "C",
+        "text": "The heuristic overestimates the cost."
+      },
+      {
+        "letter": "D",
+        "text": "The depth is shallow."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A branching factor close to 1 means the heuristic is highly accurate and guides the search directly to the goal.",
+      "ar": "عامل التفرع القريب من 1 يعني أن الاستدلال دقيق للغاية ويوجه البحث مباشرة إلى الهدف."
+    }
+  },
+  {
+    "question": {
+      "en": "Q29: How is a 'relaxed problem' utilized to create an admissible heuristic?",
+      "ar": "س29: كيف يتم استخدام \"المشكلة المريحة\" لإنشاء إرشاد مقبول؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By adding more constraints."
+      },
+      {
+        "letter": "B",
+        "text": "By removing constraints on actions; the optimal cost of this easier problem becomes the heuristic for the original."
+      },
+      {
+        "letter": "C",
+        "text": "Using pattern databases."
+      },
+      {
+        "letter": "D",
+        "text": "Using random actions."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A relaxed problem removes constraints, and its exact cost provides an optimistic, admissible heuristic for the real problem.",
+      "ar": "المشكلة المخففة تزيل القيود، وتكلفتها الدقيقة توفر استدلالاً متفائلاً ومقبولاً للمشكلة الحقيقية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q30: How do you optimally combine multiple non-dominating admissible heuristics {h1, h2, h3}?",
+      "ar": "س 30: كيف يمكنك الجمع على النحو الأمثل بين الاستدلالات المتعددة المقبولة غير المهيمنة {h1، h2، h3}؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "h(n) = (h1(n) + h2(n) + h3(n)) / 3"
+      },
+      {
+        "letter": "B",
+        "text": "h(n) = min(h1(n), h2(n), h3(n))"
+      },
+      {
+        "letter": "C",
+        "text": "h(n) = max(h1(n), h2(n), h3(n))"
+      },
+      {
+        "letter": "D",
+        "text": "h(n) = h1(n) * h2(n) * h3(n)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "To optimally combine non-dominating heuristics, take the maximum value of all heuristics at each node.",
+      "ar": "للجمع بشكل أمثل بين الاستدلالات غير المهيمنة، خذ القيمة القصوى لجميع الاستدلالات في كل عقدة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: What is a critical theoretical risk when deriving heuristics using Machine Learning?",
+      "ar": "س 31: ما هو الخطر النظري الحاسم عند استخلاص الاستدلالات باستخدام التعلم الآلي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "High time complexity."
+      },
+      {
+        "letter": "B",
+        "text": "Inability to use state features."
+      },
+      {
+        "letter": "C",
+        "text": "It is statistical and may overestimate the true cost, breaking admissibility and losing optimality."
+      },
+      {
+        "letter": "D",
+        "text": "Causes branching factor greater than 3."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Machine Learning heuristics are statistical and might overestimate costs, breaking admissibility and losing optimality.",
+      "ar": "الاستدلالات المبنية على التعلم الآلي إحصائية وقد تبالغ في التكلفة، مما يكسر المقبولية ويفقد المثالية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: In hill-climbing search, what topography feature describes a flat area of the state-space landscape from which no uphill exit exists?",
+      "ar": "س1: في بحث تسلق التل، ما هي الميزة الطبوغرافية التي تصف منطقة مسطحة من المشهد الطبيعي لمساحة الدولة والتي لا يوجد منها مخرج صعود؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ridge"
+      },
+      {
+        "letter": "B",
+        "text": "Shoulder"
+      },
+      {
+        "letter": "C",
+        "text": "Flat local maximum"
+      },
+      {
+        "letter": "D",
+        "text": "Global minimum"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A flat local maximum is a flat area in the state-space landscape from which no uphill exit exists.",
+      "ar": "الحد الأقصى المحلي المسطح هو منطقة مسطحة في مشهد مساحة الحالة لا يوجد منها مخرج صاعد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: In the simulated annealing algorithm, if a generated move worsens the evaluation by an amount ΔE, what is the exact probability that the algorithm will accept this move?",
+      "ar": "س2: في خوارزمية التلدين المحاكية، إذا أدت حركة تم إنشاؤها إلى تفاقم التقييم بمقدار ΔE، ما هو الاحتمال الدقيق لقبول الخوارزمية هذه الخطوة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 - e^(ΔE/T)"
+      },
+      {
+        "letter": "B",
+        "text": "e^(ΔE/T)"
+      },
+      {
+        "letter": "C",
+        "text": "T / ΔE"
+      },
+      {
+        "letter": "D",
+        "text": "The move is always rejected."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In simulated annealing, a worse move is accepted with probability e^(ΔE/T).",
+      "ar": "في التلدين المحاكى، يتم قبول حركة أسوأ باحتمالية e^(ΔE/T)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: How does Stochastic Beam Search mathematically alleviate the lack of diversity often found in standard Local Beam Search?",
+      "ar": "س 3: كيف يمكن لبحث الحزمة العشوائية أن يخفف رياضيًا من نقص التنوع الموجود غالبًا في بحث الحزمة المحلية القياسي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By intentionally adding states with the lowest heuristic values to the population."
+      },
+      {
+        "letter": "B",
+        "text": "By systematically traversing the search tree using breadth-first expansion."
+      },
+      {
+        "letter": "C",
+        "text": "By choosing k successors at random, with the probability of selection being an increasing function of the successor's value."
+      },
+      {
+        "letter": "D",
+        "text": "By applying a strict limit on the number of consecutive sideways moves allowed."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Stochastic Beam Search maintains diversity by choosing successors randomly with probabilities proportional to their values.",
+      "ar": "يحافظ البحث الشعاعي العشوائي على التنوع عن طريق اختيار الخلفاء عشوائياً باحتمالات تتناسب مع قيمهم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: According to schema theory in genetic algorithms, what is the theoretical advantage of the crossover operation?",
+      "ar": "س4: حسب نظرية المخطط في الخوارزميات الجينية، ما هي الميزة النظرية لعملية التقاطع؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It guarantees that the resulting offspring will directly hit the global maximum."
+      },
+      {
+        "letter": "B",
+        "text": "It ensures the mutation rate is dynamically adapted based on temperature."
+      },
+      {
+        "letter": "C",
+        "text": "It allows the algorithm to combine large blocks of letters that have evolved independently to perform useful functions."
+      },
+      {
+        "letter": "D",
+        "text": "It completely isolates the fitness function from the selection process."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Crossover allows genetic algorithms to combine large blocks of useful features that evolved independently.",
+      "ar": "يسمح التقاطع للخوارزميات الجينية بالجمع بين كتل كبيرة من الميزات المفيدة التي تطورت بشكل مستقل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: In continuous state spaces, when searching for a maximum using the Newton-Raphson update equation, what does the matrix Hf(x) mathematically represent?",
+      "ar": "س5: في فضاءات الحالة المستمرة، عند البحث عن قيمة عظمى باستخدام معادلة تحديث نيوتن-رافسون، ماذا تمثل المصفوفة Hf(x) رياضياً؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The gradient vector of the objective function."
+      },
+      {
+        "letter": "B",
+        "text": "The objective function's empirical step size."
+      },
+      {
+        "letter": "C",
+        "text": "The Hessian matrix of second derivatives."
+      },
+      {
+        "letter": "D",
+        "text": "A dynamically updated list of tabu states."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Hessian matrix Hf(x) represents the matrix of second derivatives in continuous state spaces.",
+      "ar": "تمثل مصفوفة هيسي Hf(x) مصفوفة المشتقات الثانية في مساحات الحالة المستمرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: What are the strict topological requirements for a valid solution in an AND-OR search tree dealing with nondeterministic environments?",
+      "ar": "س6: ما هي المتطلبات الطوبولوجية الصارمة للتوصل إلى حل صالح في شجرة بحث AND-OR التي تتعامل مع بيئات غير حتمية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It must be a single sequence of deterministic actions that bypasses all AND nodes."
+      },
+      {
+        "letter": "B",
+        "text": "It must be a subtree that has a goal node at every leaf, specifies one action at each OR node, and includes every outcome branch at each AND node."
+      },
+      {
+        "letter": "C",
+        "text": "It must evaluate the heuristic cost of all OR nodes and select only the single highest-valued AND branch globally."
+      },
+      {
+        "letter": "D",
+        "text": "It must strictly avoid returning any cyclic paths regardless of the environment's physics."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An AND-OR solution must cover all possible nondeterministic outcomes (AND nodes) while choosing one action (OR nodes).",
+      "ar": "يجب أن يغطي حل AND-OR جميع النتائج المحتملة (عقد AND) مع اختيار إجراء واحد (عقد OR)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: In a nondeterministic environment like the \"slippery vacuum world,\" where movement actions sometimes fail, how is a viable solution mathematically formulated?",
+      "ar": "س7: في بيئة غير حتمية مثل \"عالم الفراغ الزلق\"، حيث تفشل إجراءات الحركة أحيانًا، كيف يمكن صياغة حل قابل للتطبيق رياضيًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "As an unconditionally acyclic plan that forces deterministic outcomes."
+      },
+      {
+        "letter": "B",
+        "text": "As a sequence of random walks executed until a sensor triggers."
+      },
+      {
+        "letter": "C",
+        "text": "As a cyclic plan, adding a label to denote some portion of the plan and using that label later instead of repeating the plan itself."
+      },
+      {
+        "letter": "D",
+        "text": "As a strict conformant plan that assumes illegal actions have zero effect."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A cyclic plan uses labels to handle failures by looping back to a previous state instead of giving up.",
+      "ar": "تستخدم الخطة الدورية التسميات للتعامل مع الفشل عن طريق العودة إلى حالة سابقة بدلاً من الاستسلام."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: If an underlying physical problem P has N states, what is the theoretical maximum size of the entire belief-state space in the corresponding sensorless problem?",
+      "ar": "س8: إذا كانت المشكلة الفيزيائية الأساسية P لها حالات N، ما هو الحجم الأقصى النظري لمساحة حالة الاعتقاد بأكملها في المشكلة غير الحسية المقابلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "N^2"
+      },
+      {
+        "letter": "B",
+        "text": "N!"
+      },
+      {
+        "letter": "C",
+        "text": "2^N"
+      },
+      {
+        "letter": "D",
+        "text": "N^N"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "For a problem with N states, the maximum number of possible belief states is 2^N (the power set).",
+      "ar": "بالنسبة لمشكلة بها N من الحالات، فإن الحد الأقصى لعدد حالات الاعتقاد الممكنة هو 2^N."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: During belief-state transitions in a partially observable problem, what is the specific mathematical function of the \"update stage\"?",
+      "ar": "س9: أثناء التحولات بين حالة الاعتقاد في مشكلة يمكن ملاحظتها جزئيًا، ما هي الوظيفة الرياضية المحددة لـ \"مرحلة التحديث\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To execute the chosen action in the physical environment unconditionally."
+      },
+      {
+        "letter": "B",
+        "text": "To compute the new belief state by determining the set of states in the predicted belief state that could have produced the actual received percept."
+      },
+      {
+        "letter": "C",
+        "text": "To artificially enlarge the belief state by applying random sensor noise probabilities."
+      },
+      {
+        "letter": "D",
+        "text": "To convert the recursive state estimator into an offline path generator."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The update stage filters the predicted belief state to only include states consistent with the actual percept.",
+      "ar": "تقوم مرحلة التحديث بتصفية حالة الاعتقاد المتوقعة لتشمل فقط الحالات المتوافقة مع الإدراك الفعلي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: Why is the state estimation formula b' = UPDATE(PREDICT(b, a), o) technically referred to as a \"recursive state estimator\"?",
+      "ar": "س10: لماذا يُشار إلى صيغة تقدير الحالة b' = UPDATE(PREDICT(b, a), o) تقنيًا باسم \"مُقدِّر الحالة العودية\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because it relies completely on the full history of every action taken since the initial state."
+      },
+      {
+        "letter": "B",
+        "text": "Because it computes the new belief state from the previous one rather than by examining the entire percept sequence."
+      },
+      {
+        "letter": "C",
+        "text": "Because it recursively branches out to solve independent AND-OR trees."
+      },
+      {
+        "letter": "D",
+        "text": "Because it ignores percepts and loops recursively through pre-computed offline plans."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "It is recursive because it computes the current belief state entirely from the immediately previous belief state and action.",
+      "ar": "إنه عودي لأنه يحسب حالة الاعتقاد الحالية بالكامل من حالة الاعتقاد والإجراء السابقين مباشرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: In the analysis of online search algorithms, what does the metric known as the \"competitive ratio\" specifically measure?",
+      "ar": "س11: في تحليل خوارزميات البحث عبر الإنترنت، ما الذي يقيسه المقياس المعروف باسم \"نسبة المنافسة\" على وجه التحديد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The time complexity of generating the belief-state search graph."
+      },
+      {
+        "letter": "B",
+        "text": "The probability of selecting a globally optimal action during a random walk."
+      },
+      {
+        "letter": "C",
+        "text": "The total path cost of the path the agent actually travels compared with the path cost of the path the agent would follow if it knew the search space in advance."
+      },
+      {
+        "letter": "D",
+        "text": "The ratio of deterministic actions versus nondeterministic actions available in an unknown environment."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The competitive ratio compares the online agent's path cost to the optimal offline path cost.",
+      "ar": "تقارن النسبة التنافسية تكلفة مسار الوكيل عبر الإنترنت بتكلفة المسار المثالي دون اتصال."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: What specific architectural requirement restricts the applicability of the ONLINE-DFS-AGENT algorithm?",
+      "ar": "س12: ما هي المتطلبات المعمارية المحددة التي تقيد إمكانية تطبيق خوارزمية ONLINE-DFS-AGENT؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It requires the environment to be completely continuous."
+      },
+      {
+        "letter": "B",
+        "text": "It works only in state spaces where the actions are reversible."
+      },
+      {
+        "letter": "C",
+        "text": "It demands an admissible heuristic that precisely matches the true path cost."
+      },
+      {
+        "letter": "D",
+        "text": "It relies entirely on generating random crossover offspring."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "ONLINE-DFS requires reversible actions so it can backtrack when it hits a dead end.",
+      "ar": "يتطلب ONLINE-DFS إجراءات قابلة للعكس حتى يتمكن من التراجع عندما يصل إلى طريق مسدود."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: To prevent an online search agent from becoming stuck in irreversible dead ends during mathematical analysis, what property must be strictly assumed about the state space?",
+      "ar": "س 13: لمنع وكيل البحث عبر الإنترنت من الوقوع في طريق مسدود لا رجعة فيه أثناء التحليل الرياضي، ما هي الخاصية التي يجب افتراضها بشكل صارم حول مساحة الحالة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is perfectly deterministic with zero branching factor."
+      },
+      {
+        "letter": "B",
+        "text": "It is safely explorable, meaning some goal state is reachable from every reachable state."
+      },
+      {
+        "letter": "C",
+        "text": "It allows teleportation to random coordinates unconditionally."
+      },
+      {
+        "letter": "D",
+        "text": "It lacks any form of objective evaluation function."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The state space must be safely explorable, guaranteeing that the goal is reachable from any reachable state.",
+      "ar": "يجب أن تكون مساحة الحالة قابلة للاستكشاف بأمان، مما يضمن إمكانية الوصول إلى الهدف من أي حالة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: How does the Learning Real-Time A* (LRTA*) algorithm computationally escape flat local minima during execution?",
+      "ar": "س 14: كيف تفلت خوارزمية التعلم في الوقت الحقيقي A* (LRTA*) حسابيًا من الحد الأدنى المحلي المسطح أثناء التنفيذ؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By intentionally wiping its internal memory table and restarting the search from the beginning."
+      },
+      {
+        "letter": "B",
+        "text": "By stopping entirely and executing an offline A* pass over the fully mapped graph."
+      },
+      {
+        "letter": "C",
+        "text": "By updating the cost estimate H(s) of the current state, iteratively incrementing it and \"flattening out\" the local minimum."
+      },
+      {
+        "letter": "D",
+        "text": "By relying on the assumption that all untried actions immediately fail."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "LRTA* escapes local minima by iteratively increasing the cost estimate of the current state until it finds a better path.",
+      "ar": "يتجنب LRTA* الحدود الدنيا المحلية عن طريق زيادة تقدير تكلفة الحالة الحالية تكرارياً حتى يجد مساراً أفضل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: In LRTA*, what critical design principle is implemented when evaluating actions that have not yet been physically tried by the agent?",
+      "ar": "س 15: في LRTA*، ما هو مبدأ التصميم الحاسم الذي يتم تنفيذه عند تقييم الإجراءات التي لم يجربها الوكيل فعليًا بعد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Absolute pessimism; they are assigned an infinite cost to avoid risk."
+      },
+      {
+        "letter": "B",
+        "text": "Optimism under uncertainty; they are assumed to lead immediately to the goal with the least possible cost h(s)."
+      },
+      {
+        "letter": "C",
+        "text": "Random sampling; their cost is randomly drawn from a Gaussian distribution."
+      },
+      {
+        "letter": "D",
+        "text": "A strictly zero-cost evaluation for any unvisited state."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "LRTA* assumes unknown actions are highly promising (optimism under uncertainty) to encourage exploration.",
+      "ar": "يفترض LRTA* أن الإجراءات غير المعروفة واعدة للغاية (التفاؤل تحت عدم اليقين) لتشجيع الاستكشاف."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: When an online search agent attempts to learn the underlying \"map\" of an unknown environment, what precise structural information is it trying to acquire and populate?",
+      "ar": "س 16: عندما يحاول وكيل بحث عبر الإنترنت معرفة \"الخريطة\" الأساسية لبيئة غير معروفة، ما هي المعلومات الهيكلية الدقيقة التي يحاول اكتسابها وتعبئتها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The global location of the heuristic baseline function."
+      },
+      {
+        "letter": "B",
+        "text": "The outcome of the mathematical crossover function."
+      },
+      {
+        "letter": "C",
+        "text": "The exact state resulting from executing each action a in each state s, mathematically defining the RESULT(s, a) transition table."
+      },
+      {
+        "letter": "D",
+        "text": "The heavy-tailed distribution of run times."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The agent learns the environment by building the transition table RESULT(s, a) from its experiences.",
+      "ar": "يتعلم الوكيل البيئة من خلال بناء جدول الانتقال RESULT(s, a) من تجاربه."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: In complex domains like driving in traffic or Internet shopping, what type of representations are required, and what is the process of creating these abstract concepts called?",
+      "ar": "س1: في المجالات المعقدة مثل القيادة في حركة المرور أو التسوق عبر الإنترنت، ما نوع التمثيلات المطلوبة، وما هي عملية إنشاء هذه المفاهيم المجردة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Special-purpose representations; Knowledge engineering"
+      },
+      {
+        "letter": "B",
+        "text": "General and flexible representations; Ontological engineering"
+      },
+      {
+        "letter": "C",
+        "text": "Procedural representations; Production engineering"
+      },
+      {
+        "letter": "D",
+        "text": "Reified networks; Substance engineering"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Complex domains require general and flexible representations created through ontological engineering.",
+      "ar": "تتطلب المجالات المعقدة تمثيلات عامة ومرنة يتم إنشاؤها من خلال الهندسة الأنطولوجية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: What distinguishes a general-purpose ontology from a collection of special-purpose ontologies?",
+      "ar": "س2: ما الذي يميز الأنطولوجيا ذات الأغراض العامة عن مجموعة الأنطولوجيا ذات الأغراض الخاصة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A general-purpose ontology completely omits the concept of time to ensure simplicity."
+      },
+      {
+        "letter": "B",
+        "text": "A general-purpose ontology must be applicable in more or less any special-purpose domain, requiring different areas of knowledge to be unified simultaneously."
+      },
+      {
+        "letter": "C",
+        "text": "A general-purpose ontology is only built by untrained amateurs using crowd-sourcing."
+      },
+      {
+        "letter": "D",
+        "text": "A general-purpose ontology avoids the use of first-order logic entirely."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A general-purpose ontology must be flexible enough to unify and apply across any special-purpose domain.",
+      "ar": "يجب أن تكون الأنطولوجيا ذات الأغراض العامة مرنة بما يكفي للتوحيد والتطبيق عبر أي مجال خاص."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Which ontology construction system was built primarily by a team of trained ontologists/logicians who architected the system and wrote explicit axioms?",
+      "ar": "س3: ما هو نظام بناء الأنطولوجيا الذي تم بناؤه في المقام الأول من قبل فريق من علماء الوجود/المنطقيين المدربين الذين صمموا النظام وكتبوا بديهيات واضحة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "DBPEDIA"
+      },
+      {
+        "letter": "B",
+        "text": "TEXTRUNNER"
+      },
+      {
+        "letter": "C",
+        "text": "OPENMIND"
+      },
+      {
+        "letter": "D",
+        "text": "CYC"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "CYC is the most prominent ontology construction system built entirely by trained logicians and ontologists.",
+      "ar": "CYC هو أبرز نظام بناء أنطولوجيا تم بناؤه بالكامل بواسطة علماء منطق وعلماء وجود مدربين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: What is the process of turning a logical proposition or category into an individual object in First-Order Logic called?",
+      "ar": "س 4: ما هي عملية تحويل الاقتراح المنطقي أو الفئة إلى كائن فردي في منطق الدرجة الأولى؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Subsumption"
+      },
+      {
+        "letter": "B",
+        "text": "Individuation"
+      },
+      {
+        "letter": "C",
+        "text": "Reification"
+      },
+      {
+        "letter": "D",
+        "text": "Minimization"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Reification is the process of turning a logical proposition into an individual object that can be reasoned about.",
+      "ar": "التجسيد (Reification) هو عملية تحويل الاقتراح المنطقي إلى كائن فردي يمكن التفكير فيه."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: If we assert that Dogs ∈ DomesticatedSpecies, what is the structural nature of DomesticatedSpecies?",
+      "ar": "س5: إذا أكدنا أن الكلاب ∈ أنواع مستأنسة، فما هي الطبيعة الهيكلية للأنواع المستأنسة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is a simple first-order predicate."
+      },
+      {
+        "letter": "B",
+        "text": "It is a category of categories."
+      },
+      {
+        "letter": "C",
+        "text": "It is an unstructured mass noun (Stuff)."
+      },
+      {
+        "letter": "D",
+        "text": "It is a baseline primitive physical instance."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If Dogs belong to DomesticatedSpecies, then DomesticatedSpecies is a category containing other categories.",
+      "ar": "إذا كانت الكلاب تنتمي إلى الأنواع المستأنسة، فإن الأنواع المستأنسة هي فئة تحتوي على فئات أخرى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: Which of the following formal definitions correctly specifies a structural \"Partition\" of a category c into a set of subcategories s?",
+      "ar": "س6: أي من التعريفات الرسمية التالية يحدد بشكل صحيح \"التقسيم\" الهيكلي للفئة ج إلى مجموعة من الفئات الفرعية س؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Partition(s,c) ⟺ Disjoint(s) ∨ ExhaustiveDecomposition(s,c)"
+      },
+      {
+        "letter": "B",
+        "text": "Partition(s,c) ⟺ Disjoint(s) ∧ ExhaustiveDecomposition(s,c)"
+      },
+      {
+        "letter": "C",
+        "text": "Partition(s,c) ⟺ Subset(s,c) ∧ ¬Intersection(s,c)"
+      },
+      {
+        "letter": "D",
+        "text": "Partition(s,c) ⟺ Subsumes(c,s) ∧ Minimization(s)"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A partition requires the subcategories to be both disjoint (no overlap) and exhaustive (covering the whole category).",
+      "ar": "يتطلب التقسيم (Partition) أن تكون الفئات الفرعية منفصلة (لا تتداخل) وشاملة (تغطي الفئة بأكملها)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: What are the strict mathematical properties of the general logical relation PartOf(x,y) used in physical composition?",
+      "ar": "س7: ما هي الخصائص الرياضية الدقيقة للعلاقة المنطقية العامة PartOf(x,y) المستخدمة في التركيب الفيزيائي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Symmetric and Irreflexive"
+      },
+      {
+        "letter": "B",
+        "text": "Transitive and Reflexive"
+      },
+      {
+        "letter": "C",
+        "text": "Intrinsic and Nonmonotonic"
+      },
+      {
+        "letter": "D",
+        "text": "Asymmetric and Disjoint"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The PartOf physical composition relation is strictly transitive and reflexive.",
+      "ar": "علاقة التكوين المادي PartOf هي علاقة متعدية وانعكاسية بشكل صارم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: Why is it a semantic error to assign a physical property like weight directly to a logical set of objects (e.g., assigning weight to the set of apples in a bag)?",
+      "ar": "س8: لماذا يعد من الخطأ الدلالي تخصيص خاصية فيزيائية مثل الوزن مباشرة لمجموعة منطقية من الأشياء (على سبيل المثال، تخصيص وزن لمجموعة التفاح في كيس)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sets can only handle integer counts, not quantitative real numbers."
+      },
+      {
+        "letter": "B",
+        "text": "The set is an abstract mathematical concept that has elements but does not have physical mass or weight."
+      },
+      {
+        "letter": "C",
+        "text": "Sets automatically trigger nonmonotonic overriding, which deletes physical measurements."
+      },
+      {
+        "letter": "D",
+        "text": "Properties of sets are strictly restricted to description logic classifications."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Physical properties like weight apply to physical objects, not to abstract mathematical sets.",
+      "ar": "الخصائص الفيزيائية مثل الوزن تنطبق على الأشياء المادية، وليس على المجموعات الرياضية المجردة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: What is the defining characteristic of a \"Substance\" (Mass Noun / Stuff) category compared to a \"Thing\" (Count Noun) category when subjected to subdivision?",
+      "ar": "س9: ما هي السمة المميزة لفئة \"المادة\" (الاسم الشامل / الأشياء) مقارنة بفئة \"الشيء\" (الاسم العد) عند إخضاعها للتقسيم الفرعي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A substance loses its core definition when cut in half, while a thing remains invariant."
+      },
+      {
+        "letter": "B",
+        "text": "Any part of a substance object is also a substance object because its definition includes only intrinsic properties that are retained under subdivision."
+      },
+      {
+        "letter": "C",
+        "text": "Substances are strictly represented as abstract measure objects without physical extension."
+      },
+      {
+        "letter": "D",
+        "text": "A substance specifies only extrinsic properties like weight, length, and shape."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A substance category is characterized by intrinsic properties that remain true even if the substance is subdivided.",
+      "ar": "تتميز فئة المادة (Substance) بخصائص جوهرية تظل صحيحة حتى لو تم تقسيم المادة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: What is the fundamental limitation of Situation Calculus that motivates the introduction of Event Calculus?",
+      "ar": "س10: ما هو القيد الأساسي لحساب التفاضل والتكامل للموقف الذي يحفز على إدخال حساب التفاضل والتكامل للأحداث؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Situation Calculus cannot represent any temporal states or logical constants."
+      },
+      {
+        "letter": "B",
+        "text": "Situation Calculus is restricted to describing worlds where actions are discrete, instantaneous, and happen one at a time, making it unable to describe continuous or simultaneous actions."
+      },
+      {
+        "letter": "C",
+        "text": "Situation Calculus completely lacks referential transparency."
+      },
+      {
+        "letter": "D",
+        "text": "Situation Calculus forces all events to be modeled as liquid temporal substances."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Situation Calculus cannot model continuous or simultaneous actions, which is why Event Calculus was introduced.",
+      "ar": "حساب الموقف (Situation Calculus) لا يمكنه نمذجة الإجراءات المستمرة أو المتزامنة، ولهذا تم إدخال حساب الحدث."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: In Event Calculus, what does the expression Clipped(f, (t1, t2)) formally define?",
+      "ar": "س11: في حساب التفاضل والتكامل للحدث، ما الذي يحدده التعبير Clipped(f, (t1, t2)) رسميًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The fluent f becomes true at some point during the time interval (t1, t2)."
+      },
+      {
+        "letter": "B",
+        "text": "The event causes fluent f to start holding at time t1."
+      },
+      {
+        "letter": "C",
+        "text": "The fluent f ceases to be true at some point during the time interval (t1, t2) due to an intervening event."
+      },
+      {
+        "letter": "D",
+        "text": "The interval algebra relation where two time durations perfectly meet."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Clipped(f, (t1, t2)) means the fluent f was terminated by an event during the specified time interval.",
+      "ar": "Clipped(f, (t1, t2)) يعني أن الخاصية f قد انتهت بسبب حدث خلال الفترة الزمنية المحددة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: What is the defining property of a \"Process Category\" (or Liquid Event Category) in Event Calculus?",
+      "ar": "س12: ما هي الخاصية المحددة لـ \"فئة العملية\" (أو فئة الحدث السائل) في حساب التفاضل والتكامل للحدث؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It can only be evaluated at a single moment with zero duration."
+      },
+      {
+        "letter": "B",
+        "text": "Any process that happens over an interval also happens over any subinterval of that duration."
+      },
+      {
+        "letter": "C",
+        "text": "It forces all related propositional attitudes to become referentially transparent."
+      },
+      {
+        "letter": "D",
+        "text": "It cannot be combined with any spatial layout or coordinate systems."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A liquid event or process category means any subinterval of the process is also an instance of that process.",
+      "ar": "حدث سائل أو فئة عملية يعني أن أي فترة فرعية من العملية هي أيضاً حالة من تلك العملية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: According to Allen's Interval Algebra, what is the formal definition of the relation During(i, j)?",
+      "ar": "س13: وفقًا لجبر فترات ألين، ما هو التعريف الرسمي للعلاقة خلال (i, j)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "End(i) = Begin(j)"
+      },
+      {
+        "letter": "B",
+        "text": "Begin(i) < Begin(j) < End(i) < End(j)"
+      },
+      {
+        "letter": "C",
+        "text": "Begin(j) < Begin(i) < End(i) < End(j)"
+      },
+      {
+        "letter": "D",
+        "text": "Begin(i) = Begin(j) ∧ End(i) = End(j)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "During(i, j) formally means interval i starts after j starts and ends before j ends.",
+      "ar": "During(i, j) يعني رسمياً أن الفترة i تبدأ بعد بدء j وتنتهي قبل انتهاء j."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: Why can't a term like President(USA) simply denote different individual people at different times directly inside standard First-Order Logic?",
+      "ar": "س 14: لماذا لا يمكن لمصطلح مثل الرئيس (الولايات المتحدة الأمريكية) أن يشير ببساطة إلى أشخاص مختلفين في أوقات مختلفة مباشرةً داخل منطق الدرجة الأولى القياسي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Standard FOL does not support any equality predicates or function symbols."
+      },
+      {
+        "letter": "B",
+        "text": "A logical term denotes exactly one constant object in a given model structure; logical identity cannot change over time."
+      },
+      {
+        "letter": "C",
+        "text": "Terms in FOL are strictly limited to representing abstract numbers and measures."
+      },
+      {
+        "letter": "D",
+        "text": "Temporal indices can only be attached to nonmonotonic default reasoning rules."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Logical terms in First-Order Logic are rigid designators; their identity cannot change dynamically over time.",
+      "ar": "المصطلحات المنطقية في منطق الدرجة الأولى هي محددات جامدة؛ لا يمكن أن تتغير هويتها بمرور الوقت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: What semantic property is exhibited by propositional attitudes like Believes and Knows, making standard First-Order Logic substitution fail?",
+      "ar": "س 15: ما هي الخاصية الدلالية التي تظهرها المواقف الافتراضية مثل \"يؤمن ويعرف\"، مما يجعل الاستبدال القياسي لمنطق الترتيب الأول يفشل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Referential Transparency"
+      },
+      {
+        "letter": "B",
+        "text": "Referential Opacity"
+      },
+      {
+        "letter": "C",
+        "text": "Logical Omniscience"
+      },
+      {
+        "letter": "D",
+        "text": "Monotonic Entailment"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Referential Opacity prevents the substitution of equal terms in contexts involving propositional attitudes like belief.",
+      "ar": "تمنع العتامة المرجعية استبدال المصطلحات المتساوية في السياقات التي تنطوي على مواقف مثل الاعتقاد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: Under Kripke semantics for Modal Logic, when is a knowledge atom sentence like K_A P evaluated as true in a specific possible world w?",
+      "ar": "س 16: في ظل دلالات كريبك للمنطق الشرطي، متى يتم تقييم جملة ذرة المعرفة مثل K_A P على أنها صحيحة في عالم محتمل محدد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "If and only if P is true in at least one world accessible from w."
+      },
+      {
+        "letter": "B",
+        "text": "If and only if P is true in every possible world accessible from w."
+      },
+      {
+        "letter": "C",
+        "text": "Only if the agent has executed fewer than k steps of computation."
+      },
+      {
+        "letter": "D",
+        "text": "If P matches the closed-world assumption of minimal models."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Kripke semantics states that an agent knows P in world w if P is true in all worlds accessible from w.",
+      "ar": "تنص دلالات كريبك على أن الوكيل يعرف P في العالم w إذا كان P صحيحاً في جميع العوالم التي يمكن الوصول إليها من w."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: In Semantic Networks, how are default values prevented from causing a logical contradiction when an exception is introduced (e.g., John has 1 leg, but Persons have 2 legs)?",
+      "ar": "س 17: في الشبكات الدلالية، كيف يتم منع القيم الافتراضية من التسبب في تناقض منطقي عند تقديم استثناء (على سبيل المثال، جون لديه ساق واحدة، ولكن الأشخاص لديهم ساقان)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The network bans any objects with anomalous properties from entering the taxonomy."
+      },
+      {
+        "letter": "B",
+        "text": "The inheritance algorithm follows links upwards from the object and stops as soon as it finds a value, naturally enforcing that the default is overridden by the more specific value."
+      },
+      {
+        "letter": "C",
+        "text": "Single-boxed links are automatically converted into double-boxed inverse links."
+      },
+      {
+        "letter": "D",
+        "text": "The network runs a backward-chaining theorem prover that proves the exception is false."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Inheritance algorithms search upwards and stop at the first value they find, automatically overriding distant defaults.",
+      "ar": "تبحث خوارزميات الوراثة لأعلى وتتوقف عند أول قيمة تجدها، مما يتجاوز القيم الافتراضية البعيدة تلقائياً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: What are the two primary algorithmic inference tasks designed for Description Logics?",
+      "ar": "س18: ما هي مهمتي الاستدلال الخوارزمي الأساسيتين المصممتين لمنطق الوصف؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Circumscription and Extension generation"
+      },
+      {
+        "letter": "B",
+        "text": "Subsumption (checking subset relations via definitions) and Classification (checking if an object belongs to a category)"
+      },
+      {
+        "letter": "C",
+        "text": "Procedural attachment and Referential transparency extraction"
+      },
+      {
+        "letter": "D",
+        "text": "Logical minimization and Linear temporal chaining"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Description Logics are designed specifically to perform Subsumption and Classification tasks efficiently.",
+      "ar": "تم تصميم منطق الوصف خصيصاً لأداء مهام التضمين والتصنيف بكفاءة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: In the context of nonmonotonic logics, what is the core operational concept underlying the \"Nixon Diamond\" dilemma?",
+      "ar": "السؤال 19: في سياق المنطق غير الرتيب، ما هو المفهوم العملي الأساسي الكامن وراء معضلة \"نيكسون دايموند\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It demonstrates that prioritized circumscription always guarantees a single minimal model without ambiguity."
+      },
+      {
+        "letter": "B",
+        "text": "It shows a conflict where an individual belongs to two categories that inherit conflicting default properties, creating two equally preferred models or extensions and leaving an unprioritized reasoner agnostic."
+      },
+      {
+        "letter": "C",
+        "text": "It proves that First-Order Logic axioms can handle exceptions perfectly without nonmonotonic mechanisms."
+      },
+      {
+        "letter": "D",
+        "text": "It is a method for generating explanation proofs using character strings."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Nixon Diamond illustrates a conflict between inherited defaults, leaving the reasoner agnostic without a priority system.",
+      "ar": "يوضح ماسة نيكسون صراعاً بين الافتراضات الموروثة، مما يترك المستدل غير قادر على اتخاذ قرار بدون نظام أولوية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: What architectural feature allows an Assumption-based Truth Maintenance System (ATMS) to be more efficient at context-switching and exploring multiple hypotheses than a Justification-based TMS (JTMS)?",
+      "ar": "س20: ما هي الميزة المعمارية التي تسمح لنظام صيانة الحقيقة القائم على الافتراض (ATMS) بأن يكون أكثر كفاءة في تبديل السياق واستكشاف فرضيات متعددة من نظام TMS القائم على التبرير (JTMS)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An ATMS deletes all sentences upon retraction to maintain absolute linear consistency."
+      },
+      {
+        "letter": "B",
+        "text": "An ATMS restricts all inference chains to static polynomial-time description algebra."
+      },
+      {
+        "letter": "C",
+        "text": "A JTMS represents only one state of the world at a time (requiring retractions to switch states), whereas an ATMS represents all states that have ever been considered simultaneously by tracking labels of valid assumption sets for each sentence."
+      },
+      {
+        "letter": "D",
+        "text": "An ATMS bypasses the NP-hard computational complexity associated with propositional truth maintenance."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "An ATMS tracks all valid assumptions simultaneously, making it vastly superior for switching between multiple contexts.",
+      "ar": "يقوم ATMS بتتبع جميع الافتراضات الصالحة في وقت واحد، مما يجعله متفوقاً جداً في التبديل بين سياقات متعددة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: Rational Agent vs Laws of Thought",
+      "ar": "س1: الوكيل العقلاني مقابل قوانين الفكر"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The 'Laws of thought' approach relies on heuristic assumptions whereas rational agents operate exclusively within bounds of formal deductive logic."
+      },
+      {
+        "letter": "B",
+        "text": "The rational agent approach defines intelligence strictly based on human cognitive limitations, allowing it to bypass computational intractability."
+      },
+      {
+        "letter": "C",
+        "text": "A rational agent framework recognizes that correct logical inference is not always optimal; it allows for non-inferential reflexive actions that maximize expected outcomes when deliberation is computationally infeasible."
+      },
+      {
+        "letter": "D",
+        "text": "The logicist tradition successfully resolves uncertainty through precise notation, while the rational agent approach is forced to abandon expected outcomes."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Rational Agent approach is not strictly bound by logical inference; it allows for non-inferential actions and accommodates limited rationality when perfect deliberation is computationally unfeasible.",
+      "ar": "منهج الوكيل العقلاني لا يتقيد بالاستنتاج المنطقي فقط؛ بل يسمح بأفعال غير استنتاجية ويتكيف مع القيود الحسابية عندما يكون التفكير المنطقي المثالي مستحيلاً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Philosophical Foundation for AI",
+      "ar": "س2: الأساس الفلسفي للذكاء الاصطناعي"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Rationalism"
+      },
+      {
+        "letter": "B",
+        "text": "Dualism"
+      },
+      {
+        "letter": "C",
+        "text": "Materialism"
+      },
+      {
+        "letter": "D",
+        "text": "Logical Positivism"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Materialism holds that the brain's operation according to the laws of physics constitutes the mind, allowing intelligence to be engineered physically.",
+      "ar": "الفلسفة المادية تنص على أن عمل الدماغ وفقاً لقوانين الفيزياء هو ما يشكل العقل، مما يسمح بهندسة الذكاء فيزيائياً في آلة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Tractability in AI Design",
+      "ar": "س3: قابلية التتبع في تصميم الذكاء الاصطناعي"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It guarantees that the Turing machine can theoretically compute any rational action given infinite time."
+      },
+      {
+        "letter": "B",
+        "text": "It forces AI engineers to divide intelligent behavior into manageable subproblems because NP-complete instances result in exponential time growth."
+      },
+      {
+        "letter": "C",
+        "text": "It proves that first-order logic is incapable of representing uncertainty."
+      },
+      {
+        "letter": "D",
+        "text": "It relies on Gödel's Incompleteness Theorem to bypass loops in knowledge representation."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Problems requiring exponentially growing time are intractable. AI engineers must divide intelligent behavior into tractable subproblems to avoid paralyzing computation times.",
+      "ar": "المشاكل التي تتطلب وقتاً ينمو بشكل أسي تعتبر مستعصية رياضياً. يجب على مهندسي الذكاء الاصطناعي تقسيم المشاكل إلى أجزاء فرعية قابلة للحل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: Aristotle's Algorithm and NP-Completeness",
+      "ar": "س4: خوارزمية أرسطو واكتمال NP"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Church-Turing thesis, which prohibits backward progression without sensory observation."
+      },
+      {
+        "letter": "B",
+        "text": "The mathematical limits of Bayes' rule with environments containing more than a few hundred facts."
+      },
+      {
+        "letter": "C",
+        "text": "The underlying NP-completeness of combinatorial search problems, where subgoals expand exponentially."
+      },
+      {
+        "letter": "D",
+        "text": "The formal inability of standard arithmetic notation to capture objects and relations."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The inherent NP-completeness of combinatorial search problems causes the sequence of subgoals to expand exponentially, exhausting computational resources.",
+      "ar": "الطبيعة المستعصية (NP-complete) لمشاكل البحث التوافقي تؤدي إلى توسع تسلسل الأهداف الفرعية بشكل أسي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: Cybernetics and Purposive Behavior",
+      "ar": "س5: علم التحكم الآلي والسلوك الهادف"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By utilizing random mutations to preserve useful actions."
+      },
+      {
+        "letter": "B",
+        "text": "By translating external stimuli into subjective introspective representations."
+      },
+      {
+        "letter": "C",
+        "text": "By a regulatory mechanism that actively minimizes the 'error' between current state and goal state."
+      },
+      {
+        "letter": "D",
+        "text": "By maximizing computational logic loops within a continuous medium."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Cybernetics dictates that purposive behavior arises from a feedback loop trying to minimize the 'error' between current state and goal state.",
+      "ar": "تنص السيبرانية على أن السلوك الهادف ينشأ من آلية تنظيمية (حلقة تغذية راجعة) تحاول تقليل الخطأ بين الحالة الحالية والهدف."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: AI and Control Theory Divergence",
+      "ar": "س6: اختلاف الذكاء الاصطناعي ونظرية التحكم"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Control theory relied on empirical introspection, while AI relied on brain imaging."
+      },
+      {
+        "letter": "B",
+        "text": "AI used logic and computation for discrete problems that Control Theory's calculus and matrices could not describe."
+      },
+      {
+        "letter": "C",
+        "text": "Control theory focused on single-agent Game Theory, while AI focused on Markov Decision Processes."
+      },
+      {
+        "letter": "D",
+        "text": "The Lighthill report canceled AI, forcing researchers to rebrand as control theory."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "AI focused on discrete logic and computation for vision and language, while Control Theory relied on calculus and matrix algebra for continuous variable systems.",
+      "ar": "ركز الذكاء الاصطناعي على المنطق المتقطع للغة والرؤية، بينما اعتمدت نظرية التحكم على التفاضل والتكامل والجبر الخطي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: Syntactic Language Translation Limitation",
+      "ar": "س7: حدود ترجمة اللغة النحوية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Syntactic models generate exponential NP-complete strings that vacuum tubes cannot process."
+      },
+      {
+        "letter": "B",
+        "text": "Syntax alone cannot resolve ambiguity; understanding requires structured knowledge representation of context."
+      },
+      {
+        "letter": "C",
+        "text": "Syntactic rules require continuous adjustments via stochastic control, which Lisp could not handle."
+      },
+      {
+        "letter": "D",
+        "text": "Syntactic approach forces agents into satisficing loops, preventing generation of creative sentences."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Syntax alone cannot resolve semantic ambiguity; accurate translation requires structured knowledge representation of the subject matter and context.",
+      "ar": "النحو وحده لا يحل الغموض الدلالي؛ الترجمة الدقيقة تتطلب تمثيلاً معرفياً هيكلياً للسياق والعالم الحقيقي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: Logic Theorist Breakthrough",
+      "ar": "س8: اختراق المنظر المنطقي"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It was the first program to successfully update connection strengths using Hebbian learning."
+      },
+      {
+        "letter": "B",
+        "text": "It was the first computer program capable of thinking non-numerically, solving logic theorems."
+      },
+      {
+        "letter": "C",
+        "text": "It successfully passed the Total Turing Test by physically moving wooden blocks."
+      },
+      {
+        "letter": "D",
+        "text": "It was the first program to execute a genetic algorithm to optimize vacuum tube performance."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "It was the first computer program capable of thinking non-numerically, proving logical theorems rather than performing standard arithmetic.",
+      "ar": "كان أول برنامج حاسوبي قادر على التفكير بشكل غير رقمي، حيث قام بإثبات نظريات منطقية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: McCarthy's Advice Taker",
+      "ar": "س9: متلقي نصيحة مكارثي"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It abandoned first-order logic entirely in favor of strict connectionist neural networks."
+      },
+      {
+        "letter": "B",
+        "text": "It was hardcoded for one specific microworld, ensuring faster exponential scaling."
+      },
+      {
+        "letter": "C",
+        "text": "It cleanly separated explicit knowledge representation (axioms) from reasoning, allowing learning without reprogramming."
+      },
+      {
+        "letter": "D",
+        "text": "It relied exclusively on satisficing rather than formal explicit representation."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "It cleanly separated explicit knowledge representation from the reasoning engine, allowing the system to acquire general knowledge without physical reprogramming.",
+      "ar": "قام بفصل تمثيل المعرفة الصريح عن محرك الاستنتاج، مما سمح للنظام باكتساب المعرفة دون إعادة برمجة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: McCulloch-Pitts Neuron Model",
+      "ar": "س10: نموذج مكولوتش-بيتس للخلايا العصبية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The General Problem Solver (GPS)"
+      },
+      {
+        "letter": "B",
+        "text": "McCulloch and Pitts' model of artificial neurons using binary on/off states to compute logical connectives."
+      },
+      {
+        "letter": "C",
+        "text": "The Lisp programming language's time-sharing execution."
+      },
+      {
+        "letter": "D",
+        "text": "The Advice Taker's generation of an airport route plan."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "McCulloch and Pitts' model proved that simple binary states and network structures could compute any computable function without complex symbols.",
+      "ar": "التكوين المعماري للخلايا العصبية الاصطناعية أثبت أن الحالات الثنائية البسيطة كافية لحساب أي دالة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: Weak Methods Failure",
+      "ar": "س11: فشل الأساليب الضعيفة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "They relied exclusively on certainty factors, which could not process boolean logic."
+      },
+      {
+        "letter": "B",
+        "text": "They suffered from combinatorial explosion because general-purpose search caused exponential time growth."
+      },
+      {
+        "letter": "C",
+        "text": "They explicitly required biological neural models that hardware could not support."
+      },
+      {
+        "letter": "D",
+        "text": "They were built upon hidden Markov models lacking sufficient datasets."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "They suffered from combinatorial explosion; general-purpose search mechanisms caused exponential time growth when the state space expanded.",
+      "ar": "عانت من الانفجار التوافقي؛ حيث أدت آليات البحث العامة إلى نمو أسي عندما زاد حجم مساحة الحالة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Knowledge-Based Systems Paradigm",
+      "ar": "س12: نموذج النظم القائمة على المعرفة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The replacement of symbolic structures with pure neural connectionist weights."
+      },
+      {
+        "letter": "B",
+        "text": "The integration of a total Turing test environment to validate outcomes."
+      },
+      {
+        "letter": "C",
+        "text": "The shift from general-purpose deductive search to utilizing domain-expert rules to prune the search space."
+      },
+      {
+        "letter": "D",
+        "text": "The abandonment of logical reasoning in favor of purely stochastic mutations."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "They shifted from general-purpose deductive search to utilizing massive amounts of highly specific domain-expert rules to immediately prune the search space.",
+      "ar": "انتقل المهندسون من خوارزميات البحث الاستنتاجي العامة إلى استخدام قواعد متخصصة من الخبراء لتقليص مساحة البحث."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: Minsky and Papert's Perceptron Proof",
+      "ar": "س13: دليل مينسكي وبابيرت على الإدراك الحسي"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "That perceptrons could never execute back-propagation due to vacuum tube processing limits."
+      },
+      {
+        "letter": "B",
+        "text": "That a two-input perceptron could not be trained to recognize when inputs were different (the XOR problem)."
+      },
+      {
+        "letter": "C",
+        "text": "That perceptrons violated the physical symbol system hypothesis."
+      },
+      {
+        "letter": "D",
+        "text": "That perceptron convergence requires continuous variables that digital computers cannot process."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "They proved that a simple two-input perceptron could not be trained to recognize when its inputs were different (the XOR problem).",
+      "ar": "أثبتوا رياضياً أن نموذج البيرسيبترون ثنائي المدخلات لا يمكن تدريبه على التعرف على الفرق بين مدخلاته (مشكلة XOR)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: Judea Pearl's Bayesian Networks",
+      "ar": "س14: شبكات بايزي في يهودا بيرل"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The inability of first-order logic to efficiently represent reasoning under conditions of uncertain and incomplete knowledge."
+      },
+      {
+        "letter": "B",
+        "text": "The failure of rational agents to perform reflexive, non-inferential actions."
+      },
+      {
+        "letter": "C",
+        "text": "The semantic ambiguity inherent in machine translation without syntactic dictionaries."
+      },
+      {
+        "letter": "D",
+        "text": "The inability of automated reasoning systems to perform floating-point mathematical integration."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The inability of strict first-order logic to efficiently represent and rigorously compute reasoning under uncertain and incomplete knowledge.",
+      "ar": "عجز المنطق الصارم من الدرجة الأولى عن تمثيل المعرفة وحساب الاستنتاجات بكفاءة في ظل ظروف المعرفة غير المؤكدة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: Word-Sense Disambiguation Research",
+      "ar": "س15: بحث توضيحي لمعنى الكلمة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Complex problems require increasingly complex hand-coded logical expert rules."
+      },
+      {
+        "letter": "B",
+        "text": "The choice of algorithm is exponentially more important than training corpus size."
+      },
+      {
+        "letter": "C",
+        "text": "Given extremely large datasets, even mediocre machine learning algorithms vastly outperform best algorithms on small datasets."
+      },
+      {
+        "letter": "D",
+        "text": "Unlabeled text corpora are useless without manual human annotation."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Given extremely large datasets, even mediocre machine learning algorithms vastly outperform the best-known algorithms trained on small datasets.",
+      "ar": "عند توفر بيانات ضخمة جداً، فإن خوارزميات تعلم الآلة المتوسطة ستتفوق على أفضل الخوارزميات المعروفة إذا دُربت على قواعد بيانات صغيرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: First Autonomous Planning in Space",
+      "ar": "س16: أول تخطيط مستقل في الفضاء"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "DART"
+      },
+      {
+        "letter": "B",
+        "text": "DEEP BLUE"
+      },
+      {
+        "letter": "C",
+        "text": "REMOTE AGENT"
+      },
+      {
+        "letter": "D",
+        "text": "STANLEY"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "NASA's REMOTE AGENT generated plans from high-level goals and monitored autonomous execution in space.",
+      "ar": "برنامج REMOTE AGENT التابع لناسا قام بتوليد خطط بناءً على أهداف عالية المستوى وراقب تنفيذها ذاتياً في الفضاء."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: Automated Arabic-to-English Translation",
+      "ar": "س17: الترجمة الآلية من العربية إلى الإنجليزية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By utilizing Chomsky's pure syntactic models to map Arabic grammar to English."
+      },
+      {
+        "letter": "B",
+        "text": "By relying on a statistical model from translation examples and a massive corpus of two trillion English words."
+      },
+      {
+        "letter": "C",
+        "text": "By implementing a backward-chaining Expert System filled with manual linguistic rules."
+      },
+      {
+        "letter": "D",
+        "text": "By building a GPS that imitated how Arab children learn English."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The team relied on a robust statistical model built from machine translation examples and a massive corpus of two trillion words.",
+      "ar": "اعتمد الفريق على نموذج إحصائي متين مبني على أمثلة ترجمات مدعوم بقاعدة بيانات نصية هائلة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: Limited Rationality Requirement",
+      "ar": "س18: متطلبات العقلانية المحدودة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because Gödel's incompleteness theorem proves agents cannot logically define their goals."
+      },
+      {
+        "letter": "B",
+        "text": "Because achieving 'perfect rationality' is fundamentally unfeasible due to massive computational demands and time limits."
+      },
+      {
+        "letter": "C",
+        "text": "Because hardware power dissipation limits CPU clock speeds."
+      },
+      {
+        "letter": "D",
+        "text": "Because game theory dictates agents must make sub-optimal decisions."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Achieving perfect rationality is fundamentally unfeasible in complicated environments due to massive computational demands and limits on processing time.",
+      "ar": "تحقيق العقلانية المثالية مستحيل أساساً في البيئات المعقدة بسبب المتطلبات الحسابية الهائلة وضيق الوقت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: First Successful Commercial Expert System",
+      "ar": "س19: أول نظام خبير تجاري ناجح"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "MYCIN"
+      },
+      {
+        "letter": "B",
+        "text": "R1"
+      },
+      {
+        "letter": "C",
+        "text": "SHRDLU"
+      },
+      {
+        "letter": "D",
+        "text": "DENDRAL"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "R1 was the first commercial expert system, deployed by Digital Equipment Corporation for configuring computer orders.",
+      "ar": "نظام R1 كان أول نظام خبير تجاري ناجح، استخدمته DEC للمساعدة في تكوين طلبات أنظمة الحاسوب الجديدة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: Logical Positivism Bridge",
+      "ar": "س20: جسر الوضعية المنطقية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By asserting that the mind operates in a mystical realm beyond physical science."
+      },
+      {
+        "letter": "B",
+        "text": "By claiming that general rules are acquired through randomized genetic mutations."
+      },
+      {
+        "letter": "C",
+        "text": "By holding that all knowledge can be characterized by logical theories connected to 'observation sentences' corresponding to sensory inputs."
+      },
+      {
+        "letter": "D",
+        "text": "By proving that reasoning is strictly numerical computation without sensory involvement."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "It connects all knowledge to logical theories ultimately tied to 'observation sentences' corresponding directly to sensory inputs.",
+      "ar": "تربط هذه العقيدة كل المعارف بنظريات منطقية تستند إلى 'جمل الرصد' التي تتطابق مع المدخلات الحسية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: GPS vs Logic Theorist Shift",
+      "ar": "س21: نظام تحديد المواقع العالمي (GPS) مقابل تحول نظرية المنطق"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "GPS was the first to use Lisp instead of machine code."
+      },
+      {
+        "letter": "B",
+        "text": "GPS was designed explicitly to imitate human problem-solving protocols and consider subgoals in order similar to humans."
+      },
+      {
+        "letter": "C",
+        "text": "GPS abandoned symbolic processing entirely in favor of neural networks."
+      },
+      {
+        "letter": "D",
+        "text": "GPS successfully passed the Total Turing Test by physically interacting with blocks world."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "GPS was designed explicitly to imitate human problem-solving protocols, considering subgoals and actions in order similar to human test subjects.",
+      "ar": "صُمم GPS خصيصاً لمحاكاة بروتوكولات حل المشاكل لدى البشر، حيث يدرس الأهداف الفرعية بترتيب يطابق طريقة تفكير البشر."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: Tractability vs Computability",
+      "ar": "س22: قابلية التتبع مقابل قابلية الحساب"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because a problem may be computable but if solving time grows exponentially, it is intractable and cannot be solved in practice."
+      },
+      {
+        "letter": "B",
+        "text": "Because Turing machines cannot process continuous variables."
+      },
+      {
+        "letter": "C",
+        "text": "Because NP-complete problems have no algorithmic solution whatsoever."
+      },
+      {
+        "letter": "D",
+        "text": "Because intractable problems always require certainty factors violating first-order logic."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "A problem may have an algorithmic solution, but if required processing time grows exponentially, it is completely impossible to solve in practice.",
+      "ar": "المشكلة قد تمتلك حلاً نظرياً بخوارزمية، لكن إذا كان وقت المعالجة ينمو أُسياً، فمن المستحيل تماماً حلها عملياً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: Lighthill Report Criticism",
+      "ar": "س23: نقد تقرير لايتهيل"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Their failure to implement cybernetic feedback loops."
+      },
+      {
+        "letter": "B",
+        "text": "Their inability to compile Lisp programs efficiently on supercomputers."
+      },
+      {
+        "letter": "C",
+        "text": "Their catastrophic failure to overcome the 'combinatorial explosion' when scaling weak methods to real-world problems."
+      },
+      {
+        "letter": "D",
+        "text": "Their over-reliance on massive unlabeled datasets without proper data mining."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "It criticized their failure to overcome the 'combinatorial explosion' when attempting to scale general weak methods to realistic problem sizes.",
+      "ar": "انتقد الفشل الكارثي لتلك الخوارزميات في التغلب على ظاهرة 'الانفجار التوافقي' عند توسيع نطاق طرق البحث العامة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: According to the PEAS description of an automated taxi driver, which of the following components directly represent the \"Actuators\" used to alter the state of the environment?",
+      "ar": "س1: وفقًا لوصف PEAS لسائق سيارة أجرة آلي، أي من المكونات التالية تمثل بشكل مباشر \"المحركات\" المستخدمة لتغيير حالة البيئة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Safe, fast, legal, comfortable trip"
+      },
+      {
+        "letter": "B",
+        "text": "Roads, other traffic, pedestrians"
+      },
+      {
+        "letter": "C",
+        "text": "Cameras, sonar, speedometer, GPS"
+      },
+      {
+        "letter": "D",
+        "text": "Steering, accelerator, brake, signal, horn"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The actuators of an automated taxi are the physical controls it uses to act on the environment (steering, brakes).",
+      "ar": "مشغلات سيارة الأجرة الآلية هي أدوات التحكم المادية التي تستخدمها للتأثير على البيئة (التوجيه، الفرامل)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: A medical diagnosis system receives initial symptoms, proposes a series of tests, evaluates the progress over the course of treatment, and iteratively adjusts its diagnosis. How must this task environment be classified?",
+      "ar": "السؤال الثاني: يتلقى نظام التشخيص الطبي الأعراض الأولية، ويقترح سلسلة من الاختبارات، ويقيم التقدم على مدار فترة العلاج، ويضبط تشخيصه بشكل متكرر. كيف يجب تصنيف بيئة المهام هذه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Episodic"
+      },
+      {
+        "letter": "B",
+        "text": "Sequential"
+      },
+      {
+        "letter": "C",
+        "text": "Static"
+      },
+      {
+        "letter": "D",
+        "text": "Fully Observable"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The environment is sequential because the diagnosis depends on the history of tests and progress over time.",
+      "ar": "البيئة تسلسلية لأن التشخيص يعتمد على تاريخ الاختبارات والتقدم بمرور الوقت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: You are engineering a rational agent for an automated taxi in a Partially Observable, Stochastic, and Dynamic environment. It must weigh safe arrival against conflicting objectives (minimize time vs. minimize fuel). Which Agent Program is required?",
+      "ar": "س 3: أنت تقوم بهندسة وكيل عقلاني لسيارة أجرة آلية في بيئة يمكن ملاحظتها جزئيًا وعشوائية وديناميكية. يجب أن يزن الوصول الآمن مقابل الأهداف المتعارضة (تقليل الوقت مقابل تقليل الوقود). ما هو برنامج الوكيل المطلوب؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Simple Reflex Agent"
+      },
+      {
+        "letter": "B",
+        "text": "Goal-based Agent"
+      },
+      {
+        "letter": "C",
+        "text": "Utility-based Agent"
+      },
+      {
+        "letter": "D",
+        "text": "Model-based Reflex Agent"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A Utility-based Agent is required because it can weigh conflicting goals (safety vs speed) to maximize overall happiness.",
+      "ar": "هناك حاجة إلى وكيل قائم على المنفعة لأنه يمكنه الموازنة بين الأهداف المتضاربة (السلامة مقابل السرعة) لتعظيم المنفعة الإجمالية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: A Simple Reflex Agent operates a vacuum in a Partially Observable environment (has dirt sensor but no location sensor). What mechanism can prevent this agent from falling into infinite loops?",
+      "ar": "س 4: يقوم العامل المنعكس البسيط بتشغيل المكنسة الكهربائية في بيئة يمكن ملاحظتها جزئيًا (يحتوي على مستشعر للأوساخ ولكن لا يوجد مستشعر للموقع). ما هي الآلية التي يمكن أن تمنع هذا العامل من الوقوع في حلقات لا نهاية لها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Upgrading to a Goal-based internal state"
+      },
+      {
+        "letter": "B",
+        "text": "Implementing Randomization in its condition-action rules"
+      },
+      {
+        "letter": "C",
+        "text": "Utilizing a Problem Generator"
+      },
+      {
+        "letter": "D",
+        "text": "Generating a complete Table-Driven lookup matrix"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Adding randomization to its condition-action rules prevents the agent from getting stuck in deterministic infinite loops.",
+      "ar": "إضافة العشوائية إلى قواعد الشرط والعمل يمنع الوكيل من العالق في حلقات حتمية لا نهائية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: If an AI agent splits the current world state into a fixed vector of attributes (e.g., GPS location, gas level) and represents uncertainty by leaving certain attribute values blank, which state representation is it using?",
+      "ar": "س5: إذا قام وكيل الذكاء الاصطناعي بتقسيم الحالة العالمية الحالية إلى متجه ثابت من السمات (على سبيل المثال، موقع GPS، ومستوى الغاز) ويمثل عدم اليقين من خلال ترك قيم سمات معينة فارغة، فما هو تمثيل الحالة الذي يستخدمه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Atomic representation"
+      },
+      {
+        "letter": "B",
+        "text": "Factored representation"
+      },
+      {
+        "letter": "C",
+        "text": "Structured representation"
+      },
+      {
+        "letter": "D",
+        "text": "Table-Driven representation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A factored representation uses a fixed set of attributes (variables) to describe the state of the world.",
+      "ar": "يستخدم التمثيل المفرز مجموعة ثابتة من السمات (المتغيرات) لوصف حالة العالم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: Which best describes the fundamental difference between an omniscient agent and a rational agent?",
+      "ar": "س1: ما هو أفضل وصف للفرق الأساسي بين الفاعل العليم والفاعل العقلاني؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Omniscience maximizes expected performance, while rationality maximizes actual performance."
+      },
+      {
+        "letter": "B",
+        "text": "Omniscience relies entirely on percepts, while rationality relies on actuators."
+      },
+      {
+        "letter": "C",
+        "text": "Omniscience maximizes actual performance (knowing the actual outcome), while rationality maximizes expected performance based on the percept sequence."
+      },
+      {
+        "letter": "D",
+        "text": "There is no structural difference; perfectly rational agents are inherently omniscient."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "An omniscient agent magically knows the actual outcome, whereas a rational agent acts optimally based on its available percepts.",
+      "ar": "يعرف الوكيل العليم النتيجة الفعلية بطريقة سحرية، بينما يتصرف الوكيل العقلاني على النحو الأمثل بناءً على مدركاته."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: If an artificial agent relies completely on the prior knowledge provided by its designer and cannot adjust its behavior based on its own percepts, the agent is said to lack:",
+      "ar": "س2: إذا كان الوكيل الاصطناعي يعتمد كليًا على المعرفة السابقة التي قدمها مصممه ولا يمكنه تعديل سلوكه بناءً على تصوراته الخاصة، فيقال إن الوكيل يفتقر إلى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A performance measure"
+      },
+      {
+        "letter": "B",
+        "text": "Autonomy"
+      },
+      {
+        "letter": "C",
+        "text": "Actuators"
+      },
+      {
+        "letter": "D",
+        "text": "Rationality"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If an agent cannot adjust its behavior based on its own experience and percepts, it completely lacks autonomy.",
+      "ar": "إذا لم يتمكن الوكيل من تعديل سلوكه بناءً على خبرته ومدركاته، فإنه يفتقر تماماً إلى الاستقلالية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: How is playing chess with a clock logically differentiated from solving a crossword puzzle?",
+      "ar": "س3: كيف يتم التمييز منطقياً بين لعب الشطرنج بالساعة وحل الكلمات المتقاطعة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Chess with a clock is Dynamic, while a crossword puzzle is Semidynamic."
+      },
+      {
+        "letter": "B",
+        "text": "Chess with a clock is Semidynamic, while a crossword puzzle is Static."
+      },
+      {
+        "letter": "C",
+        "text": "Both are fully Dynamic sequential environments."
+      },
+      {
+        "letter": "D",
+        "text": "Chess with a clock is Static, while a crossword puzzle is Sequential."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Chess with a clock is semidynamic because the environment doesn't change, but the agent's performance score decreases over time.",
+      "ar": "لعبة الشطرنج مع ساعة تعتبر شبه ديناميكية لأن البيئة لا تتغير، لكن درجة أداء الوكيل تتناقص بمرور الوقت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: A Simple Reflex Agent can only sense if its current square is Clean or Dirty, but cannot sense its Location. Why will this architectural constraint cause the agent to fail?",
+      "ar": "س 4: لا يمكن للعامل المنعكس البسيط أن يشعر إلا إذا كان مربعه الحالي نظيفًا أو متسخًا، ولكن لا يمكنه الشعور بموقعه. لماذا سيؤدي هذا القيد المعماري إلى فشل الوكيل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It lacks a learning element to evaluate the external performance standard."
+      },
+      {
+        "letter": "B",
+        "text": "It will inevitably fall into infinite loops because its condition-action rules cannot distinguish between unobservable states requiring different actions."
+      },
+      {
+        "letter": "C",
+        "text": "It requires a continuous utility function to decide between cleaning and moving."
+      },
+      {
+        "letter": "D",
+        "text": "Simple reflex agents are mathematically proven to only operate in multiagent environments."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Without knowing its location, the reflex agent cannot distinguish states that require different actions, causing infinite loops.",
+      "ar": "بدون معرفة موقعه، لا يستطيع الوكيل المنعكس التمييز بين الحالات التي تتطلب إجراءات مختلفة، مما يتسبب في حلقات لا نهائية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: In a Model-based reflex agent, updating the internal state to handle partial observability requires two specific kinds of knowledge. What are they?",
+      "ar": "س5: في الوكيل الانعكاسي القائم على النموذج، يتطلب تحديث الحالة الداخلية للتعامل مع إمكانية الملاحظة الجزئية نوعين محددين من المعرفة. ما هم؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The utility function, and the condition-action rules."
+      },
+      {
+        "letter": "B",
+        "text": "The performance measure, and the Goal state."
+      },
+      {
+        "letter": "C",
+        "text": "How the world evolves independently, and what the agent's actions do."
+      },
+      {
+        "letter": "D",
+        "text": "The learning element, and the problem generator."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A model-based agent requires knowledge of how the world evolves independently and what its own actions do to update its state.",
+      "ar": "يتطلب الوكيل القائم على النموذج معرفة كيف يتطور العالم بشكل مستقل وما تفعله أفعاله لتحديث حالته."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: Within a learning agent architecture, what is the precise engineering function of the \"Critic\"?",
+      "ar": "س6: ضمن بنية وكيل التعلم، ما هي الوظيفة الهندسية الدقيقة لـ \"الناقد\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To suggest exploratory actions that might be suboptimal in the short run."
+      },
+      {
+        "letter": "B",
+        "text": "To provide feedback to the learning element on how well the agent is doing with respect to a fixed performance standard."
+      },
+      {
+        "letter": "C",
+        "text": "To select the external actions based strictly on current percepts."
+      },
+      {
+        "letter": "D",
+        "text": "To update the internal state based on failed sensor data."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Critic evaluates the agent's performance against a fixed standard and provides feedback to the learning element.",
+      "ar": "يقوم الناقد (Critic) بتقييم أداء الوكيل مقابل معيار ثابت ويقدم ملاحظات لعنصر التعلم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: What is the strict logical distinction that dictates whether entity 'B' must be treated as an \"agent\" rather than just an object obeying the laws of physics?",
+      "ar": "س7: ما هو التمييز المنطقي الصارم الذي يملي ما إذا كان يجب التعامل مع الكيان \"ب\" على أنه \"عامل\" وليس مجرد كائن يخضع لقوانين الفيزياء؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Entity B is best described as maximizing a performance measure whose value depends on agent A's behavior."
+      },
+      {
+        "letter": "B",
+        "text": "Entity B possesses physical actuators and sensors identical to agent A."
+      },
+      {
+        "letter": "C",
+        "text": "Entity B generates unpredictable stochastic noise that disrupts agent A's utility function."
+      },
+      {
+        "letter": "D",
+        "text": "Entity B shares the exact same goal destination as agent A."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "An entity is an 'agent' if it acts to maximize a performance measure based on its interactions with the environment.",
+      "ar": "يعتبر الكيان 'وكيلاً' إذا كان يتصرف لزيادة مقياس الأداء بناءً على تفاعلاته مع البيئة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: From a structural perspective, why is a Goal-based agent considered more flexible than a Simple Reflex agent?",
+      "ar": "س8: من المنظور الهيكلي، لماذا يعتبر الوكيل المستند إلى الهدف أكثر مرونة من الوكيل المنعكس البسيط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It processes environmental percepts at a higher computational speed."
+      },
+      {
+        "letter": "B",
+        "text": "Its knowledge supporting decisions is represented explicitly and can be easily modified (e.g., changing destinations) without rewriting numerous condition-action rules."
+      },
+      {
+        "letter": "C",
+        "text": "It inherently includes a learning element that completely rewrites its own atomic representation."
+      },
+      {
+        "letter": "D",
+        "text": "It uses an atomic representation which eliminates the need for sensor data."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Goal-based agents represent goals explicitly, making them flexible enough to adapt to changes without rewriting all rules.",
+      "ar": "يمثل الوكلاء القائمون على الهدف الأهداف بشكل صريح، مما يجعلهم مرنين بدرجة كافية للتكيف مع التغييرات دون إعادة كتابة كل القواعد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: Which state representation model is required when an agent needs to understand the world as having specific objects with their own attributes and explicit relationships to other objects?",
+      "ar": "س9: ما هو نموذج تمثيل الحالة المطلوب عندما يحتاج الوكيل إلى فهم العالم على أنه يحتوي على كائنات محددة لها سماتها الخاصة وعلاقاتها الواضحة بالكائنات الأخرى؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Atomic representation"
+      },
+      {
+        "letter": "B",
+        "text": "Factored representation"
+      },
+      {
+        "letter": "C",
+        "text": "Structured representation"
+      },
+      {
+        "letter": "D",
+        "text": "Episodic representation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A structured representation is necessary to model specific objects and the explicit logical relationships between them.",
+      "ar": "التمثيل المنظم ضروري لنمذجة كائنات محددة والعلاقات المنطقية الصريحة بينها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: In agent evaluation, why is it scientifically necessary to use an \"Environment Generator\" rather than testing the agent on a single, fixed environment?",
+      "ar": "س 10: في تقييم الوكيل، لماذا من الضروري علميًا استخدام \"مولد البيئة\" بدلاً من اختبار العامل في بيئة واحدة ثابتة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To manually rewrite the agent's internal state based on random variables."
+      },
+      {
+        "letter": "B",
+        "text": "To transform a fully observable environment into an unobservable one."
+      },
+      {
+        "letter": "C",
+        "text": "To force a pure reflex agent to utilize a utility function."
+      },
+      {
+        "letter": "D",
+        "text": "To select particular environments from an environment class, allowing evaluation of the agent's average performance and robustness over varied conditions."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "An Environment Generator allows testing the agent's robustness and average performance across a variety of unpredictable conditions.",
+      "ar": "يسمح مُولِّد البيئة باختبار متانة الوكيل وأدائه المتوسط عبر مجموعة متنوعة من الظروف غير المتوقعة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: What are physical agents that perform tasks by manipulating the physical world called?",
+      "ar": "س1: ما هي العوامل المادية التي تؤدي المهام عن طريق التلاعب بالعالم المادي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sensors"
+      },
+      {
+        "letter": "B",
+        "text": "Effectors"
+      },
+      {
+        "letter": "C",
+        "text": "Robots"
+      },
+      {
+        "letter": "D",
+        "text": "Actuators"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Robots are defined as physical agents that perform tasks by manipulating the physical world.",
+      "ar": "يتم تعريف الروبوتات على أنها عوامل مادية تؤدي المهام من خلال التلاعب بالعالم المادي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: What is the primary purpose of a robot's effectors?",
+      "ar": "س2: ما هو الغرض الأساسي من مؤثرات الروبوت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To perceive the environment"
+      },
+      {
+        "letter": "B",
+        "text": "To assert physical forces on the environment"
+      },
+      {
+        "letter": "C",
+        "text": "To map the workspace"
+      },
+      {
+        "letter": "D",
+        "text": "To process sensor data"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Effectors, such as legs, wheels, and grippers, have a single purpose: to assert physical forces on the environment.",
+      "ar": "إن المؤثرات، مثل الأرجل والعجلات والمقابض، لها غرض واحد: تأكيد القوى الفيزيائية على البيئة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Which of the following is an example of an active sensor?",
+      "ar": "س3: أي مما يلي يعد مثالاً على المستشعر النشط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Camera"
+      },
+      {
+        "letter": "B",
+        "text": "GPS"
+      },
+      {
+        "letter": "C",
+        "text": "Sonar"
+      },
+      {
+        "letter": "D",
+        "text": "Shaft decoder"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Active sensors, like sonar, send energy into the environment and rely on the fact that this energy is reflected back.",
+      "ar": "تقوم أجهزة الاستشعار النشطة، مثل السونار، بإرسال الطاقة إلى البيئة وتعتمد على حقيقة أن هذه الطاقة تنعكس مرة أخرى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: What type of robots are physically anchored to their workplace, such as in a factory assembly line?",
+      "ar": "س4: ما نوع الروبوتات التي يتم تثبيتها فعليًا في مكان عملها، كما هو الحال في خط تجميع المصنع؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mobile robots"
+      },
+      {
+        "letter": "B",
+        "text": "Unmanned aerial vehicles"
+      },
+      {
+        "letter": "C",
+        "text": "Humanoid robots"
+      },
+      {
+        "letter": "D",
+        "text": "Manipulators"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Manipulators, or robot arms, are physically anchored to their workplace, commonly used in industrial settings.",
+      "ar": "يتم تثبيت المتلاعبين، أو أذرع الروبوت، فعليًا في مكان عملهم، ويتم استخدامها بشكل شائع في البيئات الصناعية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: What do proprioceptive sensors inform the robot about?",
+      "ar": "س5: ما الذي تخبره أجهزة استشعار التحسس للروبوت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Distance to nearby objects"
+      },
+      {
+        "letter": "B",
+        "text": "Absolute location on Earth"
+      },
+      {
+        "letter": "C",
+        "text": "Its own motion"
+      },
+      {
+        "letter": "D",
+        "text": "Forces exerted by external objects"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Proprioceptive sensors inform the robot of its own motion, such as joint configurations and wheel revolutions.",
+      "ar": "تقوم أجهزة استشعار التحسس بإبلاغ الروبوت عن حركته، مثل تكوينات المفاصل ودورات العجلات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: What is the measurement of distance traveled based on wheel revolutions called?",
+      "ar": "س6: ماذا يسمى قياس المسافة المقطوعة بناء على عدد دورات العجلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Teleoperation"
+      },
+      {
+        "letter": "B",
+        "text": "Odometry"
+      },
+      {
+        "letter": "C",
+        "text": "Kinematics"
+      },
+      {
+        "letter": "D",
+        "text": "Localization"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Odometry is the measurement of distance traveled, often calculated using shaft decoders that report wheel revolutions.",
+      "ar": "قياس المسافة هو قياس المسافة المقطوعة، وغالبًا ما يتم حسابه باستخدام أجهزة فك ترميز العمود التي تبلغ عن دورات العجلة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: A rigid mobile robot operating in 3D space, like an Autonomous Underwater Vehicle (AUV), has how many degrees of freedom for its kinematic state?",
+      "ar": "س7: يتمتع الروبوت المتحرك الصلب الذي يعمل في مساحة ثلاثية الأبعاد، مثل المركبة المستقلة تحت الماء (AUV)، بكم درجة حرية لحالته الحركية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Two"
+      },
+      {
+        "letter": "B",
+        "text": "Three"
+      },
+      {
+        "letter": "C",
+        "text": "Six"
+      },
+      {
+        "letter": "D",
+        "text": "Nine"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A rigid mobile robot has six degrees of freedom: three for (x, y, z) location and three for angular orientation (yaw, roll, pitch).",
+      "ar": "يتمتع الروبوت المتحرك الصلب بست درجات من الحرية: ثلاث للموقع (x، y، z) وثلاث للتوجيه الزاوي (الانعراج، التدحرج، الملعب)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: A robot that has more effective degrees of freedom than controllable degrees of freedom is called:",
+      "ar": "س8: الروبوت الذي يتمتع بدرجات حرية أكثر فعالية من درجات الحرية التي يمكن التحكم فيها يسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Holonomic"
+      },
+      {
+        "letter": "B",
+        "text": "Nonholonomic"
+      },
+      {
+        "letter": "C",
+        "text": "Dynamically stable"
+      },
+      {
+        "letter": "D",
+        "text": "Statically stable"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A robot is nonholonomic if it has more effective DOFs than controllable DOFs (like a typical car).",
+      "ar": "يعتبر الروبوت غير متجانس إذا كان لديه مناطق DOF أكثر فعالية من مناطق DOF التي يمكن التحكم فيها (مثل السيارة النموذجية)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: What does it mean if a legged robot is statically stable?",
+      "ar": "س9: ماذا يعني أن يكون الروبوت ذو الأرجل مستقرًا بشكل ثابت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It can remain upright while hopping"
+      },
+      {
+        "letter": "B",
+        "text": "Its center of gravity is above the polygon spanned by its legs"
+      },
+      {
+        "letter": "C",
+        "text": "It uses a synchro drive mechanism"
+      },
+      {
+        "letter": "D",
+        "text": "It requires constant motion to stay upright"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A robot is statically stable if its center of gravity is above the polygon spanned by its legs, allowing it to remain upright without moving.",
+      "ar": "يكون الروبوت مستقرًا بشكل ثابت إذا كان مركز ثقله فوق المضلع الممتد بساقيه، مما يسمح له بالبقاء في وضع مستقيم دون التحرك."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: In robot perception, what is the process of finding out where things are, including the robot itself?",
+      "ar": "س10: في إدراك الروبوت، ما هي عملية اكتشاف مكان وجود الأشياء، بما في ذلك الروبوت نفسه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Actuation"
+      },
+      {
+        "letter": "B",
+        "text": "Skeletonization"
+      },
+      {
+        "letter": "C",
+        "text": "Localization"
+      },
+      {
+        "letter": "D",
+        "text": "Kinematics"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Localization is the problem of finding out where things are, including the robot itself.",
+      "ar": "التوطين هو مشكلة معرفة مكان وجود الأشياء، بما في ذلك الروبوت نفسه."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: Which localization algorithm represents the belief state by a collection of particles?",
+      "ar": "س11: ما هي خوارزمية التعريب التي تمثل حالة الاعتقاد من خلال مجموعة من الجزيئات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Extended Kalman Filter"
+      },
+      {
+        "letter": "B",
+        "text": "Monte Carlo localization"
+      },
+      {
+        "letter": "C",
+        "text": "Value Iteration"
+      },
+      {
+        "letter": "D",
+        "text": "Cell Decomposition"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Localization using particle filtering, which represents the belief state by a collection of particles, is called Monte Carlo localization (MCL).",
+      "ar": "التوطين باستخدام تصفية الجسيمات، والذي يمثل حالة الاعتقاد من خلال مجموعة من الجسيمات، يسمى توطين مونت كارلو (MCL)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Why do localization algorithms using the Kalman filter linearize the motion and sensor models?",
+      "ar": "س 12: لماذا تقوم خوارزميات التعريب باستخدام مرشح كالمان بتحويل نماذج الحركة وأجهزة الاستشعار إلى خطية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because Gaussian beliefs are not closed under nonlinear models"
+      },
+      {
+        "letter": "B",
+        "text": "To increase the number of particles"
+      },
+      {
+        "letter": "C",
+        "text": "To convert a partially observable environment into a fully observable one"
+      },
+      {
+        "letter": "D",
+        "text": "To eliminate the need for landmarks"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Gaussian beliefs are only closed under linear models. For nonlinear models, the result is not Gaussian, so the Extended Kalman Filter linearizes them.",
+      "ar": "يتم إغلاق المعتقدات الغوسية فقط في ظل النماذج الخطية. بالنسبة للنماذج غير الخطية، فإن النتيجة ليست غاوسية، لذا فإن مرشح كالمان الممتد يجعلها خطية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: What does SLAM stand for in robotics?",
+      "ar": "س13: ما الذي يمثله SLAM في مجال الروبوتات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sensor Location and Mapping"
+      },
+      {
+        "letter": "B",
+        "text": "Static Localization and Movement"
+      },
+      {
+        "letter": "C",
+        "text": "Simultaneous Localization and Mapping"
+      },
+      {
+        "letter": "D",
+        "text": "Serial Linkage and Manipulation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "SLAM stands for simultaneous localization and mapping, solving the chicken-and-egg problem of navigating and mapping an unknown environment.",
+      "ar": "يرمز SLAM إلى التحديد المتزامن ورسم الخرائط، مما يحل مشكلة الدجاجة والبيضة المتمثلة في التنقل ورسم خرائط لبيئة غير معروفة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: What is the space of robot states defined by location, orientation, and joint angles called?",
+      "ar": "س14: ما هو اسم مساحة حالات الروبوت المحددة بالموقع والاتجاه والزوايا المشتركة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Workspace"
+      },
+      {
+        "letter": "B",
+        "text": "Configuration space"
+      },
+      {
+        "letter": "C",
+        "text": "Emergent space"
+      },
+      {
+        "letter": "D",
+        "text": "State-action space"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The configuration space is the space of robot states defined by location, orientation, and joint angles.",
+      "ar": "مساحة التكوين هي مساحة حالات الروبوت المحددة حسب الموقع والاتجاه وزوايا المفصل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: The process of transforming configuration space coordinates into workspace coordinates is known as:",
+      "ar": "س15: تُعرف عملية تحويل إحداثيات مساحة التكوين إلى إحداثيات مساحة العمل بما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inverse kinematics"
+      },
+      {
+        "letter": "B",
+        "text": "Forward mapping"
+      },
+      {
+        "letter": "C",
+        "text": "Kinematics"
+      },
+      {
+        "letter": "D",
+        "text": "Skeletonization"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The chain of coordinate transformations from configuration space into workspace is known as kinematics.",
+      "ar": "تُعرف سلسلة التحويلات الإحداثية من مساحة التكوين إلى مساحة العمل باسم الحركية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: What is the inverse problem of calculating the configuration of a robot whose effector location is specified in workspace coordinates?",
+      "ar": "س 16: ما هي المشكلة العكسية لحساب تكوين الروبوت الذي تم تحديد موقع المستجيب له في إحداثيات مساحة العمل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inverse kinematics"
+      },
+      {
+        "letter": "B",
+        "text": "Inverse dynamics"
+      },
+      {
+        "letter": "C",
+        "text": "Odometry reverse"
+      },
+      {
+        "letter": "D",
+        "text": "Subsumption"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Inverse kinematics is calculating the configuration of a robot from a specified workspace effector location.",
+      "ar": "تقوم الحركية العكسية بحساب تكوين الروبوت من موقع المستجيب المحدد في مساحة العمل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: Which path-planning approach decomposes the free space into a finite number of contiguous regions?",
+      "ar": "س 17: ما هو أسلوب تخطيط المسار الذي يقسم المساحة الحرة إلى عدد محدود من المناطق المتجاورة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Skeletonization"
+      },
+      {
+        "letter": "B",
+        "text": "Cell decomposition"
+      },
+      {
+        "letter": "C",
+        "text": "Potential fields"
+      },
+      {
+        "letter": "D",
+        "text": "Markov localization"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Cell decomposition methods reduce path-planning to a discrete graph-search by dividing free space into cells.",
+      "ar": "تقلل طرق تحلل الخلايا من تخطيط المسار إلى بحث بياني منفصل عن طريق تقسيم المساحة الحرة إلى خلايا."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: What is a Voronoi graph in the context of robot path planning?",
+      "ar": "س18: ما هو الرسم البياني لفورونوي في سياق تخطيط مسار الروبوت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A map of occupied spaces"
+      },
+      {
+        "letter": "B",
+        "text": "The set of all points equidistant to two or more obstacles"
+      },
+      {
+        "letter": "C",
+        "text": "A grid of mixed cells"
+      },
+      {
+        "letter": "D",
+        "text": "A hierarchy of AFSMs"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A Voronoi graph is a skeletonization technique identifying points equidistant to two or more obstacles in free space.",
+      "ar": "الرسم البياني Voronoi هو أسلوب هيكلي يحدد النقاط المتساوية بين عائقين أو أكثر في المساحة الحرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Which of the following is a skeletonization approach that generates paths by randomly sampling points in free space?",
+      "ar": "س 19: أي مما يلي هو أسلوب الهيكلة الذي ينشئ مسارات من خلال نقاط أخذ عينات عشوائيًا في المساحة الحرة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Voronoi graph"
+      },
+      {
+        "letter": "B",
+        "text": "Exact cell decomposition"
+      },
+      {
+        "letter": "C",
+        "text": "Probabilistic roadmap"
+      },
+      {
+        "letter": "D",
+        "text": "Coastal navigation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A probabilistic roadmap is created by randomly generating configurations and discarding those not in free space, then joining the valid nodes.",
+      "ar": "يتم إنشاء خارطة طريق احتمالية عن طريق إنشاء التكوينات بشكل عشوائي وتجاهل تلك غير الموجودة في المساحة الحرة، ثم الانضمام إلى العقد الصالحة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: What type of planning involves moving a robot arm in very close proximity to a static environment object, utilizing guarded motions?",
+      "ar": "س 20: ما هو نوع التخطيط الذي يتضمن تحريك ذراع الروبوت على مقربة شديدة من جسم ثابت في البيئة، باستخدام حركات محمية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fine-motion planning"
+      },
+      {
+        "letter": "B",
+        "text": "Gross-motion planning"
+      },
+      {
+        "letter": "C",
+        "text": "Potential field planning"
+      },
+      {
+        "letter": "D",
+        "text": "Skeletonization"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Fine-motion planning involves moving in close proximity to objects, often using compliant, guarded motions due to uncertainty.",
+      "ar": "يتضمن تخطيط الحركة الدقيقة التحرك على مقربة من الأشياء، وغالبًا ما يستخدم حركات متوافقة ومحمية بسبب عدم اليقين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: In a PD controller, what is the specific purpose of the derivative component?",
+      "ar": "س21: في وحدة التحكم PD، ما هو الغرض المحدد للمكون المشتق؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To correct long-lasting systematic errors"
+      },
+      {
+        "letter": "B",
+        "text": "To dampen the system and reduce oscillatory behavior"
+      },
+      {
+        "letter": "C",
+        "text": "To maximize path clearance"
+      },
+      {
+        "letter": "D",
+        "text": "To linearize the motion model"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The derivative component dampens the system by counteracting the proportional term when the error is changing rapidly, preventing violent oscillation.",
+      "ar": "يقوم المكون المشتق بإخماد النظام عن طريق إبطال الحد التناسبي عندما يتغير الخطأ بسرعة، مما يمنع التذبذب العنيف."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: Which controller term specifically addresses systematic errors (like wear and tear) by integrating the error over time?",
+      "ar": "س22: ما هو مصطلح وحدة التحكم الذي يعالج على وجه التحديد الأخطاء المنهجية (مثل التآكل والاستهلاك) من خلال دمج الخطأ مع مرور الوقت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Proportional"
+      },
+      {
+        "letter": "B",
+        "text": "Derivative"
+      },
+      {
+        "letter": "C",
+        "text": "Integral"
+      },
+      {
+        "letter": "D",
+        "text": "Kinematic"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The integral term calculates the integral of the error over time to force long-lasting, systematic deviations to shrink.",
+      "ar": "يحسب المصطلح التكاملي تكامل الخطأ بمرور الوقت لإجبار الانحرافات المنهجية طويلة الأمد على التقلص."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: What is a major mathematical drawback of using potential-field control for robot navigation?",
+      "ar": "س23: ما هو العيب الرياضي الرئيسي لاستخدام التحكم في المجال المحتمل للملاحة الآلية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It requires exact cell decomposition"
+      },
+      {
+        "letter": "B",
+        "text": "It is computationally exponential"
+      },
+      {
+        "letter": "C",
+        "text": "It can trap the robot in local minima"
+      },
+      {
+        "letter": "D",
+        "text": "It only works for humanoid robots"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Potential fields have many local minima that can trap the robot, necessitating global planning to escape in some scenarios.",
+      "ar": "تحتوي الحقول المحتملة على العديد من الحدود الدنيا المحلية التي يمكنها احتجاز الروبوت، مما يستلزم تخطيطًا عالميًا للهروب في بعض السيناريوهات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: Which software architecture builds robot controllers by combining interconnected augmented finite state machines (AFSMs)?",
+      "ar": "س24: ما هي بنية البرامج التي تبني وحدات تحكم الروبوت من خلال الجمع بين أجهزة الحالة المحدودة المعززة المترابطة (AFSMs)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Three-layer architecture"
+      },
+      {
+        "letter": "B",
+        "text": "Pipeline architecture"
+      },
+      {
+        "letter": "C",
+        "text": "Subsumption architecture"
+      },
+      {
+        "letter": "D",
+        "text": "Reference architecture"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The subsumption architecture is a framework for assembling reactive controllers out of finite state machines (AFSMs).",
+      "ar": "إن البنية الفرعية هي إطار لتجميع وحدات التحكم التفاعلية من أجهزة الحالة المحدودة (AFSMs)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: In a three-layer robot architecture, which layer serves as the glue that sequences tasks between the reactive and deliberative layers?",
+      "ar": "س25: في بنية الروبوت ثلاثية الطبقات، ما هي الطبقة التي تعمل بمثابة الغراء الذي يتسلسل المهام بين الطبقات التفاعلية والتداولية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sensor interface layer"
+      },
+      {
+        "letter": "B",
+        "text": "Executive layer"
+      },
+      {
+        "letter": "C",
+        "text": "Perception layer"
+      },
+      {
+        "letter": "D",
+        "text": "Motor control layer"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The executive (or sequencing) layer serves as the glue, accepting directives from the deliberative layer and sequencing them for the reactive layer.",
+      "ar": "تعمل الطبقة التنفيذية (أو التسلسلية) بمثابة الغراء، حيث تقبل التوجيهات من الطبقة التداولية وتسلسلها للطبقة التفاعلية."
+    }
+  }
+]

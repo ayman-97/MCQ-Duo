@@ -1,0 +1,5135 @@
+[
+  {
+    "question": {
+      "en": "Q1: What are the three fundamental algebraic structures discussed in abstract algebra?",
+      "ar": "س1: ما هي الهياكل الجبرية الأساسية الثلاثة التي تمت مناقشتها في الجبر المجرد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sets, Matrices, Polynomials"
+      },
+      {
+        "letter": "B",
+        "text": "Groups, Rings, Fields"
+      },
+      {
+        "letter": "C",
+        "text": "Vectors, Scalars, Tensors"
+      },
+      {
+        "letter": "D",
+        "text": "Primes, Composites, Moduli"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The text identifies groups, rings, and fields as the fundamental elements of abstract algebra.",
+      "ar": "يحدد النص صراحة المجموعات والحلقات والحقول كعناصر أساسية في الجبر المجرد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Which of the following axioms must be satisfied by a group?",
+      "ar": "س2: أي من البديهيات التالية يجب أن تتوفر في المجموعة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Commutativity"
+      },
+      {
+        "letter": "B",
+        "text": "Distributive laws"
+      },
+      {
+        "letter": "C",
+        "text": "Identity element"
+      },
+      {
+        "letter": "D",
+        "text": "No zero divisors"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A group must satisfy closure, associativity, identity element, and inverse element axioms.",
+      "ar": "يجب أن تستوفي المجموعة بديهيات الانغلاق، التجميع، عنصر الهوية، والعنصر المعكوس."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: A group that satisfies the commutative axiom is known as a(n):",
+      "ar": "س3: المجموعة التي تحقق البديهية التبادلية تعرف باسم (ن):"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cyclic group"
+      },
+      {
+        "letter": "B",
+        "text": "Abelian group"
+      },
+      {
+        "letter": "C",
+        "text": "Integral domain"
+      },
+      {
+        "letter": "D",
+        "text": "Ring"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An Abelian group is a group that also satisfies the commutative property.",
+      "ar": "المجموعة الأبيلية هي مجموعة تستوفي أيضاً خاصية التبديل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: An integral domain is a commutative ring that obeys which of the following axioms?",
+      "ar": "س4: المجال المتكامل هو حلقة تبادلية تخضع لأي من البديهيات التالية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Multiplicative identity and no zero divisors"
+      },
+      {
+        "letter": "B",
+        "text": "Multiplicative inverse"
+      },
+      {
+        "letter": "C",
+        "text": "Closure under division"
+      },
+      {
+        "letter": "D",
+        "text": "Cyclic generator"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "An integral domain adds the multiplicative identity and no zero divisors axioms to a commutative ring.",
+      "ar": "يضيف النطاق المتكامل بديهيات الهوية الضربية وعدم وجود قواسم صفرية إلى الحلقة التبادلية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: A field is defined as a set of elements that forms an integral domain and also satisfies which condition?",
+      "ar": "س5: يتم تعريف الحقل على أنه مجموعة من العناصر التي تشكل مجالًا متكاملاً وما هو الشرط الذي يحققه أيضًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Additive identity"
+      },
+      {
+        "letter": "B",
+        "text": "Multiplicative inverse for all non-zero elements"
+      },
+      {
+        "letter": "C",
+        "text": "Infinite number of elements"
+      },
+      {
+        "letter": "D",
+        "text": "Matrix multiplication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A field allows division by ensuring every non-zero element has a multiplicative inverse.",
+      "ar": "يتيح الحقل عملية القسمة من خلال ضمان وجود معكوس ضربي لكل عنصر غير صفري."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: The order of a finite field must be of the form:",
+      "ar": "س6: ترتيب المجال المحدود يجب أن يكون على الصورة:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "p^n where p is prime and n is a positive integer"
+      },
+      {
+        "letter": "B",
+        "text": "n^p where n is any integer"
+      },
+      {
+        "letter": "C",
+        "text": "2n where n is prime"
+      },
+      {
+        "letter": "D",
+        "text": "n! where n is positive"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Finite fields have an order equal to a power of a prime number.",
+      "ar": "يجب أن تكون رتبة الحقول المنتهية مساوية لقوة عدد أولي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: For a given prime p, the finite field of order p, GF(p), uses which type of arithmetic?",
+      "ar": "س7: بالنسبة لعدد أولي معين p، فإن المجال المحدود من الرتبة p، GF(p)، يستخدم أي نوع من العمليات الحسابية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ordinary polynomial arithmetic"
+      },
+      {
+        "letter": "B",
+        "text": "Matrix arithmetic"
+      },
+      {
+        "letter": "C",
+        "text": "Modular arithmetic modulo p"
+      },
+      {
+        "letter": "D",
+        "text": "Arithmetic modulo p^n"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "GF(p) is defined using integers mod p together with modular arithmetic operations.",
+      "ar": "يُعرّف GF(p) باستخدام الأعداد الصحيحة بقيمة المقياس p مع عمليات الحساب المعياري."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: Which algorithm is commonly used to find the multiplicative inverse in GF(p) when p is large?",
+      "ar": "س8: ما هي الخوارزمية المستخدمة عادة لإيجاد المعكوس الضربي في GF(p) عندما تكون p كبيرة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fermat's algorithm"
+      },
+      {
+        "letter": "B",
+        "text": "Extended Euclidean algorithm"
+      },
+      {
+        "letter": "C",
+        "text": "Diffie-Hellman algorithm"
+      },
+      {
+        "letter": "D",
+        "text": "Rijndael algorithm"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The extended Euclidean algorithm is used to compute the multiplicative inverse efficiently.",
+      "ar": "تُستخدم خوارزمية إقليدس الممتدة لحساب المعكوس الضربي بكفاءة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: In polynomial arithmetic with coefficients in Z_p, division is exact if the coefficient set is a:",
+      "ar": "س9: في حساب كثيرات الحدود مع المعاملات في Z_p، تكون القسمة صحيحة إذا كانت مجموعة المعاملات هي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ring"
+      },
+      {
+        "letter": "B",
+        "text": "Group"
+      },
+      {
+        "letter": "C",
+        "text": "Field"
+      },
+      {
+        "letter": "D",
+        "text": "Vector space"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Polynomial division is only strictly allowed and exact when the coefficients form a field.",
+      "ar": "تكون قسمة كثيرات الحدود مسموحة ودقيقة فقط عندما تشكل المعاملات حقلاً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: A polynomial that cannot be expressed as a product of two polynomials of lower degree is called:",
+      "ar": "س10: كثيرة الحدود التي لا يمكن التعبير عنها كحاصل ضرب كثيرتي حدود من الدرجة الأدنى تسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Monic"
+      },
+      {
+        "letter": "B",
+        "text": "Abelian"
+      },
+      {
+        "letter": "C",
+        "text": "Irreducible"
+      },
+      {
+        "letter": "D",
+        "text": "Commutative"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "An irreducible polynomial acts like a prime number in polynomial arithmetic.",
+      "ar": "تعمل كثيرة الحدود غير القابلة للاختزال مثل العدد الأولي في حساب كثيرات الحدود."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: In GF(2^n), the addition of two polynomials corresponds to which bitwise operation?",
+      "ar": "س11: في GF(2^n)، إضافة اثنين من كثيرات الحدود يتوافق مع أي عملية بت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "AND"
+      },
+      {
+        "letter": "B",
+        "text": "OR"
+      },
+      {
+        "letter": "C",
+        "text": "XOR"
+      },
+      {
+        "letter": "D",
+        "text": "NAND"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Addition in GF(2^n) is performed modulo 2, which corresponds to the XOR operation.",
+      "ar": "يتم الجمع في GF(2^n) بالمقياس 2، وهو ما يتوافق مع عملية XOR."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Which finite field is extensively used in the Advanced Encryption Standard (AES)?",
+      "ar": "س12: ما هو المجال المحدود المستخدم على نطاق واسع في معيار التشفير المتقدم (AES)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "GF(p)"
+      },
+      {
+        "letter": "B",
+        "text": "GF(2^3)"
+      },
+      {
+        "letter": "C",
+        "text": "GF(2^8)"
+      },
+      {
+        "letter": "D",
+        "text": "GF(2^16)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "AES performs its arithmetic operations over the finite field GF(2^8).",
+      "ar": "ينفذ AES عملياته الحسابية في الحقل المنتهي GF(2^8)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: The AES algorithm operates on data blocks of what size?",
+      "ar": "س13: تعمل خوارزمية AES على كتل البيانات بأي حجم؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "64 bits"
+      },
+      {
+        "letter": "B",
+        "text": "128 bits"
+      },
+      {
+        "letter": "C",
+        "text": "192 bits"
+      },
+      {
+        "letter": "D",
+        "text": "256 bits"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "AES takes a plaintext block size of 128 bits (16 bytes).",
+      "ar": "يأخذ AES كتلة نص صريح بحجم 128 بت (16 بايت)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: How many rounds are used in AES for a 128-bit key?",
+      "ar": "س14: ما هو عدد الجولات المستخدمة في AES لمفتاح 128 بت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "12"
+      },
+      {
+        "letter": "C",
+        "text": "14"
+      },
+      {
+        "letter": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "AES-128 uses 10 rounds for its encryption process.",
+      "ar": "يستخدم AES-128 عشر جولات في عملية التشفير."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: Which of the following is NOT one of the four transformations used in a standard AES round?",
+      "ar": "س 15: أي مما يلي ليس أحد التحويلات الأربعة المستخدمة في جولة AES القياسية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "SubBytes"
+      },
+      {
+        "letter": "B",
+        "text": "ShiftRows"
+      },
+      {
+        "letter": "C",
+        "text": "MixColumns"
+      },
+      {
+        "letter": "D",
+        "text": "FeistelSwap"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "AES uses SubBytes, ShiftRows, MixColumns, and AddRoundKey; it does not use a Feistel structure.",
+      "ar": "يستخدم AES التحويلات الأربعة المذكورة ولا يعتمد على بنية فيستل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: In AES, how many transformations are present in the final round?",
+      "ar": "س16: في AES، كم عدد التحولات الموجودة في الجولة النهائية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The final round of AES omits the MixColumns transformation, leaving only 3 transformations.",
+      "ar": "تحذف الجولة الأخيرة من AES تحويل MixColumns، مما يترك 3 تحويلات فقط."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: Which AES transformation provides non-linearity to the cipher?",
+      "ar": "س17: ما هو تحويل AES الذي يوفر عدم الخطية للتشفير؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ShiftRows"
+      },
+      {
+        "letter": "B",
+        "text": "MixColumns"
+      },
+      {
+        "letter": "C",
+        "text": "SubBytes"
+      },
+      {
+        "letter": "D",
+        "text": "AddRoundKey"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "SubBytes uses an S-box that provides non-linear substitution.",
+      "ar": "يستخدم SubBytes صندوق تعويض يوفر استبدالاً غير خطي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: The AES SubBytes transformation uses an S-box constructed using the multiplicative inverse in which finite field?",
+      "ar": "س18: يستخدم تحويل AES SubBytes صندوق S تم إنشاؤه باستخدام المعكوس المضاعف، في أي مجال محدود؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "GF(2^4)"
+      },
+      {
+        "letter": "B",
+        "text": "GF(2^8)"
+      },
+      {
+        "letter": "C",
+        "text": "GF(p)"
+      },
+      {
+        "letter": "D",
+        "text": "Z_256"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The S-box maps each byte to its multiplicative inverse in GF(2^8) followed by an affine transformation.",
+      "ar": "يربط صندوق التعويض كل بايت بمعكوسه الضربي في GF(2^8) ثم يطبق تحويلاً تآلفياً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: In the ShiftRows transformation of AES, how many bytes is the second row of the State matrix shifted left?",
+      "ar": "س 19: في تحويل ShiftRows لـ AES، كم عدد البايتات التي تم إزاحة الصف الثاني من مصفوفة الحالة إلى اليسار؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The second row is shifted left by 1 byte, the third by 2, and the fourth by 3.",
+      "ar": "يُزاح الصف الثاني لليسار بمقدار بايت واحد، والثالث بمقدار 2، والرابع بمقدار 3."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: The MixColumns transformation operates on the State matrix column by column. It multiplies each column by a fixed matrix over which field?",
+      "ar": "س 20: يعمل تحويل MixColumns على عمود مصفوفة الحالة بعمود. يقوم بضرب كل عمود بمصفوفة ثابتة على أي حقل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "GF(p)"
+      },
+      {
+        "letter": "B",
+        "text": "GF(2^8)"
+      },
+      {
+        "letter": "C",
+        "text": "Real numbers"
+      },
+      {
+        "letter": "D",
+        "text": "Integers mod 256"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "MixColumns performs matrix multiplication over the GF(2^8) finite field.",
+      "ar": "ينفذ MixColumns ضرب المصفوفات في الحقل المنتهي GF(2^8)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: Which AES transformation makes use of the encryption key?",
+      "ar": "س21: ما هو تحويل AES الذي يستخدم مفتاح التشفير؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "SubBytes"
+      },
+      {
+        "letter": "B",
+        "text": "ShiftRows"
+      },
+      {
+        "letter": "C",
+        "text": "MixColumns"
+      },
+      {
+        "letter": "D",
+        "text": "AddRoundKey"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "AddRoundKey is the only stage that introduces the key material into the cipher state.",
+      "ar": "AddRoundKey هي المرحلة الوحيدة التي تُدخل المفتاح في حالة التشفير."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: For an AES 128-bit key, the key expansion algorithm expands the 16-byte key into how many 32-bit words?",
+      "ar": "س22: بالنسبة لمفتاح AES 128 بت، تقوم خوارزمية توسيع المفتاح بتوسيع المفتاح 16 بايت إلى كم عدد الكلمات 32 بت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "40"
+      },
+      {
+        "letter": "B",
+        "text": "44"
+      },
+      {
+        "letter": "C",
+        "text": "52"
+      },
+      {
+        "letter": "D",
+        "text": "60"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A 128-bit key requires 11 round keys of 4 words each, totaling 44 words.",
+      "ar": "يتطلب مفتاح 128 بت 11 مفتاح جولة يتكون كل منها من 4 كلمات، بإجمالي 44 كلمة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: What is the purpose of the round constant (Rcon) in the AES key expansion?",
+      "ar": "س23: ما هو الغرض من الثابت الدائري (Rcon) في توسيع مفتاح AES؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To speed up the algorithm"
+      },
+      {
+        "letter": "B",
+        "text": "To eliminate symmetries between rounds"
+      },
+      {
+        "letter": "C",
+        "text": "To compress the key size"
+      },
+      {
+        "letter": "D",
+        "text": "To substitute the S-box"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Rcon eliminates the symmetry in the way round keys are generated across different rounds.",
+      "ar": "يزيل Rcon التماثل في طريقة إنشاء مفاتيح الجولات عبر الجولات المختلفة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: In double encryption, what attack makes it vulnerable even with two distinct keys?",
+      "ar": "س24: في التشفير المزدوج، ما الهجوم الذي يجعله عرضة للخطر حتى مع وجود مفتاحين مختلفين؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Meet-in-the-middle attack"
+      },
+      {
+        "letter": "B",
+        "text": "Differential cryptanalysis"
+      },
+      {
+        "letter": "C",
+        "text": "Linear cryptanalysis"
+      },
+      {
+        "letter": "D",
+        "text": "Timing attack"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Double encryption is susceptible to the meet-in-the-middle attack, drastically reducing its effective security.",
+      "ar": "التشفير المزدوج عرضة لهجوم الالتقاء في المنتصف، مما يقلل بشكل كبير من أمانه الفعلي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: The level of effort for a meet-in-the-middle attack on double DES is on the order of:",
+      "ar": "س25: مستوى الجهد المبذول لهجوم الالتقاء في المنتصف على DES المزدوج هو في حدود:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "2^56"
+      },
+      {
+        "letter": "B",
+        "text": "2^112"
+      },
+      {
+        "letter": "C",
+        "text": "2^128"
+      },
+      {
+        "letter": "D",
+        "text": "2^64"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The attack requires 2^56 encryptions and decryptions, demonstrating that double DES is not practically much more secure than single DES.",
+      "ar": "يتطلب الهجوم 2^56 عملية تشفير وفك تشفير، مما يثبت أن التشفير المزدوج ليس أكثر أمانًا من المفرد بكثير."
+    }
+  },
+  {
+    "question": {
+      "en": "Q26: Triple DES (3DES) with two keys uses which sequence of operations?",
+      "ar": "س26: نظام DES الثلاثي (3DES) بمفتاحين يستخدم أي تسلسل من العمليات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Encrypt-Encrypt-Encrypt"
+      },
+      {
+        "letter": "B",
+        "text": "Encrypt-Decrypt-Encrypt"
+      },
+      {
+        "letter": "C",
+        "text": "Decrypt-Encrypt-Decrypt"
+      },
+      {
+        "letter": "D",
+        "text": "Decrypt-Decrypt-Decrypt"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "3DES typically uses an E-D-E sequence to allow backward compatibility with single DES.",
+      "ar": "يستخدم 3DES عادةً تسلسل E-D-E للسماح بالتوافق مع التشفير المفرد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q27: Which block cipher mode encrypts each block of plaintext independently using the same key?",
+      "ar": "س27: ما هو وضع تشفير الكتل الذي يقوم بتشفير كل كتلة من النص العادي بشكل مستقل باستخدام نفس المفتاح؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "CBC"
+      },
+      {
+        "letter": "B",
+        "text": "CFB"
+      },
+      {
+        "letter": "C",
+        "text": "ECB"
+      },
+      {
+        "letter": "D",
+        "text": "CTR"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Electronic Codebook (ECB) encrypts each block independently without chaining.",
+      "ar": "يقوم وضع ECB بتشفير كل كتلة بشكل مستقل دون ربط."
+    }
+  },
+  {
+    "question": {
+      "en": "Q28: Why is ECB mode generally not recommended for lengthy messages?",
+      "ar": "س28: لماذا لا يُنصح عمومًا بوضع ECB للرسائل الطويلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is too slow"
+      },
+      {
+        "letter": "B",
+        "text": "It uses too many keys"
+      },
+      {
+        "letter": "C",
+        "text": "Repeating plaintext blocks produce repeating ciphertext blocks"
+      },
+      {
+        "letter": "D",
+        "text": "It amplifies bit errors"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "ECB exposes regularities because identical plaintext blocks encrypt to identical ciphertext blocks.",
+      "ar": "يكشف وضع ECB عن الأنماط لأن كتل النص الصريح المتطابقة تُشفّر إلى كتل نص مشفر متطابقة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q29: In Cipher Block Chaining (CBC) mode, what is XORed with the current plaintext block before encryption?",
+      "ar": "س29: في وضع Cipher Block Chaining (CBC)، ما هو XORed مع كتلة النص العادي الحالية قبل التشفير؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The current round key"
+      },
+      {
+        "letter": "B",
+        "text": "The previous plaintext block"
+      },
+      {
+        "letter": "C",
+        "text": "The previous ciphertext block"
+      },
+      {
+        "letter": "D",
+        "text": "An independent counter"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "CBC links blocks by XORing the plaintext with the preceding ciphertext block.",
+      "ar": "يربط وضع CBC الكتل عن طريق تطبيق XOR على النص الصريح مع كتلة النص المشفر السابقة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q30: Which of the following is required for the first block in CBC mode?",
+      "ar": "س30: أي مما يلي مطلوب للكتلة الأولى في وضع CBC؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A counter"
+      },
+      {
+        "letter": "B",
+        "text": "An Initialization Vector (IV)"
+      },
+      {
+        "letter": "C",
+        "text": "A tweak"
+      },
+      {
+        "letter": "D",
+        "text": "A padding byte"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Since there is no previous ciphertext, an IV is used for the first block.",
+      "ar": "نظراً لعدم وجود نص مشفر سابق، يتم استخدام متجه التهيئة (IV) للكتلة الأولى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: In Cipher Feedback (CFB) mode, the block cipher is converted to operate as a:",
+      "ar": "س31: في وضع تعليقات التشفير (CFB)، يتم تحويل التشفير الكتلي ليعمل كـ:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stream cipher"
+      },
+      {
+        "letter": "B",
+        "text": "Hash function"
+      },
+      {
+        "letter": "C",
+        "text": "Public-key cipher"
+      },
+      {
+        "letter": "D",
+        "text": "Tweakable cipher"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "CFB processes data in smaller segments, effectively turning a block cipher into a stream cipher.",
+      "ar": "يعالج CFB البيانات في أجزاء أصغر، مما يحول تشفير الكتل فعلياً إلى تشفير تدفقي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q32: One advantage of Output Feedback (OFB) mode over CFB mode is:",
+      "ar": "س32: إحدى ميزات وضع التغذية المرتدة للمخرجات (OFB) مقارنة بوضع CFB هي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It doesn't require an IV"
+      },
+      {
+        "letter": "B",
+        "text": "It encrypts faster"
+      },
+      {
+        "letter": "C",
+        "text": "Bit errors in transmission do not propagate"
+      },
+      {
+        "letter": "D",
+        "text": "It uses less memory"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In OFB, the feedback is independent of the ciphertext, so a transmitted bit error affects only one recovered bit.",
+      "ar": "في OFB، تكون التغذية الراجعة مستقلة عن النص المشفر، لذا فإن أي خطأ في البت يؤثر على بت واحد فقط."
+    }
+  },
+  {
+    "question": {
+      "en": "Q33: Which mode of operation involves encrypting a counter value that is incremented for each block?",
+      "ar": "س33: ما هو وضع التشغيل الذي يتضمن تشفير قيمة العداد المتزايدة لكل كتلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "CBC"
+      },
+      {
+        "letter": "B",
+        "text": "CTR"
+      },
+      {
+        "letter": "C",
+        "text": "OFB"
+      },
+      {
+        "letter": "D",
+        "text": "ECB"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Counter (CTR) mode encrypts a sequential counter and XORs it with the plaintext.",
+      "ar": "يقوم وضع العداد (CTR) بتشفير عداد تسلسلي ويطبق عليه XOR مع النص الصريح."
+    }
+  },
+  {
+    "question": {
+      "en": "Q34: Which of the following is a major advantage of the Counter (CTR) mode?",
+      "ar": "س34: أي مما يلي يعد من المزايا الرئيسية لوضع العداد (CTR)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It hides the plaintext length"
+      },
+      {
+        "letter": "B",
+        "text": "Hardware/software efficiency through parallel execution"
+      },
+      {
+        "letter": "C",
+        "text": "It does not require a key"
+      },
+      {
+        "letter": "D",
+        "text": "It is immune to all cryptanalysis"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "CTR mode allows blocks to be processed in parallel, maximizing hardware and software throughput.",
+      "ar": "يسمح وضع CTR بمعالجة الكتل بالتوازي، مما يزيد من إنتاجية الأجهزة والبرامج."
+    }
+  },
+  {
+    "question": {
+      "en": "Q35: The XTS-AES mode was specifically designed for which application?",
+      "ar": "س35: تم تصميم وضع XTS-AES خصيصًا لأي تطبيق؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Wireless communication"
+      },
+      {
+        "letter": "B",
+        "text": "Block-oriented storage devices"
+      },
+      {
+        "letter": "C",
+        "text": "Email encryption"
+      },
+      {
+        "letter": "D",
+        "text": "Satellite communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "XTS-AES is an IEEE standard designed for encrypting data on sector-based storage devices.",
+      "ar": "وضع XTS-AES هو معيار IEEE مصمم لتشفير البيانات على أجهزة التخزين القطاعية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q36: XTS-AES is based on the concept of a:",
+      "ar": "س36: يعتمد XTS-AES على مفهوم:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stream cipher"
+      },
+      {
+        "letter": "B",
+        "text": "Tweakable block cipher"
+      },
+      {
+        "letter": "C",
+        "text": "Format-preserving cipher"
+      },
+      {
+        "letter": "D",
+        "text": "Public-key block cipher"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "XTS-AES implements a tweakable block cipher to ensure identically positioned blocks encrypt differently.",
+      "ar": "يطبق XTS-AES تشفير الكتل القابل للتعديل لضمان اختلاف تشفير الكتل المتطابقة الموضع."
+    }
+  },
+  {
+    "question": {
+      "en": "Q37: In a tweakable block cipher, the inputs are the plaintext, the symmetric key, and what else?",
+      "ar": "س37: في التشفير الكتلي القابل للتعديل، المدخلات هي النص العادي، والمفتاح المتماثل، وماذا أيضًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A nonce"
+      },
+      {
+        "letter": "B",
+        "text": "A tweak"
+      },
+      {
+        "letter": "C",
+        "text": "An initialization vector"
+      },
+      {
+        "letter": "D",
+        "text": "A counter"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The third input is the tweak, which provides variability without keeping it secret.",
+      "ar": "الإدخال الثالث هو التعديل (tweak)، والذي يوفر تنوعاً دون الحاجة للحفاظ عليه سرياً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q38: Format-Preserving Encryption (FPE) ensures that:",
+      "ar": "س38: يضمن التشفير مع الحفاظ على التنسيق (FPE) ما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The ciphertext is in binary format"
+      },
+      {
+        "letter": "B",
+        "text": "The ciphertext is compressed"
+      },
+      {
+        "letter": "C",
+        "text": "The ciphertext has the same length and format as the plaintext"
+      },
+      {
+        "letter": "D",
+        "text": "The encryption is irreversible"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "FPE is critical for databases where encrypted strings (like credit cards) must retain their original structure.",
+      "ar": "التشفير المحافظ على التنسيق مهم لقواعد البيانات حيث يجب أن تحتفظ السلاسل بتنسيقها الأصلي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q39: The FPE algorithms FF1, FF2, and FF3 specified by NIST SP 800-38G use which underlying structure?",
+      "ar": "س39: ما هي البنية الأساسية التي تستخدمها خوارزميات FPE FF1 وFF2 وFF3 المحددة بواسطة NIST SP 800-38G؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Substitution-Permutation Network"
+      },
+      {
+        "letter": "B",
+        "text": "Feistel structure"
+      },
+      {
+        "letter": "C",
+        "text": "AES round structure"
+      },
+      {
+        "letter": "D",
+        "text": "Tweakable XTS structure"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The FF algorithms construct the format-preserving mapping using a Feistel network based on AES.",
+      "ar": "تقوم خوارزميات FF ببناء التشفير المحافظ على التنسيق باستخدام شبكة فيستل المبنية على AES."
+    }
+  },
+  {
+    "question": {
+      "en": "Q40: In GF(2^8), polynomial addition is equivalent to which bitwise operation?",
+      "ar": "س40: في GF(2^8)، إضافة كثيرات الحدود تعادل أي عملية بت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "AND"
+      },
+      {
+        "letter": "B",
+        "text": "OR"
+      },
+      {
+        "letter": "C",
+        "text": "XOR"
+      },
+      {
+        "letter": "D",
+        "text": "NOT"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Polynomial addition over GF(2) discards carries, identical to bitwise XOR.",
+      "ar": "جمع كثيرات الحدود في GF(2) يلغي الحمل، وهو متطابق مع عملية XOR بالبتات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q41: According to the AES key expansion, how many distinct 4x4 matrices serve as round keys for AES-128?",
+      "ar": "س41: وفقًا لتوسعة مفتاح AES، كم عدد مصفوفات 4x4 المميزة التي تعمل كمفاتيح مستديرة لـ AES-128؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "11"
+      },
+      {
+        "letter": "C",
+        "text": "12"
+      },
+      {
+        "letter": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A 128-bit key uses 10 rounds plus an initial AddRoundKey, requiring 11 round keys total.",
+      "ar": "يستخدم مفتاح 128 بت 10 جولات بالإضافة إلى مفتاح أولي، مما يتطلب إجمالي 11 مفتاح جولة."
+    }
+  },
+  {
+    "question": {
+      "en": "1. What is the original intelligible message fed into the encryption algorithm called?",
+      "ar": "1. ما هي الرسالة الأصلية الواضحة التي يتم إدخالها في خوارزمية التشفير؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ciphertext"
+      },
+      {
+        "letter": "B",
+        "text": "Plaintext"
+      },
+      {
+        "letter": "C",
+        "text": "Secret key"
+      },
+      {
+        "letter": "D",
+        "text": "Cryptanalysis"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An original message is known as the plaintext, while the coded message is called the ciphertext.",
+      "ar": "تُعرف الرسالة الأصلية باسم النص الواضح (plaintext)، بينما تُعرف الرسالة المشفرة باسم النص المشفر (ciphertext)."
+    }
+  },
+  {
+    "question": {
+      "en": "2. The process of restoring the plaintext from the ciphertext is known as:",
+      "ar": "2. تُعرف عملية استعادة النص الصريح من النص المشفر بأنها:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Enciphering"
+      },
+      {
+        "letter": "B",
+        "text": "Deciphering"
+      },
+      {
+        "letter": "C",
+        "text": "Cryptography"
+      },
+      {
+        "letter": "D",
+        "text": "Substitution"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Restoring the plaintext from the ciphertext is deciphering or decryption.",
+      "ar": "استعادة النص الواضح من النص المشفر تُعرف بفك التشفير (deciphering)."
+    }
+  },
+  {
+    "question": {
+      "en": "3. Techniques used for deciphering a message without any knowledge of the enciphering details fall into the area of:",
+      "ar": "3. التقنيات المستخدمة لفك تشفير الرسالة دون أي معرفة بتفاصيل التشفير تقع في مجال:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cryptography"
+      },
+      {
+        "letter": "B",
+        "text": "Steganography"
+      },
+      {
+        "letter": "C",
+        "text": "Cryptanalysis"
+      },
+      {
+        "letter": "D",
+        "text": "Transposition"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Cryptanalysis involves techniques used for deciphering a message without knowing the enciphering details.",
+      "ar": "تحليل التعمية (Cryptanalysis) يشمل التقنيات المستخدمة لفك تشفير رسالة دون معرفة تفاصيل التشفير."
+    }
+  },
+  {
+    "question": {
+      "en": "4. The areas of cryptography and cryptanalysis together are called:",
+      "ar": "4. تسمى مجالات التشفير وتحليل الشفرات معًا:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Steganography"
+      },
+      {
+        "letter": "B",
+        "text": "Cryptology"
+      },
+      {
+        "letter": "C",
+        "text": "Block Ciphers"
+      },
+      {
+        "letter": "D",
+        "text": "Symmetric encryption"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The areas of cryptography and cryptanalysis together are called cryptology.",
+      "ar": "يُطلق على مجالي علم التشفير وتحليل الشفرات معاً اسم علم التعمية (Cryptology)."
+    }
+  },
+  {
+    "question": {
+      "en": "5. Which attack involves trying every possible key on a piece of ciphertext until an intelligible translation is obtained?",
+      "ar": "5. ما هو الهجوم الذي يتضمن تجربة كل مفتاح ممكن على جزء من النص المشفر حتى يتم الحصول على ترجمة واضحة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ciphertext-only attack"
+      },
+      {
+        "letter": "B",
+        "text": "Known-plaintext attack"
+      },
+      {
+        "letter": "C",
+        "text": "Chosen-ciphertext attack"
+      },
+      {
+        "letter": "D",
+        "text": "Brute-force attack"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "A brute-force attack involves trying every possible key until an intelligible translation into plaintext is obtained.",
+      "ar": "هجوم القوة الغاشمة (Brute-force) يتضمن تجربة كل مفتاح ممكن حتى يتم الحصول على ترجمة مفهومة للنص."
+    }
+  },
+  {
+    "question": {
+      "en": "6. Which type of cryptanalytic attack is considered the most difficult to present?",
+      "ar": "6. ما هو نوع هجوم تحليل الشفرات الذي يعتبر الأكثر صعوبة في تقديمه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Chosen-plaintext"
+      },
+      {
+        "letter": "B",
+        "text": "Ciphertext-only"
+      },
+      {
+        "letter": "C",
+        "text": "Known-plaintext"
+      },
+      {
+        "letter": "D",
+        "text": "Chosen-ciphertext"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The most difficult problem is presented when all that is available is the ciphertext only.",
+      "ar": "هجوم النص المشفر فقط (Ciphertext-only) هو الأصعب لأن المهاجم يمتلك أقل قدر من المعلومات."
+    }
+  },
+  {
+    "question": {
+      "en": "7. An encryption scheme is said to be computationally secure if:",
+      "ar": "7. يُقال إن نظام التشفير آمن حسابيًا إذا:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The cost of breaking the cipher exceeds the value of the information."
+      },
+      {
+        "letter": "B",
+        "text": "The time required to break the cipher exceeds the useful lifetime of the information."
+      },
+      {
+        "letter": "C",
+        "text": "Both A and B."
+      },
+      {
+        "letter": "D",
+        "text": "It cannot be broken regardless of time and resources."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "An encryption scheme is computationally secure if the cost of breaking it exceeds the information's value or the time required exceeds the information's lifetime.",
+      "ar": "يكون التشفير آمناً حسابياً إذا كانت تكلفة كسره تتجاوز قيمة المعلومات، أو كان الوقت اللازم لكسره يتجاوز العمر الافتراضي للمعلومات."
+    }
+  },
+  {
+    "question": {
+      "en": "8. Which encryption algorithm is the only one known to be unconditionally secure?",
+      "ar": "8. ما هي خوارزمية التشفير الوحيدة المعروفة بأنها آمنة بشكل غير مشروط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "DES"
+      },
+      {
+        "letter": "B",
+        "text": "Caesar Cipher"
+      },
+      {
+        "letter": "C",
+        "text": "Vigenère Cipher"
+      },
+      {
+        "letter": "D",
+        "text": "One-time pad"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "With the exception of the one-time pad, there is no encryption algorithm that is unconditionally secure.",
+      "ar": "لوحة المرة الواحدة (One-time pad) هي خوارزمية التشفير الوحيدة التي تعتبر آمنة بشكل غير مشروط."
+    }
+  },
+  {
+    "question": {
+      "en": "9. In the Caesar cipher, each letter is replaced by the letter standing how many places further down the alphabet?",
+      "ar": "9. في تشفير قيصر، يتم استبدال كل حرف بالحرف الذي يقف في مكانه في أسفل الأبجدية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Caesar cipher involves replacing each letter with the letter standing three places further down the alphabet.",
+      "ar": "في شفرة قيصر، يتم استبدال كل حرف بالحرف الذي يليه بثلاثة مراتب في الأبجدية."
+    }
+  },
+  {
+    "question": {
+      "en": "10. How many possible permutations (keys) exist for a general monoalphabetic substitution cipher of the English alphabet?",
+      "ar": "10. ما هو عدد التباديل (المفاتيح) المحتملة الموجودة لتشفير الاستبدال الأحادي الأبجدي العام للأبجدية الإنجليزية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "25"
+      },
+      {
+        "letter": "B",
+        "text": "26"
+      },
+      {
+        "letter": "C",
+        "text": "26!"
+      },
+      {
+        "letter": "D",
+        "text": "2^56"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "If the cipher line can be any permutation of the 26 characters, there are 26! (greater than 4 x 10^26) possible keys.",
+      "ar": "يوجد 26! (مضروب الـ 26) من المفاتيح الممكنة لشفرة الاستبدال أحادية الأبجدية."
+    }
+  },
+  {
+    "question": {
+      "en": "11. The Playfair cipher translates plaintext units into ciphertext. What size are these units?",
+      "ar": "11. يقوم تشفير Playfair بترجمة وحدات النص العادي إلى نص مشفر. ما حجم هذه الوحدات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Single letters"
+      },
+      {
+        "letter": "B",
+        "text": "Digrams (two letters)"
+      },
+      {
+        "letter": "C",
+        "text": "Trigrams (three letters)"
+      },
+      {
+        "letter": "D",
+        "text": "Blocks of 64 bits"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Playfair cipher treats digrams in the plaintext as single units and translates them into ciphertext digrams.",
+      "ar": "تتعامل شفرة بلاي فير مع أزواج الحروف (Digrams) كوحدة واحدة عند التشفير."
+    }
+  },
+  {
+    "question": {
+      "en": "12. What size is the matrix used in the Playfair cipher?",
+      "ar": "12. ما هو حجم المصفوفة المستخدمة في تشفير Playfair؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "3x3"
+      },
+      {
+        "letter": "B",
+        "text": "4x4"
+      },
+      {
+        "letter": "C",
+        "text": "5x5"
+      },
+      {
+        "letter": "D",
+        "text": "6x6"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Playfair algorithm is based on the use of a 5x5 matrix of letters constructed using a keyword.",
+      "ar": "تعتمد خوارزمية بلاي فير على استخدام مصفوفة 5x5 من الحروف."
+    }
+  },
+  {
+    "question": {
+      "en": "13. The Hill cipher involves concepts from which area of mathematics?",
+      "ar": "13. تتضمن شفرة هيل مفاهيم من أي مجال من مجالات الرياضيات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Calculus"
+      },
+      {
+        "letter": "B",
+        "text": "Linear Algebra (Matrix arithmetic modulo 26)"
+      },
+      {
+        "letter": "C",
+        "text": "Trigonometry"
+      },
+      {
+        "letter": "D",
+        "text": "Differential Equations"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Hill cipher involves matrix arithmetic modulo 26, using linear algebra concepts like matrix inversion.",
+      "ar": "تعتمد شفرة هيل على مفاهيم الجبر الخطي وحساب المصفوفات بمعيار 26."
+    }
+  },
+  {
+    "question": {
+      "en": "14. A polyalphabetic substitution cipher improves on monoalphabetic ciphers by:",
+      "ar": "14. يتم تحسين التشفير البديل متعدد الأبجدية على الأصفار أحادية الأبجدية عن طريق:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using a single fixed alphabet"
+      },
+      {
+        "letter": "B",
+        "text": "Using different monoalphabetic substitutions as it proceeds through the message"
+      },
+      {
+        "letter": "C",
+        "text": "Removing spaces from the message"
+      },
+      {
+        "letter": "D",
+        "text": "Encrypting only numbers"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Polyalphabetic substitution ciphers use different monoalphabetic substitutions as one proceeds through the plaintext.",
+      "ar": "تستخدم الشفرة متعددة الأبجديات بدائل أحادية أبجدية مختلفة مع التقدم في النص الواضح."
+    }
+  },
+  {
+    "question": {
+      "en": "15. Which polyalphabetic cipher uses a running key created by concatenating a keyword with the plaintext itself?",
+      "ar": "15. ما هو التشفير متعدد الحروف الذي يستخدم مفتاح التشغيل الذي تم إنشاؤه عن طريق ربط كلمة رئيسية مع النص العادي نفسه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Caesar Cipher"
+      },
+      {
+        "letter": "B",
+        "text": "Vigenère Cipher"
+      },
+      {
+        "letter": "C",
+        "text": "Autokey System"
+      },
+      {
+        "letter": "D",
+        "text": "Hill Cipher"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Vigenère proposed an autokey system, in which a keyword is concatenated with the plaintext itself to provide a running key.",
+      "ar": "اقترح فيجينير نظام المفتاح التلقائي حيث يتم دمج كلمة مرور مع النص الأصلي لإنشاء مفتاح مستمر."
+    }
+  },
+  {
+    "question": {
+      "en": "16. The Vernam cipher works on binary data rather than letters. What logical operation is used to combine plaintext and key?",
+      "ar": "16. تعمل شفرة فيرنام على البيانات الثنائية بدلاً من الحروف. ما هي العملية المنطقية المستخدمة للجمع بين النص العادي والمفتاح؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "AND"
+      },
+      {
+        "letter": "B",
+        "text": "OR"
+      },
+      {
+        "letter": "C",
+        "text": "XOR"
+      },
+      {
+        "letter": "D",
+        "text": "NAND"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In the Vernam cipher, ciphertext is generated by performing the bitwise XOR of the plaintext and the key.",
+      "ar": "في شفرة فيرنام، يتم إنشاء النص المشفر عن طريق تنفيذ عملية XOR على مستوى البتات بين النص الواضح والمفتاح."
+    }
+  },
+  {
+    "question": {
+      "en": "17. The one-time pad requires a key that is:",
+      "ar": "17. تتطلب لوحة المرة الواحدة مفتاحًا يكون:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A repeating keyword"
+      },
+      {
+        "letter": "B",
+        "text": "Exactly 56 bits long"
+      },
+      {
+        "letter": "C",
+        "text": "As long as the message and truly random"
+      },
+      {
+        "letter": "D",
+        "text": "Shared publicly"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The one-time pad uses a random key that is as long as the message, and it is used only once.",
+      "ar": "لوحة المرة الواحدة تتطلب مفتاحاً عشوائياً حقيقياً بنفس طول الرسالة، ويُستخدم مرة واحدة فقط."
+    }
+  },
+  {
+    "question": {
+      "en": "18. A transposition cipher achieves encryption by:",
+      "ar": "18. يحقق تشفير التحويل التشفير عن طريق:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Replacing plaintext letters with other letters"
+      },
+      {
+        "letter": "B",
+        "text": "Performing some sort of permutation on the plaintext letters"
+      },
+      {
+        "letter": "C",
+        "text": "Using binary XOR operations"
+      },
+      {
+        "letter": "D",
+        "text": "Hiding the existence of the message"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A transposition cipher performs a permutation on the plaintext letters, changing their order.",
+      "ar": "تحقق شفرة التبديل (Transposition cipher) التشفير عن طريق تبديل مواقع (permutation) حروف النص الواضح."
+    }
+  },
+  {
+    "question": {
+      "en": "19. The 'rail fence' technique is an example of which type of cipher?",
+      "ar": "19. تعتبر تقنية \"سياج السكك الحديدية\" مثالاً على أي نوع من التشفير؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Substitution cipher"
+      },
+      {
+        "letter": "B",
+        "text": "Steganography"
+      },
+      {
+        "letter": "C",
+        "text": "Transposition cipher"
+      },
+      {
+        "letter": "D",
+        "text": "Rotor machine"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The rail fence is the simplest transposition cipher, writing plaintext as a sequence of diagonals.",
+      "ar": "تعتبر تقنية سياج السكة الحديدية (rail fence) أبسط أنواع شفرات التبديل."
+    }
+  },
+  {
+    "question": {
+      "en": "20. What is the fundamental difference between cryptography and steganography?",
+      "ar": "20. ما هو الفرق الأساسي بين التشفير وإخفاء المعلومات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cryptography is for military use, steganography is civilian."
+      },
+      {
+        "letter": "B",
+        "text": "Steganography conceals the existence of the message, cryptography renders it unintelligible."
+      },
+      {
+        "letter": "C",
+        "text": "Steganography uses keys, cryptography does not."
+      },
+      {
+        "letter": "D",
+        "text": "Cryptography uses binary data, steganography uses text."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Steganography conceals the existence of the message, whereas cryptography renders the message unintelligible to outsiders.",
+      "ar": "إخفاء المعلومات (Steganography) يخفي وجود الرسالة، بينما علم التعمية (Cryptography) يجعل الرسالة غير مفهومة للمتطفلين."
+    }
+  },
+  {
+    "question": {
+      "en": "21. Character marking and invisible ink are historical examples of:",
+      "ar": "21. تعد علامات الأحرف والحبر غير المرئي أمثلة تاريخية على ما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Block ciphers"
+      },
+      {
+        "letter": "B",
+        "text": "Rotor machines"
+      },
+      {
+        "letter": "C",
+        "text": "Cryptanalysis"
+      },
+      {
+        "letter": "D",
+        "text": "Steganography"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Character marking, invisible ink, and pin punctures are historical steganography techniques.",
+      "ar": "تحديد الحروف والحبر السري هي أمثلة تاريخية لتقنيات إخفاء المعلومات (Steganography)."
+    }
+  },
+  {
+    "question": {
+      "en": "22. A stream cipher operates on data by:",
+      "ar": "22. يعمل تشفير الدفق على البيانات من خلال:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Encrypting one block of 64 bits at a time"
+      },
+      {
+        "letter": "B",
+        "text": "Encrypting a digital data stream one bit or one byte at a time"
+      },
+      {
+        "letter": "C",
+        "text": "Encrypting the entire file instantly"
+      },
+      {
+        "letter": "D",
+        "text": "Using only transposition"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A stream cipher encrypts a digital data stream one bit or one byte at a time.",
+      "ar": "شفرة التدفق (Stream cipher) تقوم بتشفير تدفق البيانات الرقمية بت أو بايت واحد في كل مرة."
+    }
+  },
+  {
+    "question": {
+      "en": "23. In block ciphers, what is considered a typical block size that provides a reasonable tradeoff between security and speed?",
+      "ar": "23. في تشفير الكتل، ما هو حجم الكتلة النموذجي الذي يوفر مقايضة معقولة بين الأمان والسرعة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "8 bits"
+      },
+      {
+        "letter": "B",
+        "text": "16 bits"
+      },
+      {
+        "letter": "C",
+        "text": "64 or 128 bits"
+      },
+      {
+        "letter": "D",
+        "text": "1024 bits"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Typically, a block size of 64 or 128 bits is used in block ciphers.",
+      "ar": "عادةً ما يُستخدم حجم كتلة يبلغ 64 أو 128 بت في شفرات الكتل (Block ciphers)."
+    }
+  },
+  {
+    "question": {
+      "en": "24. For a block cipher to be reversible, the transformation must be:",
+      "ar": "24. لكي يكون التشفير الكتلي قابلاً للعكس، يجب أن يكون التحويل:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Singular"
+      },
+      {
+        "letter": "B",
+        "text": "Nonsingular"
+      },
+      {
+        "letter": "C",
+        "text": "Asymmetric"
+      },
+      {
+        "letter": "D",
+        "text": "Linear"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "For decryption to be possible, each plaintext block must produce a unique ciphertext block. Such a transformation is called reversible or nonsingular.",
+      "ar": "لكي تكون شفرة الكتلة قابلة للعكس (صالحة لفك التشفير)، يجب أن يكون التحويل غير شاذ (Nonsingular)."
+    }
+  },
+  {
+    "question": {
+      "en": "25. Which concept proposed by Claude Shannon seeks to dissipate the statistical structure of plaintext into long-range statistics of the ciphertext?",
+      "ar": "25. ما هو المفهوم الذي اقترحه كلود شانون والذي يسعى إلى تشتيت البنية الإحصائية للنص العادي إلى إحصائيات طويلة المدى للنص المشفر؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Confusion"
+      },
+      {
+        "letter": "B",
+        "text": "Avalanche effect"
+      },
+      {
+        "letter": "C",
+        "text": "Diffusion"
+      },
+      {
+        "letter": "D",
+        "text": "Permutation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In diffusion, the statistical structure of the plaintext is dissipated into long-range statistics of the ciphertext.",
+      "ar": "الانتشار (Diffusion) هو مفهوم يهدف إلى تبديد البنية الإحصائية للنص الواضح في إحصائيات النص المشفر طويلة المدى."
+    }
+  },
+  {
+    "question": {
+      "en": "26. Which concept seeks to make the relationship between the statistics of the ciphertext and the encryption key as complex as possible?",
+      "ar": "26. ما هو المفهوم الذي يسعى إلى جعل العلاقة بين إحصائيات النص المشفر ومفتاح التشفير معقدة قدر الإمكان؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Diffusion"
+      },
+      {
+        "letter": "B",
+        "text": "Confusion"
+      },
+      {
+        "letter": "C",
+        "text": "Deciphering"
+      },
+      {
+        "letter": "D",
+        "text": "Transposition"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Confusion seeks to make the relationship between the statistics of the ciphertext and the value of the encryption key as complex as possible.",
+      "ar": "الارتباك (Confusion) يهدف إلى جعل العلاقة بين إحصائيات النص المشفر ومفتاح التشفير معقدة قدر الإمكان."
+    }
+  },
+  {
+    "question": {
+      "en": "27. In the Feistel cipher structure, what happens to the right half of the data during each round?",
+      "ar": "27. في بنية تشفير Feistel، ماذا يحدث للنصف الأيمن من البيانات خلال كل جولة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is XORed with the key and becomes the left half."
+      },
+      {
+        "letter": "B",
+        "text": "It is discarded."
+      },
+      {
+        "letter": "C",
+        "text": "It is passed through function F, XORed with the left half, and then they are swapped."
+      },
+      {
+        "letter": "D",
+        "text": "It remains completely unchanged until the final round."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The right half is used as input to round function F, XORed with the left half, and then the two halves are interchanged.",
+      "ar": "يتم تمرير النصف الأيمن عبر الدالة F، ثم يتم تطبيق XOR مع النصف الأيسر، وبعد ذلك يتم التبديل بين النصفين."
+    }
+  },
+  {
+    "question": {
+      "en": "28. How does the decryption process in a Feistel cipher differ from encryption?",
+      "ar": "28. كيف تختلف عملية فك التشفير في تشفير Feistel عن التشفير؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It uses an entirely different algorithm."
+      },
+      {
+        "letter": "B",
+        "text": "It uses the same algorithm but with subkeys applied in reverse order."
+      },
+      {
+        "letter": "C",
+        "text": "It uses a different block size."
+      },
+      {
+        "letter": "D",
+        "text": "It requires no key."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Decryption with a Feistel cipher uses the same algorithm as encryption, but subkeys K are used in reverse order.",
+      "ar": "يستخدم فك التشفير في شفرة فايستل نفس الخوارزمية، لكن مع استخدام المفاتيح الفرعية بترتيب عكسي."
+    }
+  },
+  {
+    "question": {
+      "en": "29. What is the block size and key length used in the Data Encryption Standard (DES)?",
+      "ar": "29. ما هو حجم الكتلة وطول المفتاح المستخدم في معيار تشفير البيانات (DES)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "128-bit block, 64-bit key"
+      },
+      {
+        "letter": "B",
+        "text": "64-bit block, 56-bit key"
+      },
+      {
+        "letter": "C",
+        "text": "64-bit block, 64-bit key"
+      },
+      {
+        "letter": "D",
+        "text": "256-bit block, 128-bit key"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "For DEA (DES), data are encrypted in 64-bit blocks using a 56-bit key.",
+      "ar": "في معيار (DES)، يتم تشفير البيانات في كتل بحجم 64 بت باستخدام مفتاح بحجم 56 بت."
+    }
+  },
+  {
+    "question": {
+      "en": "30. How many rounds of processing are used in the DES algorithm?",
+      "ar": "30. ما هو عدد جولات المعالجة المستخدمة في خوارزمية DES؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "8"
+      },
+      {
+        "letter": "B",
+        "text": "10"
+      },
+      {
+        "letter": "C",
+        "text": "16"
+      },
+      {
+        "letter": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The processing of the plaintext proceeds in three phases, including a phase consisting of 16 rounds of the same function.",
+      "ar": "تتكون خوارزمية DES من 16 جولة من المعالجة."
+    }
+  },
+  {
+    "question": {
+      "en": "31. In DES, what happens immediately before the 64-bit preoutput is produced?",
+      "ar": "31. في DES، ماذا يحدث مباشرة قبل إنتاج الإخراج المسبق 64 بت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An initial permutation."
+      },
+      {
+        "letter": "B",
+        "text": "The left and right halves are swapped."
+      },
+      {
+        "letter": "C",
+        "text": "The key is inverted."
+      },
+      {
+        "letter": "D",
+        "text": "A 128-bit expansion."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The left and right halves of the output of the 16th round are swapped to produce the preoutput.",
+      "ar": "يتم تبديل النصفين الأيمن والأيسر من مخرجات الجولة السادسة عشرة لإنتاج ما قبل المخرجات (preoutput)."
+    }
+  },
+  {
+    "question": {
+      "en": "32. The property where a small change in plaintext or key produces a significant change in the ciphertext is known as:",
+      "ar": "32. الخاصية التي يؤدي فيها تغيير بسيط في النص العادي أو المفتاح إلى تغيير كبير في النص المشفر تُعرف باسم:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Linear cryptanalysis"
+      },
+      {
+        "letter": "B",
+        "text": "Steganography"
+      },
+      {
+        "letter": "C",
+        "text": "The Avalanche Effect"
+      },
+      {
+        "letter": "D",
+        "text": "Nonsingular mapping"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A change in one bit of plaintext or key producing a change in many bits of ciphertext is referred to as the avalanche effect.",
+      "ar": "يُعرف التغير البسيط في النص الواضح أو المفتاح الذي يؤدي إلى تغيير كبير في النص المشفر بتأثير الانهيار (Avalanche Effect)."
+    }
+  },
+  {
+    "question": {
+      "en": "33. What is the approximate number of possible keys in a 56-bit DES key space?",
+      "ar": "33. ما هو العدد التقريبي للمفاتيح الممكنة في مساحة مفتاح DES 56 بت؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "7.2 x 10^16"
+      },
+      {
+        "letter": "B",
+        "text": "3.4 x 10^38"
+      },
+      {
+        "letter": "C",
+        "text": "4 x 10^26"
+      },
+      {
+        "letter": "D",
+        "text": "256!"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "With a key length of 56 bits, there are 2^56 possible keys, which is approximately 7.2 x 10^16 keys.",
+      "ar": "بمفتاح طوله 56 بت، يوجد 2^56 مفتاح محتمل، وهو ما يعادل تقريباً 7.2 × 10^16 مفتاح."
+    }
+  },
+  {
+    "question": {
+      "en": "34. What threat made the 56-bit key length of DES widely considered inadequate?",
+      "ar": "34. ما هو التهديد الذي جعل طول المفتاح 56 بت لـ DES يعتبر على نطاق واسع غير مناسب؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Advanced linear algebra"
+      },
+      {
+        "letter": "B",
+        "text": "Parallel machines and commercial off-the-shelf processors performing brute-force attacks"
+      },
+      {
+        "letter": "C",
+        "text": "Quantum computing"
+      },
+      {
+        "letter": "D",
+        "text": "Steganography tools"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The speed of commercial, off-the-shelf processors executing a brute-force search threatens the security of the 56-bit DES key.",
+      "ar": "سرعة المعالجات التجارية المتاحة والأنظمة المتوازية جعلت من هجوم القوة الغاشمة خطراً يهدد مفتاح DES ذي الـ 56 بت."
+    }
+  },
+  {
+    "question": {
+      "en": "35. The suspected vulnerabilities in the internal structure of DES largely focused on which component?",
+      "ar": "35. نقاط الضعف المشتبه بها في البنية الداخلية لـ DES تركز إلى حد كبير على أي مكون؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Initial Permutation"
+      },
+      {
+        "letter": "B",
+        "text": "The 32-bit swap"
+      },
+      {
+        "letter": "C",
+        "text": "The eight S-boxes"
+      },
+      {
+        "letter": "D",
+        "text": "The left circular shift"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The focus of concern has been on the eight substitution tables, or S-boxes, used in each iteration.",
+      "ar": "تركزت المخاوف الأمنية حول صناديق الاستبدال الثمانية (S-boxes) المستخدمة في كل جولة من خوارزمية DES."
+    }
+  },
+  {
+    "question": {
+      "en": "36. An attack where information is obtained by observing how long it takes an implementation to perform decryptions is called:",
+      "ar": "36. الهجوم الذي يتم فيه الحصول على المعلومات من خلال ملاحظة المدة التي يستغرقها التنفيذ لإجراء عمليات فك التشفير يسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Differential cryptanalysis"
+      },
+      {
+        "letter": "B",
+        "text": "Brute-force attack"
+      },
+      {
+        "letter": "C",
+        "text": "Ciphertext-only attack"
+      },
+      {
+        "letter": "D",
+        "text": "Timing attack"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "A timing attack exploits the fact that an encryption or decryption algorithm takes slightly different amounts of time on different inputs.",
+      "ar": "هجوم التوقيت (Timing attack) يستغل الاختلاف الطفيف في الوقت الذي تستغرقه الخوارزمية لفك تشفير مدخلات مختلفة."
+    }
+  },
+  {
+    "question": {
+      "en": "37. Which of the following is NOT one of the critical aspects of block cipher design mentioned in the text?",
+      "ar": "37. أي مما يلي ليس أحد الجوانب المهمة لتصميم التشفير الكتلي المذكور في النص؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Number of rounds"
+      },
+      {
+        "letter": "B",
+        "text": "Design of the function F"
+      },
+      {
+        "letter": "C",
+        "text": "Key schedule algorithm"
+      },
+      {
+        "letter": "D",
+        "text": "Choosing prime numbers for keys"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The text lists three critical aspects of block cipher design: number of rounds, design of function F, and key scheduling.",
+      "ar": "الجوانب الحاسمة لتصميم شفرة الكتلة المذكورة هي عدد الجولات، تصميم الدالة F، وجدولة المفاتيح، وليس اختيار الأعداد الأولية."
+    }
+  },
+  {
+    "question": {
+      "en": "38. The Strict Avalanche Criterion (SAC) states that:",
+      "ar": "38. ينص معيار الانهيار الجليدي الصارم (SAC) على ما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "All keys must be 128 bits minimum."
+      },
+      {
+        "letter": "B",
+        "text": "Any output bit should change with probability 1/2 when any single input bit is inverted."
+      },
+      {
+        "letter": "C",
+        "text": "Plaintext must not contain repeated digrams."
+      },
+      {
+        "letter": "D",
+        "text": "S-boxes must be linear."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The strict avalanche criterion (SAC) states that any output bit of an S-box should change with probability 1/2 when any single input bit is inverted.",
+      "ar": "ينص معيار الانهيار الصارم (SAC) على أن أي بت ناتج يجب أن يتغير باحتمالية النصف (1/2) عند عكس أي بت إدخال مفرد."
+    }
+  },
+  {
+    "question": {
+      "en": "39. The Bit Independence Criterion (BIC) ensures that:",
+      "ar": "39. يضمن معيار استقلال البت (BIC) ما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bits from different blocks do not mix."
+      },
+      {
+        "letter": "B",
+        "text": "Key bits are generated randomly."
+      },
+      {
+        "letter": "C",
+        "text": "Output bits j and k should change independently when any single input bit i is inverted."
+      },
+      {
+        "letter": "D",
+        "text": "Encryption and decryption use the same permutations."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "BIC states that output bits j and k should change independently when any single input bit i is inverted.",
+      "ar": "معيار استقلالية البتات (BIC) يضمن أن البتات الناتجة j و k تتغير بشكل مستقل عند عكس أي بت إدخال i."
+    }
+  },
+  {
+    "question": {
+      "en": "40. What action undoes the Initial Permutation at the end of the DES encryption process?",
+      "ar": "40. ما هو الإجراء الذي يلغي التبديل الأولي في نهاية عملية تشفير DES؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The 32-bit swap"
+      },
+      {
+        "letter": "B",
+        "text": "The S-box substitution"
+      },
+      {
+        "letter": "C",
+        "text": "The Inverse Initial Permutation"
+      },
+      {
+        "letter": "D",
+        "text": "The subkey generation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The preoutput is passed through a permutation (IP^-1) that is the inverse of the initial permutation to produce the ciphertext.",
+      "ar": "يتم تمرير مخرجات الجولات النهائية عبر التبديل العكسي المبدئي (Inverse Initial Permutation) لإنتاج النص المشفر النهائي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: What are the two fundamentally different strategies for generating random bits?",
+      "ar": "س1: ما هما الاستراتيجيتان المختلفتان بشكل أساسي لتوليد البتات العشوائية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deterministic and Non-deterministic"
+      },
+      {
+        "letter": "B",
+        "text": "Symmetric and Asymmetric"
+      },
+      {
+        "letter": "C",
+        "text": "Linear and Non-linear"
+      },
+      {
+        "letter": "D",
+        "text": "Uniform and Independent"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "TRNGs produce bits non-deterministically, while PRNGs and DRBGs compute bits deterministically.",
+      "ar": "تنتج مولدات الأرقام العشوائية الحقيقية (TRNGs) البتات بشكل غير حتمي، بينما تعتمد مولدات الأرقام شبه العشوائية (PRNGs) على خوارزميات حتمية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Which of the following uses an open-ended sequence of bits?",
+      "ar": "س2: أي مما يلي يستخدم سلسلة مفتوحة من البتات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "PRF"
+      },
+      {
+        "letter": "B",
+        "text": "PRNG"
+      },
+      {
+        "letter": "C",
+        "text": "TRNG"
+      },
+      {
+        "letter": "D",
+        "text": "Block Cipher"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A PRNG produces an open-ended sequence of bits, whereas a PRF produces a fixed-length string.",
+      "ar": "ينتج (PRNG) تسلسلاً مفتوح النهاية من البتات، بينما ينتج (PRF) سلسلة ذات طول ثابت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: A sequence of random numbers must exhibit which two distinct requirements?",
+      "ar": "س3: أي تسلسل من الأرقام العشوائية يجب أن يحمل المتطلبين المتميزين؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Uniformity and Scalability"
+      },
+      {
+        "letter": "B",
+        "text": "Randomness and Unpredictability"
+      },
+      {
+        "letter": "C",
+        "text": "Independence and Consistency"
+      },
+      {
+        "letter": "D",
+        "text": "Determinism and Efficiency"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Cryptographic applications require the random numbers to be both statistically random and unpredictable.",
+      "ar": "تتطلب التطبيقات التشفيرية أن تكون الأرقام العشوائية عشوائية إحصائياً وغير قابلة للتنبؤ."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: Which test determines if a sequence can be significantly compressed without loss of information?",
+      "ar": "س 4: ما هو الاختبار الذي يحدد ما إذا كان من الممكن ضغط التسلسل بشكل كبير دون فقدان المعلومات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Frequency test"
+      },
+      {
+        "letter": "B",
+        "text": "Runs test"
+      },
+      {
+        "letter": "C",
+        "text": "Maurer's universal statistical test"
+      },
+      {
+        "letter": "D",
+        "text": "Forward unpredictability test"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Maurer's test detects if a sequence can be compressed, indicating it is non-random.",
+      "ar": "يكتشف اختبار مورر ما إذا كان يمكن ضغط التسلسل، مما يدل على أنه ليس عشوائياً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: A cryptographically secure pseudorandom bit generator (CSPRBG) must pass which test?",
+      "ar": "س5: ما هو الاختبار الذي يجب أن يجتازه مولد البت العشوائي الكاذب الآمن تشفيرًا (CSPRBG)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Next-bit test"
+      },
+      {
+        "letter": "B",
+        "text": "Frequency test"
+      },
+      {
+        "letter": "C",
+        "text": "Blum Blum Shub test"
+      },
+      {
+        "letter": "D",
+        "text": "Runs test"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "A CSPRBG passes the next-bit test if there is no algorithm that can predict the next bit with probability greater than 1/2.",
+      "ar": "يجتاز المولد (CSPRBG) اختبار البت التالي إذا لم تكن هناك خوارزمية قادرة على التنبؤ بالبت التالي باحتمال يزيد عن 1/2."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: In the Linear Congruential Generator equation X_{n+1} = (aX_n + c) mod m, what does 'm' represent?",
+      "ar": "س6: في معادلة المولد التطابقي الخطي X_{n+1} = (aX_n + c) mod m، ماذا يمثل 'm'؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Multiplier"
+      },
+      {
+        "letter": "B",
+        "text": "Increment"
+      },
+      {
+        "letter": "C",
+        "text": "Modulus"
+      },
+      {
+        "letter": "D",
+        "text": "Seed"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In the algorithm, 'm' is the modulus, 'a' is the multiplier, and 'c' is the increment.",
+      "ar": "في هذه الخوارزمية، يمثل 'm' المعامل (Modulus)، و'a' هو المضاعف، و'c' هو مقدار الزيادة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: The security of the Blum Blum Shub (BBS) generator is based on the difficulty of:",
+      "ar": "س7: يعتمد أمان مولد Blum Blum Shub (BBS) على صعوبة:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Discrete logarithms"
+      },
+      {
+        "letter": "B",
+        "text": "Factoring n"
+      },
+      {
+        "letter": "C",
+        "text": "Elliptic curve logarithms"
+      },
+      {
+        "letter": "D",
+        "text": "Brute force attacks"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The security of BBS is based on the difficulty of factoring n into its two prime factors p and q.",
+      "ar": "يعتمد أمان خوارزمية (BBS) على صعوبة تحليل الرقم (n) إلى عوامله الأولية p و q."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: Which block cipher modes of operation are recommended by NIST for PRNG construction?",
+      "ar": "س8: ما هي أوضاع تشغيل كتلة التشفير التي أوصت بها NIST لبناء PRNG؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ECB and CBC"
+      },
+      {
+        "letter": "B",
+        "text": "CFB and OFB"
+      },
+      {
+        "letter": "C",
+        "text": "CTR and OFB"
+      },
+      {
+        "letter": "D",
+        "text": "CBC and MAC"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The CTR and OFB modes are widespread and recommended by NIST SP 800-90A and RFC 4086.",
+      "ar": "تعتبر أنماط (CTR) و (OFB) من الأنماط الموصى بها في المعايير مثل NIST لبناء مولدات الأرقام شبه العشوائية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: In the ANSI X9.17 PRNG, which cryptographic algorithm is used?",
+      "ar": "س9: في ANSI X9.17 PRNG، ما هي خوارزمية التشفير المستخدمة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "AES-128"
+      },
+      {
+        "letter": "B",
+        "text": "RC4"
+      },
+      {
+        "letter": "C",
+        "text": "Triple DES"
+      },
+      {
+        "letter": "D",
+        "text": "SHA-1"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "ANSI X9.17 PRNG makes use of three triple DES encryption modules.",
+      "ar": "تستخدم خوارزمية ANSI X9.17 PRNG ثلاث وحدات تشفير من نوع Triple DES."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: Which of the following is a stream cipher designed by Ron Rivest in 1987?",
+      "ar": "س10: أي مما يلي هو تشفير دفق صممه رون ريفست في عام 1987؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "DES"
+      },
+      {
+        "letter": "B",
+        "text": "AES"
+      },
+      {
+        "letter": "C",
+        "text": "RC4"
+      },
+      {
+        "letter": "D",
+        "text": "RSA"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "RC4 is a widely used stream cipher designed by Ron Rivest for RSA Security.",
+      "ar": "خوارزمية (RC4) هي خوارزمية تشفير تدفقي شهيرة صممها رون ريفست."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: The internal state vector S in RC4 consists of how many bytes?",
+      "ar": "س11: كم عدد البايتات يتكون ناقل الحالة الداخلي S في RC4؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "64"
+      },
+      {
+        "letter": "B",
+        "text": "128"
+      },
+      {
+        "letter": "C",
+        "text": "256"
+      },
+      {
+        "letter": "D",
+        "text": "512"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "RC4 initializes a 256-byte state vector S with elements from 0 to 255.",
+      "ar": "يقوم (RC4) بتهيئة متجه حالة S بحجم 256 بايت يحتوي على عناصر من 0 إلى 255."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Which protocol uses RC4 and was shown to be vulnerable due to the way keys are generated?",
+      "ar": "س12: ما هو البروتوكول الذي يستخدم RC4 والذي تبين أنه عرضة للاختراق بسبب الطريقة التي يتم بها إنشاء المفاتيح؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "WEP"
+      },
+      {
+        "letter": "B",
+        "text": "SSH"
+      },
+      {
+        "letter": "C",
+        "text": "TLS"
+      },
+      {
+        "letter": "D",
+        "text": "Kerberos"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "WEP protocol in 802.11 was shown to be vulnerable due to its key scheduling for RC4.",
+      "ar": "بروتوكول WEP كان عرضة للاختراق بسبب الطريقة التي يتم بها توليد وجدولة المفاتيح في خوارزمية RC4."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: Which test is designed to quickly detect a catastrophic failure causing the noise source to become stuck?",
+      "ar": "س 13: ما هو الاختبار المصمم للكشف بسرعة عن الفشل الذريع الذي يتسبب في توقف مصدر الضوضاء؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adaptive Proportion Test"
+      },
+      {
+        "letter": "B",
+        "text": "Repetition Count Test"
+      },
+      {
+        "letter": "C",
+        "text": "Maurer's Test"
+      },
+      {
+        "letter": "D",
+        "text": "Next-bit test"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Repetition Count Test looks for consecutive identical samples to detect stuck noise sources.",
+      "ar": "يبحث اختبار تكرار العد (Repetition Count Test) عن العينات المتطابقة المتتالية لاكتشاف الأعطال الجسيمة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: What is the primary purpose of conditioning algorithms in TRNGs?",
+      "ar": "س14: ما هو الغرض الأساسي من خوارزميات التكييف في TRNGs؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To encrypt the random bits"
+      },
+      {
+        "letter": "B",
+        "text": "To eliminate bias and increase entropy"
+      },
+      {
+        "letter": "C",
+        "text": "To decrease the generation time"
+      },
+      {
+        "letter": "D",
+        "text": "To compress the sequence"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Conditioning or deskewing algorithms eliminate bias and increase the entropy of TRNG outputs.",
+      "ar": "الهدف من خوارزميات التكييف (Conditioning) هو التخلص من التحيز وزيادة الإنتروبيا في المخرجات العشوائية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: Which instruction in Intel's digital random number generator retrieves a hardware-generated random seed?",
+      "ar": "س 15: ما هي التعليمات الموجودة في مولد الأرقام العشوائية الرقمية من Intel التي تسترد بذرة عشوائية تم إنشاؤها بواسطة الأجهزة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "RDRAND"
+      },
+      {
+        "letter": "B",
+        "text": "RDSEED"
+      },
+      {
+        "letter": "C",
+        "text": "ENRNG"
+      },
+      {
+        "letter": "D",
+        "text": "CMAC"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "RDSEED retrieves a hardware-generated random seed value from the ENRNG.",
+      "ar": "تقوم تعليمة (RDSEED) باسترجاع قيمة البذرة العشوائية المولدة عتادياً من وحدة (ENRNG)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: Public-key cryptography is also known as:",
+      "ar": "س16: يُعرف التشفير بالمفتاح العام أيضًا باسم:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Symmetric cryptography"
+      },
+      {
+        "letter": "B",
+        "text": "Asymmetric cryptography"
+      },
+      {
+        "letter": "C",
+        "text": "Transposition cryptography"
+      },
+      {
+        "letter": "D",
+        "text": "Stream cryptography"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Public-key cryptography involves two separate keys, thus it is asymmetric.",
+      "ar": "التشفير بالمفتاح العام يُعرف أيضاً بالتشفير غير المتماثل (Asymmetric) لأنه يستخدم مفتاحين مختلفين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: In public-key encryption, what does the sender use to encrypt a confidential message?",
+      "ar": "س17: في التشفير بالمفتاح العام، ما الذي يستخدمه المرسل لتشفير رسالة سرية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sender's private key"
+      },
+      {
+        "letter": "B",
+        "text": "Sender's public key"
+      },
+      {
+        "letter": "C",
+        "text": "Receiver's private key"
+      },
+      {
+        "letter": "D",
+        "text": "Receiver's public key"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "To ensure confidentiality, the message is encrypted with the recipient's public key.",
+      "ar": "لضمان سرية الرسالة، يقوم المرسل بتشفيرها باستخدام المفتاح العام الخاص بالمستلم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: To provide a digital signature, the sender encrypts the message (or its hash) using:",
+      "ar": "س18: لتوفير توقيع رقمي، يقوم المرسل بتشفير الرسالة (أو تجزئتها) باستخدام:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sender's private key"
+      },
+      {
+        "letter": "B",
+        "text": "Receiver's public key"
+      },
+      {
+        "letter": "C",
+        "text": "Sender's public key"
+      },
+      {
+        "letter": "D",
+        "text": "Receiver's private key"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "A digital signature is created using the sender's private key to authenticate the source.",
+      "ar": "يتم إنشاء التوقيع الرقمي باستخدام المفتاح الخاص للمرسل لإثبات هويته."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Which of the following algorithms is typically used ONLY for key exchange?",
+      "ar": "س19: أي من الخوارزميات التالية تُستخدم عادةً لتبادل المفاتيح فقط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "RSA"
+      },
+      {
+        "letter": "B",
+        "text": "Elliptic Curve"
+      },
+      {
+        "letter": "C",
+        "text": "Diffie-Hellman"
+      },
+      {
+        "letter": "D",
+        "text": "Elgamal"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Diffie-Hellman algorithm is solely intended for key exchange.",
+      "ar": "تستخدم خوارزمية ديفي-هيلمان (Diffie-Hellman) حصرياً لتبادل المفاتيح وليس لتشفير الرسائل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: A trap-door one-way function is central to the design of:",
+      "ar": "س 20: تعتبر وظيفة الباب المصيدة أحادية الاتجاه أمرًا أساسيًا في تصميم:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Symmetric ciphers"
+      },
+      {
+        "letter": "B",
+        "text": "Hash functions"
+      },
+      {
+        "letter": "C",
+        "text": "Public-key cryptosystems"
+      },
+      {
+        "letter": "D",
+        "text": "True random number generators"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Public-key schemes depend on trap-door one-way functions, which are easy in one direction and hard in reverse unless a secret is known.",
+      "ar": "يعتمد التشفير بالمفتاح العام على دوال الاتجاه الواحد ذات الباب الخلفي (Trap-door one-way functions)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: In the RSA algorithm, if p=17 and q=11, what is the value of Euler's totient function phi(n)?",
+      "ar": "س21: في خوارزمية RSA، إذا كانت p=17 وq=11، ما هي قيمة دالة أويلر totient phi(n)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "187"
+      },
+      {
+        "letter": "B",
+        "text": "160"
+      },
+      {
+        "letter": "C",
+        "text": "16"
+      },
+      {
+        "letter": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "phi(n) = (p-1)(q-1) = (16)(10) = 160.",
+      "ar": "قيمة دالة أويلر هي (17-1)*(11-1) = 16 * 10 = 160."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: Which of the following conditions must the public exponent 'e' satisfy in RSA?",
+      "ar": "س22: أي من الشروط التالية يجب أن يستوفي الأس العام \"e\" في RSA؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "gcd(phi(n), e) = 1"
+      },
+      {
+        "letter": "B",
+        "text": "e > phi(n)"
+      },
+      {
+        "letter": "C",
+        "text": "e must be a prime number"
+      },
+      {
+        "letter": "D",
+        "text": "e * d = 1 mod n"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The public exponent e must be relatively prime to phi(n).",
+      "ar": "يجب أن يكون المفتاح العام e أولياً نسبياً مع قيمة دالة أويلر phi(n)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: The security of RSA relies primarily on the difficulty of:",
+      "ar": "س23: يعتمد أمن RSA بشكل أساسي على صعوبة:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Computing discrete logarithms"
+      },
+      {
+        "letter": "B",
+        "text": "Factoring a large integer into its two prime factors"
+      },
+      {
+        "letter": "C",
+        "text": "Solving elliptic curve equations"
+      },
+      {
+        "letter": "D",
+        "text": "Hash collisions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The security of RSA is fundamentally tied to the integer factorization problem.",
+      "ar": "يعتمد أمان خوارزمية (RSA) بشكل أساسي على صعوبة تحليل الرقم الكبير إلى عوامله الأولية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: An attack that measures the execution time to determine the private key is called a:",
+      "ar": "س24: الهجوم الذي يقيس وقت التنفيذ لتحديد المفتاح الخاص يسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mathematical attack"
+      },
+      {
+        "letter": "B",
+        "text": "Chosen ciphertext attack"
+      },
+      {
+        "letter": "C",
+        "text": "Timing attack"
+      },
+      {
+        "letter": "D",
+        "text": "Hardware fault-based attack"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Timing attacks exploit the variation in decryption running times.",
+      "ar": "يعتمد هجوم التوقيت على قياس التباين في الوقت المستغرق لعمليات فك التشفير لاستنتاج المفتاح."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: Which countermeasure involves multiplying the ciphertext by a random number to prevent timing attacks in RSA?",
+      "ar": "س25: ما هو الإجراء المضاد الذي يتضمن ضرب النص المشفر برقم عشوائي لمنع هجمات التوقيت في RSA؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Random delay"
+      },
+      {
+        "letter": "B",
+        "text": "Constant exponentiation time"
+      },
+      {
+        "letter": "C",
+        "text": "Blinding"
+      },
+      {
+        "letter": "D",
+        "text": "OAEP"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Blinding randomizes the ciphertext prior to decryption to thwart timing and some chosen-ciphertext attacks.",
+      "ar": "التعمية (Blinding) تقوم بضرب النص المشفر برقم عشوائي قبل فك التشفير لمنع هجمات التوقيت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q26: What procedure is recommended by RSA Security to counter Chosen Ciphertext Attacks (CCA)?",
+      "ar": "س26: ما الإجراء الذي توصي به RSA Security لمواجهة هجمات النص المشفر المختارة (CCA)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Blinding"
+      },
+      {
+        "letter": "B",
+        "text": "Optimal Asymmetric Encryption Padding (OAEP)"
+      },
+      {
+        "letter": "C",
+        "text": "Padding with zeros"
+      },
+      {
+        "letter": "D",
+        "text": "Hash chains"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "OAEP adds randomness and padding to the plaintext to ensure semantic security against CCA.",
+      "ar": "يُنصح باستخدام التبطين الأمثل للتشفير غير المتماثل (OAEP) لمواجهة هجمات النص المشفر المختار (CCA)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q27: According to the prime number theorem, the primes near N are spaced on average one every:",
+      "ar": "س27: وفقًا لنظرية الأعداد الأولية، فإن الأعداد الأولية القريبة من N تتباعد بمعدل واحد لكل:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "N integers"
+      },
+      {
+        "letter": "B",
+        "text": "N/2 integers"
+      },
+      {
+        "letter": "C",
+        "text": "ln(N) integers"
+      },
+      {
+        "letter": "D",
+        "text": "N^2 integers"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The prime number theorem states that the density of primes around N is approximately 1/ln(N).",
+      "ar": "تشير نظرية الأعداد الأولية إلى أن الأعداد الأولية تتوزع بمعدل واحد لكل ln(N) من الأعداد تقريباً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q28: What is the primary purpose of the Miller-Rabin algorithm in the context of RSA?",
+      "ar": "س28: ما هو الغرض الأساسي من خوارزمية ميلر رابين في سياق RSA؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Key exchange"
+      },
+      {
+        "letter": "B",
+        "text": "Probabilistic primality testing"
+      },
+      {
+        "letter": "C",
+        "text": "Generating random bits"
+      },
+      {
+        "letter": "D",
+        "text": "Exponentiation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Miller-Rabin is an efficient probabilistic test used to verify if the randomly generated numbers p and q are prime.",
+      "ar": "تُستخدم خوارزمية ميلر-رابين كاختبار احتمالي للتحقق من أولية الأعداد الكبيرة (p و q) بكفاءة عالية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q29: In RSA, decryption of ciphertext C is performed using which formula?",
+      "ar": "س29: في RSA، يتم فك تشفير النص المشفر C باستخدام أي صيغة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "M = C^e mod n"
+      },
+      {
+        "letter": "B",
+        "text": "M = C^d mod n"
+      },
+      {
+        "letter": "C",
+        "text": "M = C * d mod n"
+      },
+      {
+        "letter": "D",
+        "text": "M = C^n mod d"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Decryption is done by raising the ciphertext to the private exponent 'd' modulo 'n'.",
+      "ar": "تتم عملية فك التشفير برفع النص المشفر C لأس المفتاح الخاص d ثم حساب باقي القسمة على n."
+    }
+  },
+  {
+    "question": {
+      "en": "Q30: Diffie-Hellman key exchange algorithm relies on the difficulty of:",
+      "ar": "س 30: تعتمد خوارزمية تبادل مفاتيح Diffie-Hellman على صعوبة ما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Factoring large primes"
+      },
+      {
+        "letter": "B",
+        "text": "Computing discrete logarithms"
+      },
+      {
+        "letter": "C",
+        "text": "Generating prime numbers"
+      },
+      {
+        "letter": "D",
+        "text": "Reversing hash functions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Diffie-Hellman security relies on the discrete logarithm problem over finite fields.",
+      "ar": "يعتمد أمان ديفي-هيلمان على صعوبة حساب اللوغاريتمات المنفصلة (Discrete Logarithms)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: Which attack is the original Diffie-Hellman protocol inherently vulnerable to without prior authentication?",
+      "ar": "س31: ما هو الهجوم الذي يكون بروتوكول Diffie-Hellman الأصلي عرضة له بطبيعته دون مصادقة مسبقة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Timing attack"
+      },
+      {
+        "letter": "B",
+        "text": "Man-in-the-middle attack"
+      },
+      {
+        "letter": "C",
+        "text": "Chosen ciphertext attack"
+      },
+      {
+        "letter": "D",
+        "text": "Factoring attack"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Without authentication, an attacker can intercept and modify the key exchange messages (Man-in-the-middle).",
+      "ar": "البروتوكول عرضة لهجوم (الرجل في المنتصف) لأنه لا يحتوي على آلية للتحقق من هوية الطرفين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q32: In the Elgamal cryptosystem, what serves as a one-time key for encrypting the message block?",
+      "ar": "س32: في نظام تشفير الجمل، ما هو المفتاح الذي يستخدم لمرة واحدة لتشفير كتلة الرسالة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The private key X_A"
+      },
+      {
+        "letter": "B",
+        "text": "The random integer k"
+      },
+      {
+        "letter": "C",
+        "text": "The value K = (Y_A)^k mod q"
+      },
+      {
+        "letter": "D",
+        "text": "The primitive root alpha"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The value K is computed using a random integer k and the recipient's public key, serving as a one-time key.",
+      "ar": "تُستخدم القيمة K كمفتاح يُستعمل لمرة واحدة لتشفير الرسالة، ويتم حسابه باستخدام رقم عشوائي (k)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q33: For an elliptic curve equation y^2 = x^3 + ax + b, what is the condition for it to define a valid cryptographic group?",
+      "ar": "س33: بالنسبة لمعادلة المنحنى الناقص y^2 = x^3 + ax + b، ما هو الشرط لتحديد مجموعة تشفير صالحة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "a + b != 0"
+      },
+      {
+        "letter": "B",
+        "text": "4a^3 + 27b^2 != 0"
+      },
+      {
+        "letter": "C",
+        "text": "a^3 + b^2 = 1"
+      },
+      {
+        "letter": "D",
+        "text": "4a + 27b != 0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The condition 4a^3 + 27b^2 != 0 ensures the curve has no repeated factors (no singular points).",
+      "ar": "هذا الشرط يضمن أن المنحنى لا يحتوي على جذور مكررة (نقاط شاذة)، مما يجعله صالحاً لتكوين زمرة رياضية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q34: In elliptic curve cryptography, the single element denoted as 'O' represents:",
+      "ar": "س 34: في التشفير المنحني الإهليلجي، يمثل العنصر المفرد المشار إليه بالحرف \"O\":"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The center point"
+      },
+      {
+        "letter": "B",
+        "text": "The point at infinity (additive identity)"
+      },
+      {
+        "letter": "C",
+        "text": "The multiplicative identity"
+      },
+      {
+        "letter": "D",
+        "text": "The intersection point"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The point at infinity 'O' acts as the additive identity in the abelian group of an elliptic curve.",
+      "ar": "النقطة 'O' في المالانهاية تمثل المحايد الجمعي في الزمرة الخاصة بالمنحنى الإهليلجي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q35: The two families of elliptic curves commonly used in cryptographic applications are prime curves over Z_p and:",
+      "ar": "س35: عائلتا المنحنيات الإهليلجية المستخدمة بشكل شائع في تطبيقات التشفير هما المنحنيات الأولية فوق Z_p و:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Real curves over R"
+      },
+      {
+        "letter": "B",
+        "text": "Binary curves over GF(2^m)"
+      },
+      {
+        "letter": "C",
+        "text": "Complex curves over C"
+      },
+      {
+        "letter": "D",
+        "text": "Rational curves over Q"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Cryptography utilizes prime curves over Z_p (for software) and binary curves over GF(2^m) (for hardware).",
+      "ar": "تستخدم التطبيقات التشفيرية المنحنيات الأولية والثنائية (Binary curves over GF(2^m)) والتي تناسب العتاد بشكل خاص."
+    }
+  },
+  {
+    "question": {
+      "en": "Q36: What is the principal attraction of Elliptic Curve Cryptography (ECC) compared to RSA?",
+      "ar": "س36: ما هو عامل الجذب الرئيسي لتشفير المنحنى الإهليلجي (ECC) مقارنة بـ RSA؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Faster encryption speeds with the same key size"
+      },
+      {
+        "letter": "B",
+        "text": "Equal security for a far smaller key size"
+      },
+      {
+        "letter": "C",
+        "text": "Easier implementation in all software"
+      },
+      {
+        "letter": "D",
+        "text": "Immunity to quantum computers"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "ECC provides equivalent security to RSA but requires significantly fewer bits, reducing processing and storage overhead.",
+      "ar": "الميزة الرئيسية لـ ECC هي توفير نفس مستوى الأمان بمفتاح أصغر بكثير مقارنة بـ RSA، مما يقلل الحمل الحسابي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q37: In ECC over real numbers, if three points on an elliptic curve lie on a straight line, their sum is:",
+      "ar": "س37: في ECC على الأعداد الحقيقية، إذا كانت ثلاث نقاط على منحنى إهليلجي تقع على خط مستقيم، فإن مجموعها هو:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Zero point (O)"
+      },
+      {
+        "letter": "B",
+        "text": "The point (1, 1)"
+      },
+      {
+        "letter": "C",
+        "text": "Double the first point"
+      },
+      {
+        "letter": "D",
+        "text": "Negative of the third point"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Geometrically, the sum of three points on a straight line intersecting the curve is the point at infinity O.",
+      "ar": "هندسياً، مجموع أي ثلاث نقاط تقع على خط مستقيم يتقاطع مع المنحنى الإهليلجي هو النقطة صفر (O)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q38: In Diffie-Hellman key exchange, if Alice has private key X_A, how does she compute her public key Y_A?",
+      "ar": "س38: في تبادل مفاتيح Diffie-Hellman، إذا كان لدى Alice مفتاح خاص X_A، فكيف يمكنها حساب مفتاحها العام Y_A؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Y_A = a * X_A mod q"
+      },
+      {
+        "letter": "B",
+        "text": "Y_A = X_A^a mod q"
+      },
+      {
+        "letter": "C",
+        "text": "Y_A = a^{X_A} mod q"
+      },
+      {
+        "letter": "D",
+        "text": "Y_A = q^{X_A} mod a"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Alice computes her public key by raising the primitive root 'a' to her private key 'X_A' modulo 'q'.",
+      "ar": "تقوم أليس بحساب مفتاحها العام برفع الجذر الأولي 'a' لأس مفتاحها الخاص 'X_A' ثم حساب الباقي على 'q'."
+    }
+  },
+  {
+    "question": {
+      "en": "Q39: In Elgamal, if a message must be broken into blocks, what must be done with the random integer k?",
+      "ar": "س39: في الجمل، إذا كان يجب تقسيم الرسالة إلى كتل، ما الذي يجب فعله بالعدد الصحيح العشوائي k؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use the same k for all blocks"
+      },
+      {
+        "letter": "B",
+        "text": "Use a unique value of k for each block"
+      },
+      {
+        "letter": "C",
+        "text": "Increment k by 1 for each block"
+      },
+      {
+        "letter": "D",
+        "text": "Multiply k by the block index"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Reusing 'k' compromises the cipher because knowing one block's plaintext reveals the others.",
+      "ar": "يجب استخدام قيمة فريدة لـ 'k' لكل كتلة، لأن إعادة استخدامه تسمح للمهاجمين بكشف باقي الرسالة إذا عُرفت كتلة واحدة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q40: Which of the following algorithms can be used for Encryption/Decryption, Digital Signature, AND Key Exchange?",
+      "ar": "س40: أي من الخوارزميات التالية يمكن استخدامها للتشفير/فك التشفير والتوقيع الرقمي وتبادل المفاتيح؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "RSA and Elliptic Curve"
+      },
+      {
+        "letter": "B",
+        "text": "Diffie-Hellman only"
+      },
+      {
+        "letter": "C",
+        "text": "DSS only"
+      },
+      {
+        "letter": "D",
+        "text": "Elgamal only"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Both RSA and ECC support all three main applications of public-key systems.",
+      "ar": "تدعم خوارزميات (RSA) والمنحنيات الإهليلجية (ECC) التطبيقات الثلاثة: التشفير، التوقيع الرقمي، وتبادل المفاتيح."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: Which concept ensures that private or confidential information is not disclosed to unauthorized individuals?",
+      "ar": "س1: ما هو المفهوم الذي يضمن عدم الكشف عن المعلومات الخاصة أو السرية لأفراد غير مصرح لهم؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data Integrity"
+      },
+      {
+        "letter": "B",
+        "text": "Authenticity"
+      },
+      {
+        "letter": "C",
+        "text": "Data Confidentiality"
+      },
+      {
+        "letter": "D",
+        "text": "Nonrepudiation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Data confidentiality assures that private or confidential information is not made available or disclosed to unauthorized individuals.",
+      "ar": "تضمن سرية البيانات عدم إتاحة المعلومات الخاصة أو السرية أو الكشف عنها لأفراد غير مصرح لهم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Which FIPS 199 impact level involves a severe or catastrophic adverse effect?",
+      "ar": "س2: ما هو مستوى تأثير FIPS 199 الذي يتضمن تأثيرًا سلبيًا شديدًا أو كارثيًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Low"
+      },
+      {
+        "letter": "B",
+        "text": "Moderate"
+      },
+      {
+        "letter": "C",
+        "text": "High"
+      },
+      {
+        "letter": "D",
+        "text": "Critical"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "High impact is expected to have a severe or catastrophic adverse effect on organizational operations, assets, or individuals.",
+      "ar": "من المتوقع أن يكون للتأثير الكبير تأثير سلبي شديد أو كارثي على العمليات التنظيمية أو الأصول أو الأفراد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Which of the following is an example of a passive attack?",
+      "ar": "س3: أي مما يلي يعد مثالاً على الهجوم السلبي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Masquerade"
+      },
+      {
+        "letter": "B",
+        "text": "Traffic analysis"
+      },
+      {
+        "letter": "C",
+        "text": "Replay"
+      },
+      {
+        "letter": "D",
+        "text": "Denial of service"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Passive attacks include the release of message contents and traffic analysis. They attempt to learn information without affecting system resources.",
+      "ar": "تتضمن الهجمات السلبية إطلاق محتويات الرسالة وتحليل حركة المرور. يحاولون تعلم المعلومات دون التأثير على موارد النظام."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: What type of active attack involves one entity pretending to be a different entity?",
+      "ar": "س 4: ما نوع الهجوم النشط الذي يتضمن كيانًا يتظاهر بأنه كيان مختلف؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Modification of messages"
+      },
+      {
+        "letter": "B",
+        "text": "Masquerade"
+      },
+      {
+        "letter": "C",
+        "text": "Replay"
+      },
+      {
+        "letter": "D",
+        "text": "Traffic analysis"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A masquerade takes place when one entity pretends to be a different entity.",
+      "ar": "تحدث حفلة تنكرية عندما يتظاهر كيان بأنه كيان مختلف."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: The X.800 architecture focuses on security attacks, mechanisms, and what else?",
+      "ar": "س5: تركز بنية X.800 على الهجمات الأمنية والآليات وماذا أيضًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Policies"
+      },
+      {
+        "letter": "B",
+        "text": "Vulnerabilities"
+      },
+      {
+        "letter": "C",
+        "text": "Services"
+      },
+      {
+        "letter": "D",
+        "text": "Threats"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The OSI security architecture (X.800) focuses on security attacks, mechanisms, and services.",
+      "ar": "تركز بنية أمان OSI (X.800) على الهجمات والآليات والخدمات الأمنية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: Which security service prevents either the sender or receiver from denying a transmitted message?",
+      "ar": "س6: ما هي خدمة الأمان التي تمنع المرسل أو المتلقي من رفض الرسالة المرسلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Authentication"
+      },
+      {
+        "letter": "B",
+        "text": "Access Control"
+      },
+      {
+        "letter": "C",
+        "text": "Nonrepudiation"
+      },
+      {
+        "letter": "D",
+        "text": "Data Integrity"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Nonrepudiation prevents either sender or receiver from denying a transmitted message.",
+      "ar": "يمنع عدم التنصل المرسل أو المستقبل من رفض الرسالة المرسلة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: Which fundamental design principle states that access decisions should be based on permission rather than exclusion?",
+      "ar": "س7: ما هو مبدأ التصميم الأساسي الذي ينص على أن قرارات الوصول يجب أن تستند إلى الإذن بدلاً من الاستبعاد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fail-safe defaults"
+      },
+      {
+        "letter": "B",
+        "text": "Economy of mechanism"
+      },
+      {
+        "letter": "C",
+        "text": "Complete mediation"
+      },
+      {
+        "letter": "D",
+        "text": "Open design"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Fail-safe defaults means that access decisions should be based on permission rather than exclusion.",
+      "ar": "تعني الإعدادات الافتراضية الآمنة من الفشل أن قرارات الوصول يجب أن تستند إلى الإذن بدلاً من الاستبعاد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: What design principle advocates for the design of security measures to be as simple and small as possible?",
+      "ar": "س8: ما هو مبدأ التصميم الذي يدعو إلى أن يكون تصميم الإجراءات الأمنية بسيطًا وصغيرًا قدر الإمكان؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Least common mechanism"
+      },
+      {
+        "letter": "B",
+        "text": "Economy of mechanism"
+      },
+      {
+        "letter": "C",
+        "text": "Encapsulation"
+      },
+      {
+        "letter": "D",
+        "text": "Modularity"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Economy of mechanism means the design of security measures embodied in hardware and software should be as simple and small as possible.",
+      "ar": "اقتصاد الآلية يعني أن تصميم الإجراءات الأمنية المضمنة في الأجهزة والبرامج يجب أن يكون بسيطًا وصغيرًا قدر الإمكان."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: Which attack surface refers to vulnerabilities in application, utility, or operating system code?",
+      "ar": "س9: ما هو سطح الهجوم الذي يشير إلى الثغرات الأمنية في التطبيق أو الأداة المساعدة أو رمز نظام التشغيل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Network attack surface"
+      },
+      {
+        "letter": "B",
+        "text": "Human attack surface"
+      },
+      {
+        "letter": "C",
+        "text": "Physical attack surface"
+      },
+      {
+        "letter": "D",
+        "text": "Software attack surface"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Software attack surface refers to vulnerabilities in application, utility, or operating system code.",
+      "ar": "يشير سطح الهجوم على البرامج إلى نقاط الضعف في التطبيق أو الأداة المساعدة أو رمز نظام التشغيل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: In an attack tree, what node type requires all its subnodes to be achieved to reach the goal?",
+      "ar": "س10: في شجرة الهجوم، ما هو نوع العقدة التي تتطلب تحقيق جميع العقد الفرعية الخاصة بها للوصول إلى الهدف؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "OR-node"
+      },
+      {
+        "letter": "B",
+        "text": "AND-node"
+      },
+      {
+        "letter": "C",
+        "text": "Root node"
+      },
+      {
+        "letter": "D",
+        "text": "Leaf node"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "To achieve the goal represented by an AND-node, the subgoals represented by all of that node's subnodes must be achieved.",
+      "ar": "لتحقيق الهدف الذي تمثله عقدة AND، يجب تحقيق الأهداف الفرعية التي تمثلها جميع العقد الفرعية لتلك العقدة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: Which organization produces Federal Information Processing Standards (FIPS)?",
+      "ar": "س11: ما هي المنظمة التي تنتج المعايير الفيدرالية لمعالجة المعلومات (FIPS)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ISO"
+      },
+      {
+        "letter": "B",
+        "text": "ITU-T"
+      },
+      {
+        "letter": "C",
+        "text": "ISOC"
+      },
+      {
+        "letter": "D",
+        "text": "NIST"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "NIST is the U.S. federal agency that deals with measurement science and standards, producing FIPS.",
+      "ar": "NIST هي الوكالة الفيدرالية الأمريكية التي تتعامل مع علوم القياس والمعايير، وتنتج FIPS."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: According to the division algorithm a = qn + r, what is the condition for the remainder r?",
+      "ar": "س12: حسب خوارزمية القسمة a = qn + r، ما هو شرط الباقي r؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "0 < r < n"
+      },
+      {
+        "letter": "B",
+        "text": "0 <= r < n"
+      },
+      {
+        "letter": "C",
+        "text": "1 <= r <= n"
+      },
+      {
+        "letter": "D",
+        "text": "0 <= r <= n"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The division algorithm states that a = qn + r where 0 <= r < n.",
+      "ar": "تنص خوارزمية القسمة على أن a = qn + r حيث 0 <= r < n."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: What does the Euclidean algorithm efficiently determine?",
+      "ar": "س13: ما الذي تحدده الخوارزمية الإقليدية بكفاءة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prime numbers"
+      },
+      {
+        "letter": "B",
+        "text": "Modular inverse"
+      },
+      {
+        "letter": "C",
+        "text": "Greatest common divisor"
+      },
+      {
+        "letter": "D",
+        "text": "Discrete logarithms"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Euclidean algorithm is a simple procedure for determining the greatest common divisor of two positive integers.",
+      "ar": "الخوارزمية الإقليدية هي إجراء بسيط لتحديد القاسم المشترك الأكبر لعددين صحيحين موجبين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: Two integers are relatively prime if their greatest common divisor is equal to:",
+      "ar": "س14: يكون العددان الصحيحان أوليين نسبيًا إذا كان القاسم المشترك الأكبر لهما يساوي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "The smaller integer"
+      },
+      {
+        "letter": "D",
+        "text": "The larger integer"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Two integers are relatively prime if and only if their only common positive integer factor is 1 (gcd = 1).",
+      "ar": "يكون عددان صحيحان أوليين نسبيًا إذا وفقط إذا كان عاملهما الصحيح الموجب المشترك الوحيد هو 1 (gcd = 1)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: The Extended Euclidean algorithm calculates the gcd(a,b) as well as two integers x and y that satisfy:",
+      "ar": "س 15: تقوم خوارزمية الإقليدية الموسعة بحساب gcd(a,b) بالإضافة إلى عددين صحيحين x وy يحققان:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "ax - by = 1"
+      },
+      {
+        "letter": "B",
+        "text": "a^x + b^y = gcd(a,b)"
+      },
+      {
+        "letter": "C",
+        "text": "ax + by = gcd(a,b)"
+      },
+      {
+        "letter": "D",
+        "text": "x/a + y/b = gcd(a,b)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The extended Euclidean algorithm calculates gcd(a,b) and two integers x and y that satisfy ax + by = d = gcd(a,b).",
+      "ar": "تقوم الخوارزمية الإقليدية الموسعة بحساب gcd(a,b) وعددين صحيحين x وy يرضيان ax + by = d = gcd(a,b)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: Which of the following defines Euler's totient function φ(n)?",
+      "ar": "س16: أي مما يلي يحدد دالة أويلر φ(n)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Number of prime factors of n"
+      },
+      {
+        "letter": "B",
+        "text": "Number of positive integers less than n and relatively prime to n"
+      },
+      {
+        "letter": "C",
+        "text": "The largest prime less than n"
+      },
+      {
+        "letter": "D",
+        "text": "Number of divisors of n"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Euler's totient function, φ(n), is defined as the number of positive integers less than n and relatively prime to n.",
+      "ar": "يتم تعريف دالة أويلر، φ(n)، على أنها عدد الأعداد الصحيحة الموجبة الأقل من n والأعداد الأولية نسبيًا لـ n."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: What is the value of Euler's totient function φ(p) for a prime number p?",
+      "ar": "س17: ما هي قيمة دالة أويلر φ(p) للعدد الأولي p؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "p"
+      },
+      {
+        "letter": "B",
+        "text": "p + 1"
+      },
+      {
+        "letter": "C",
+        "text": "p - 1"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "For a prime number p, all positive integers less than p are relatively prime to p, thus φ(p) = p - 1.",
+      "ar": "بالنسبة للعدد الأولي p، جميع الأعداد الصحيحة الموجبة الأقل من p هي أولية نسبيًا للعدد p، وبالتالي φ(p) = p - 1."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: What theorem states that if p is prime and a is not divisible by p, then a^(p-1) ≡ 1 (mod p)?",
+      "ar": "س18: ما هي النظرية التي تنص على أنه إذا كانت p أولية وa غير قابلة للقسمة على p، فإن a^(p-1) ≡ 1 (mod p)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Euler's Theorem"
+      },
+      {
+        "letter": "B",
+        "text": "Chinese Remainder Theorem"
+      },
+      {
+        "letter": "C",
+        "text": "Fermat's Theorem"
+      },
+      {
+        "letter": "D",
+        "text": "Miller-Rabin Theorem"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Fermat's theorem states that if p is prime and a is a positive integer not divisible by p, then a^(p-1) ≡ 1 (mod p).",
+      "ar": "تنص نظرية فيرما على أنه إذا كان p أوليًا وكان a عددًا صحيحًا موجبًا لا يقبل القسمة على p، فإن a^(p-1) ≡ 1 (mod p)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Which algorithm is a popular probabilistic method used to test a large number for primality?",
+      "ar": "س 19: ما هي الخوارزمية التي تعتبر طريقة احتمالية شائعة تستخدم لاختبار عدد كبير من البدائية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Extended Euclidean Algorithm"
+      },
+      {
+        "letter": "B",
+        "text": "Miller-Rabin Algorithm"
+      },
+      {
+        "letter": "C",
+        "text": "AKS Algorithm"
+      },
+      {
+        "letter": "D",
+        "text": "Discrete Logarithm Algorithm"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The algorithm due to Miller and Rabin is typically used to probabilistically test a large number for primality.",
+      "ar": "عادةً ما يتم استخدام الخوارزمية الناتجة عن ميلر ورابين لاختبار احتمالي لعدد كبير من البدائية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: The Chinese Remainder Theorem enables the reconstruction of integers from their residues modulo a set of what type of moduli?",
+      "ar": "س20: نظرية الباقي الصينية تمكن من إعادة بناء الأعداد الصحيحة من بقاياها modulo مجموعة من أي نوع من المعامل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Identical"
+      },
+      {
+        "letter": "B",
+        "text": "Composite"
+      },
+      {
+        "letter": "C",
+        "text": "Pairwise relatively prime"
+      },
+      {
+        "letter": "D",
+        "text": "Even numbers"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The CRT allows reconstructing integers from residues modulo a set of pairwise relatively prime moduli.",
+      "ar": "يسمح CRT بإعادة بناء الأعداد الصحيحة من وحدات المخلفات وهي مجموعة من الوحدات الأولية الزوجية نسبيًا."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: The highest possible exponent to which a number can belong modulo n is:",
+      "ar": "س21: أعلى أس ممكن يمكن أن ينتمي إليه الرقم modulo n هو:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "n - 1"
+      },
+      {
+        "letter": "B",
+        "text": "φ(n)"
+      },
+      {
+        "letter": "C",
+        "text": "n / 2"
+      },
+      {
+        "letter": "D",
+        "text": "n + 1"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The highest possible exponent to which a number can belong (mod n) is φ(n).",
+      "ar": "أعلى أس ممكن يمكن أن ينتمي إليه الرقم (mod n) هو φ(n)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: If a number 'a' belongs to the highest possible exponent modulo n, it is referred to as a:",
+      "ar": "س22: إذا كان الرقم 'a' ينتمي إلى أعلى معامل أس ممكن n، فيشار إليه بـ a:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Primitive root"
+      },
+      {
+        "letter": "B",
+        "text": "Discrete logarithm"
+      },
+      {
+        "letter": "C",
+        "text": "Prime number"
+      },
+      {
+        "letter": "D",
+        "text": "Totient"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "If a number is of order φ(n), it is referred to as a primitive root of n.",
+      "ar": "إذا كان الرقم من الرتبة φ(n)، فيشار إليه بالجذر البدائي لـ n."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: Which principle dictates that every access must be checked against the access control mechanism?",
+      "ar": "س23: ما هو المبدأ الذي يفرض ضرورة فحص كل وصول مقابل آلية التحكم في الوصول؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Least privilege"
+      },
+      {
+        "letter": "B",
+        "text": "Separation of privilege"
+      },
+      {
+        "letter": "C",
+        "text": "Complete mediation"
+      },
+      {
+        "letter": "D",
+        "text": "Open design"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Complete mediation means that every access must be checked against the access control mechanism.",
+      "ar": "تعني الوساطة الكاملة أنه يجب فحص كل وصول مقابل آلية التحكم في الوصول."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: The principle of Defense in Depth is most closely associated with which design principle?",
+      "ar": "س24: ما هو مبدأ التصميم الأكثر ارتباطًا بمبدأ الدفاع في العمق؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Encapsulation"
+      },
+      {
+        "letter": "B",
+        "text": "Modularity"
+      },
+      {
+        "letter": "C",
+        "text": "Layering"
+      },
+      {
+        "letter": "D",
+        "text": "Isolation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Layering refers to the use of multiple, overlapping protection approaches, often referred to as defense in depth.",
+      "ar": "تشير الطبقات إلى استخدام أساليب حماية متعددة ومتداخلة، يشار إليها غالبًا بالدفاع المتعمق."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: Which security service ensures that data received are exactly as sent by an authorized entity?",
+      "ar": "س25: ما هي خدمة الأمان التي تضمن أن البيانات المستلمة هي تمامًا كما تم إرسالها من قبل جهة معتمدة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data Confidentiality"
+      },
+      {
+        "letter": "B",
+        "text": "Data Integrity"
+      },
+      {
+        "letter": "C",
+        "text": "Authentication"
+      },
+      {
+        "letter": "D",
+        "text": "Access Control"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Data integrity assures that information is changed only in a specified and authorized manner, without unauthorized modification.",
+      "ar": "تضمن سلامة البيانات أن يتم تغيير المعلومات فقط بطريقة محددة ومصرح بها، دون تعديل غير مصرح به."
+    }
+  },
+  {
+    "question": {
+      "en": "Q26: Which type of attack involves the release of message contents?",
+      "ar": "س26: ما هو نوع الهجوم الذي يتضمن نشر محتويات الرسالة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Passive attack"
+      },
+      {
+        "letter": "B",
+        "text": "Active attack"
+      },
+      {
+        "letter": "C",
+        "text": "Denial of Service"
+      },
+      {
+        "letter": "D",
+        "text": "Insider attack"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Release of message contents and traffic analysis are the two types of passive attacks.",
+      "ar": "يعد إصدار محتويات الرسالة وتحليل حركة المرور نوعين من الهجمات السلبية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q27: A denial of service attack targets which of the following security objectives?",
+      "ar": "س27: أي من الأهداف الأمنية التالية يستهدف هجوم حجب الخدمة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Confidentiality"
+      },
+      {
+        "letter": "B",
+        "text": "Integrity"
+      },
+      {
+        "letter": "C",
+        "text": "Availability"
+      },
+      {
+        "letter": "D",
+        "text": "Nonrepudiation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A loss of availability is the disruption of access to or use of information or a system, such as in a denial of service attack.",
+      "ar": "فقدان التوفر هو تعطيل الوصول إلى المعلومات أو النظام أو استخدامه، كما هو الحال في هجوم رفض الخدمة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q28: An asset with a low availability requirement is typically:",
+      "ar": "س28: عادةً ما تكون الأصول ذات متطلبات التوفر المنخفضة:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Critical for saving lives"
+      },
+      {
+        "letter": "B",
+        "text": "Highly classified"
+      },
+      {
+        "letter": "C",
+        "text": "A component whose temporary loss is only an annoyance"
+      },
+      {
+        "letter": "D",
+        "text": "Used for authentication services"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A low availability requirement implies the loss could have a limited adverse effect, such as being a temporary annoyance.",
+      "ar": "يشير شرط التوفر المنخفض إلى أن الخسارة قد يكون لها تأثير سلبي محدود، مثل كونها إزعاجًا مؤقتًا."
+    }
+  },
+  {
+    "question": {
+      "en": "Q29: Accountability in computer security helps support:",
+      "ar": "س29: تساعد المساءلة في مجال أمن الكمبيوتر على دعم:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fast data transmission"
+      },
+      {
+        "letter": "B",
+        "text": "Nonrepudiation, intrusion detection, and legal action"
+      },
+      {
+        "letter": "C",
+        "text": "Compression of data"
+      },
+      {
+        "letter": "D",
+        "text": "Wireless connections"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Accountability generates the requirement for actions to be traced uniquely to an entity, supporting nonrepudiation, intrusion detection, and legal action.",
+      "ar": "تولد المساءلة متطلبات تتبع الإجراءات بشكل فريد لكيان ما، ودعم عدم التنصل، وكشف التسلل، والإجراءات القانونية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q30: The property of being genuine and able to be verified is:",
+      "ar": "س30: خاصية الصدق والقابلية للتحقق هي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Authenticity"
+      },
+      {
+        "letter": "B",
+        "text": "Availability"
+      },
+      {
+        "letter": "C",
+        "text": "Modularity"
+      },
+      {
+        "letter": "D",
+        "text": "Confidentiality"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Authenticity is the property of being genuine and being able to be verified and trusted.",
+      "ar": "الأصالة هي خاصية الأصالة والقدرة على التحقق منها والوثوق بها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: What is a loss of confidentiality defined as according to FIPS 199?",
+      "ar": "س31: ما هو فقدان السرية المحدد وفقًا لـ FIPS 199؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Unauthorized modification of information"
+      },
+      {
+        "letter": "B",
+        "text": "Unauthorized disclosure of information"
+      },
+      {
+        "letter": "C",
+        "text": "Disruption of access"
+      },
+      {
+        "letter": "D",
+        "text": "Forgery of a signature"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "According to FIPS 199, a loss of confidentiality is the unauthorized disclosure of information.",
+      "ar": "وفقًا لمعيار FIPS 199، فإن فقدان السرية هو الكشف غير المصرح به عن المعلومات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q32: What does the 'mod' operator return when dividing a by n?",
+      "ar": "س32: ما الذي يعود به عامل التشغيل \"mod\" عند قسمة a على n؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The quotient"
+      },
+      {
+        "letter": "B",
+        "text": "The remainder"
+      },
+      {
+        "letter": "C",
+        "text": "The sum"
+      },
+      {
+        "letter": "D",
+        "text": "The difference"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "a mod n is defined as the remainder when a is divided by n.",
+      "ar": "يتم تعريف mod n على أنه الباقي عندما يتم تقسيم a على n."
+    }
+  },
+  {
+    "question": {
+      "en": "Q33: Which mathematical theorem asserts that any positive integer can be factored in a unique way into prime numbers?",
+      "ar": "س33: ما هي النظرية الرياضية التي تؤكد أن أي عدد صحيح موجب يمكن تحليله إلى أعداد أولية بطريقة فريدة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fermat's Theorem"
+      },
+      {
+        "letter": "B",
+        "text": "Euler's Theorem"
+      },
+      {
+        "letter": "C",
+        "text": "Fundamental theorem of arithmetic"
+      },
+      {
+        "letter": "D",
+        "text": "Chinese Remainder Theorem"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The fundamental theorem of arithmetic states that any integer a > 1 can be factored in a unique way as a product of primes.",
+      "ar": "تنص النظرية الأساسية في الحساب على أن أي عدد صحيح a > 1 يمكن تحليله بطريقة فريدة كحاصل ضرب الأعداد الأولية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q34: If a ≡ b (mod n) and b ≡ c (mod n), what can be deduced?",
+      "ar": "س34: إذا كانت a ≡ b (mod n) وb ≡ c (mod n)، ما الذي يمكن استنتاجه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "a ≡ c (mod n)"
+      },
+      {
+        "letter": "B",
+        "text": "a + b ≡ c (mod n)"
+      },
+      {
+        "letter": "C",
+        "text": "a * c ≡ b (mod n)"
+      },
+      {
+        "letter": "D",
+        "text": "a = c"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "One of the basic properties of congruences is transitivity: a ≡ b (mod n) and b ≡ c (mod n) implies a ≡ c (mod n).",
+      "ar": "إحدى الخصائص الأساسية للتطابقات هي العبور: a ≡ b (mod n) و b ≡ c (mod n) يتضمن a ≡ c (mod n)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q35: In modular arithmetic modulo n, if (a * x) ≡ 1 (mod n), what is x?",
+      "ar": "س35: في المعامل الحسابي المعياري n، إذا كان (a * x) ≡ 1 (mod n)، ما هو x؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The additive inverse of a"
+      },
+      {
+        "letter": "B",
+        "text": "The multiplicative inverse of a"
+      },
+      {
+        "letter": "C",
+        "text": "The modulus"
+      },
+      {
+        "letter": "D",
+        "text": "The primitive root"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In modular arithmetic, the multiplicative inverse of a is the integer x such that (a * x) mod n = 1.",
+      "ar": "في الحساب المعياري، المعكوس المضاعف لـ a هو العدد الصحيح x بحيث (a * x) mod n = 1."
+    }
+  },
+  {
+    "question": {
+      "en": "Q36: Which algorithm developed in 2002 provides a deterministic method to check if a large number is prime?",
+      "ar": "س36: ما هي الخوارزمية التي تم تطويرها في عام 2002 والتي توفر طريقة حتمية للتحقق مما إذا كان العدد الكبير أوليًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Miller-Rabin algorithm"
+      },
+      {
+        "letter": "B",
+        "text": "Euclidean algorithm"
+      },
+      {
+        "letter": "C",
+        "text": "AKS algorithm"
+      },
+      {
+        "letter": "D",
+        "text": "Diffie-Hellman algorithm"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Agrawal, Kayal, and Saxena (AKS) developed a deterministic algorithm that efficiently determines whether a large number is prime.",
+      "ar": "طور أغراوال، وكيال، وساكسينا (AKS) خوارزمية حتمية تحدد بكفاءة ما إذا كان العدد الكبير أوليًا."
+    }
+  },
+  {
+    "question": {
+      "en": "Q37: According to the prime number theorem, primes near n are spaced on average one every:",
+      "ar": "س37: وفقا لنظرية الأعداد الأولية، فإن الأعداد الأولية القريبة من n تكون متباعدة بمعدل واحد لكل:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "n integers"
+      },
+      {
+        "letter": "B",
+        "text": "ln(n) integers"
+      },
+      {
+        "letter": "C",
+        "text": "n^2 integers"
+      },
+      {
+        "letter": "D",
+        "text": "n/2 integers"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The prime number theorem states that primes near n are spaced on the average one every ln(n) integers.",
+      "ar": "تنص نظرية الأعداد الأولية على أن الأعداد الأولية القريبة من n متباعدة بمعدل واحد لكل عدد صحيح ln(n)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q38: A primitive root of a prime p has powers that generate all integers from 1 to:",
+      "ar": "س38: الجذر البدائي لـ p الأولي له صلاحيات تولد جميع الأعداد الصحيحة من 1 إلى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "p"
+      },
+      {
+        "letter": "B",
+        "text": "p / 2"
+      },
+      {
+        "letter": "C",
+        "text": "p - 1"
+      },
+      {
+        "letter": "D",
+        "text": "p + 1"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "If a is a primitive root of a prime p, then its powers generate all distinct integers from 1 to p-1.",
+      "ar": "إذا كان a جذرًا أوليًا لـ p الأولي، فإن قواه تولد جميع الأعداد الصحيحة المميزة من 1 إلى p-1."
+    }
+  },
+  {
+    "question": {
+      "en": "Q39: In discrete logarithms, what does the exponent i represent in b ≡ a^i (mod p)?",
+      "ar": "س39: في اللوغاريتمات المنفصلة، ​​ما هو الأس الذي أمثله في b ≡ a^i (mod p)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The discrete logarithm of b for the base a"
+      },
+      {
+        "letter": "B",
+        "text": "The primitive root of p"
+      },
+      {
+        "letter": "C",
+        "text": "Euler's totient"
+      },
+      {
+        "letter": "D",
+        "text": "The modulus"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The exponent i is referred to as the discrete logarithm of the number b for the base a (mod p).",
+      "ar": "يُشار إلى الأس i باللوغاريتم المنفصل للرقم b للأساس a (mod p)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q40: The principle of least astonishment means that a program interface should:",
+      "ar": "س 40: مبدأ أقل الدهشة يعني أن واجهة البرنامج يجب أن:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Be completely invisible"
+      },
+      {
+        "letter": "B",
+        "text": "Require multiple privileges"
+      },
+      {
+        "letter": "C",
+        "text": "Respond in a way least likely to astonish the user"
+      },
+      {
+        "letter": "D",
+        "text": "Encapsulate its procedures"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Least astonishment means that a program or user interface should always respond in the way that is least likely to astonish the user.",
+      "ar": "\"الدهشة الأقل\" تعني أن البرنامج أو واجهة المستخدم يجب أن تستجيب دائمًا بالطريقة التي من غير المرجح أن تدهش المستخدم."
+    }
+  },
+  {
+    "question": {
+      "en": "Q41: The human attack surface mainly involves vulnerabilities created by:",
+      "ar": "س41: يتضمن سطح الهجوم البشري بشكل أساسي ثغرات أمنية تم إنشاؤها بواسطة:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Open ports on outward facing Web servers"
+      },
+      {
+        "letter": "B",
+        "text": "Network protocol vulnerabilities"
+      },
+      {
+        "letter": "C",
+        "text": "Application code errors"
+      },
+      {
+        "letter": "D",
+        "text": "Personnel via social engineering or human error"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The human attack surface refers to vulnerabilities created by personnel or outsiders, such as social engineering, human error, and trusted insiders.",
+      "ar": "ويشير سطح الهجوم البشري إلى نقاط الضعف التي أنشأها الأفراد أو الغرباء، مثل الهندسة الاجتماعية، والخطأ البشري، والمطلعين الموثوقين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q42: Security mechanisms that are not specific to any particular OSI security service or protocol layer are called:",
+      "ar": "س42: تُسمى آليات الأمان غير الخاصة بأي خدمة أمان OSI أو طبقة بروتوكول معينة بما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pervasive security mechanisms"
+      },
+      {
+        "letter": "B",
+        "text": "Specific security mechanisms"
+      },
+      {
+        "letter": "C",
+        "text": "Cloud security mechanisms"
+      },
+      {
+        "letter": "D",
+        "text": "Gatekeeper mechanisms"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Pervasive security mechanisms are mechanisms that are not specific to any particular OSI security service or protocol layer.",
+      "ar": "آليات الأمان الشاملة هي آليات ليست خاصة بأي خدمة أمان OSI معينة أو طبقة بروتوكول."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: Which of the following is NOT one of the fundamental security design principles?",
+      "ar": "س31: أي مما يلي ليس أحد مبادئ التصميم الأمني ​​الأساسية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Least privilege"
+      },
+      {
+        "letter": "B",
+        "text": "Security through obscurity"
+      },
+      {
+        "letter": "C",
+        "text": "Economy of mechanism"
+      },
+      {
+        "letter": "D",
+        "text": "Separation of privilege"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Security through obscurity is generally discouraged; the fundamental principles include least privilege, economy of mechanism, and separation of privilege.",
+      "ar": "بشكل عام، لا يتم تشجيع الأمن من خلال الغموض؛ وتشمل المبادئ الأساسية أقل الامتيازات، واقتصاد الآلية، وفصل الامتيازات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q32: Data origin authentication provides corroboration of the source of a data unit but does not provide protection against:",
+      "ar": "س32: توفر مصادقة أصل البيانات تأكيدًا لمصدر وحدة البيانات ولكنها لا توفر الحماية ضد:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Duplication or modification of data units"
+      },
+      {
+        "letter": "B",
+        "text": "Disclosure of message contents"
+      },
+      {
+        "letter": "C",
+        "text": "Verification of identity"
+      },
+      {
+        "letter": "D",
+        "text": "Traffic flow analysis"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Data origin authentication does not provide protection against the duplication or modification of data units.",
+      "ar": "لا توفر مصادقة أصل البيانات الحماية ضد تكرار وحدات البيانات أو تعديلها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q33: Which mechanism involves the insertion of bits into gaps in a data stream to frustrate traffic analysis attempts?",
+      "ar": "س33: ما هي الآلية التي تتضمن إدخال البتات في الفجوات الموجودة في تدفق البيانات لإحباط محاولات تحليل حركة المرور؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Encipherment"
+      },
+      {
+        "letter": "B",
+        "text": "Routing Control"
+      },
+      {
+        "letter": "C",
+        "text": "Traffic Padding"
+      },
+      {
+        "letter": "D",
+        "text": "Notarization"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Traffic padding is the insertion of bits into gaps in a data stream to frustrate traffic analysis attempts.",
+      "ar": "حشوة حركة المرور هي إدخال وحدات البت في الفجوات في تدفق البيانات لإحباط محاولات تحليل حركة المرور."
+    }
+  },
+  {
+    "question": {
+      "en": "Q34: What is the primary function of the Notarization security mechanism?",
+      "ar": "س34: ما هي الوظيفة الأساسية لآلية تأمين التوثيق؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Detecting security-relevant events"
+      },
+      {
+        "letter": "B",
+        "text": "Using a trusted third party to assure certain properties of a data exchange"
+      },
+      {
+        "letter": "C",
+        "text": "Transforming data into an unintelligible form"
+      },
+      {
+        "letter": "D",
+        "text": "Enforcing access rights to resources"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Notarization involves the use of a trusted third party to assure certain properties of a data exchange.",
+      "ar": "يتضمن التوثيق الاستعانة بطرف ثالث موثوق به لضمان خصائص معينة لتبادل البيانات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q35: In the context of security mechanisms, 'Event Detection' is considered a:",
+      "ar": "س35: في سياق آليات الأمان، يعتبر \"اكتشاف الأحداث\" بمثابة:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Specific security mechanism"
+      },
+      {
+        "letter": "B",
+        "text": "Pervasive security mechanism"
+      },
+      {
+        "letter": "C",
+        "text": "Network access control"
+      },
+      {
+        "letter": "D",
+        "text": "Transport-level security"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Event Detection is listed under Pervasive Security Mechanisms in the X.800 architecture.",
+      "ar": "تم إدراج \"كشف الأحداث\" ضمن آليات الأمان الشاملة في بنية X.800."
+    }
+  },
+  {
+    "question": {
+      "en": "Q36: The principle of 'Separation of privilege' implies that:",
+      "ar": "س36: مبدأ \"فصل الامتيازات\" يتضمن ما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Multiple privilege attributes are required to achieve access to a restricted resource"
+      },
+      {
+        "letter": "B",
+        "text": "The system should operate using the least set of privileges"
+      },
+      {
+        "letter": "C",
+        "text": "A single key can unlock all resources"
+      },
+      {
+        "letter": "D",
+        "text": "The default situation is lack of access"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Separation of privilege requires multiple privilege attributes to achieve access to a restricted resource.",
+      "ar": "يتطلب فصل الامتياز سمات امتياز متعددة لتحقيق الوصول إلى مورد مقيد."
+    }
+  },
+  {
+    "question": {
+      "en": "Q37: Which principle states that the design of a security mechanism should be public rather than secret?",
+      "ar": "س37: ما هو المبدأ الذي ينص على أن تصميم آلية الأمن يجب أن يكون عامًا وليس سريًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Least common mechanism"
+      },
+      {
+        "letter": "B",
+        "text": "Open design"
+      },
+      {
+        "letter": "C",
+        "text": "Modularity"
+      },
+      {
+        "letter": "D",
+        "text": "Encapsulation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Open design means that the design of a security mechanism should be open rather than secret.",
+      "ar": "التصميم المفتوح يعني أن تصميم آلية الأمان يجب أن يكون مفتوحًا وليس سريًا."
+    }
+  },
+  {
+    "question": {
+      "en": "Q38: Which security model protects an information system from unwanted access by using a 'gatekeeper function'?",
+      "ar": "س38: ما هو نموذج الأمان الذي يحمي نظام المعلومات من الوصول غير المرغوب فيه باستخدام \"وظيفة حارس البوابة\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Network Security Model"
+      },
+      {
+        "letter": "B",
+        "text": "Network Access Security Model"
+      },
+      {
+        "letter": "C",
+        "text": "OSI Architecture Model"
+      },
+      {
+        "letter": "D",
+        "text": "CIA Triad"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Network Access Security Model uses a gatekeeper function (like login procedures) to deny access to unauthorized users or software.",
+      "ar": "يستخدم نموذج أمان الوصول إلى الشبكة وظيفة حارس البوابة (مثل إجراءات تسجيل الدخول) لمنع الوصول إلى المستخدمين غير المصرح لهم أو البرامج."
+    }
+  },
+  {
+    "question": {
+      "en": "Q39: According to the properties of divisibility, if a|b and b|c, then:",
+      "ar": "س39: حسب خواص قابلية القسمة، إذا كانت a|b وb|c فإن:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "a|c"
+      },
+      {
+        "letter": "B",
+        "text": "c|a"
+      },
+      {
+        "letter": "C",
+        "text": "a = c"
+      },
+      {
+        "letter": "D",
+        "text": "b = a * c"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "A fundamental property of divisibility is transitivity: if a divides b and b divides c, then a divides c.",
+      "ar": "الخاصية الأساسية لقابلية القسمة هي العبور: إذا كان أ يقسم ب و ب يقسم ج، فإن أ يقسم ج."
+    }
+  },
+  {
+    "question": {
+      "en": "Q40: What is the remainder when -11 is divided by 7 according to the division algorithm?",
+      "ar": "س40: ما هو الباقي عند قسمة -11 على 7 حسب خوارزمية القسمة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "-4"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "-3"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "-11 = (-2) * 7 + 3, so the remainder r is 3 (where 0 <= r < 7).",
+      "ar": "-11 = (-2) * 7 + 3، وبالتالي فإن الباقي r هو 3 (حيث 0 <= r <7)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q41: The expression gcd(a, b) = gcd(|a|, |b|) indicates that:",
+      "ar": "س41: التعبير gcd(a, b) = gcd(|a|, |b|) يشير إلى ما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The gcd is always 1"
+      },
+      {
+        "letter": "B",
+        "text": "Negative numbers cannot have a gcd"
+      },
+      {
+        "letter": "C",
+        "text": "The gcd of negative numbers is the same as their positive counterparts"
+      },
+      {
+        "letter": "D",
+        "text": "The gcd is independent of the values"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The gcd(a, b) = gcd(|a|, |b|) indicates that the sign of the integers does not affect their greatest common divisor.",
+      "ar": "يشير gcd(a, b) = gcd(|a|, |b|) إلى أن إشارة الأعداد الصحيحة لا تؤثر على القاسم المشترك الأكبر لها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q42: Which mathematical structure allows arithmetic operations on the set Zn = {0, 1, ..., n-1}?",
+      "ar": "س42: ما هو البناء الرياضي الذي يسمح بإجراء العمليات الحسابية على المجموعة Zn = {0, 1, ..., n-1}؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Real Numbers"
+      },
+      {
+        "letter": "B",
+        "text": "Modular Arithmetic"
+      },
+      {
+        "letter": "C",
+        "text": "Complex Arithmetic"
+      },
+      {
+        "letter": "D",
+        "text": "Exponential Arithmetic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Modular arithmetic maps all integers into the set of integers {0, 1, ..., n-1} and performs arithmetic operations within this set.",
+      "ar": "يقوم الحساب المعياري بتعيين جميع الأعداد الصحيحة في مجموعة الأعداد الصحيحة {0، 1، ...، n-1} وتنفيذ العمليات الحسابية ضمن هذه المجموعة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q43: Two numbers 'a' and 'b' are congruent modulo 'n' if:",
+      "ar": "س43: الرقمان \"أ\" و\"ب\" متطابقان في المقياس \"ن\" إذا:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "a mod n = b"
+      },
+      {
+        "letter": "B",
+        "text": "a = b mod n"
+      },
+      {
+        "letter": "C",
+        "text": "(a mod n) = (b mod n)"
+      },
+      {
+        "letter": "D",
+        "text": "a / n = b / n"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Two integers a and b are said to be congruent modulo n if (a mod n) = (b mod n), written as a ≡ b (mod n).",
+      "ar": "يقال أن عددين صحيحين a وb متطابقان modulo n إذا (a mod n) = (b mod n)، مكتوبين بالشكل a ≡ b (mod n)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q44: For the equation ax + by = d, what does 'd' represent if calculated using the extended Euclidean algorithm?",
+      "ar": "س44: بالنسبة للمعادلة ax + by = d، ماذا يمثل 'd' إذا تم حسابه باستخدام الخوارزمية الإقليدية الموسعة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The remainder"
+      },
+      {
+        "letter": "B",
+        "text": "The greatest common divisor of a and b"
+      },
+      {
+        "letter": "C",
+        "text": "The primitive root"
+      },
+      {
+        "letter": "D",
+        "text": "Euler's totient"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In the extended Euclidean algorithm, d is the gcd(a, b) and is expressed as a linear combination ax + by.",
+      "ar": "في الخوارزمية الإقليدية الموسعة، d هو gcd(a, b) ويتم التعبير عنه كمجموعة خطية ax + by."
+    }
+  }
+]

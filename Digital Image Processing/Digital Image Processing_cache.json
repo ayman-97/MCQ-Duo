@@ -1,0 +1,2367 @@
+[
+  {
+    "question": {
+      "en": "Q1: What is a digital image defined as?",
+      "ar": "س1: ما هو تعريف الصورة الرقمية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A continuous one-dimensional function"
+      },
+      {
+        "letter": "B",
+        "text": "A two-dimensional function f(x,y) with finite, discrete quantities"
+      },
+      {
+        "letter": "C",
+        "text": "An analog spectrum"
+      },
+      {
+        "letter": "D",
+        "text": "A continuous three-dimensional wave"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A digital image is defined as a two-dimensional function f(x,y) where the coordinates and intensity values are finite, discrete quantities.",
+      "ar": "تُعرف الصورة الرقمية كدالة ثنائية الأبعاد f(x,y) حيث تكون الإحداثيات وقيم الشدة كميات منتهية ومنفصلة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Which of the following terms is NOT used to denote the elements of a digital image?",
+      "ar": "س2: أي من المصطلحات التالية لا يستخدم للدلالة على عناصر الصورة الرقمية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Picture elements"
+      },
+      {
+        "letter": "B",
+        "text": "Image elements"
+      },
+      {
+        "letter": "C",
+        "text": "Pels"
+      },
+      {
+        "letter": "D",
+        "text": "Continuous variables"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The elements of a digital image are called picture elements, image elements, pels, and pixels. They are discrete, not continuous variables.",
+      "ar": "عناصر الصورة الرقمية تسمى بكسلات (pixels)، أو pels، وليست متغيرات مستمرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Imaging machines cover almost the entire electromagnetic (EM) spectrum, ranging from:",
+      "ar": "س3: تغطي آلات التصوير كامل الطيف الكهرومغناطيسي (EM) تقريبًا، بدءًا من:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Visual band to infrared"
+      },
+      {
+        "letter": "B",
+        "text": "Gamma to radio waves"
+      },
+      {
+        "letter": "C",
+        "text": "X-rays to microwaves"
+      },
+      {
+        "letter": "D",
+        "text": "Ultraviolet to acoustic waves"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Unlike humans who are limited to the visual band, imaging machines cover almost the entire EM spectrum from gamma to radio waves.",
+      "ar": "على عكس البشر المحدودين بالطيف المرئي، تغطي آلات التصوير الطيف الكهرومغناطيسي بالكامل تقريبًا من أشعة غاما إلى موجات الراديو."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: What characterizes a low-level image processing operation?",
+      "ar": "س4: ما الذي يميز عملية معالجة الصور ذات المستوى المنخفض؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Input is an image, output is an attribute"
+      },
+      {
+        "letter": "B",
+        "text": "Both inputs and outputs are images"
+      },
+      {
+        "letter": "C",
+        "text": "Input is an attribute, output is an image"
+      },
+      {
+        "letter": "D",
+        "text": "It emulates human cognition"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A low-level process is characterized by the fact that both its inputs and outputs are images (e.g., noise reduction).",
+      "ar": "تتميز العمليات منخفضة المستوى بأن مدخلاتها ومخرجاتها عبارة عن صور (مثل تقليل الضوضاء)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: What characterizes a mid-level image processing operation?",
+      "ar": "س5: ما الذي يميز عملية معالجة الصور ذات المستوى المتوسط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Its inputs and outputs are both images"
+      },
+      {
+        "letter": "B",
+        "text": "It performs cognitive functions"
+      },
+      {
+        "letter": "C",
+        "text": "Its inputs are images, but its outputs are attributes extracted from them"
+      },
+      {
+        "letter": "D",
+        "text": "It only compresses the image"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Mid-level processing involves tasks like segmentation and classification, outputting attributes like edges or contours.",
+      "ar": "تتضمن المعالجة متوسطة المستوى استخراج سمات من الصورة مثل الحواف والحدود."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: One of the earliest applications of digital images was in the newspaper industry using the Bartlane system. What did this system accomplish?",
+      "ar": "س6: أحد أقدم تطبيقات الصور الرقمية كان في صناعة الصحف باستخدام نظام بارتلان. ماذا حقق هذا النظام؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reduced picture transmission time across the Atlantic from over a week to less than three hours"
+      },
+      {
+        "letter": "B",
+        "text": "Took the first picture of the moon"
+      },
+      {
+        "letter": "C",
+        "text": "Discovered X-rays"
+      },
+      {
+        "letter": "D",
+        "text": "Invented the CAT scan"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Introduced in the early 1920s, the Bartlane system sent pictures by submarine cable, reducing transmission time significantly.",
+      "ar": "قلل نظام بارتلين في العشرينيات من زمن نقل الصور عبر المحيط الأطلسي من أسبوع إلى أقل من ثلاث ساعات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: The early Bartlane systems in the 1920s were capable of coding images in how many distinct levels of gray?",
+      "ar": "س7: كانت أنظمة بارتلين المبكرة في عشرينيات القرن الماضي قادرة على تشفير الصور في عدد المستويات المميزة للون الرمادي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "15"
+      },
+      {
+        "letter": "D",
+        "text": "256"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The early Bartlane systems coded images in five distinct levels of gray.",
+      "ar": "كانت أنظمة بارتلين المبكرة قادرة على تشفير الصور في 5 مستويات مختلفة من الرمادي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: By 1929, the Bartlane system's capability was increased to how many levels of gray?",
+      "ar": "س8: بحلول عام 1929، تمت زيادة قدرة نظام بارتلان إلى كم عدد مستويات اللون الرمادي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "10"
+      },
+      {
+        "letter": "C",
+        "text": "15"
+      },
+      {
+        "letter": "D",
+        "text": "50"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The capability of the Bartlane system was increased to 15 levels of gray in 1929.",
+      "ar": "بحلول عام 1929، زادت قدرة نظام بارتلين إلى 15 مستوى من الرمادي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: Who introduced the two key concepts of a memory to hold a stored program and conditional branching?",
+      "ar": "س9: من الذي قدم المفهومين الأساسيين للذاكرة التي تحتوي على برنامج مخزن والتفرع المشروط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "John von Neumann"
+      },
+      {
+        "letter": "B",
+        "text": "Wilhelm Conrad Roentgen"
+      },
+      {
+        "letter": "C",
+        "text": "Allan M. Cormack"
+      },
+      {
+        "letter": "D",
+        "text": "Godfrey N. Hounsfield"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "John von Neumann introduced these concepts in the 1940s, which became the foundation of the central processing unit (CPU).",
+      "ar": "جون فون نيومان هو من قدم مفاهيم الذاكرة لتخزين البرامج والتفرع المشروط في الأربعينيات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: In what year was the transistor invented at Bell Laboratories?",
+      "ar": "س10: في أي عام تم اختراع الترانزستور في مختبرات بيل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1920"
+      },
+      {
+        "letter": "B",
+        "text": "1948"
+      },
+      {
+        "letter": "C",
+        "text": "1958"
+      },
+      {
+        "letter": "D",
+        "text": "1970"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The transistor was invented at Bell Laboratories in 1948, a key advance in computing.",
+      "ar": "تم اختراع الترانزستور في مختبرات بيل عام 1948، مما شكل تقدمًا رئيسيًا في الحوسبة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: Which spacecraft took the first image of the moon processed by a computer to correct image distortion in 1964?",
+      "ar": "س11: ما هي المركبة الفضائية التي التقطت أول صورة للقمر ومعالجتها بالكمبيوتر لتصحيح تشوه الصورة عام 1964؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apollo 11"
+      },
+      {
+        "letter": "B",
+        "text": "Surveyor 1"
+      },
+      {
+        "letter": "C",
+        "text": "Mariner 4"
+      },
+      {
+        "letter": "D",
+        "text": "Ranger 7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Ranger 7 took the first picture of the moon by a U.S. spacecraft in 1964, and the images were processed to correct distortion.",
+      "ar": "المركبة رينجر 7 التقطت أول صورة للقمر تمت معالجتها بواسطة الحاسوب لتصحيح التشوه في عام 1964."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Who invented Computerized Axial Tomography (CAT)?",
+      "ar": "س12: من مخترع التصوير المقطعي المحوري المحوسب (CAT)؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "John von Neumann"
+      },
+      {
+        "letter": "B",
+        "text": "Wilhelm Conrad Roentgen"
+      },
+      {
+        "letter": "C",
+        "text": "Sir Godfrey N. Hounsfield and Professor Allan M. Cormack"
+      },
+      {
+        "letter": "D",
+        "text": "Richard E. Woods"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "CAT was invented independently by Hounsfield and Cormack, who shared the 1979 Nobel Prize.",
+      "ar": "اخترع التصوير المقطعي (CAT) كل من هاونسفيلد وكورماك وحصلا على جائزة نوبل في عام 1979."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: Who discovered X-rays in 1895?",
+      "ar": "س13: من مكتشف الأشعة السينية عام 1895؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "John von Neumann"
+      },
+      {
+        "letter": "B",
+        "text": "Wilhelm Conrad Roentgen"
+      },
+      {
+        "letter": "C",
+        "text": "Sir Godfrey N. Hounsfield"
+      },
+      {
+        "letter": "D",
+        "text": "Allan M. Cormack"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "X-rays were discovered in 1895 by Wilhelm Conrad Roentgen.",
+      "ar": "اكتشف فيلهلم كونراد رونتجن الأشعة السينية في عام 1895."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: Which of the following is a major use of gamma-ray imaging?",
+      "ar": "س14: أي مما يلي يعد استخدامًا رئيسيًا لتصوير أشعة جاما؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Radar"
+      },
+      {
+        "letter": "B",
+        "text": "Positron Emission Tomography (PET)"
+      },
+      {
+        "letter": "C",
+        "text": "Magnetic Resonance Imaging (MRI)"
+      },
+      {
+        "letter": "D",
+        "text": "Ultrasound"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "PET is a major modality of nuclear imaging that relies on gamma-ray emission.",
+      "ar": "التصوير المقطعي بالإصدار البوزيتروني (PET) هو أحد الاستخدامات الرئيسية لتصوير أشعة غاما."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: In PET imaging, what causes the emission of gamma rays?",
+      "ar": "س15: في التصوير المقطعي بالإصدار البوزيتروني، ما الذي يسبب انبعاث أشعة جاما؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Electrons striking an anode"
+      },
+      {
+        "letter": "B",
+        "text": "Magnetic fields aligning protons"
+      },
+      {
+        "letter": "C",
+        "text": "Annihilation of a positron and an electron"
+      },
+      {
+        "letter": "D",
+        "text": "High-frequency sound waves"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "When a positron meets an electron, both are annihilated and two gamma rays are given off.",
+      "ar": "عندما يلتقي بوزيترون بإلكترون، يفني كل منهما الآخر وينبعث شعاعا غاما."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: How are X-rays typically generated for medical and industrial imaging?",
+      "ar": "س16: كيف يتم توليد الأشعة السينية عادة للتصوير الطبي والصناعي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "By heating a radioactive isotope"
+      },
+      {
+        "letter": "B",
+        "text": "Using an X-ray tube where electrons strike a positively charged anode"
+      },
+      {
+        "letter": "C",
+        "text": "By emitting sound pulses"
+      },
+      {
+        "letter": "D",
+        "text": "By capturing natural gamma radiation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "X-rays are generated in a vacuum tube where heated electrons flow at high speed and strike a positively charged anode.",
+      "ar": "تتولد الأشعة السينية في أنبوب تفريغ حيث تصطدم الإلكترونات السريعة بأنود موجب الشحنة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: In contrast enhancement radiography, what is the procedure used to obtain images of blood vessels called?",
+      "ar": "س17: في التصوير الشعاعي لتعزيز التباين، ما هو الإجراء المستخدم للحصول على صور للأوعية الدموية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Angiography"
+      },
+      {
+        "letter": "B",
+        "text": "Lithography"
+      },
+      {
+        "letter": "C",
+        "text": "Tomography"
+      },
+      {
+        "letter": "D",
+        "text": "Ultrasound"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Angiography uses a catheter and a contrast medium to enhance the contrast of blood vessels.",
+      "ar": "تصوير الأوعية الدموية (Angiography) يستخدم قسطرة ومادة تباين للحصول على صور واضحة للأوعية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: Which imaging modality is commonly used for inspecting electronic circuit boards for manufacturing flaws?",
+      "ar": "س 18: ما هي طريقة التصوير الشائعة الاستخدام لفحص لوحات الدوائر الإلكترونية بحثًا عن عيوب التصنيع؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gamma-ray imaging"
+      },
+      {
+        "letter": "B",
+        "text": "Ultrasound"
+      },
+      {
+        "letter": "C",
+        "text": "X-ray imaging"
+      },
+      {
+        "letter": "D",
+        "text": "MRI"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "X-rays are heavily used in industrial processes, such as inspecting electronic circuit boards for missing components.",
+      "ar": "تُستخدم الأشعة السينية بشكل شائع في الصناعة، مثل فحص لوحات الدوائر الإلكترونية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Which band of the electromagnetic spectrum is used in fluorescence microscopy?",
+      "ar": "س19: ما هو نطاق الطيف الكهرومغناطيسي المستخدم في الفحص المجهري الفلوري؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Radio waves"
+      },
+      {
+        "letter": "B",
+        "text": "Ultraviolet"
+      },
+      {
+        "letter": "C",
+        "text": "Microwaves"
+      },
+      {
+        "letter": "D",
+        "text": "Infrared"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Ultraviolet light is used in fluorescence microscopy to excite electrons, which then emit visible light.",
+      "ar": "تُستخدم الأشعة فوق البنفسجية في الفحص المجهري الفلوري لإثارة الإلكترونات التي تشع لاحقاً ضوءاً مرئياً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: In NASA's LANDSAT satellites, Band 4 corresponds to which part of the spectrum?",
+      "ar": "س20: في أقمار لاندسات الصناعية التابعة لناسا، أي جزء من الطيف يتوافق النطاق 4؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Visible blue"
+      },
+      {
+        "letter": "B",
+        "text": "Thermal infrared"
+      },
+      {
+        "letter": "C",
+        "text": "Near infrared"
+      },
+      {
+        "letter": "D",
+        "text": "Visible green"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "According to Table 1.1, Band 4 (0.78-0.90 µm) is the Near infrared band, used for biomass and shoreline mapping.",
+      "ar": "النطاق 4 في أقمار لاندسات يتوافق مع الأشعة تحت الحمراء القريبة ويستخدم لرسم خرائط الكتلة الحيوية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: Which band is primarily used to measure plant vigor in LANDSAT satellites?",
+      "ar": "س21: ما هو النطاق الذي يستخدم بشكل أساسي لقياس قوة النبات في الأقمار الصناعية لاندسات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Band 1 (Visible blue)"
+      },
+      {
+        "letter": "B",
+        "text": "Band 2 (Visible green)"
+      },
+      {
+        "letter": "C",
+        "text": "Band 6 (Thermal infrared)"
+      },
+      {
+        "letter": "D",
+        "text": "Band 7 (Short-wave infrared)"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Table 1.1 indicates that Band 2 (Visible green) is used to measure plant vigor.",
+      "ar": "يُستخدم النطاق 2 (الأخضر المرئي) بشكل أساسي لقياس حيوية النباتات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: The 'Nighttime Lights of the World' dataset uses which imaging band to observe human settlements?",
+      "ar": "س22: تستخدم مجموعة بيانات \"أضواء العالم الليلية\" أي نطاق تصوير لمراقبة المستوطنات البشرية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ultraviolet"
+      },
+      {
+        "letter": "B",
+        "text": "Microwave"
+      },
+      {
+        "letter": "C",
+        "text": "Infrared"
+      },
+      {
+        "letter": "D",
+        "text": "X-ray"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Infrared imaging (10.0 to 13.4 µm) is used by NOAA/DMSP satellites to observe visible/near infrared emissions from cities.",
+      "ar": "يُستخدم التصوير بالأشعة تحت الحمراء لمراقبة المستوطنات البشرية واستخدام الطاقة ليلاً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: What is the principal application of imaging in the microwave band?",
+      "ar": "س23: ما هو التطبيق الرئيسي للتصوير في نطاق الموجات الدقيقة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lithography"
+      },
+      {
+        "letter": "B",
+        "text": "Radar"
+      },
+      {
+        "letter": "C",
+        "text": "MRI"
+      },
+      {
+        "letter": "D",
+        "text": "Fluorescence microscopy"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The principal application in the microwave band is radar, which can collect data regardless of weather.",
+      "ar": "التطبيق الرئيسي في نطاق الميكروويف هو الرادار، والذي يمكنه جمع البيانات بغض النظر عن الطقس."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: Which of the following is a unique capability of imaging radar?",
+      "ar": "س24: أي مما يلي يعد قدرة فريدة لرادار التصوير؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It uses a stream of electrons"
+      },
+      {
+        "letter": "B",
+        "text": "It requires a radioactive isotope"
+      },
+      {
+        "letter": "C",
+        "text": "It can penetrate clouds and gather data regardless of weather"
+      },
+      {
+        "letter": "D",
+        "text": "It records natural gamma radiation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Imaging radar provides its own illumination and can see through clouds, vegetation, and ice.",
+      "ar": "الرادار يوفر إضاءته الخاصة (نبضات الميكروويف) ويمكنه اختراق السحب والتقاط البيانات في أي طقس."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: Magnetic Resonance Imaging (MRI) operates in which band of the electromagnetic spectrum?",
+      "ar": "س25: التصوير بالرنين المغناطيسي (MRI) يعمل في أي نطاق من الطيف الكهرومغناطيسي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "X-ray"
+      },
+      {
+        "letter": "B",
+        "text": "Ultraviolet"
+      },
+      {
+        "letter": "C",
+        "text": "Radio wave"
+      },
+      {
+        "letter": "D",
+        "text": "Gamma ray"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "MRI places a patient in a powerful magnet and uses radio waves (radio band) to generate images.",
+      "ar": "يعمل التصوير بالرنين المغناطيسي (MRI) باستخدام موجات الراديو ضمن مجال مغناطيسي قوي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q26: In marine geological exploration, what is typically used as the energy source for acoustic imaging?",
+      "ar": "س26: في الاستكشاف الجيولوجي البحري، ما الذي يستخدم عادة كمصدر للطاقة للتصوير الصوتي؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A large flat steel plate vibrated by a truck"
+      },
+      {
+        "letter": "B",
+        "text": "Two air guns towed behind a ship"
+      },
+      {
+        "letter": "C",
+        "text": "An X-ray tube"
+      },
+      {
+        "letter": "D",
+        "text": "A cathode ray tube"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "For marine acoustic imaging, two air guns are typically towed behind a ship to generate sound waves.",
+      "ar": "في الاستكشاف البحري الجيولوجي، تُستخدم مسدسات الهواء المقطورة خلف السفينة لتوليد الموجات الصوتية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q27: What frequency range is typically used for medical ultrasound imaging?",
+      "ar": "س27: ما هو نطاق التردد المستخدم عادة للتصوير الطبي بالموجات فوق الصوتية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "10 to 50 Hz"
+      },
+      {
+        "letter": "B",
+        "text": "1 to 5 kHz"
+      },
+      {
+        "letter": "C",
+        "text": "1 to 5 MHz"
+      },
+      {
+        "letter": "D",
+        "text": "1 to 5 GHz"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Medical ultrasound systems transmit high-frequency sound pulses in the range of 1 to 5 MHz.",
+      "ar": "تستخدم أنظمة الموجات فوق الصوتية الطبية نبضات صوتية عالية التردد تتراوح بين 1 إلى 5 ميجا هرتز."
+    }
+  },
+  {
+    "question": {
+      "en": "Q28: How does a Transmission Electron Microscope (TEM) form an image?",
+      "ar": "س28: كيف يقوم المجهر الإلكتروني النافذ (TEM) بتكوين الصورة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It records the returning sound waves"
+      },
+      {
+        "letter": "B",
+        "text": "It shines a beam of electrons through a thin specimen"
+      },
+      {
+        "letter": "C",
+        "text": "It scans a beam across the surface to produce light on a phosphor screen"
+      },
+      {
+        "letter": "D",
+        "text": "It detects natural gamma radiation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A TEM transmits a beam of electrons through a specimen, much like a slide projector.",
+      "ar": "يُمرر المجهر الإلكتروني النافذ (TEM) شعاعًا من الإلكترونات عبر عينة رقيقة لتكوين الصورة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q29: What is the principal difference between TEM and SEM?",
+      "ar": "س29: ما هو الفرق الرئيسي بين TEM وSEM؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "TEM uses sound; SEM uses light"
+      },
+      {
+        "letter": "B",
+        "text": "TEM uses X-rays; SEM uses electrons"
+      },
+      {
+        "letter": "C",
+        "text": "TEM requires thin samples and transmits electrons; SEM is for bulky samples and scans the surface"
+      },
+      {
+        "letter": "D",
+        "text": "There is no difference"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "TEM shines electrons through a thin sample, whereas SEM scans the electron beam across the surface of a bulky sample.",
+      "ar": "يعتمد TEM على تمرير الإلكترونات عبر عينة رقيقة، بينما يقوم SEM بمسح سطح العينات السميكة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q30: What is a fractal in the context of computer-generated images?",
+      "ar": "س30: ما هو الفركتل في سياق الصور المولدة بالكمبيوتر؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An image obtained from an electron microscope"
+      },
+      {
+        "letter": "B",
+        "text": "An iterative reproduction of a basic pattern according to mathematical rules"
+      },
+      {
+        "letter": "C",
+        "text": "A digitized X-ray image"
+      },
+      {
+        "letter": "D",
+        "text": "A type of radar output"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A fractal is a computer-generated image created by iterativly reproducing a pattern based on mathematical rules.",
+      "ar": "الفركتل هو صورة يتم توليدها حاسوبيًا من خلال تكرار نمط أساسي وفقًا لقواعد رياضية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: Which fundamental step of digital image processing involves manipulating an image so the result is subjectively more suitable for a specific application?",
+      "ar": "س31: ما هي الخطوة الأساسية لمعالجة الصور الرقمية التي تتضمن معالجة الصورة بحيث تكون النتيجة أكثر ملاءمة لتطبيق معين؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Image restoration"
+      },
+      {
+        "letter": "B",
+        "text": "Image enhancement"
+      },
+      {
+        "letter": "C",
+        "text": "Segmentation"
+      },
+      {
+        "letter": "D",
+        "text": "Compression"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Image enhancement is subjective and deals with manipulating an image to improve its appearance for a specific task.",
+      "ar": "تحسين الصورة هو عملية ذاتية (Subjective) تهدف لمعالجة الصورة لتكون أكثر ملاءمة لتطبيق معين."
+    }
+  },
+  {
+    "question": {
+      "en": "Q32: How does image restoration differ from image enhancement?",
+      "ar": "س32: كيف تختلف استعادة الصورة عن تحسين الصورة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Restoration is subjective; enhancement is objective"
+      },
+      {
+        "letter": "B",
+        "text": "Restoration is objective and based on mathematical/probabilistic models"
+      },
+      {
+        "letter": "C",
+        "text": "Restoration only applies to color images"
+      },
+      {
+        "letter": "D",
+        "text": "There is no difference"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Unlike subjective enhancement, restoration is objective and relies on mathematical models of image degradation.",
+      "ar": "على عكس التحسين الذاتي، تعتبر استعادة الصورة عملية موضوعية تستند إلى نماذج رياضية لتشوه الصورة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q33: Which process deals with tools for extracting image components that are useful in the representation and description of shape?",
+      "ar": "س33: ما هي العملية التي تتناول أدوات استخراج مكونات الصورة المفيدة في تمثيل الشكل ووصفه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Color image processing"
+      },
+      {
+        "letter": "B",
+        "text": "Compression"
+      },
+      {
+        "letter": "C",
+        "text": "Morphological processing"
+      },
+      {
+        "letter": "D",
+        "text": "Wavelets"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Morphological processing involves extracting image components useful for shape representation.",
+      "ar": "تتعامل المعالجة المورفولوجية مع استخراج مكونات الصورة المفيدة في تمثيل ووصف الشكل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q34: Why is segmentation considered one of the most difficult tasks in digital image processing?",
+      "ar": "س34: لماذا يعتبر التجزئة من أصعب المهام في معالجة الصور الرقمية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It requires massive storage"
+      },
+      {
+        "letter": "B",
+        "text": "Rugged autonomous segmentation is difficult but crucial for recognizing individual objects"
+      },
+      {
+        "letter": "C",
+        "text": "It only works on 3-D images"
+      },
+      {
+        "letter": "D",
+        "text": "It requires human intervention for every pixel"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Autonomous segmentation (partitioning an image into objects) is extremely difficult, and its failure guarantees the failure of subsequent recognition.",
+      "ar": "تجزئة الصورة (Segmentation) تلقائياً أمر بالغ الصعوبة، وفشله يؤدي إلى فشل التعرف الآلي على الأجسام."
+    }
+  },
+  {
+    "question": {
+      "en": "Q35: Feature extraction consists of which two components?",
+      "ar": "س35: استخراج الميزة يتكون من مكونين؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Enhancement and restoration"
+      },
+      {
+        "letter": "B",
+        "text": "Acquisition and display"
+      },
+      {
+        "letter": "C",
+        "text": "Feature detection and feature description"
+      },
+      {
+        "letter": "D",
+        "text": "Segmentation and clustering"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Feature extraction includes finding features (detection) and assigning quantitative attributes to them (description).",
+      "ar": "تتكون استخراج الميزات من خطوتين: اكتشاف الميزات (Detection) ووصف الميزات (Description) كمياً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q36: What is the purpose of image pattern classification?",
+      "ar": "س36: ما هو الغرض من تصنيف أنماط الصور؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To reduce storage space"
+      },
+      {
+        "letter": "B",
+        "text": "To partition the image into objects"
+      },
+      {
+        "letter": "C",
+        "text": "To assign a label to an object based on its feature descriptors"
+      },
+      {
+        "letter": "D",
+        "text": "To increase the resolution of the image"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Classification assigns a specific label (like 'vehicle') to an object based on the features extracted.",
+      "ar": "التصنيف هو العملية التي تمنح ملصقًا (مثل 'مركبة') لجسم ما بناءً على واصفات ميزاته."
+    }
+  },
+  {
+    "question": {
+      "en": "Q37: In an image processing system, what is the function of the digitizer?",
+      "ar": "س37: ما هي وظيفة جهاز التحويل الرقمي في نظام معالجة الصور؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To display the final image"
+      },
+      {
+        "letter": "B",
+        "text": "To convert the electrical output of physical sensors into digital form"
+      },
+      {
+        "letter": "C",
+        "text": "To compress the image"
+      },
+      {
+        "letter": "D",
+        "text": "To store the image permanently"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A digitizer converts the analog output of the physical sensor into digital data for the computer.",
+      "ar": "يقوم جهاز الرقمنة (Digitizer) بتحويل الخرج الكهربائي للمستشعرات المادية إلى بيانات رقمية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q38: What is the primary characteristic of an Arithmetic Logic Unit (ALU) used as front-end specialized hardware in image processing?",
+      "ar": "س38: ما هي الخاصية الأساسية لوحدة المنطق الحسابي (ALU) المستخدمة كجهاز أمامي متخصص في معالجة الصور؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It stores images for years"
+      },
+      {
+        "letter": "B",
+        "text": "It performs arithmetic and logical operations in parallel on entire images at high speed"
+      },
+      {
+        "letter": "C",
+        "text": "It prints the images"
+      },
+      {
+        "letter": "D",
+        "text": "It captures the sound waves"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An ALU processes entire images in parallel for fast operations, such as averaging video images at 30 frames/s.",
+      "ar": "وحدة الحساب والمنطق في العتاد المتخصص تنفذ عمليات متوازية على الصور بأكملها بسرعة عالية جداً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q39: Which type of mass storage is characterized by frequent access and usually consists of magnetic disks?",
+      "ar": "س39: ما هو نوع التخزين كبير السعة الذي يتميز بتكرار الوصول إليه ويتكون عادةً من أقراص مغناطيسية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Short-term storage"
+      },
+      {
+        "letter": "B",
+        "text": "On-line storage"
+      },
+      {
+        "letter": "C",
+        "text": "Archival storage"
+      },
+      {
+        "letter": "D",
+        "text": "Frame buffers"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "On-line storage implies fast, frequent access to stored data, typically using magnetic or optical disks.",
+      "ar": "يتميز التخزين المتصل (On-line storage) بكثرة وسرعة الوصول للبيانات ويستخدم عادة الأقراص المغناطيسية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q40: Frame buffers are typically associated with which type of storage?",
+      "ar": "س40: عادةً ما ترتبط المخازن المؤقتة للإطارات بأي نوع من وحدات التخزين؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Archival storage"
+      },
+      {
+        "letter": "B",
+        "text": "On-line storage"
+      },
+      {
+        "letter": "C",
+        "text": "Short-term storage"
+      },
+      {
+        "letter": "D",
+        "text": "Cloud storage"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Frame buffers provide short-term storage for rapid access, allowing instantaneous zoom, pan, and scroll at video rates.",
+      "ar": "تُستخدموا مخازن الإطارات (Frame buffers) كتخزين قصير الأجل للوصول السريع للصور أثناء المعالجة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q41: What is the key consideration in image transmission across networks due to the large amount of data involved?",
+      "ar": "س41: ما هو الاعتبار الرئيسي في نقل الصور عبر الشبكات نظرًا للكمية الكبيرة من البيانات المعنية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bandwidth"
+      },
+      {
+        "letter": "B",
+        "text": "Monitor size"
+      },
+      {
+        "letter": "C",
+        "text": "Digitizer type"
+      },
+      {
+        "letter": "D",
+        "text": "Sensor resolution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Because image processing involves massive amounts of data, transmission bandwidth is the key consideration in networking.",
+      "ar": "نظرًا للكم الهائل من البيانات في معالجة الصور، يعتبر عرض النطاق الترددي (Bandwidth) العامل الأهم عند النقل عبر الشبكات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q42: Which operation is represented by the double-headed arrows connecting the 'Knowledge base' to the processing modules in the fundamental steps diagram?",
+      "ar": "س42: ما هي العملية التي تمثلها الأسهم ذات الرأسين التي تربط \"قاعدة المعرفة\" بوحدات المعالجة في مخطط الخطوات الأساسية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Permanent storage"
+      },
+      {
+        "letter": "B",
+        "text": "Display rendering"
+      },
+      {
+        "letter": "C",
+        "text": "Guiding operation and controlling interaction between modules"
+      },
+      {
+        "letter": "D",
+        "text": "Image printing"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The double-headed arrows indicate that the knowledge base guides the operation of modules and controls interactions between them.",
+      "ar": "الأسهم المزدوجة تشير إلى أن قاعدة المعرفة توجه تشغيل الوحدات وتتحكم في التفاعل بينها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: Image segmentation algorithms are generally based on one of two basic properties of intensity values. What are they?",
+      "ar": "س1: تعتمد خوارزميات تجزئة الصورة عمومًا على إحدى الخاصيتين الأساسيتين لقيم الكثافة. ما هم؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Discontinuity and similarity"
+      },
+      {
+        "letter": "B",
+        "text": "Brightness and contrast"
+      },
+      {
+        "letter": "C",
+        "text": "Frequency and spatial domain"
+      },
+      {
+        "letter": "D",
+        "text": "Smoothing and sharpening"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Segmentation is based on abrupt changes in intensity (discontinuity) or partitioning based on criteria (similarity).",
+      "ar": "يعتمد التقسيم على التغيرات المفاجئة في الشدة (الانقطاع) أو التقسيم على أساس المعايير (التشابه)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Which of the following is based on the discontinuity property?",
+      "ar": "س2: أي مما يلي يعتمد على خاصية عدم الاستمرارية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Region growing"
+      },
+      {
+        "letter": "B",
+        "text": "Thresholding"
+      },
+      {
+        "letter": "C",
+        "text": "Edge detection"
+      },
+      {
+        "letter": "D",
+        "text": "Region merging"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Edge detection relies on finding abrupt changes in image intensity, which represents discontinuities.",
+      "ar": "يعتمد اكتشاف الحواف على إيجاد تغييرات مفاجئة في كثافة الصورة، وهو ما يمثل الانقطاعات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Which segmentation technique is an example of similarity-based partitioning?",
+      "ar": "س3: ما هي تقنية التجزئة التي تعتبر مثالاً على التقسيم المبني على التشابه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Point detection"
+      },
+      {
+        "letter": "B",
+        "text": "Edge detection"
+      },
+      {
+        "letter": "C",
+        "text": "Thresholding"
+      },
+      {
+        "letter": "D",
+        "text": "Line detection"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Thresholding segments an image into regions of similar intensity, thus relying on similarity.",
+      "ar": "يقوم تحديد العتبة بتقسيم الصورة إلى مناطق ذات كثافة مماثلة، وبالتالي الاعتماد على التشابه."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: For point detection using a standard 3x3 mask, what is the sum of its coefficients?",
+      "ar": "س4: بالنسبة لاكتشاف النقاط باستخدام قناع 3x3 القياسي، ما هو مجموع معاملاته؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "0"
+      },
+      {
+        "letter": "D",
+        "text": "-1"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Derivative masks used for detecting points and edges sum to zero to give no response in areas of constant intensity.",
+      "ar": "الأقنعة المشتقة المستخدمة للكشف عن النقاط والحواف مجموعها صفر ولا تعطي أي استجابة في المناطق ذات الكثافة الثابتة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: What mathematical operator is typically used for point detection?",
+      "ar": "س5: ما هو العامل الرياضي الذي يُستخدم عادةً لاكتشاف النقاط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gradient"
+      },
+      {
+        "letter": "B",
+        "text": "Laplacian"
+      },
+      {
+        "letter": "C",
+        "text": "Sobel"
+      },
+      {
+        "letter": "D",
+        "text": "Fourier Transform"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Laplacian, a second-order derivative, is highly responsive to fine detail like isolated points.",
+      "ar": "اللابلاسي، وهو مشتق من الدرجة الثانية، يستجيب بشكل كبير للتفاصيل الدقيقة مثل النقاط المعزولة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: A horizontal line mask will produce the strongest response for lines oriented at what angle?",
+      "ar": "س6: قناع الخط الأفقي سينتج أقوى استجابة للخطوط الموجهة بأي زاوية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "0 degrees"
+      },
+      {
+        "letter": "B",
+        "text": "45 degrees"
+      },
+      {
+        "letter": "C",
+        "text": "90 degrees"
+      },
+      {
+        "letter": "D",
+        "text": "135 degrees"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "A horizontal line mask is designed specifically to detect horizontal lines (0 degrees).",
+      "ar": "تم تصميم قناع الخط الأفقي خصيصًا لاكتشاف الخطوط الأفقية (0 درجة)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: The first derivative of an image is typically computed using the magnitude of the:",
+      "ar": "س7: عادةً ما يتم حساب المشتق الأول للصورة باستخدام حجم:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gradient"
+      },
+      {
+        "letter": "B",
+        "text": "Laplacian"
+      },
+      {
+        "letter": "C",
+        "text": "Median"
+      },
+      {
+        "letter": "D",
+        "text": "Histogram"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The gradient is a vector whose magnitude gives the maximum rate of change, which represents the first derivative.",
+      "ar": "التدرج هو متجه يعطي حجمه الحد الأقصى لمعدل التغيير، وهو ما يمثل المشتقة الأولى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: The Sobel operator uses which of the following mask sizes for basic edge detection?",
+      "ar": "س8: أي من أحجام القناع التالية يستخدمها مشغل Sobel للكشف عن الحواف الأساسية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "2x2"
+      },
+      {
+        "letter": "B",
+        "text": "3x3"
+      },
+      {
+        "letter": "C",
+        "text": "4x4"
+      },
+      {
+        "letter": "D",
+        "text": "5x5"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The standard Sobel operators use 3x3 masks to compute horizontal and vertical approximations of the derivative.",
+      "ar": "يستخدم مشغلو Sobel القياسيون أقنعة 3x3 لحساب التقريبات الأفقية والرأسية للمشتق."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: What advantage does the Sobel operator have over the Prewitt operator?",
+      "ar": "س9: ما هي الميزة التي يتمتع بها مشغل Sobel عن مشغل Prewitt؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is faster"
+      },
+      {
+        "letter": "B",
+        "text": "It uses a 2x2 mask"
+      },
+      {
+        "letter": "C",
+        "text": "It provides better noise suppression"
+      },
+      {
+        "letter": "D",
+        "text": "It is a second derivative operator"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Sobel operator uses a weight of 2 in the center, providing some smoothing which suppresses noise better than Prewitt.",
+      "ar": "يستخدم مشغل Sobel وزنًا يبلغ 2 في المنتصف، مما يوفر بعض السلاسة التي تمنع الضوضاء بشكل أفضل من Prewitt."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: The Roberts cross-gradient operators use masks of what dimension?",
+      "ar": "س 10: يستخدم مشغلو روبرتس للتدرج المتقاطع أقنعة من أي بعد؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "1x1"
+      },
+      {
+        "letter": "B",
+        "text": "2x2"
+      },
+      {
+        "letter": "C",
+        "text": "3x3"
+      },
+      {
+        "letter": "D",
+        "text": "4x4"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Roberts operators are one of the oldest edge detectors and use simple 2x2 masks.",
+      "ar": "يعد مشغلو Roberts أحد أقدم أجهزة كشف الحواف ويستخدمون أقنعة 2x2 بسيطة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: The Laplacian is a:",
+      "ar": "س11: اللابلاسي هو:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "First-order derivative operator"
+      },
+      {
+        "letter": "B",
+        "text": "Second-order derivative operator"
+      },
+      {
+        "letter": "C",
+        "text": "Smoothing filter"
+      },
+      {
+        "letter": "D",
+        "text": "Morphological operator"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Laplacian computes the sum of unmixed second derivatives, making it a second-order operator.",
+      "ar": "يحسب اللابلاسي مجموع المشتقات الثانية غير المخلوطة، مما يجعله عاملاً من الدرجة الثانية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: A primary disadvantage of using the Laplacian alone for edge detection is:",
+      "ar": "س12: العيب الأساسي لاستخدام اللابلاتسي وحده للكشف عن الحواف هو:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It produces thick edges"
+      },
+      {
+        "letter": "B",
+        "text": "It is insensitive to noise"
+      },
+      {
+        "letter": "C",
+        "text": "It is highly sensitive to noise"
+      },
+      {
+        "letter": "D",
+        "text": "It only detects vertical lines"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Because it is a second-order derivative, the Laplacian amplifies high-frequency noise significantly.",
+      "ar": "ولأنه مشتق من الدرجة الثانية، يعمل اللابلاتسي على تضخيم الضوضاء عالية التردد بشكل كبير."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: The Marr-Hildreth edge detector uses which function?",
+      "ar": "س13: ما هي الوظيفة التي يستخدمها كاشف الحواف Marr-Hildreth؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Difference of Gaussians (DoG)"
+      },
+      {
+        "letter": "B",
+        "text": "Laplacian of a Gaussian (LoG)"
+      },
+      {
+        "letter": "C",
+        "text": "Canny function"
+      },
+      {
+        "letter": "D",
+        "text": "Sobel function"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Marr-Hildreth algorithm filters the image with a Gaussian before applying the Laplacian, hence LoG.",
+      "ar": "تقوم خوارزمية Marr-Hildreth بتصفية الصورة باستخدام Gaussian قبل تطبيق Laplacian، وبالتالي LoG."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: In the Marr-Hildreth detector, edges correspond to what features of the LoG output?",
+      "ar": "س 14: في كاشف Marr-Hildreth، ما هي الحواف التي تتوافق مع ميزات مخرجات Log؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Maximum values"
+      },
+      {
+        "letter": "B",
+        "text": "Minimum values"
+      },
+      {
+        "letter": "C",
+        "text": "Zero-crossings"
+      },
+      {
+        "letter": "D",
+        "text": "Average values"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Zero-crossings of the second derivative correspond to the inflection points (peaks) of the first derivative, indicating an edge.",
+      "ar": "تتوافق التقاطعات الصفرية للمشتق الثاني مع نقاط الانعطاف (القمم) للمشتق الأول، مما يشير إلى وجود حافة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: The Canny edge detector uses which technique to narrow wide ridges into 1-pixel thin edges?",
+      "ar": "س 15: ما هي التقنية التي يستخدمها كاشف الحواف Canny لتضييق الحواف العريضة إلى حواف رفيعة تبلغ 1 بكسل؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Double thresholding"
+      },
+      {
+        "letter": "B",
+        "text": "Gaussian smoothing"
+      },
+      {
+        "letter": "C",
+        "text": "Non-maximum suppression"
+      },
+      {
+        "letter": "D",
+        "text": "Region growing"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Non-maximum suppression suppresses pixels that are not local maxima, effectively thinning the edge.",
+      "ar": "يؤدي القمع غير الأقصى إلى منع وحدات البكسل التي لا تمثل الحد الأقصى المحلي، مما يؤدي إلى ترقق الحافة بشكل فعال."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: Which edge detector attempts to minimize an error rate, achieve good localization, and have only a single response to an edge?",
+      "ar": "س 16: ما هو كاشف الحواف الذي يحاول تقليل معدل الخطأ وتحقيق توطين جيد والحصول على استجابة واحدة فقط للحافة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sobel"
+      },
+      {
+        "letter": "B",
+        "text": "Roberts"
+      },
+      {
+        "letter": "C",
+        "text": "Marr-Hildreth"
+      },
+      {
+        "letter": "D",
+        "text": "Canny"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "These three criteria were explicitly formulated by John Canny to design the optimal edge detector.",
+      "ar": "تمت صياغة هذه المعايير الثلاثة بشكل صريح بواسطة جون كاني لتصميم كاشف الحواف الأمثل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: What is the purpose of hysteresis thresholding in the Canny edge detector?",
+      "ar": "س17: ما هو الغرض من عتبة التباطؤ في كاشف حافة كاني؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To thin the edges"
+      },
+      {
+        "letter": "B",
+        "text": "To link broken edges"
+      },
+      {
+        "letter": "C",
+        "text": "To smooth the image"
+      },
+      {
+        "letter": "D",
+        "text": "To find the gradient angle"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Hysteresis uses a high threshold to find strong edges and a low threshold to connect weak edges attached to strong ones.",
+      "ar": "يستخدم التباطؤ عتبة عالية للعثور على حواف قوية وعتبة منخفضة لربط الحواف الضعيفة المرتبطة بالحواف القوية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: Which transform is widely used for linking edge pixels into global parametric shapes such as lines?",
+      "ar": "س 18: ما هو التحويل المستخدم على نطاق واسع لربط وحدات بكسل الحافة بأشكال بارامترية عالمية مثل الخطوط؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fourier transform"
+      },
+      {
+        "letter": "B",
+        "text": "Wavelet transform"
+      },
+      {
+        "letter": "C",
+        "text": "Hough transform"
+      },
+      {
+        "letter": "D",
+        "text": "Radon transform"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Hough transform groups edge pixels into object candidates by mapping them to a parameter space.",
+      "ar": "يقوم Hough بتحويل وحدات البكسل الحافة إلى كائنات مرشحة عن طريق تعيينها إلى مساحة المعلمة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: In the normal representation of a line (rho = x*cos(theta) + y*sin(theta)) used in the Hough transform, a single point in the xy-plane maps to what in the rho-theta parameter space?",
+      "ar": "س 19: في التمثيل الطبيعي للخط (rho = x*cos(theta) + y*sin(theta)) المستخدم في تحويل Hough، تقوم نقطة واحدة في المستوى xy بتعيين ما في مساحة معلمة rho-theta؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A point"
+      },
+      {
+        "letter": "B",
+        "text": "A line"
+      },
+      {
+        "letter": "C",
+        "text": "A sinusoidal curve"
+      },
+      {
+        "letter": "D",
+        "text": "A circle"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A point in image space maps to a sinusoid in the rho-theta parameter space.",
+      "ar": "يتم تعيين نقطة في مساحة الصورة إلى شكل جيبي في مساحة معلمة rho-theta."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: Thresholding segments an image into objects and background based on what property?",
+      "ar": "س 20: تحديد عتبة الصورة إلى كائنات وخلفية بناءً على أي خاصية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Edge direction"
+      },
+      {
+        "letter": "B",
+        "text": "Intensity values"
+      },
+      {
+        "letter": "C",
+        "text": "Texture variations"
+      },
+      {
+        "letter": "D",
+        "text": "Spatial frequency"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Thresholding compares intensity values against a threshold to separate objects from the background.",
+      "ar": "يقوم العتبة بمقارنة قيم الكثافة مع العتبة لفصل الكائنات عن الخلفية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q21: If a threshold is constant for the entire image, it is called:",
+      "ar": "س21: إذا كانت العتبة ثابتة للصورة بأكملها تسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Local thresholding"
+      },
+      {
+        "letter": "B",
+        "text": "Global thresholding"
+      },
+      {
+        "letter": "C",
+        "text": "Adaptive thresholding"
+      },
+      {
+        "letter": "D",
+        "text": "Regional thresholding"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Global thresholding uses a single threshold value for all pixels in an image.",
+      "ar": "تستخدم العتبة العامة قيمة عتبة واحدة لجميع وحدات البكسل في الصورة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q22: If the threshold value T depends on the spatial coordinates (x,y), the thresholding method is called:",
+      "ar": "س22: إذا كانت قيمة العتبة T تعتمد على الإحداثيات المكانية (x,y)، تسمى طريقة العتبة:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Global"
+      },
+      {
+        "letter": "B",
+        "text": "Dynamic or variable"
+      },
+      {
+        "letter": "C",
+        "text": "Optimal"
+      },
+      {
+        "letter": "D",
+        "text": "Fixed"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Variable (or adaptive) thresholding changes the threshold across the image based on local spatial properties.",
+      "ar": "تغير العتبة المتغيرة (أو التكيفية) العتبة عبر الصورة بناءً على الخصائص المكانية المحلية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q23: Illumination variations across an image often cause global thresholding to fail. Which technique is most effective in solving this?",
+      "ar": "س23: غالبًا ما تتسبب اختلافات الإضاءة عبر الصورة في فشل العتبة العامة. ما هي التقنية الأكثر فعالية في حل هذه المشكلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Increasing the global threshold"
+      },
+      {
+        "letter": "B",
+        "text": "Variable thresholding"
+      },
+      {
+        "letter": "C",
+        "text": "Adding Gaussian noise"
+      },
+      {
+        "letter": "D",
+        "text": "Shrinking the image"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Variable thresholding compensates for non-uniform illumination by computing thresholds locally.",
+      "ar": "تعوض العتبة المتغيرة الإضاءة غير المنتظمة عن طريق حساب العتبات محليًا."
+    }
+  },
+  {
+    "question": {
+      "en": "Q24: Otsu's method is used for which purpose?",
+      "ar": "س24: لأي غرض يتم استخدام طريقة أوتسو؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Finding the best edge directions"
+      },
+      {
+        "letter": "B",
+        "text": "Smoothing an image automatically"
+      },
+      {
+        "letter": "C",
+        "text": "Automatically finding an optimal global threshold"
+      },
+      {
+        "letter": "D",
+        "text": "Region splitting"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Otsu's algorithm automatically determines the optimal threshold by maximizing the between-class variance.",
+      "ar": "تحدد خوارزمية Otsu تلقائيًا العتبة المثالية عن طريق زيادة التباين بين الفئات إلى الحد الأقصى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q25: What does Otsu's method aim to maximize?",
+      "ar": "س25: ما الذي تهدف طريقة أوتسو إلى تعظيمه؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Within-class variance"
+      },
+      {
+        "letter": "B",
+        "text": "Between-class variance"
+      },
+      {
+        "letter": "C",
+        "text": "Total variance"
+      },
+      {
+        "letter": "D",
+        "text": "Mean square error"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "By maximizing the between-class variance, Otsu's method ensures maximum separation between object and background classes.",
+      "ar": "من خلال تعظيم التباين بين الفئات، تضمن طريقة أوتسو أقصى قدر من الفصل بين فئات الكائنات والخلفية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q26: Which basic assumption does Otsu's method make about the image histogram?",
+      "ar": "س26: ما هو الافتراض الأساسي الذي تقوم به طريقة أوتسو بشأن الرسم البياني للصورة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is uniform"
+      },
+      {
+        "letter": "B",
+        "text": "It contains three equal classes"
+      },
+      {
+        "letter": "C",
+        "text": "It is bimodal (contains two principal classes)"
+      },
+      {
+        "letter": "D",
+        "text": "It is perfectly symmetric"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Otsu's method assumes the histogram has two main peaks representing the background and the foreground.",
+      "ar": "تفترض طريقة أوتسو أن الرسم البياني له قمتان رئيسيتان تمثلان الخلفية والمقدمة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q27: Region growing is an image segmentation technique that is based on:",
+      "ar": "س27: النمو الإقليمي هو أسلوب لتجزئة الصور يعتمد على:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Discontinuity"
+      },
+      {
+        "letter": "B",
+        "text": "Similarity"
+      },
+      {
+        "letter": "C",
+        "text": "Filtering"
+      },
+      {
+        "letter": "D",
+        "text": "Edge linking"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Region growing groups pixels based on predefined criteria of similarity, such as intensity or color.",
+      "ar": "تعمل المنطقة على تجميع وحدات البكسل بناءً على معايير التشابه المحددة مسبقًا، مثل الكثافة أو اللون."
+    }
+  },
+  {
+    "question": {
+      "en": "Q28: Region growing requires initial pixels to start the growing process. What are these pixels called?",
+      "ar": "س28: يتطلب نمو المنطقة وحدات بكسل أولية لبدء عملية النمو. ماذا تسمى هذه البكسلات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Leaves"
+      },
+      {
+        "letter": "B",
+        "text": "Branches"
+      },
+      {
+        "letter": "C",
+        "text": "Seeds"
+      },
+      {
+        "letter": "D",
+        "text": "Roots"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The initial starting points for the region growing process are known as \"seed\" points.",
+      "ar": "تُعرف نقاط البداية الأولية لعملية النمو في المنطقة بنقاط \"البذور\"."
+    }
+  },
+  {
+    "question": {
+      "en": "Q29: A common issue in region growing where the segmented regions grow beyond their true boundaries is called:",
+      "ar": "س29: هناك مشكلة شائعة في المنطقة التي تنمو حيث تنمو المناطق المجزأة خارج حدودها الحقيقية تسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Leakage"
+      },
+      {
+        "letter": "B",
+        "text": "Splitting"
+      },
+      {
+        "letter": "C",
+        "text": "Over-segmentation"
+      },
+      {
+        "letter": "D",
+        "text": "Merging"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Leakage occurs if the connectivity or similarity criteria are too relaxed, causing the region to spill into surrounding areas.",
+      "ar": "يحدث التسرب إذا كانت معايير الاتصال أو التشابه مريحة للغاية، مما يتسبب في تسرب المنطقة إلى المناطق المحيطة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q30: The region splitting and merging algorithm is typically implemented using what kind of data structure?",
+      "ar": "س30: يتم عادةً تنفيذ خوارزمية تقسيم المنطقة ودمجها باستخدام أي نوع من بنية البيانات؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Binary tree"
+      },
+      {
+        "letter": "B",
+        "text": "Linked list"
+      },
+      {
+        "letter": "C",
+        "text": "Quadtree"
+      },
+      {
+        "letter": "D",
+        "text": "Hash table"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "A quadtree divides a square region into four smaller quadrants recursively if the region is not homogeneous.",
+      "ar": "تقسم الشجرة الرباعية المنطقة المربعة إلى أربعة أرباع أصغر بشكل متكرر إذا لم تكن المنطقة متجانسة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q31: In region splitting and merging, a region is split into four sub-regions if:",
+      "ar": "س31: في تقسيم المنطقة ودمجها، يتم تقسيم المنطقة إلى أربع مناطق فرعية إذا:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It satisfies a homogeneity predicate"
+      },
+      {
+        "letter": "B",
+        "text": "It does not satisfy a homogeneity predicate"
+      },
+      {
+        "letter": "C",
+        "text": "It contains an edge"
+      },
+      {
+        "letter": "D",
+        "text": "It is completely black"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If a region is not homogeneous according to a predefined predicate, it must be split into smaller subregions.",
+      "ar": "إذا لم تكن المنطقة متجانسة وفقًا لمسند محدد مسبقًا، فيجب تقسيمها إلى مناطق فرعية أصغر."
+    }
+  },
+  {
+    "question": {
+      "en": "Q32: In the merging step of the split-and-merge algorithm, two adjacent regions are merged if:",
+      "ar": "س32: في خطوة الدمج لخوارزمية التقسيم والدمج، يتم دمج منطقتين متجاورتين إذا:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Their combined area is larger than a threshold"
+      },
+      {
+        "letter": "B",
+        "text": "Their combined region satisfies the homogeneity predicate"
+      },
+      {
+        "letter": "C",
+        "text": "They have different intensity means"
+      },
+      {
+        "letter": "D",
+        "text": "They share exactly one pixel"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Adjacent regions that satisfy the similarity condition when combined are merged back together.",
+      "ar": "يتم دمج المناطق المتجاورة التي تستوفي شرط التشابه عند دمجها معًا مرة أخرى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q33: Morphological watershed segmentation visualizes an image as:",
+      "ar": "س 33: تجزئة مستجمعات المياه المورفولوجية تصور الصورة على النحو التالي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A set of discrete particles"
+      },
+      {
+        "letter": "B",
+        "text": "A one-dimensional frequency signal"
+      },
+      {
+        "letter": "C",
+        "text": "A 3D topographic surface"
+      },
+      {
+        "letter": "D",
+        "text": "A color wheel"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Watershed transforms view image intensities as elevations, treating the image as a topographic relief.",
+      "ar": "تحولات مستجمعات المياه عرض شدة الصورة على أنها ارتفاعات، ومعالجة الصورة على أنها تضاريس طبوغرافية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q34: Direct application of the watershed transform to a gradient image usually leads to what problem?",
+      "ar": "س34: التطبيق المباشر لتحويل مستجمعات المياه إلى صورة متدرجة عادة ما يؤدي إلى أي مشكلة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Under-segmentation"
+      },
+      {
+        "letter": "B",
+        "text": "Over-segmentation"
+      },
+      {
+        "letter": "C",
+        "text": "Image blurring"
+      },
+      {
+        "letter": "D",
+        "text": "Edge disappearance"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Noise and local gradient irregularities create many local minima, leading to severe over-segmentation.",
+      "ar": "تخلق الضوضاء وعدم انتظام التدرج المحلي العديد من الحدود الدنيا المحلية، مما يؤدي إلى تجزئة مفرطة شديدة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q35: To mitigate the over-segmentation problem in watersheds, what approach is commonly used?",
+      "ar": "س 35: للتخفيف من مشكلة التقسيم الزائد في مستجمعات المياه، ما هو النهج الشائع الاستخدام؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Low-pass filtering exclusively"
+      },
+      {
+        "letter": "B",
+        "text": "Edge suppression"
+      },
+      {
+        "letter": "C",
+        "text": "Marker-controlled watershed segmentation"
+      },
+      {
+        "letter": "D",
+        "text": "Global thresholding"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Markers denote the specific locations of regions, restricting the valid local minima to prevent over-segmentation.",
+      "ar": "تشير العلامات إلى المواقع المحددة للمناطق، مما يقيد الحد الأدنى المحلي الصالح لمنع الإفراط في التجزئة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q36: What is a \"superpixel\" in the context of image segmentation?",
+      "ar": "س36: ما هو \"البكسل الفائق\" في سياق تجزئة الصورة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A very bright pixel"
+      },
+      {
+        "letter": "B",
+        "text": "A pixel that contains all color channels"
+      },
+      {
+        "letter": "C",
+        "text": "A cohesive, localized grouping of pixels that preserve image structure"
+      },
+      {
+        "letter": "D",
+        "text": "A pixel belonging to an edge"
+      },
+      {
+        "letter": "A",
+        "text": "Canny"
+      },
+      {
+        "letter": "B",
+        "text": "SLIC (Simple Linear Iterative Clustering)"
+      },
+      {
+        "letter": "C",
+        "text": "Otsu"
+      },
+      {
+        "letter": "D",
+        "text": "Hough"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "SLIC is a widely used algorithm that adapts k-means clustering to generate superpixels efficiently.",
+      "ar": "SLIC عبارة عن خوارزمية مستخدمة على نطاق واسع تعمل على تكييف مجموعات k-means لإنشاء وحدات بكسل فائقة بكفاءة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q38: Graph cuts segmentation models the segmentation problem as finding:",
+      "ar": "س 38: الرسم البياني يقطع نماذج التجزئة مشكلة التجزئة كما يلي:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The longest path in a graph"
+      },
+      {
+        "letter": "B",
+        "text": "The minimum cut or maximum flow"
+      },
+      {
+        "letter": "C",
+        "text": "The maximum spanning tree"
+      },
+      {
+        "letter": "D",
+        "text": "The shortest path between all nodes"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Graph cuts find a partition of the graph that minimizes the cut capacity, separating the object from the background.",
+      "ar": "تبحث عمليات قطع الرسم البياني عن قسم من الرسم البياني يقلل من سعة القطع، ويفصل الكائن عن الخلفية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q39: In graph cuts, nodes typically correspond to what image elements?",
+      "ar": "س39: في قطع الرسم البياني، تتوافق العقد عادةً مع أي عناصر الصورة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Image boundaries"
+      },
+      {
+        "letter": "B",
+        "text": "Threshold values"
+      },
+      {
+        "letter": "C",
+        "text": "Pixels or regions"
+      },
+      {
+        "letter": "D",
+        "text": "Morphological structuring elements"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Each pixel (or superpixel) is represented as a node in the graph.",
+      "ar": "يتم تمثيل كل بكسل (أو بكسل فائق) كعقدة في الرسم البياني."
+    }
+  },
+  {
+    "question": {
+      "en": "Q40: In terms of computational approach, graph-based segmentation is primarily a form of:",
+      "ar": "س 40: فيما يتعلق بالنهج الحسابي، فإن التجزئة القائمة على الرسم البياني هي في المقام الأول شكل من أشكال:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Energy minimization"
+      },
+      {
+        "letter": "B",
+        "text": "High-pass filtering"
+      },
+      {
+        "letter": "C",
+        "text": "Histogram equalization"
+      },
+      {
+        "letter": "D",
+        "text": "Geometric transformation"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "The method constructs an energy function that models region similarity and boundary costs, which is then minimized.",
+      "ar": "تقوم الطريقة بإنشاء دالة طاقة تمثل تشابه المنطقة وتكاليف الحدود، والتي يتم بعد ذلك تقليلها إلى الحد الأدنى."
+    }
+  }
+]

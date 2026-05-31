@@ -1,0 +1,1539 @@
+[
+  {
+    "question": {
+      "en": "Q1: Compile-Time Address Binding",
+      "ar": "Q1: ربط عنوان وقت الترجمة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The dispatcher will dynamically compute the delta during the next context switch."
+      },
+      {
+        "letter": "B",
+        "text": "The operating system must invoke a compaction cycle to re-align symbolic references."
+      },
+      {
+        "letter": "C",
+        "text": "The entire source code must be recompiled to generate a new absolute binary image."
+      },
+      {
+        "letter": "D",
+        "text": "The execution-time loader will shift the relocatable offsets via the hardware unit."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Compile-time binding requires absolute knowledge of the process's location in physical memory during compilation. If the starting location changes, the generated absolute machine code becomes invalid because all jumps and memory references are hardcoded.",
+      "ar": "يتطلب ربط العناوين وقت الترجمة معرفة مطلقة بموقع العملية في الذاكرة الفيزيائية أثناء توليد الشفرة. إذا تغير موقع البداية، تصبح الشفرة المطلقة المتولدة غير صالحة لأن جميع قفزات ومراجع الذاكرة مثبتة برقم العنوان الفيزيائي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Base and Limit Register Protection",
+      "ar": "س2: حماية السجل الأساسي والحد"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Logical Address >= Base"
+      },
+      {
+        "letter": "B",
+        "text": "Logical Address < Base + Limit"
+      },
+      {
+        "letter": "C",
+        "text": "Logical Address >= Limit"
+      },
+      {
+        "letter": "D",
+        "text": "Logical Address < Base"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In standard hardware protection architecture, the CPU checks that the logical address is strictly less than the Limit register value. If the address exceeds or equals the Limit, it represents an access violation, causing a hardware trap.",
+      "ar": "في بنية الحماية العتادية القياسية، يفحص المعالج العنوان المنطقي للتأكد أنه أقل تماماً من قيمة الـ Limit. إذا كان العنوان أكبر من أو يساوي الـ Limit، يطلق فخاً عتادياً فوراً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Privileged Instructions for Base/Limit",
+      "ar": "س3: تعليمات مميزة للقاعدة/الحد"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To minimize context-switch latency by keeping the registers isolated from the instruction pipeline."
+      },
+      {
+        "letter": "B",
+        "text": "To prevent user-mode processes from changing their boundaries and accessing unauthorized memory."
+      },
+      {
+        "letter": "C",
+        "text": "Because the memory bus architecture cannot route selector data lines when operating in user mode."
+      },
+      {
+        "letter": "D",
+        "text": "To allow the compilation phase to embed absolute physical addresses into the runtime context block."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If user programs could modify base and limit registers, they could alter their own memory access boundaries and bypass security protections, compromising the entire system.",
+      "ar": "لو سمح النظام لبرامج المستخدمين بتنفيذ تعليمات تعديل مسجلات القاعدة والنطاق، لتمكنت من تجاوز الحماية واختراق نظام التشغيل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: MMU Dynamic Relocation",
+      "ar": "س4: النقل الديناميكي للوحدة الطبية المتنقلة (MMU)."
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "39000"
+      },
+      {
+        "letter": "B",
+        "text": "24000"
+      },
+      {
+        "letter": "C",
+        "text": "38999"
+      },
+      {
+        "letter": "D",
+        "text": "No address is sent; a hardware protection trap occurs immediately."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "The legal logical address range is 0 through 14999. A reference to address 15000 equals the limit value, which violates the boundary condition (Logical Address < Limit). The MMU blocks address generation and triggers a protection violation trap.",
+      "ar": "النطاق القانوني للعناوين المنطقية هو من 0 إلى 14999. محاولة الوصول للعنوان 15000 تعادل قيمة الـ Limit، وهو ما يخرق شرط الحماية الصارم."
+    }
+  },
+  {
+    "question": {
+      "en": "A systems engineer identifies that while total free memory is 50 MB (sufficient for a 40 MB process), allocation fails. Which phenomenon is responsible?",
+      "ar": "يحدد مهندس الأنظمة أنه بينما يبلغ إجمالي الذاكرة الحرة 50 ميجابايت (كافية لعملية 40 ميجابايت)، يفشل التخصيص. ما هي الظاهرة المسؤولة؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Internal Fragmentation"
+      },
+      {
+        "letter": "B",
+        "text": "External Fragmentation"
+      },
+      {
+        "letter": "C",
+        "text": "Inverted Table Collision"
+      },
+      {
+        "letter": "D",
+        "text": "Thrashing due to dynamic linking overhead"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "External fragmentation occurs when sufficient total memory exists but it is scattered in non-contiguous holes throughout RAM, preventing any single process from loading.",
+      "ar": "يحدث التفتت الخارجي عندما تكون المساحة الإجمالية متاحة لكن مجزأة إلى فجوات صغيرة متفرقة، مما يمنع شحن العملية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: The 50-Percent Rule",
+      "ar": "س6: قاعدة الخمسين بالمائة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Compaction Quotient"
+      },
+      {
+        "letter": "B",
+        "text": "The 50-Percent Rule"
+      },
+      {
+        "letter": "C",
+        "text": "The Fragmentation Paradox"
+      },
+      {
+        "letter": "D",
+        "text": "The Two-Memory-Access Boundary"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The 50-percent rule states that for every N allocated blocks, 0.5 N blocks are lost to external fragmentation, meaning roughly one-third of total memory becomes unusable.",
+      "ar": "قاعدة الـ 50 بالمئة تنص على أنه مقابل كل N من الكتل المخصصة، هناك 0.5 N من الكتل تضيع في التفتت الخارجي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: Memory Compaction Possibility",
+      "ar": "س7: إمكانية ضغط الذاكرة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Execution-Time Address Binding"
+      },
+      {
+        "letter": "B",
+        "text": "Dynamic Relocation utilizing an MMU"
+      },
+      {
+        "letter": "C",
+        "text": "Compile-Time or Load-Time Address Binding"
+      },
+      {
+        "letter": "D",
+        "text": "Forward-Mapped Hierarchical Paging"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Compaction requires moving processes and updating base pointers, only possible with dynamic binding. Fixed binding at compile or load time hardcodes absolute addresses, making relocation impossible.",
+      "ar": "يتطلب دمج الذاكرة نقل البرامج وتحديث المؤشرات، وهو ممكن فقط إذا كان الربط ديناميكياً. الربط الثابت يحفر العناوين نهائياً في الشفرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: Logical vs Physical Address Bits",
+      "ar": "س8: بتات العنوان المنطقية مقابل بتات العناوين الفعلية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Logical: 18 bits | Physical: 16 bits"
+      },
+      {
+        "letter": "B",
+        "text": "Logical: 17 bits | Physical: 17 bits"
+      },
+      {
+        "letter": "C",
+        "text": "Logical: 16 bits | Physical: 15 bits"
+      },
+      {
+        "letter": "D",
+        "text": "Logical: 17 bits | Physical: 16 bits"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "en": "Page size = 2,048 = 2^11 requires 11 bits for offset. Pages = 64 = 2^6 requires 6 bits for page number. Logical Address = 6 + 11 = 17 bits. Frames = 32 = 2^5 requires 5 bits. Physical Address = 5 + 11 = 16 bits.",
+      "ar": "حجم الصفحة = 2,048 = 2^11 يتطلب 11 بت للإزاحة. عدد الصفحات = 64 = 2^6 يتطلب 6 بت لرقم الصفحة. العنوان المنطقي = 6 + 11 = 17 بت. عدد الإطارات = 32 = 2^5 يتطلب 5 بت. العنوان الفيزيائي = 5 + 11 = 16 بت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: Internal Fragmentation Calculation",
+      "ar": "س9: حساب التجزئة الداخلية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "24 frames | 1,696 bytes fragmentation"
+      },
+      {
+        "letter": "B",
+        "text": "25 frames | 2,400 bytes fragmentation"
+      },
+      {
+        "letter": "C",
+        "text": "25 frames | 1,696 bytes fragmentation"
+      },
+      {
+        "letter": "D",
+        "text": "24 frames | 0 bytes fragmentation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "100,000 / 4,096 = 24.414, so 25 frames needed. Total allocated = 25 * 4,096 = 102,400 bytes. Fragmentation = 102,400 - 100,000 = 1,696 bytes.",
+      "ar": "100,000 ÷ 4,096 = 24.414، لذا نحتاج 25 إطاراً. المساحة الإجمالية = 25 * 4,096 = 102,400 بايت. التفتت الداخلي = 102,400 - 100,000 = 1,696 بايت."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: Memory Accesses Without TLB",
+      "ar": "Q10: الوصول إلى الذاكرة بدون TLB"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "One access, because PTBR caches all translations."
+      },
+      {
+        "letter": "B",
+        "text": "Three accesses, due to hierarchical verification cycles."
+      },
+      {
+        "letter": "C",
+        "text": "Two accesses, one for page table lookup and one for data access."
+      },
+      {
+        "letter": "D",
+        "text": "Caching eliminates memory accesses entirely."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The processor must first access main memory to read the page table entry (to find the frame number), then access memory again to read or write the actual data, requiring two total accesses.",
+      "ar": "يجب على المعالج أولاً الوصول للذاكرة لقراءة سطر جدول الصفحات لإيجاد رقم الإطار، ثم الوصول للذاكرة ثانية لقراءة أو كتابة البيانات الفعلية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: TLB Associative Memory Lookup",
+      "ar": "Q11: البحث عن الذاكرة الترابطية لـ TLB"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It searches entries sequentially using a linear hardware comparator."
+      },
+      {
+        "letter": "B",
+        "text": "It compares the input key against all tags simultaneously in parallel within a single pipeline step."
+      },
+      {
+        "letter": "C",
+        "text": "It hashes the logical page value through a microprogrammed ALU."
+      },
+      {
+        "letter": "D",
+        "text": "It utilizes a linked list pointer structure to resolve collisions."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A TLB uses associative memory where every entry has a tag (page number) and value (frame number). When given a page number, the hardware compares it against all tags simultaneously in parallel.",
+      "ar": "يتم بناء الـ TLB بالذاكرة الترابطية حيث يقوم العتاد بمقارنة رقم الصفحة بكافة المفاتيح في نفس الوقت بالتوازي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Effective Memory Access Time (EAT)",
+      "ar": "Q12: وقت الوصول الفعال للذاكرة (EAT)"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "10.1 nanoseconds"
+      },
+      {
+        "letter": "B",
+        "text": "11.0 nanoseconds"
+      },
+      {
+        "letter": "C",
+        "text": "12.0 nanoseconds"
+      },
+      {
+        "letter": "D",
+        "text": "20.0 nanoseconds"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "EAT = Hit Ratio * (Memory Time) + (1 - Hit Ratio) * (2 * Memory Time) = 0.99 * 10 + 0.01 * 20 = 9.9 + 0.2 = 10.1 ns.",
+      "ar": "زمن الوصول الفعلي = 0.99 * 10 + 0.01 * 20 = 9.9 + 0.2 = 10.1 نانوثانية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: Address-Space Identifiers (ASIDs)",
+      "ar": "س13: معرفات مساحة العنوان (ASIDs)"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "They compute the mathematical hash index for hierarchical page tables."
+      },
+      {
+        "letter": "B",
+        "text": "They uniquely identify each process and allow TLB to hold entries from multiple processes without flushing on context switches."
+      },
+      {
+        "letter": "C",
+        "text": "They act as protection bits enforcing read-only or execute-only states."
+      },
+      {
+        "letter": "D",
+        "text": "They track the least recently used entries for replacement policy."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An ASID uniquely identifies a specific process context, preventing cross-process violations and eliminating the need to flush the entire TLB during context switches.",
+      "ar": "يقوم معرف فضاء العنونة (ASID) بتمييز سياق كل عملية بشكل فريد، مما يلغي ضرورة مسح الـ TLB عند تبديل السياق."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: Valid-Invalid Bit in Page Tables",
+      "ar": "Q14: بت صالح-غير صالح في جداول الصفحات"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The page has undergone internal fragmentation and must be compacted."
+      },
+      {
+        "letter": "B",
+        "text": "The page frame is shared with a reentrant system library."
+      },
+      {
+        "letter": "C",
+        "text": "The page is outside the process's legal address space, triggering a trap on access."
+      },
+      {
+        "letter": "D",
+        "text": "The page has been updated in cache but not written back to RAM."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The valid-invalid bit indicates whether a page is legally mapped into the process's address space. Invalid means the page is outside the legal range, and any access triggers an automatic trap.",
+      "ar": "يوضح بت الصلاحية ما إذا كانت الصفحة قانونية في فضاء العنونة. Invalid تعني أن الصفحة خارج النطاق القانوني، وأي وصول يطلق فخاً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: Hierarchical Page Tables in 64-bit",
+      "ar": "س15: جداول الصفحات الهرمية في نظام 64 بت"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It fails to support ASIDs at the outer directory level."
+      },
+      {
+        "letter": "B",
+        "text": "The required hierarchical levels cause prohibitive numbers of physical memory accesses per translation."
+      },
+      {
+        "letter": "C",
+        "text": "It causes severe internal fragmentation by restricting page sizes to powers of 2."
+      },
+      {
+        "letter": "D",
+        "text": "Hardware registers cannot hold multi-level page directories."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "In 64-bit with 4 KB pages, the page table needs 4-7 nested levels. Translating one address requires 4-7 sequential memory accesses, causing unacceptable performance penalty.",
+      "ar": "في فضاء عنونة 64 بت مع صفحات 4 كيلوبايت، نحتاج 4 إلى 7 مستويات متداخلة، مما يتطلب 4-7 دورات وصول منفصلة للذاكرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: Inverted Page Table",
+      "ar": "س16: جدول الصفحات المقلوب"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "One entry per logical page; advantage is accelerating dynamic shared library linking."
+      },
+      {
+        "letter": "B",
+        "text": "One entry per physical frame; advantage is drastically reducing physical memory overhead of page tables."
+      },
+      {
+        "letter": "C",
+        "text": "Uses hardware hash function to bypass TLB; advantage is zero-clock-cycle lookups."
+      },
+      {
+        "letter": "D",
+        "text": "Mirrors binary image on backing store; advantage is enabling static binding."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An Inverted Page Table contains one entry per physical frame instead of per virtual page. This drastically reduces physical memory consumption by eliminating millions of entries across separate per-process tables.",
+      "ar": "جدول الصفحات المعكوس يحتوي على سطر واحد لكل إطار فيزيائي فقط، مما يقلل استهلاك الذاكرة بشكل جذري."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: Inverted Page Table Constraint",
+      "ar": "Q17: قيد جدول الصفحة المقلوب"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shared memory must be recompiled through load-time absolute binder."
+      },
+      {
+        "letter": "B",
+        "text": "TLB hit ratio drops to 0% because hash collisions block parallel matching."
+      },
+      {
+        "letter": "C",
+        "text": "Only one mapping per physical page can exist, forcing page faults if multiple processes access shared space."
+      },
+      {
+        "letter": "D",
+        "text": "Shared pages are restricted exclusively to reentrant code in high memory."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Since an inverted table has only one virtual entry per physical frame, only one virtual-to-physical mapping can exist at a time. Multiple process accesses to shared memory cause page faults and overhead.",
+      "ar": "بما أن الجدول المعكوس يحتوي على إدخال واحد فقط لكل إطار فيزيائي، يمكن لترجمة واحدة فقط أن تستقر فيه في اللحظة الواحدة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: Swapping with Paging",
+      "ar": "س18: التبديل مع الترحيل"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Moving entire binary images between RAM and flash cards."
+      },
+      {
+        "letter": "B",
+        "text": "Swapping only individual discrete pages rather than entire process context, minimizing data movement."
+      },
+      {
+        "letter": "C",
+        "text": "Forcing applications to voluntarily clear heap structures while freezing execution."
+      },
+      {
+        "letter": "D",
+        "text": "Utilizing hardware-managed page directory pointer table to overwrite descriptor blocks."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Modern OSs swap on a per-page basis instead of entire processes. Only unused pages are paged to backing store and paged back on demand, minimizing bus utilization and preserving responsiveness.",
+      "ar": "الأنظمة المعاصرة تبدل الذاكرة على مستوى الصفحة الفردية فقط، مما يقلل استخدام ناقل البيانات ويحافظ على استجابة النظام."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Mobile OS Swap Constraints",
+      "ar": "س19: قيود تبديل نظام تشغيل الهاتف المحمول"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mobile ARM cores cannot execute contextual memory stalls."
+      },
+      {
+        "letter": "B",
+        "text": "Flash memory has limited write cycles and poor throughput, making continuous swapping impractical."
+      },
+      {
+        "letter": "C",
+        "text": "ASIDs are hardware-disabled on low-power architectures."
+      },
+      {
+        "letter": "D",
+        "text": "Lack of hardware MMU prevents execution-time dynamic binding."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Mobile flash memory (NAND) has limited write endurance; continuous swapping would rapidly degrade the chip. Additionally, mobile storage throughput is poor, making swapping impractical.",
+      "ar": "ذاكرة الفلاش (NAND) في الهواتف لها عمراً افتراضياً محكوماً بعدد دورات كتابة، والتبديل المستمر سيعجل بإتلافها."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: IA-32 Memory Address Translation",
+      "ar": "Q20: ترجمة عنوان الذاكرة IA-32"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Paging transforms logical to virtual; Segmentation transforms virtual to physical."
+      },
+      {
+        "letter": "B",
+        "text": "Segmentation transforms logical to 32-bit linear address; Paging transforms it to physical address."
+      },
+      {
+        "letter": "C",
+        "text": "MMU routes absolute code directly into relocation directory, bypassing CR3."
+      },
+      {
+        "letter": "D",
+        "text": "LDT and GDT convert symbolic pointers into reentrant frames on physical bus."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "IA-32 combines segmentation and paging. Segmentation Unit takes logical address (selector, offset) and produces 32-bit Linear Address using segment descriptors. Paging Unit then translates this to physical address.",
+      "ar": "بنية IA-32 تجمع بين التقطيع والصفحات. وحدة التقطيع تحول العنوان المنطقي لعنوان خطي 32 بت، ثم وحدة الصفحات تحوله للعنوان الفيزيائي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: What is the precise definition of a 'Process'?",
+      "ar": "س1: ما هو التعريف الدقيق لـ \"العملية\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A program stored on the hard disk."
+      },
+      {
+        "letter": "B",
+        "text": "A program in execution."
+      },
+      {
+        "letter": "C",
+        "text": "Source code written in a high-level language."
+      },
+      {
+        "letter": "D",
+        "text": "Only a .exe file."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A program is a passive entity (a file on disk), whereas a process is an active entity that includes a program counter and associated resources during its execution.",
+      "ar": "البرنامج هو كيان سلبي (ملف على القرص)، في حين أن العملية هي كيان نشط يتضمن عداد البرنامج والموارد المرتبطة به أثناء تنفيذه."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: In which memory section are 'Local Variables' stored?",
+      "ar": "س2: في أي قسم من الذاكرة يتم تخزين \"المتغيرات المحلية\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Text Section"
+      },
+      {
+        "letter": "B",
+        "text": "Data Section"
+      },
+      {
+        "letter": "C",
+        "text": "Stack"
+      },
+      {
+        "letter": "D",
+        "text": "Heap"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Stack is used for temporary data storage such as function parameters, return addresses, and local variables.",
+      "ar": "يتم استخدام المكدس لتخزين البيانات المؤقتة مثل معلمات الوظائف وعناوين الإرجاع والمتغيرات المحلية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: Where are 'Global Variables' stored in the process memory layout?",
+      "ar": "س3: أين يتم تخزين \"المتغيرات العامة\" في تخطيط ذاكرة العملية؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stack"
+      },
+      {
+        "letter": "B",
+        "text": "Data Section"
+      },
+      {
+        "letter": "C",
+        "text": "Heap"
+      },
+      {
+        "letter": "D",
+        "text": "Text Section"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Data Section is specifically designed to store global and static variables.",
+      "ar": "تم تصميم قسم البيانات خصيصًا لتخزين المتغيرات العامة والثابتة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: A process in the 'Ready' state is a process that is:",
+      "ar": "س 4: العملية في الحالة \"جاهزة\" هي عملية:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Currently being created."
+      },
+      {
+        "letter": "B",
+        "text": "Waiting for an I/O event."
+      },
+      {
+        "letter": "C",
+        "text": "Waiting to be assigned to a processor."
+      },
+      {
+        "letter": "D",
+        "text": "Finished with its execution."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Ready state means the process has all the resources it needs and is only waiting for the CPU to become available.",
+      "ar": "تعني حالة الاستعداد أن العملية تحتوي على جميع الموارد التي تحتاجها وتنتظر فقط أن تصبح وحدة المعالجة المركزية متاحة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: Which component of the PCB indicates the address of the next instruction to be executed?",
+      "ar": "س5: أي مكون من مكونات PCB يشير إلى عنوان التعليمات التالية التي سيتم تنفيذها؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Process State"
+      },
+      {
+        "letter": "B",
+        "text": "Program Counter"
+      },
+      {
+        "letter": "C",
+        "text": "CPU Registers"
+      },
+      {
+        "letter": "D",
+        "text": "Memory Management Info"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Program Counter (PC) tracks the sequence of execution by holding the memory address of the next command.",
+      "ar": "يتتبع عداد البرامج (PC) تسلسل التنفيذ عن طريق الاحتفاظ بعنوان الذاكرة الخاص بالأمر التالي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: Which scheduler controls the 'Degree of Multiprogramming'?",
+      "ar": "س6: ما هو المجدول الذي يتحكم في \"درجة البرمجة المتعددة\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Short-term Scheduler"
+      },
+      {
+        "letter": "B",
+        "text": "Medium-term Scheduler"
+      },
+      {
+        "letter": "C",
+        "text": "Long-term Scheduler"
+      },
+      {
+        "letter": "D",
+        "text": "Context Switcher"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The Long-term (Job) scheduler determines which processes are brought into memory, thus controlling the total number of processes in the system.",
+      "ar": "يحدد المجدول طويل المدى (المهمة) العمليات التي يتم إدخالها إلى الذاكرة، وبالتالي التحكم في إجمالي عدد العمليات في النظام."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: A process that spends more of its time doing computations than I/O is called:",
+      "ar": "س7: العملية التي تقضي وقتها في إجراء العمليات الحسابية أكثر من عملية الإدخال/الإخراج تسمى:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "I/O-bound process"
+      },
+      {
+        "letter": "B",
+        "text": "CPU-bound process"
+      },
+      {
+        "letter": "C",
+        "text": "Independent process"
+      },
+      {
+        "letter": "D",
+        "text": "Zombie process"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "CPU-bound processes focus on mathematical or logical calculations and rarely request I/O operations.",
+      "ar": "تركز العمليات المرتبطة بوحدة المعالجة المركزية على الحسابات الرياضية أو المنطقية ونادرًا ما تطلب عمليات الإدخال/الإخراج."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: The 'Swapping' mechanism is primarily the responsibility of the:",
+      "ar": "س8: تقع مسؤولية آلية \"التبديل\" في المقام الأول على عاتق:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Short-term Scheduler"
+      },
+      {
+        "letter": "B",
+        "text": "Medium-term Scheduler"
+      },
+      {
+        "letter": "C",
+        "text": "Long-term Scheduler"
+      },
+      {
+        "letter": "D",
+        "text": "File System"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The Medium-term scheduler moves processes between RAM and disk (swapping) to balance system load and memory usage.",
+      "ar": "يقوم المجدول متوسط ​​المدى بنقل العمليات بين ذاكرة الوصول العشوائي (RAM) والقرص (التبديل) لموازنة تحميل النظام واستخدام الذاكرة."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: The time taken by the system to save the state of one process and load the state of another is:",
+      "ar": "س9: الوقت الذي يستغرقه النظام لحفظ حالة إحدى العمليات وتحميل حالة عملية أخرى هو:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Response Time"
+      },
+      {
+        "letter": "B",
+        "text": "Waiting Time"
+      },
+      {
+        "letter": "C",
+        "text": "Context Switch"
+      },
+      {
+        "letter": "D",
+        "text": "Throughput"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Context switching is overhead during which the CPU does no 'useful' work for user processes while it swaps execution states.",
+      "ar": "يعتبر تبديل السياق بمثابة حمل إضافي حيث لا تقوم وحدة المعالجة المركزية بعمل \"مفيد\" لعمليات المستخدم أثناء تبديل حالات التنفيذ."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: In Unix, the system call used to create a new process identical to the parent is:",
+      "ar": "س10: في Unix، استدعاء النظام المستخدم لإنشاء عملية جديدة مطابقة للعملية الأم هو:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "exec()"
+      },
+      {
+        "letter": "B",
+        "text": "fork()"
+      },
+      {
+        "letter": "C",
+        "text": "wait()"
+      },
+      {
+        "letter": "D",
+        "text": "exit()"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "fork() creates a child process that is a duplicate of the parent process.",
+      "ar": "تقوم fork() بإنشاء عملية فرعية تكون نسخة مكررة من العملية الأصلية."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: What is a 'Zombie Process'?",
+      "ar": "س11: ما هي \"عملية الزومبي\"؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A process with no parent."
+      },
+      {
+        "letter": "B",
+        "text": "A terminated process whose exit status hasn't been read by its parent."
+      },
+      {
+        "letter": "C",
+        "text": "A process consuming 100% CPU."
+      },
+      {
+        "letter": "D",
+        "text": "A process swapped to the disk."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A zombie remains in the process table until the parent calls wait() to acknowledge its termination.",
+      "ar": "يبقى الزومبي في جدول العملية حتى يستدعي الوالد الانتظار () للإقرار بإنهائه."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: An 'Orphan Process' is a process where:",
+      "ar": "س12: \"العملية اليتيمة\" هي عملية حيث:"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The parent terminated before the child."
+      },
+      {
+        "letter": "B",
+        "text": "The child terminated before the parent."
+      },
+      {
+        "letter": "C",
+        "text": "It has no resources allocated."
+      },
+      {
+        "letter": "D",
+        "text": "It runs in the background."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "If a parent dies, its children are orphaned and typically adopted by the 'init' or 'systemd' process.",
+      "ar": "إذا مات أحد الوالدين، يصبح أطفاله أيتامًا ويتم تبنيهم عادةً من خلال عملية \"init\" أو \"systemd\"."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: Which IPC model is faster for exchanging large amounts of data locally?",
+      "ar": "س13: ما هو نموذج IPC الأسرع في تبادل كميات كبيرة من البيانات محليًا؟"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Message Passing"
+      },
+      {
+        "letter": "B",
+        "text": "Shared Memory"
+      },
+      {
+        "letter": "C",
+        "text": "Sockets"
+      },
+      {
+        "letter": "D",
+        "text": "RPC"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Shared memory allows processes to access the same memory region directly without kernel intervention for every data exchange.",
+      "ar": "تسمح الذاكرة المشتركة للعمليات بالوصول إلى نفس منطقة الذاكرة مباشرة دون تدخل kernel في كل عملية تبادل للبيانات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q1: Resource Classes Implementation",
+      "ar": "س1: تنفيذ فئات الموارد"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "When a thread requests a resource type and is placed into a blocked waiting queue."
+      },
+      {
+        "letter": "B",
+        "text": "When the allocation of any instance of a requested resource type fails to satisfy the thread's execution requirements."
+      },
+      {
+        "letter": "C",
+        "text": "When the total number of resource instances requested by a thread does not exceed the total available instances in the kernel table."
+      },
+      {
+        "letter": "D",
+        "text": "When a dynamic synchronization tool like a mutex lock is assigned its own independent resource class."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A resource class must contain identical instances. If allocating an instance fails to satisfy a thread's request, the instances are fundamentally non-identical, proving that the resource types were improperly defined within the system model.",
+      "ar": "يجب أن تتكون فئة المورد من نسخ متطابقة تماماً. إذا فشل تخصيص أي نسخة في تلبية طلب الخيط، فهذا يعني أن النسخ غير متطابقة عتادياً، مما يثبت أن فئات الموارد لم تُعرّف في نموذج النظام بشكل صحيح."
+    }
+  },
+  {
+    "question": {
+      "en": "Q2: Livelock vs Deadlock",
+      "ar": "س2: لايفلوك ضد ديدلوك"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deadlock failure caused by a breach of the Hold-and-Wait condition."
+      },
+      {
+        "letter": "B",
+        "text": "Starvation condition due to CPU scheduler algorithmic prioritizing."
+      },
+      {
+        "letter": "C",
+        "text": "Livelock failure, which can generally be mitigated by introducing random backoff time intervals."
+      },
+      {
+        "letter": "D",
+        "text": "Mutual Exclusion violation resulting from improper kernel system table tracking."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Livelock occurs when threads continuously attempt an action that fails without entering a blocked state. It is a liveness failure structurally distinct from deadlock. It can be bypassed via random backoff algorithms.",
+      "ar": "يحدث الانغلاق النشط (Livelock) عندما تحاول الخيوط تنفيذ إجراء يفشل باستمرار دون الدخول في حالة حظر. هذا فشل حيوي يختلف بنيوياً عن الانغلاق التام."
+    }
+  },
+  {
+    "question": {
+      "en": "Q3: RAG State Transitions",
+      "ar": "س3: تحولات حالة RAG"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The voluntary release of an allocated resource instance by thread T_i."
+      },
+      {
+        "letter": "B",
+        "text": "The atomic transformation of a request edge into an assignment edge upon resource allocation."
+      },
+      {
+        "letter": "C",
+        "text": "The declaration of a priori claim edges by an application developer before execution."
+      },
+      {
+        "letter": "D",
+        "text": "The execution of a cycle-detection routine that forces process termination."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "When a thread T_i requests an instance of resource R_j, a request edge (T_i -> R_j) is drawn. The instant the request is granted by the kernel, this edge is atomically mutated into an assignment edge (R_j -> T_i).",
+      "ar": "عندما يطلب الخيط موردًا، يتم رسم حافة طلب (T_i -> R_j). وفي اللحظة التي يوافق فيها نظام التشغيل على الطلب، تتحول هذه الحافة بشكل ذري إلى حافة تخصيص (R_j -> T_i)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q4: RAG Cycles and Deadlock",
+      "ar": "س 4: دورات RAG والجمود"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "When every resource type involved in the cycle has several instances."
+      },
+      {
+        "letter": "B",
+        "text": "When the system is executing an unsafe Banker's Algorithm safety routine."
+      },
+      {
+        "letter": "C",
+        "text": "When each resource type involved in the cycle has exactly a single instance."
+      },
+      {
+        "letter": "D",
+        "text": "When claim edges are represented as dashed lines within a multiple-instance system."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "In a single-instance RAG, a cycle indicates a deadlock with absolute certainty. Thus, the cycle is both necessary and sufficient. In multi-instance configurations, it is merely necessary.",
+      "ar": "في مخطط تخصيص الموارد ذي النسخة الواحدة، وجود الحلقة يعني حدوث الانغلاق التام قطعاً. في حالة النسخ المتعددة، فإن الحلقة تعد شرطاً ضرورياً فقط."
+    }
+  },
+  {
+    "question": {
+      "en": "Q5: Production OS Deadlock Strategy",
+      "ar": "س5: إستراتيجية الجمود في نظام التشغيل الإنتاجي"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Strict enforcement of Banker's Algorithm on all user applications."
+      },
+      {
+        "letter": "B",
+        "text": "Periodic invocation of wait-for graph cycle-detection matrix every clock cycle."
+      },
+      {
+        "letter": "C",
+        "text": "Ignoring the problem altogether, relying on programmer-level design or manual restarts."
+      },
+      {
+        "letter": "D",
+        "text": "Automatic dynamic resource preemption utilizing hardware register rollbacks."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Due to severe performance overhead, standard production OS platforms choose to ignore deadlock entirely, leaving recovery to applications or human reboots.",
+      "ar": "بسبب التكلفة العالية، تختار أنظمة التشغيل التجارية تجاهل مشكلة الانغلاق التام تماماً، تاركةً المعالجة لمطوري التطبيقات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q6: Hold-and-Wait Prevention Issues",
+      "ar": "س6: مشكلات منع الانتظار والانتظار"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "High runtime overhead and reduced transitivity within kernel system tables."
+      },
+      {
+        "letter": "B",
+        "text": "Low resource utilization and high probability of thread starvation."
+      },
+      {
+        "letter": "C",
+        "text": "Invalidation of the mutual exclusion condition for unsharable system locks."
+      },
+      {
+        "letter": "D",
+        "text": "Excessive generation of cascading claim edges inside the Directed Graph."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Disallowing thread holding while waiting for new ones results in allocated resources remaining unused for long intervals, lowering utilization and causing thread starvation.",
+      "ar": "منع الخيط من احتجاز موارد أثناء انتظار موارد جديدة يؤدي إلى تخصيص موارد تظل غير مستغلة لفترات طويلة، مما يخفض كفاءة النظام."
+    }
+  },
+  {
+    "question": {
+      "en": "Q7: No-Preemption and Synchronization Primitives",
+      "ar": "س7: عدم الشفعة وأوليات التزامن"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "These resources cannot be tracked by kernel-managed centralized system tables."
+      },
+      {
+        "letter": "B",
+        "text": "Preempting a lock protecting critical section during data modification destroys data integrity."
+      },
+      {
+        "letter": "C",
+        "text": "Their states can be easily saved and restored via standard CPU registers."
+      },
+      {
+        "letter": "D",
+        "text": "Locks are intrinsically sharable resources permitting simultaneous read-access operations."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Preempting a mutex protecting shared data being modified ruins the critical section, causing race conditions and data loss.",
+      "ar": "انتزاع قفل Mutex يحمي قسماً حرجاً في منتصف عملية تعديل البيانات سيؤدي حتماً إلى تدمير سلامة البيانات."
+    }
+  },
+  {
+    "question": {
+      "en": "Q8: Total Ordering Contradiction Proof",
+      "ar": "س8: إثبات تناقض الطلب الإجمالي"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "The transitivity logic yielding F(R_0) < F(R_0)."
+      },
+      {
+        "letter": "B",
+        "text": "The reduction of dimensionality by m * n^2."
+      },
+      {
+        "letter": "C",
+        "text": "The instantaneous conversion of assignment edges into dashed claim lines."
+      },
+      {
+        "letter": "D",
+        "text": "The summation of maximum demands falling below m + n."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "en": "Total ordering enforces strict monotonic increase in lock numbers. A circular wait requires F(R_0) < F(R_0), which is logically impossible.",
+      "ar": "يفرض الترتيب الإجمالي تصاعداً صارماً في أرقام الأقفال. انتظار دائري مغلق يقتضي أن F(R_0) < F(R_0)، وهو تناقض منطقي."
+    }
+  },
+  {
+    "question": {
+      "en": "Q9: Linux lockdep Tool Profile",
+      "ar": "س9: ملف تعريف أداة lockdep لنظام التشغيل Linux"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A low-overhead avoidance algorithm for production databases with automatic rollbacks."
+      },
+      {
+        "letter": "B",
+        "text": "A validation tool checking lock patterns against ordering rules, intended for development kernels."
+      },
+      {
+        "letter": "C",
+        "text": "A hardware-driven mechanism forcing synchronization objects into single higher-order lock."
+      },
+      {
+        "letter": "D",
+        "text": "An offline compiler plugin hardcoding System.identityHashCode into executables."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Linux's lockdep tracks kernel spinlock/mutex usage against pre-configured constraints, recommended for development due to performance cost.",
+      "ar": "أداة lockdep تتبع استخدام الأقفال ديناميكياً للتحقق من امتثالها لقواعد الترتيب، تُستخدم حصراً في نسخ التطوير."
+    }
+  },
+  {
+    "question": {
+      "en": "Q10: Unsafe State Classification",
+      "ar": "س10: تصنيف الحالة غير الآمنة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "An unsafe state is mathematically equivalent to a deadlocked state space."
+      },
+      {
+        "letter": "B",
+        "text": "An unsafe state can no longer prevent threads from forcing a deadlock."
+      },
+      {
+        "letter": "C",
+        "text": "An unsafe state implies that a safe sequence has been successfully completed."
+      },
+      {
+        "letter": "D",
+        "text": "An unsafe state can only occur if all resources are limited to single instances."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "An unsafe state is distinct from deadlock. It means the system cannot guarantee deadlock prevention.",
+      "ar": "الحالة غير الآمنة تختلف تماماً عن الانغلاق التام. فهي تعني أن النظام دخل في حيز لا يمكنه ضمان عدم حدوث انغلاق."
+    }
+  },
+  {
+    "question": {
+      "en": "Q11: Banker's Algorithm Need Matrix",
+      "ar": "س11: تحتاج خوارزمية المصرفي إلى مصفوفة"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Need[i][j] = Max[i][j] + Allocation[i][j]"
+      },
+      {
+        "letter": "B",
+        "text": "Need[i][j] = Available[j] - Request[i][j]"
+      },
+      {
+        "letter": "C",
+        "text": "Need[i][j] = Max[i][j] - Allocation[i][j]"
+      },
+      {
+        "letter": "D",
+        "text": "Need[i][j] = Allocation[i][j] - Available[j]"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Remaining resource needs are derived by subtracting allocated resources from declared maximum demand.",
+      "ar": "يتم حساب الاحتياجات المتبقية عبر طرح الموارد المخصصة من الحد الأقصى المعلن عنه مسبقاً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q12: Banker's Safety Algorithm Execution",
+      "ar": "س12: تنفيذ خوارزمية السلامة المصرفية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Allocation of new resources to increase process maximum potential claim."
+      },
+      {
+        "letter": "B",
+        "text": "Optimistic assumption that process will complete and release allocated resources."
+      },
+      {
+        "letter": "C",
+        "text": "Permanent locking of resource instances to induce controlled unsafe check."
+      },
+      {
+        "letter": "D",
+        "text": "Conversion of multi-instance vector into wait-for graph cycle."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "The algorithm assumes the process completes and returns all allocated assets back to the Work pool.",
+      "ar": "الخوارزمية تفترض أن الخيط سينهي مهمته ويعيد كامل الموارد المخصصة إلى مصفوفة العمل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q13: Banker's Safety Complexity",
+      "ar": "س13: تعقيد سلامة المصرفي"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "O(n + m)"
+      },
+      {
+        "letter": "B",
+        "text": "O(n^2)"
+      },
+      {
+        "letter": "C",
+        "text": "O(m * n^2)"
+      },
+      {
+        "letter": "D",
+        "text": "O(m^n)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The algorithm checks up to n processes with m comparisons each, yielding O(m * n^2) complexity.",
+      "ar": "الخوارزمية تقوم بفحص الخيوط مع إجراء مقارنات لجميع فئات الموارد، مما ينتج عنه تعقيد حسابي O(m * n^2)."
+    }
+  },
+  {
+    "question": {
+      "en": "Q14: Resource-Request Algorithm Response",
+      "ar": "س14: استجابة خوارزمية طلب الموارد"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It triggers system halt and kernel panic."
+      },
+      {
+        "letter": "B",
+        "text": "It forces total rollback and CPU cache flush."
+      },
+      {
+        "letter": "C",
+        "text": "It restores old state, denies transaction, and blocks requesting thread."
+      },
+      {
+        "letter": "D",
+        "text": "It overrides Max matrix and grants resources permanently."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "The kernel rolls back temporary adjustments and blocks the requesting thread until resources are released.",
+      "ar": "تقوم النواة فوراً بالتراجع عن التعديلات وإعادة المصفوفات لحالتها السابقة، مع حجب الخيط."
+    }
+  },
+  {
+    "question": {
+      "en": "Q15: Deadlock Detection Data Structure",
+      "ar": "س 15: بنية بيانات الكشف عن حالة توقف تام"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "A claim graph derived by substituting dashed lines with request edges."
+      },
+      {
+        "letter": "B",
+        "text": "A wait-for graph derived by removing resource nodes and collapsing edges."
+      },
+      {
+        "letter": "C",
+        "text": "An allocation matrix computed by subtracting Available from Max."
+      },
+      {
+        "letter": "D",
+        "text": "A containment table mapping synchronization primitives to natural numbers."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "A wait-for graph is used for single-instance systems, collapsing resource nodes and creating edges between threads.",
+      "ar": "يُستخدم مخطط الانتظار لأجل (Wait-For Graph)، ويتم بناؤه بحذف عقد الموارد ودمج الحواف بين الخيوط."
+    }
+  },
+  {
+    "question": {
+      "en": "Q16: Detection vs Avoidance Assumptions",
+      "ar": "س 16: اكتشاف مقابل افتراضات التجنب"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It assumes unsharable locks can be converted into read-only architectures."
+      },
+      {
+        "letter": "B",
+        "text": "It assumes threads will return resources without requesting further assets to max."
+      },
+      {
+        "letter": "C",
+        "text": "It assumes any thread with zero Allocation is automatically deadlocked."
+      },
+      {
+        "letter": "D",
+        "text": "It assumes CPU scheduler never context switches during critical sections."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Detection only checks current explicit requests, assuming zero further maximum allocation claims.",
+      "ar": "الرصد يفحص فقط الطلبات الحالية الفعلية مفترضاً أن الخيوط لن تطلب شيئاً إضافياً حتى حدها الأقصى."
+    }
+  },
+  {
+    "question": {
+      "en": "Q17: CPU Utilization Detection Threshold",
+      "ar": "Q17: عتبة الكشف عن استخدام وحدة المعالجة المركزية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "Low utilization indicates high number of threads in ready state."
+      },
+      {
+        "letter": "B",
+        "text": "Deadlocks block threads, reducing throughput and CPU utilization sharply."
+      },
+      {
+        "letter": "C",
+        "text": "CPU performance drop automatically converts claim edges to assignment edges."
+      },
+      {
+        "letter": "D",
+        "text": "Low utilization reduces cycle detection complexity to O(1)."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "Deadlocked threads are blocked and cannot execute. As deadlocks grow, more threads freeze, CPU utilization drops sharply.",
+      "ar": "الخيوط المنغلقة تدخل في حالة حظر دائم. مع نمو الانغلاق، تتجمد خيوط أكثر وينخفض استهلاك CPU حاداً."
+    }
+  },
+  {
+    "question": {
+      "en": "Q18: Process Termination Recovery Cost",
+      "ar": "س18: تكلفة استرداد إنهاء العملية"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "It leaves shared data protected by mutex locks open to race conditions."
+      },
+      {
+        "letter": "B",
+        "text": "It discards total progress of all processes simultaneously."
+      },
+      {
+        "letter": "C",
+        "text": "Deadlock-detection algorithm must be re-invoked after each termination."
+      },
+      {
+        "letter": "D",
+        "text": "It alters the total ordering function assigned to synchronization structures."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Aborting sequentially requires executing the full O(m * n^2) algorithm after every termination.",
+      "ar": "إن إنهاء الخيوط تلو الآخر يتطلب إعادة استدعاء خوارزمية الرصد كاملة مع تعقيدها البالغ O(m * n^2) فور كل عملية قتل."
+    }
+  },
+  {
+    "question": {
+      "en": "Q19: Resource Preemption Victim Selection",
+      "ar": "س19: اختيار الضحية قبل الموارد"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "To minimize computational footprint of wait-for graph cycle search."
+      },
+      {
+        "letter": "B",
+        "text": "To guarantee kernel can always perform partial rollback instead of total."
+      },
+      {
+        "letter": "C",
+        "text": "To prevent starvation by ensuring a process isn't perpetually targeted."
+      },
+      {
+        "letter": "D",
+        "text": "To maintain compliance with Linux lockdep kernel configuration rules."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "en": "Tracking rollbacks prevents a low-priority thread from being continuously targeted, protecting it from starvation.",
+      "ar": "يتم إضافة عدّاد مرات التراجع إلى معادلة الكلفة لحماية الخيط من التجويع البنيوي المستمر."
+    }
+  },
+  {
+    "question": {
+      "en": "Q20: System Deadlock-Free Condition",
+      "ar": "س20: حالة عدم توقف النظام"
+    },
+    "options": [
+      {
+        "letter": "A",
+        "text": "System is inherently unstable and settles into unsafe state."
+      },
+      {
+        "letter": "B",
+        "text": "System is deadlock-free because circular wait cannot hold."
+      },
+      {
+        "letter": "C",
+        "text": "System induces immediate thread starvation due to low utilization."
+      },
+      {
+        "letter": "D",
+        "text": "Allocation matrix perpetually exceeds Max array limits."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "en": "If total maximum requirements < m + n, circular wait is impossible mathematically.",
+      "ar": "إذا كان مجموع الاحتياجات القصوى أقل من m + n، فإن الانتظار الدائري مستحيل رياضياً."
+    }
+  }
+]
