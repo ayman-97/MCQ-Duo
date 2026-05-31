@@ -110,7 +110,7 @@ export const OptionCard: React.FC<OptionCardProps> = ({
       onClick={onClick}
       disabled={disabled || blurred}
       className={`
-        w-full p-4 mb-3 text-left rounded-lg border-2 transition-all
+        w-full p-4 mb-3 text-start rounded-lg border-2 transition-all
         ${bgColor} ${borderColor} ${textColor}
         ${disabled || blurred ? "cursor-not-allowed opacity-70" : "cursor-pointer"}
         flex items-start gap-3
@@ -160,6 +160,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
             animate={{ y: 0 }}
             exit={{ y: 100 }}
             onClick={(e) => e.stopPropagation()}
+            dir={content.match(/[\u0600-\u06FF]/) ? "rtl" : "ltr"}
           >
             {/* Header with close button */}
             <div className="flex justify-between items-center mb-4">
@@ -171,7 +172,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
                 ✕
               </button>
             </div>
-            <p className="text-white leading-relaxed">{content}</p>
+            <p className="text-white leading-relaxed text-start">{content}</p>
           </motion.div>
         </motion.div>
       )}

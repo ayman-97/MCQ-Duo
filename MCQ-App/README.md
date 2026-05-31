@@ -1,11 +1,11 @@
-# 🎮 MCQ Duolingo - Gamified Learning App
+# 🎮 MCQ Duo - Gamified Learning App
 
-A highly addictive, mobile-first MCQ (Multiple Choice Questions) learning web app inspired by Duolingo's progression mechanics. Combines a beautiful Duolingo-style progression map with fast-paced, high-feedback interaction mechanics.
+A highly addictive, mobile-first MCQ (Multiple Choice Questions) learning web app inspired by Duo's progression mechanics. Combines a beautiful Duo-style progression map with fast-paced, high-feedback interaction mechanics.
 
 ## 🌟 Features
 
 ### 🎯 Core Mechanics
-- **Duolingo-Style Progression Map**: SVG-based winding path with interactive level nodes
+- **Duo-Style Progression Map**: SVG-based winding path with interactive level nodes
 - **Level States**: Locked, Current (pulsing), Completed (with 1-3 star ratings)
 - **Read-First Mechanic**: Questions require reading before options become clickable (1.5s)
 - **Real-time Feedback**: 

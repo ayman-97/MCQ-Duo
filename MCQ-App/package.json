@@ -1,7 +1,7 @@
 {
-  "name": "mcq-duolingo-app",
+  "name": "mcq-Duo-app",
   "version": "1.0.0",
-  "description": "Gamified MCQ learning app with Duolingo-style progression",
+  "description": "Gamified MCQ learning app with Duo-style progression",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -31,7 +31,7 @@ export const QuizInterface: React.FC<QuizInterfaceProps> = ({
   const [answered, setAnswered] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
   const [readingTime, setReadingTime] = useState(0);
-  const [language, setLanguage] = useState<"en" | "ar">("en");
+  const [language, setLanguage] = useState<"en" | "ar">("ar");
 
   const question = questions[currentQuestion];
   const isCorrect =
@@ -118,22 +118,25 @@ export const QuizInterface: React.FC<QuizInterfaceProps> = ({
       />
 
       {/* Question Section */}
-      <motion.div className="bg-dark-800 rounded-lg p-6 mb-6 flex-1">
+      <motion.div 
+        className="bg-dark-800 rounded-lg p-6 mb-6 flex-1"
+        dir={language === "ar" ? "rtl" : "ltr"}
+      >
         {/* Question with language toggle */}
         <div className="mb-8">
           <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-white flex-1 leading-tight">
+            <h2 className="text-2xl font-bold text-white flex-1 leading-tight text-start">
               {language === "en" ? question.question.en : (question.question.ar || question.question.en)}
             </h2>
             <button
               onClick={() => setLanguage(language === "en" ? "ar" : "en")}
-              className="ml-4 px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition whitespace-nowrap"
+              className={`${language === "ar" ? "mr-4" : "ml-4"} px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition whitespace-nowrap`}
               title="Toggle language"
             >
               {language === "en" ? "عربي" : "English"}
             </button>
           </div>
-          <p className="text-gray-400 text-sm italic">
+          <p className="text-gray-400 text-sm italic text-start" dir={language === "en" ? "rtl" : "ltr"}>
             {language === "en" ? (question.question.ar || question.question.en) : question.question.en}
           </p>
         </div>

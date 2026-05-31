@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
-  title: "MCQ Duolingo - Gamified Learning",
+  title: "MCQ Duo - Gamified Learning",
   description:
-    "Master MCQ with Duolingo-style progression, fast-paced gameplay, and addictive mechanics",
+    "Master MCQ with Duo-style progression, fast-paced gameplay, and addictive mechanics",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
 

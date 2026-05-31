@@ -6,13 +6,13 @@ Your gamified MCQ learning app is now running at **http://localhost:3001**
 
 ### 📋 What You've Built
 
-A **highly addictive, mobile-first MCQ learning web app** combining Duolingo's progression mechanics with fast-paced, high-feedback gameplay.
+A **highly addictive, mobile-first MCQ learning web app** combining Duo's progression mechanics with fast-paced, high-feedback gameplay.
 
 ---
 
 ## 🎯 Core Features Implemented
 
-### 1. **Duolingo-Style Progression Map** ✅
+### 1. **Duo-Style Progression Map** ✅
 - SVG-based winding path with circular level nodes
 - **Level States**:
   - 🔒 Locked (greyed out, disabled)
@@ -416,6 +416,6 @@ Perfect for:
 
 ---
 
-**🚀 Happy learning! Your MCQ Duolingo app is ready to go!**
+**🚀 Happy learning! Your MCQ Duo app is ready to go!**
 
 For questions, check [README.md](README.md) or [SETUP_COMPLETE.md](SETUP_COMPLETE.md)

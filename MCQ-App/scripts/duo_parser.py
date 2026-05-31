@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Duo Parser: Extract and organize MCQ data from .docx files
-Converts Word documents into a structured JSON database optimized for the Duolingo-style learning app.
+Converts Word documents into a structured JSON database optimized for the Duo-style learning app.
 
 Usage:
     python scripts/duo_parser.py
@@ -197,7 +197,7 @@ class MCQParser:
 
 def main():
     """Main entry point."""
-    print("🚀 MCQ Parser - Duolingo Style Data Pipeline\n")
+    print("🚀 MCQ Parser - Duo Style Data Pipeline\n")
     
     parser = MCQParser()
     parser.parse_all_subjects()

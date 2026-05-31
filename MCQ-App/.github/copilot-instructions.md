@@ -2,7 +2,7 @@
 
 ## Project Overview
 This is a gamified MCQ learning application combining:
-- Duolingo-style progression map with level-based learning
+- Duo-style progression map with level-based learning
 - Dark theme cyberpunk aesthetic
 - Mobile-first responsive design
 - Smooth 60fps animations with Framer Motion

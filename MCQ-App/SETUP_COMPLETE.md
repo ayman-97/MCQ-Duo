@@ -11,7 +11,7 @@
 ### 2. **React/Next.js Frontend**
 **Core Components:**
 - `GameHome.tsx` - Main app container
-- `ProgressionMap.tsx` - Duolingo-style SVG path with level nodes
+- `ProgressionMap.tsx` - Duo-style SVG path with level nodes
 - `QuizInterface.tsx` - Fast-paced quiz with read-first mechanic
 - `LevelCompleteScreen.tsx` - Confetti animations & stats display
 - `SubjectSelector.tsx` - Subject dropdown + progress bar
