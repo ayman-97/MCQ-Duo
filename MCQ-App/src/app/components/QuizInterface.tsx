@@ -156,7 +156,7 @@ export const QuizInterface: React.FC<QuizInterfaceProps> = ({
         </div>
 
         {/* Options */}
-        <div className="space-y-3">
+        <div className="space-y-3" dir="ltr">
           {question.options.map((option) => {
             let state: "default" | "correct" | "wrong" = "default";
             if (answered) {
